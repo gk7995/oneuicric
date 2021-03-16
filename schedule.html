@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>One UI Cricket - Schedules</title>
+    <link rel="stylesheet" href="OneUI/oui.min.css">
+    <link rel="stylesheet" href="materialize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="OUC.ico">
+    <style>
+        @font-face {
+            font-family: 'SamsungOne 400';
+            src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+        }
+
+        * {
+            font-family: 'SamsungOne 400';
+            font-size: larger;
+        }
+
+        .oui-button {
+            font-family: 'SamsungOne 400';
+         }
+    </style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="materialize.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.fixed-action-btn').openFAB();
+            $('.fixed-action-btn').closeFAB();
+            $('.fixed-action-btn.toolbar').openToolbar();
+            $('.fixed-action-btn.toolbar').closeToolbar();
+            $('.tooltipped').tooltip({
+                delay: 50
+            });
+        })
+    </script>
+</head>
+
+<body oncontextmenu="return false;" onload="Materialize.toast('Ongoing: ENG tour of IND', 5000,'rounded')">
+    <main class="container">
+        <div class="oui-interaction center-align">
+            <!-- Interaction area -->
+            <div class="fixed-action-btn">
+                <a class="btn-floating btn-large teal lighten-1 btn tooltipped" data-position="left" data-delay="50"
+                    data-tooltip="Menu">
+                    <i class="large material-icons">more_vert</i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating btn tooltipped" data-position="top" data-delay="50" data-tooltip="About"
+                            href="about.html"><i class="material-icons">info</i></a></li>
+                    <li><a class="btn-floating btn tooltipped" data-position="left" data-delay="50"
+                            data-tooltip="HOME" href="index.html"><i class="material-icons">home</i></a>
+                    </li>
+                    <li><a class="btn-floating btn tooltipped" data-position="left" data-delay="50"
+                            data-tooltip="Scorecard" href="live.html"><i class="material-icons">live_tv</i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="oui-bubble">
+                <div class="oui-bubble">
+                    <table class="centered bordered highlight">
+                        <tbody>
+                            <tr>
+                                <td colspan="6"><b>ENGLAND tour of INDIA 2021 (4 Tests, 5 T20s, 3 ODIs)</b></td>
+                            </tr>
+                            <tr>
+                                <td><b>DATE</b></td>
+                                <td><b>TIME</b></td>
+                                <td><b>HOME TEAM</b></td>
+                                <td><b>AWAY TEAM</b></td>
+                                <td><b>VENUE</b></td>
+                            </tr>
+                            <tr class="grey white-text">
+                                <td colspan="5">4 Tests & 2 T20s are completed</td>
+                            </tr>
+                            <tr class="orange white-text">
+                                <td>March 16,<br>2021</td>
+                                <td>19:00 IST</td>
+                                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>INDIA</td>
+                                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="25px" height="15px"><br>ENGLAND</td>
+                                <td>Ahmedabad</td>
+                            </tr>
+                            <tr class="orange white-text">
+                                <td>March 18,<br>2021</td>
+                                <td>19:00 IST</td>
+                                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>INDIA</td>
+                                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="25px" height="15px"><br>ENGLAND</td>
+                                <td>Ahmedabad</td>
+                            </tr>
+                            <tr class="orange white-text">
+                                <td>March 20,<br>2021</td>
+                                <td>19:00 IST</td>
+                                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>INDIA</td>
+                                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="25px" height="15px"><br>ENGLAND</td>
+                                <td>Ahmedabad</td>
+                            </tr>
+                            <tr class="blue white-text">
+                                <td>March 23,<br>2021</td>
+                                <td>13:30 IST</td>
+                                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>INDIA</td>
+                                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="25px" height="15px"><br>ENGLAND</td>
+                                <td>Pune</td>
+                            </tr>
+                            <tr class="blue white-text">
+                                <td>March 26,<br>2021</td>
+                                <td>13:30 IST</td>
+                                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>INDIA</td>
+                                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="25px" height="15px"><br>ENGLAND</td>
+                                <td>Pune</td>
+                            </tr>
+                            <tr class="blue white-text">
+                                <td>March 28,<br>2021</td>
+                                <td>13:30 IST</td>
+                                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>INDIA</td>
+                                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="25px" height="15px"><br>ENGLAND</td>
+                                <td>Pune</td>
+                            </tr>
+                            <tr>
+                                <td colspan="6"><a href="ipltt.html" class="black-text"><b>IPL 2021 (Apr 9 - May 30, 2021)</b></a></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6"><b>ICC WORLD TEST CHAMPIONSHIP FINAL</b></td>
+                            </tr>
+                            <tr class="green white-text">
+                                <td>June 18,<br>2021</td>
+                                <td>15:30 IST</td>
+                                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>INDIA</td>
+                                <td><img src="https://images.cricket.com/teams/5_flag_safari.png" alt="NEW ZEALAND" width="25px" height="15px"><br>NEW ZEALAND</td>
+                                <td>Southampton</td>
+                            </tr>
+                            <tr>
+                                <td colspan="6"><b>INDIA tour of ENGLAND 2021 (5 Tests)</b></td>
+                            </tr>
+                            <tr class="green white-text">
+                                <td>August 4,<br>2021</td>
+                                <td>15:30 IST</td>
+                                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="25px" height="15px"><br>ENGLAND</td>
+                                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>INDIA</td>
+                                <td>Nottingham</td>
+                            </tr>
+                            <tr class="green white-text">
+                                <td>August 12,<br>2021</td>
+                                <td>15:30 IST</td>
+                                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="25px" height="15px"><br>ENGLAND</td>
+                                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>INDIA</td>
+                                <td>Lords,<br>London</td>
+                            </tr>
+                            <tr class="green white-text">
+                                <td>August 25,<br>2021</td>
+                                <td>15:30 IST</td>
+                                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="25px" height="15px"><br>ENGLAND</td>
+                                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>INDIA</td>
+                                <td>Leeds</td>
+                            </tr>
+                            <tr class="green white-text">
+                                <td>September 2,<br>2021</td>
+                                <td>15:30 IST</td>
+                                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="25px" height="15px"><br>ENGLAND</td>
+                                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>INDIA</td>
+                                <td>Oval,<br>London</td>
+                            </tr>
+                            <tr class="green white-text">
+                                <td>September 10,<br>2021</td>
+                                <td>15:30 IST</td>
+                                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="25px" height="15px"><br>ENGLAND</td>
+                                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>INDIA</td>
+                                <td>Manchester</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="oui-bubble">
+                <table class="centered">
+                    <tbody>
+                        <tr>
+                            <td class="green white-text">TEST</td>
+                            <td class="blue white-text">ODI</td>
+                            <td class="orange white-text">T20</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div><br>
+    </main>
+</body>
+
+</html>

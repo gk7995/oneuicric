@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>One UI Cricket</title>
+    <link rel="stylesheet" href="OneUI/oui.min.css">
+    <link rel="stylesheet" href="materialize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="OUC.ico">
+    <style>
+        @font-face {
+            font-family: 'SamsungOne 400';
+            src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+        }
+
+        * {
+            font-family: 'SamsungOne 400';
+            font-size: larger;
+        }
+
+        .oui-button {
+            font-family: 'SamsungOne 400';
+         }
+    </style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="materialize.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.fixed-action-btn').openFAB();
+            $('.fixed-action-btn').closeFAB();
+            $('.fixed-action-btn.toolbar').openToolbar();
+            $('.fixed-action-btn.toolbar').closeToolbar();
+            $('.tooltipped').tooltip({
+                delay: 50
+            });
+        })
+    </script>
+</head>
+
+<body oncontextmenu="return false;" onload="Materialize.toast('', 5000,'rounded')">
+    <main class="container">
+        <div class="oui-interaction center-align">
+            <!-- Interaction area -->
+            <div class="fixed-action-btn">
+                <a class="btn-floating btn-large teal lighten-1 btn tooltipped" data-position="left" data-delay="50"
+                    data-tooltip="Menu">
+                    <i class="large material-icons">more_vert</i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating btn tooltipped" data-position="top" data-delay="50" data-tooltip="About"
+                            href="about.html"><i class="material-icons">info</i></a></li>
+                    <li><a class="btn-floating btn tooltipped" data-position="left" data-delay="50"
+                            data-tooltip="Scorecard" href="live.html"><i class="material-icons">live_tv</i></a>
+                    </li>
+                    <li><a class="btn-floating btn tooltipped" data-position="left" data-delay="50"
+                            data-tooltip="Schedule" href="schedule.html"><i class="material-icons">view_list</i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="oui-bubble green lighten-1">
+                    <div class="oui-bubble">
+                    <h5 class="center"><b>LIVE SCORES*</b></h5>
+                    <iframe src="https://www.cricket.com/live-score/199348/scorecard/ind-vs-eng-3rd-t20i-england-tour-of-india-2021" width="100%" height="150px" scrolling="no"></iframe>
+                    </div>
+                    <div class="oui-bubble">
+                    <h5 class="center"><b>STATISTICS</b></h5>
+                    <table class="highlight">
+                        <thead>
+                            <tr>
+                                <td><b>TEAM</b></td>
+                                <td><b><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="40px" height="25px"><br> INDIA</b></td>
+                                <td><b><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="40px" height="25px"><br> ENGLAND</b></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>RECENT FORM <br>(MAX 5 MATCHES)</b></td>
+                                <td><b>W, W, L, L, W</b></td>
+                                <td><b>W, W, W, W, L</b></td>
+                            </tr>
+                            <tr>
+                                <td><b>HEAD TO HEAD <br>(5 MATCHES, TIED 0)</b></td>
+                                <td><b>3</b></td>
+                                <td><b>2</b></td>
+                            </tr>
+                            <tr>
+                                <td><b>TOP RUN SCORER <br>(LAST 5 MATCHES)</b></td>
+                                <td><b>Kohli 207</b></td>
+                                <td><b>Malan 221</b></td>
+                            </tr>
+                            <tr>
+                                <td><b>TOP WICKET TAKER<br>(LAST 5 MATCHES)</b></td>
+                                <td><b>Chahal 6wkts</b></td>
+                                <td><b>Jordan 5wkts</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div class="oui-bubble">
+                        <h5 class="center"><b>COMING GAMES</b></h5>
+                        <table class="centered bordered highlight">
+                            <tbody>
+                                <tr>
+                                    <td><b>DATE</b></td>
+                                    <td><b>TIME</b></td>
+                                    <td><b>HOME TEAM</b></td>
+                                    <td><b>AWAY TEAM</b></td>
+                                    <td><b>VENUE</b></td>
+                                </tr>
+                                <tr>
+                                    <td>March 18,<br>2021</td>
+                                    <td>19:00 IST</td>
+                                    <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>INDIA</td>
+                                    <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="25px" height="15px"><br>ENGLAND</td>
+                                    <td>Ahmedabad</td>
+                                </tr>
+                                <tr>
+                                    <td>March 20,<br>2021</td>
+                                    <td>19:00 IST</td>
+                                    <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>INDIA</td>
+                                    <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="25px" height="15px"><br>ENGLAND</td>
+                                    <td>Ahmedabad</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+    </main>
+</body>
+
+</html>
