@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>One UI Cricket - IPL Schedule 2021</title>
+    <link rel="stylesheet" href="OneUI/oui.min.css">
+    <link rel="stylesheet" href="materialize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="OUC.ico">
+    <style>
+        @font-face {
+            font-family: 'SamsungOne 400';
+            src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+        }
+
+        * {
+            font-family: 'SamsungOne 400';
+            font-size: larger;
+        }
+
+        .oui-button {
+            font-family: 'SamsungOne 400';
+         }
+    </style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="materialize.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.fixed-action-btn').openFAB();
+            $('.fixed-action-btn').closeFAB();
+            $('.fixed-action-btn.toolbar').openToolbar();
+            $('.fixed-action-btn.toolbar').closeToolbar();
+            $('.tooltipped').tooltip({
+                delay: 50
+            });
+        })
+    </script>
+</head>
+
+<body oncontextmenu="return false;" onload="Materialize.toast('Result, Points Table in Menu', 5000,'rounded')">
+    <main class="container">
+        <div class="oui-interaction center-align">
+            <!-- Interaction area -->
+            <div class="fixed-action-btn">
+                <a class="btn-floating btn-large indigo darken-4 btn tooltipped" data-position="left" data-delay="50"
+                    data-tooltip="Menu">
+                    <i class="large material-icons">more_vert</i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating btn indigo darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="About"
+                            href="about.html"><i class="material-icons">info</i></a></li>
+                    <li><a class="btn-floating btn indigo darken-4 tooltipped" data-position="left" data-delay="50"
+                            data-tooltip="HOME" href="index.html"><i class="material-icons">home</i></a>
+                    </li>
+                    <li><a class="btn-floating btn indigo darken-4 tooltipped" data-position="left" data-delay="50"
+                            data-tooltip="Scorecard" href="live.html"><i class="material-icons">live_tv</i></a>
+                    </li>
+                    <li><a class="btn-floating btn indigo darken-4 tooltipped" data-position="left" data-delay="50"
+                            data-tooltip="Results" href="results.html"><i class="material-icons">emoji_events</i></a>
+                    </li>
+                    <li><a class="btn-floating btn indigo darken-4 tooltipped" data-position="left" data-delay="50" 
+                            data-tooltip="Other Schedules" href="schedule.html"><i class="material-icons">view_list</i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="oui-bubble orange accent-3">
+                <div class="oui-bubble">
+                    <table class="centered bordered highlight striped">
+                        <tbody>
+                            <tr>
+                                <td><b>DATE<br>&#9788;/&#9790;</b></td>
+                                <td><b>HOME TEAM</b></td>
+                                <td><b>AWAY TEAM</b></td>
+                                <td><b>VENUE</b></td>
+                            </tr>
+                            <tr>
+                                <td>09-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px" height="15px"><br>MI</td>
+                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px" height="15px"><br>RCB</td>
+                                <td>CHENNAI</td>
+                            </tr>
+                            <tr>
+                                <td>10-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px" height="15px"><br>CSK</td>
+                                <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px" height="15px"><br>DC</td>
+                                <td>MUMBAI</td>
+                            </tr>
+                            <tr>
+                                <td>11-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px" height="15px"><br>SRH</td>
+                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px" height="15px"><br>KKR</td>
+                                <td>CHENNAI</td>
+                            </tr>
+                            <tr>
+                                <td>12-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px" height="15px"><br>RR</td>
+                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px" height="15px"><br>PBKS</td>
+                                <td>MUMBAI</td>
+                            </tr>
+                            <tr>
+                                <td>13-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px" height="15px"><br>KKR</td>
+                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px" height="15px"><br>MI</td>
+                                <td>CHENNAI</td>
+                            </tr>
+                            <tr>
+                                <td>14-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px" height="15px"><br>SRH</td>
+                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px" height="15px"><br>RCB</td>
+                                <td>CHENNAI</td>
+                            </tr>
+                            <tr>
+                                <td>15-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px" height="15px"><br>RR</td>
+                                <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px" height="15px"><br>DC</td>
+                                <td>MUMBAI</td>
+                            </tr>
+                            <tr>
+                                <td>16-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px" height="15px"><br>PBKS</td>
+                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px" height="15px"><br>CSK</td>
+                                <td>MUMBAI</td>
+                            </tr>
+                            <tr>
+                                <td>17-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px" height="15px"><br>MI</td>
+                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px" height="15px"><br>SRH</td>
+                                <td>CHENNAI</td>
+                            </tr>
+                            <tr>
+                                <td>18-Apr <br>&#9788;</td>
+                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px" height="15px"><br>RCB</td>
+                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px" height="15px"><br>KKR</td>
+                                <td>CHENNAI</td>
+                            </tr>
+                            <tr>
+                                <td>18-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px" height="15px"><br>DC</td>
+                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px" height="15px"><br>PBKS</td>
+                                <td>MUMBAI</td>
+                            </tr>
+                            <tr>
+                                <td>19-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px" height="15px"><br>CSK</td>
+                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px" height="15px"><br>RR</td>
+                                <td>MUMBAI</td>
+                            </tr>
+                            <tr>
+                                <td>20-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px" height="15px"><br>DC</td>
+                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px" height="15px"><br>MI</td>
+                                <td>CHENNAI</td>
+                            </tr>
+                            <tr>
+                                <td>21-Apr <br>&#9788;</td>
+                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px" height="15px"><br>PBKS</td>
+                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px" height="15px"><br>SRH</td>
+                                <td>CHENNAI</td>
+                            </tr>
+                            <tr>
+                                <td>21-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px" height="15px"><br>KKR</td>
+                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px" height="15px"><br>CSK</td>
+                                <td>MUMBAI</td>
+                            </tr>
+                            <tr>
+                                <td>22-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px" height="15px"><br>RCB</td>
+                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px" height="15px"><br>RR</td>
+                                <td>MUMBAI</td>
+                            </tr>
+                            <tr>
+                                <td>23-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px" height="15px"><br>PBKS</td>
+                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px" height="15px"><br>MI</td>
+                                <td>CHENNAI</td>
+                            </tr>
+                            <tr>
+                                <td>24-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px" height="15px"><br>RR</td>
+                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px" height="15px"><br>KKR</td>
+                                <td>MUMBAI</td>
+                            </tr>
+                            <tr>
+                                <td>25-Apr <br>&#9788;</td>
+                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px" height="15px"><br>CSK</td>
+                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px" height="15px"><br>RCB</td>
+                                <td>MUMBAI</td>
+                            </tr>
+                            <tr>
+                                <td>25-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px" height="15px"><br>SRH</td>
+                                <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px" height="15px"><br>DC</td>
+                                <td>CHENNAI</td>
+                            </tr>
+                            <tr>
+                                <td>26-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px" height="15px"><br>PBKS</td>
+                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px" height="15px"><br>KKR</td>
+                                <td>AHMEDABAD</td>
+                            </tr>
+                            <tr>
+                                <td>27-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px" height="15px"><br>DC</td>
+                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px" height="15px"><br>RCB</td>
+                                <td>AHMEDABAD</td>
+                            </tr>
+                            <tr>
+                                <td>28-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px" height="15px"><br>CSK</td>
+                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px" height="15px"><br>SRH</td>
+                                <td>DELHI</td>
+                            </tr>
+                            <tr>
+                                <td>29-Apr <br>&#9788;</td>
+                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px" height="15px"><br>MI</td>
+                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px" height="15px"><br>RR</td>
+                                <td>DELHI</td>
+                            </tr>
+                            <tr>
+                                <td>29-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px" height="15px"><br>DC</td>
+                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px" height="15px"><br>KKR</td>
+                                <td>AHMEDABAD</td>
+                            </tr>
+                            <tr>
+                                <td>30-Apr <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px" height="15px"><br>PBKS</td>
+                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px" height="15px"><br>RCB</td>
+                                <td>AHMEDABAD</td>
+                            </tr>
+                            <tr>
+                                <td>01-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px" height="15px"><br>MI</td>
+                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px" height="15px"><br>CSK</td>
+                                <td>DELHI</td>
+                            </tr>
+                            <tr>
+                                <td>02-May <br>&#9788;</td>
+                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px" height="15px"><br>RR</td>
+                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px" height="15px"><br>SRH</td>
+                                <td>DELHI</td>
+                            </tr>
+                            <tr>
+                                <td>02-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px" height="15px"><br>PBKS</td>
+                                <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px" height="15px"><br>DC</td>
+                                <td>AHMEDABAD</td>
+                            </tr>
+                            <tr>
+                                <td>03-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px" height="15px"><br>KKR</td>
+                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px" height="15px"><br>RCB</td>
+                                <td>AHMEDABAD</td>
+                            </tr>
+                            <tr>
+                                <td>04-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px" height="15px"><br>SRH</td>
+                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px" height="15px"><br>MI</td>
+                                <td>DELHI</td>
+                            </tr>
+                            <tr>
+                                <td>05-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px" height="15px"><br>RR</td>
+                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px" height="15px"><br>CSK</td>
+                                <td>DELHI</td>
+                            </tr>
+                            <tr>
+                                <td>06-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px" height="15px"><br>RCB</td>
+                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px" height="15px"><br>PBKS</td>
+                                <td>AHMEDABAD</td>
+                            </tr>
+                            <tr>
+                                <td>07-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px" height="15px"><br>SRH</td>
+                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px" height="15px"><br>CSK</td>
+                                <td>DELHI</td>
+                            </tr>
+                            <tr>
+                                <td>08-May <br>&#9788;</td>
+                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px" height="15px"><br>KKR</td>
+                                <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px" height="15px"><br>DC</td>
+                                <td>AHMEDABAD</td>
+                            </tr>
+                            <tr>
+                                <td>08-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px" height="15px"><br>RR</td>
+                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px" height="15px"><br>MI</td>
+                                <td>DELHI</td>
+                            </tr>
+                            <tr>
+                                <td>09-May <br>&#9788;</td>
+                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px" height="15px"><br>CSK</td>
+                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px" height="15px"><br>PBKS</td>
+                                <td>BANGALORE</td>
+                            </tr>
+                            <tr>
+                                <td>09-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px" height="15px"><br>RCB</td>
+                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px" height="15px"><br>SRH</td>
+                                <td>KOLKATA</td>
+                            </tr>
+                            <tr>
+                                <td>10-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px" height="15px"><br>MI</td>
+                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px" height="15px"><br>KKR</td>
+                                <td>BANGALORE</td>
+                            </tr>
+                            <tr>
+                                <td>11-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px" height="15px"><br>DC</td>
+                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px" height="15px"><br>RR</td>
+                                <td>KOLKATA</td>
+                            </tr>
+                            <tr>
+                                <td>12-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px" height="15px"><br>CSK</td>
+                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px" height="15px"><br>KKR</td>
+                                <td>BANGALORE</td>
+                            </tr>
+                            <tr>
+                                <td>13-May <br>&#9788;</td>
+                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px" height="15px"><br>MI</td>
+                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px" height="15px"><br>PBKS</td>
+                                <td>BANGALORE</td>
+                            </tr>
+                            <tr>
+                                <td>13-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px" height="15px"><br>SRH</td>
+                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px" height="15px"><br>RR</td>
+                                <td>KOLKATA</td>
+                            </tr>
+                            <tr>
+                                <td>14-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px" height="15px"><br>RCB</td>
+                                <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px" height="15px"><br>DC</td>
+                                <td>KOLKATA</td>
+                            </tr>
+                            <tr>
+                                <td>15-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px" height="15px"><br>KKR</td>
+                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px" height="15px"><br>PBKS</td>
+                                <td>BANGALORE</td>
+                            </tr>
+                            <tr>
+                                <td>16-May <br>&#9788;</td>
+                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px" height="15px"><br>RR</td>
+                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px" height="15px"><br>RCB</td>
+                                <td>KOLKATA</td>
+                            </tr>
+                            <tr>
+                                <td>16-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px" height="15px"><br>CSK</td>
+                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px" height="15px"><br>MI</td>
+                                <td>BANGALORE</td>
+                            </tr>
+                            <tr>
+                                <td>17-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px" height="15px"><br>DC</td>
+                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px" height="15px"><br>SRH</td>
+                                <td>KOLKATA</td>
+                            </tr>
+                            <tr>
+                                <td>18-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px" height="15px"><br>KKR</td>
+                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px" height="15px"><br>RR</td>
+                                <td>BANGALORE</td>
+                            </tr>
+                            <tr>
+                                <td>19-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px" height="15px"><br>SRH</td>
+                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px" height="15px"><br>PBKS</td>
+                                <td>BANGALORE</td>
+                            </tr>
+                            <tr>
+                                <td>20-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px" height="15px"><br>RCB</td>
+                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px" height="15px"><br>MI</td>
+                                <td>KOLKATA</td>
+                            </tr>
+                            <tr>
+                                <td>21-May <br>&#9788;</td>
+                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px" height="15px"><br>KKR</td>
+                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px" height="15px"><br>SRH</td>
+                                <td>BANGALORE</td>
+                            </tr>
+                            <tr>
+                                <td>21-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px" height="15px"><br>DC</td>
+                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px" height="15px"><br>CSK</td>
+                                <td>KOLKATA</td>
+                            </tr>
+                            <tr>
+                                <td>22-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px" height="15px"><br>PBKS</td>
+                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px" height="15px"><br>RR</td>
+                                <td>BANGALORE</td>
+                            </tr>
+                            <tr>
+                                <td>23-May <br>&#9788;</td>
+                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px" height="15px"><br>MI</td>
+                                <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px" height="15px"><br>DC</td>
+                                <td>KOLKATA</td>
+                            </tr>
+                            <tr>
+                                <td>23-May <br>&#9790;</td>
+                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px" height="15px"><br>RCB</td>
+                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px" height="15px"><br>CSK</td>
+                                <td>KOLKATA</td>
+                            </tr>
+                            <tr>
+                                <td>25-May <br>&#9790;</td>
+                                <td colspan="2">QUALIFIER 1</td>
+                                <td>AHMEDABAD</td>
+                            </tr>
+                            <tr>
+                                <td>26-May <br>&#9790;</td>
+                                <td colspan="2">ELIMINATOR</td>
+                                <td>AHMEDABAD</td>
+                            </tr>
+                            <tr>
+                                <td>28-May <br>&#9790;</td>
+                                <td colspan="2">QUALIFIER 2</td>
+                                <td>AHMEDABAD</td>
+                            </tr>
+                            <tr>
+                                <td>30-May <br>&#9790;</td>
+                                <td colspan="2">FINAL</td>
+                                <td>AHMEDABAD</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="oui-bubble">
+                <table class="centered bordered striped">
+                    <tbody>
+                        <tr>
+                            <td colspan="3">TEAMS & TIME DENOTATIONS:</td>
+                        </tr>
+                        <tr>
+                            <td>CSK-Chennai Super Kings</td>
+                            <td>DC-Delhi Capitals</td>
+                            <td>KKR-Kolkata Knight Riders</td>
+                        </tr>
+                        <tr>
+                            <td>MI-Mumbai Indians</td>
+                            <td>PBKS-PunjaB KingS</td>
+                            <td>RR-Rajasthan Royals</td>
+                        </tr>
+                        <tr>
+                            <td>RCB-Royal Challengers Bangalore</td>
+                            <td>SRH-SunRisers Hyderabad</td>
+                            <td>&#9788; 15:30 IST,<br>&#9790; 19:30 IST</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div><br>
+    </main>
+</body>
+
+</html>

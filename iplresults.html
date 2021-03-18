@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>One UI Cricket - IPL Results & Points Table</title>
+    <link rel="stylesheet" href="OneUI/oui.min.css">
+    <link rel="stylesheet" href="materialize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="OUC.ico">
+    <style>
+        @font-face {
+            font-family: 'SamsungOne 400';
+            src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+        }
+
+        * {
+            font-family: 'SamsungOne 400';
+            font-size: larger;
+        }
+
+        .oui-button {
+            font-family: 'SamsungOne 400';
+         }
+    </style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="materialize.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.fixed-action-btn').openFAB();
+            $('.fixed-action-btn').closeFAB();
+            $('.fixed-action-btn.toolbar').openToolbar();
+            $('.fixed-action-btn.toolbar').closeToolbar();
+            $('.tooltipped').tooltip({
+                delay: 50
+            });
+        })
+    </script>
+</head>
+
+<body oncontextmenu="return false;" onload="Materialize.toast('Ongoing: ENG tour of IND', 5000,'rounded')">
+    <main class="container">
+        <div class="oui-interaction center-align">
+            <!-- Interaction area -->
+            <div class="fixed-action-btn">
+                <a class="btn-floating btn-large indigo darken-4 btn tooltipped" data-position="left" data-delay="50"
+                    data-tooltip="Menu">
+                    <i class="large material-icons">more_vert</i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating btn indigo darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="About"
+                            href="about.html"><i class="material-icons">info</i></a></li>
+                    <li><a class="btn-floating btn indigo darken-4 tooltipped" data-position="left" data-delay="50"
+                            data-tooltip="Home" href="index.html"><i class="material-icons">home</i></a>
+                    </li>
+                    <li><a class="btn-floating btn indigo darken-4 tooltipped" data-position="left" data-delay="50"
+                            data-tooltip="Other Schedules" href="schedule.html"><i class="material-icons">view_list</i></a>
+                    </li>
+                    <li><a class="btn-floating btn indigo darken-4 tooltipped" data-position="left" data-delay="50"
+                            data-tooltip="Scorecard" href="live.html"><i class="material-icons">live_tv</i></a>
+                    </li>
+                    <li><a class="btn-floating btn indigo darken-4 tooltipped" data-position="left" data-delay="50" 
+                            data-tooltip="IPL Home" href="ipltt.html"><i class="material-icons">sports_cricket</i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="oui-bubble orange accent-3">
+                <div class="oui-bubble">
+                    <table class="centered bordered highlight">
+                        <tbody>
+                            <tr>
+                                <td><b>TEAM</b></td>
+                                <td><b>PLAYED</b></td>
+                                <td><b>WON</b></td>
+                                <td><b>POINTS</b></td>
+                                <td><b>NRR</b></td>
+                            </tr>
+                            <tr>
+                                <td>CSK</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>+0.000</td>
+                            </tr>
+                            <tr>
+                                <td>DC</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>+0.000</td>
+                            </tr>
+                            <tr>
+                                <td>KKR</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>+0.000</td>
+                            </tr>
+                            <tr>
+                                <td>MI</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>+0.000</td>
+                            </tr>
+                            <tr>
+                                <td>PBKS</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>+0.000</td>
+                            </tr>
+                            <tr>
+                                <td>RR</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>+0.000</td>
+                            </tr>
+                            <tr>
+                                <td>RCB</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>+0.000</td>
+                            </tr>
+                            <tr>
+                                <td>SRH</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>+0.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="oui-bubble">
+                    <table class="centered bordered highlight">
+                        <tbody>
+                            <tr>
+                                <td><b>DATE</b></td>
+                                <td><b>SCORES & MATCH RESULT</b></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><b>NO MATCH TO DISPLAY</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--div class="oui-bubble">
+                <table class="centered">
+                    <tbody>
+                        <tr>
+                            <td colspan="3"><b>FORMATS ARE DENOTED BY COLORS:</b></td>
+                        </tr>
+                        <tr>
+                            <td class="green white-text">TEST - GREEN</td>
+                            <td class="blue white-text">ODI - BLUE</td>
+                            <td class="orange white-text">T20 - ORANGE</td>
+                        </tr-->
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div><br>
+    </main>
+</body>
+
+</html>
