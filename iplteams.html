@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>One UI Cricket - IPL Teams</title>
+    <link rel="stylesheet" href="OneUI/oui.min.css">
+    <link rel="stylesheet" href="materialize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="OUC.ico">
+    <style>
+        @font-face {
+            font-family: 'SamsungOne 400';
+            src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+        }
+
+        * {
+            font-family: 'SamsungOne 400';
+            font-size: larger;
+        }
+
+        .oui-button {
+            font-family: 'SamsungOne 400';
+        }
+    </style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="materialize.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.fixed-action-btn').openFAB();
+            $('.fixed-action-btn').closeFAB();
+            $('.fixed-action-btn.toolbar').openToolbar();
+            $('.fixed-action-btn.toolbar').closeToolbar();
+            $('.tooltipped').tooltip({
+                delay: 50
+            });
+        })
+    </script>
+</head>
+
+<body oncontextmenu="return false;" onload="Materialize.toast('', 5000,'rounded')">
+    <main class="container">
+        <div class="oui-interaction center-align">
+            <!-- Interaction area -->
+            <div class="fixed-action-btn">
+                <a class="btn-floating btn-large indigo darken-4 btn tooltipped" data-position="left" data-delay="50"
+                    data-tooltip="Menu">
+                    <i class="large material-icons">more_vert</i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating btn indigo darken-4 tooltipped" data-position="top" data-delay="50"
+                            data-tooltip="About" href="about.html"><i class="material-icons">info</i></a></li>
+                    <li><a class="btn-floating btn indigo darken-4 tooltipped" data-position="left" data-delay="50"
+                            data-tooltip="IPL Results" href="iplresults.html"><i
+                                class="material-icons">emoji_events</i></a>
+                    </li>
+                    <li><a class="btn-floating btn indigo darken-4 tooltipped" data-position="left" data-delay="50"
+                            data-tooltip="IPL Schedule" href="ipltt.html"><i class="material-icons">view_list</i></a>
+                    </li>
+                    <li><a class="btn-floating btn indigo darken-4 tooltipped" data-position="left" data-delay="50"
+                            data-tooltip="Scorecard 4" href="ipllive4.html"><i
+                                class="material-icons">live_tv&#8308;</i></a>
+                    </li>
+                    <li><a class="btn-floating btn indigo darken-4 tooltipped" data-position="left" data-delay="50"
+                            data-tooltip="Scorecard 3" href="ipllive3.html"><i
+                                class="material-icons">live_tv&#179;</i></a>
+                    </li>
+                    <li><a class="btn-floating btn indigo darken-4 tooltipped" data-position="left" data-delay="50"
+                            data-tooltip="Scorecard 2" href="ipllive.html"><i
+                                class="material-icons">live_tv&#178;</i></a>
+                    </li>
+                    <li><a class="btn-floating btn indigo darken-4 tooltipped" data-position="left" data-delay="50"
+                            data-tooltip="Scorecard 1" href="live.html"><i class="material-icons">live_tv&#185;</i></a>
+                    </li>
+                    <li><a class="btn-floating btn indigo darken-4 tooltipped" data-position="left" data-delay="50"
+                            data-tooltip="IPL Home" href="iplhome.html"><i class="material-icons">sports_cricket</i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="oui-bubble orange accent-3">
+                <h5 class="center white-text"><b>IPL SQUADS 2021</b></h5>
+                <div class="oui-bubble">
+                    <table class="bordered highlight">
+                        <tbody>
+                            <tr id="csk">
+                                <td class="center" colspan="2"><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px" height="15px"><b> CHENNAI SUPER KINGS</b></td>
+                            </tr>
+                            <tr>
+                                <td>&#8227; MS Dhoni (Captain)</td>
+                                <td>WKB</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Ambati Rayudu</td>
+                                <td>BAT</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; KM Asif</td>
+                                <td>ALL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Dwayne Bravo</td>
+                                <td>ALL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Deepak Chahar</td>
+                                <td>BOWL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Faf du Plessis</td>
+                                <td>BAT</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Imran Tahir</td>
+                                <td>BOWL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Narayan Jagadeesan</td>
+                                <td>WKB</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Josh Hazlewood</td>
+                                <td>BOWL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Karn Sharma</td>
+                                <td>BOWL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Lungi Ngidi</td>
+                                <td>BOWL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Mitchell Santner</td>
+                                <td>BOWL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; R Sai Kishore</td>
+                                <td>BOWL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Ravindra Jadeja</td>
+                                <td>ALL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Robin Uthappa</td>
+                                <td>BAT</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Ruturaj Gaikwad</td>
+                                <td>BAT</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Sam Curran</td>
+                                <td>ALL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Shardul Thakur</td>
+                                <td>BOWL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Suresh Raina</td>
+                                <td>BAT</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Moeen Ali</td>
+                                <td>ALL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Krishnappa Gowtham</td>
+                                <td>ALL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Cheteshwar Pujara</td>
+                                <td>BAT</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Harishankar Reddy</td>
+                                <td>BOWL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; C Hari Nishaanth</td>
+                                <td>BAT</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Bhagath Varma</td>
+                                <td>ALL</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="oui-bubble">
+                    <table class="bordered highlight">
+                        <tbody>
+                            <tr id="dc">
+                                <td class="center" colspan="2"><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px" height="15px"><b> DELHI CAPITALS</b></td>
+                            </tr>
+                            <tr>
+                                <td>&#8227; Rishabh Pant (Captain)</td>
+                                <td>WKB</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Ajinkya Rahane</td>
+                                <td>BAT</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Amit Mishra</td>
+                                <td>BOWL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Anrich Nortje</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Avesh Khan</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Axar Patel</td>
+                                <td>BOWL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Chris Woakes</td>
+                                <td>ALL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Ishant Sharma</td>
+                                <td>BOWL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Kagiso Rabada</td>
+                                <td>BOWL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Lalith Yadav</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Marcus Stoinis</td>
+                                <td>ALL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Pravin Dubey</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Prithvi Shaw</td>
+                                <td>BAT</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Ravichandran Ashwin</td>
+                                <td>ALL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Shikhar Dhawan</td>
+                                <td>BAT</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Shimron Hetmyer</td>
+                                <td>ALL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Steve Smith</td>
+                                <td>BAT</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Umesh Yadav</td>
+                                <td>BOWL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Ripal Patel</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Vishnu Vinod</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Lukman Meriwala</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; M Siddharth</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Tom Curran</td>
+                                <td>BOWL</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Sam Billings</td>
+                                <td>ALL</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="oui-bubble">
+                    <table class="bordered highlight">
+                        <tbody>
+                            <tr id="kkr">
+                                <td class="center" colspan="2"><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px" height="15px"><b> KOLKATA KNIGHT RIDERS</b></td>
+                            </tr>
+                            <tr>
+                                <td>&#8227; Eoin Morgan (Captain)</td>
+                                <td>BAT</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Andre Russell</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Dinesh Karthik</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Kamlesh Nagarkoti</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Kuldeep Yadav</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Lockie Ferguson</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Nitish Rana</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Pat Cummins</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Prasidh Krishna</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Rahul Tripathi</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Sandeep Warrier</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Rinku Singh</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Shivam Mavi</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Shubman Gill</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Sunil Narine</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Tim Seifert</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Varun Chakravarthy</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Shakib Al Hasan</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Sheldon Jackson</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Vaibhav Arora</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Karun Nair</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Harbhajan Singh</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Ben Cutting</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Venkatesh Iyer</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Pawan Negi</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="oui-bubble">
+                    <table class="bordered highlight">
+                        <tbody>
+                            <tr id="mi">
+                                <td class="center" colspan="2"><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px" height="15px"><b> MUMBAI INDIANS</b></td>
+                            </tr>
+                            <tr>
+                                <td>&#8227; Rohit Sharma (Captain)</td>
+                                <td>BAT</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Aditya Tare</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Anukul Roy</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Anmolpreet Singh</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Chris Lynn</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Dhawal Kulkarni</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Hardik Pandya</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Ishan Kishan</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Jasprit Bumrah</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Jayant Yadav</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Kieron Pollard</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Krunal Pandya</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Mohsin Khan</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Quinton de Kock</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Rahul Chahar</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Saurabh Tiwary</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Suryakumar Yadav</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Trent Boult</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Adam Milne</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Nathan Coulter-Nile</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Piyush Chawla</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Jimmy Neesham</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Yudhvir Charak</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Marco Jansen</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Arjun Tendulkar</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="oui-bubble">
+                    <table class="bordered highlight">
+                        <tbody>
+                            <tr id="pbks">
+                                <td class="center" colspan="2"><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px" height="15px"><b> PUNJAB KINGS</b></td>
+                            </tr>
+                            <tr>
+                                <td>&#8227; KL Rahul (Captain)</td>
+                                <td>WKB</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Arshdeep Singh</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Chris Gayle</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Chris Jordan</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Darshan Nalkande</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Deepak Hooda</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Harpreet Brar</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Ishan Porel</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Mandeep Singh</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Mayank Agarwal</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Mohammad Shami</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Murugan Ashwin</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Nicholas Pooran</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Prabhsimran Singh</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Ravi Bishnoi</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Sarfaraz Khan</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Dawid Malan</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Jhye Richardson</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Shahrukh Khan</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Riley Meredith</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Moises Henriques</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Jalaj Saxena</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Utkarsh Singh</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Fabian Allen</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Saurabh Kumar</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="oui-bubble">
+                    <table class="bordered highlight">
+                        <tbody>
+                            <tr id="rr">
+                                <td class="center" colspan="2"><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px" height="15px"><b> RAJASTHAN ROYALS</b></td>
+                            </tr>
+                            <tr>
+                                <td>&#8227; Sanju Samson (Captain)</td>
+                                <td>BAT</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Andrew Tye</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Anuj Rawat</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Ben Stokes</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; David Miller</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Jaydev Unadkat</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Jofra Archer</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Jos Buttler</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Kartik Tyagi</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Mahipal Lomror</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Manan Vohra</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Mayank Markande</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Rahul Tewatia</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Riyan Parag</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Shreyas Gopal</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Yashasvi Jaiswal</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Shivam Dube</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Chris Morris</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Mustafizur Rahman</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Chetan Sakariya</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; KC Cariappa</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Liam Livingstone</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Kuldip Yadav</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Akash Singh</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="oui-bubble">
+                    <table class="bordered highlight">
+                        <tbody>
+                            <tr id="rcb">
+                                <td class="center" colspan="2"><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px" height="15px"><b> ROYAL CHALLENGERS BANGALORE</b></td>
+                            </tr>
+                            <tr>
+                                <td>&#8227; Virat Kohli (Captain)</td>
+                                <td>BAT</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; AB de Villiers</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Adam Zampa</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Devdutt Padikkal</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Kane Richardson</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Mohammed Siraj</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Navdeep Saini</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Pavan Deshpande</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Shahbaz Ahmed</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Washington Sundar</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Yuzvendra Chahal</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Daniel Sams</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Harshal Patel</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Glenn Maxwell</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Sachin Baby</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Rajat Patidar</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Mohammed Azharuddeen</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Kyle Jamieson</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Dan Christian</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Suyash Prabhudessai</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; K.S Bharat</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Finn Allen</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="oui-bubble">
+                    <table class="bordered highlight">
+                        <tbody>
+                            <tr id="srh">
+                                <td class="center" colspan="2"><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px" height="15px"><b> SUNRISERS HYDERABAD</b></td>
+                            </tr>
+                            <tr>
+                                <td>&#8227; David Warner (Captain)</td>
+                                <td>BAT</td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Abdul Samad</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Abhishek Sharma</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Basil Thampi</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Bhuvneshwar Kumar</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Jason Holder</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Jonny Bairstow</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Kane Williamson</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Manish Pandey</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Mitchell Marsh</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Mohammad Nabi</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Priyam Garg</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Rashid Khan</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Sandeep Sharma</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Shahbaz Nadeem</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Shreevats Goswami</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Siddarth Kaul</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Khaleel Ahmed</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; T Natarajan</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Vijay Shankar</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Virat Singh</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Wriddhiman Saha</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Jagadeesha Suchith</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Kedar Jadhav</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&#8226; Mujeeb Ur Rahman</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div><br>
+    </main>
+</body>
+
+</html>
