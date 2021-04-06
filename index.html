@@ -10,6 +10,30 @@
     <link rel="stylesheet" href="materialize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="icon" href="OUC.ico">
+    <link rel="manifest" href="manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="One UI Cricket">
+  <meta name="apple-mobile-web-app-title" content="One UI Cricket">
+  <meta name="theme-color" content="#1a237e">
+  <meta name="msapplication-navbutton-color" content="#1a237e">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-starturl" content="index.html">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="picture3.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="32x32" href="picture3.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="picture4.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="48x48" href="picture4.png">
+  <link rel="icon" type="image/png" sizes="60x60" href="picture5.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="picture5.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="picture6.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="128x128" href="picture6.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="picture7.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="picture7.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="picture2.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="256x256" href="picture2.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="picture1.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="picture1.png">
     <style>
         @font-face {
             font-family: 'SamsungOne 400';
@@ -142,8 +166,15 @@
                     </div>
                 </div>
             </div>
-        </div><br>
+        </div>
+        <br>
     </main>
+    <script>
+        if('serviceWorker' in navigator){
+          // Register service worker
+          navigator.serviceWorker.register('sw.js',{scope: '.'});
+        };
+      </script>
 </body>
 
 </html>

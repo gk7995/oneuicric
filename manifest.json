@@ -1,0 +1,39 @@
+{
+  "name": "One UI Cricket",
+  "short_name": "OUICric",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#1a237e",
+  "description": "One UI Cricket",
+  "theme_color": "#1a237e",
+  "orientation": "any",
+  "icons": [{
+      "src": "picture2.png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "picture3.png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "picture4.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "picture5.png",
+      "sizes": "60x60"
+    },
+    {
+      "src": "picture6.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "picture7.png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "picture1.png",
+      "sizes": "512x512"
+    }
+  ]
+}
