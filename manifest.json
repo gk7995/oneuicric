@@ -3,9 +3,9 @@
   "short_name": "OUICric",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#1a237e",
+  "background_color": "#0d47a1",
   "description": "One UI Cricket",
-  "theme_color": "#1a237e",
+  "theme_color": "#0d47a1",
   "orientation": "any",
   "icons": [{
       "src": "picture2.png",

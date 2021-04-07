@@ -531,115 +531,115 @@
   color: #6200ea !important;
 }
 
-.indigo {
+.blue {
   background-color: #3f51b5 !important;
 }
 
-.indigo-text {
+.blue-text {
   color: #3f51b5 !important;
 }
 
-.indigo.lighten-5 {
+.blue.lighten-5 {
   background-color: #e8eaf6 !important;
 }
 
-.indigo-text.text-lighten-5 {
+.blue-text.text-lighten-5 {
   color: #e8eaf6 !important;
 }
 
-.indigo.lighten-4 {
+.blue.lighten-4 {
   background-color: #c5cae9 !important;
 }
 
-.indigo-text.text-lighten-4 {
+.blue-text.text-lighten-4 {
   color: #c5cae9 !important;
 }
 
-.indigo.lighten-3 {
+.blue.lighten-3 {
   background-color: #9fa8da !important;
 }
 
-.indigo-text.text-lighten-3 {
+.blue-text.text-lighten-3 {
   color: #9fa8da !important;
 }
 
-.indigo.lighten-2 {
+.blue.lighten-2 {
   background-color: #7986cb !important;
 }
 
-.indigo-text.text-lighten-2 {
+.blue-text.text-lighten-2 {
   color: #7986cb !important;
 }
 
-.indigo.lighten-1 {
+.blue.lighten-1 {
   background-color: #5c6bc0 !important;
 }
 
-.indigo-text.text-lighten-1 {
+.blue-text.text-lighten-1 {
   color: #5c6bc0 !important;
 }
 
-.indigo.darken-1 {
+.blue.darken-1 {
   background-color: #3949ab !important;
 }
 
-.indigo-text.text-darken-1 {
+.blue-text.text-darken-1 {
   color: #3949ab !important;
 }
 
-.indigo.darken-2 {
+.blue.darken-2 {
   background-color: #303f9f !important;
 }
 
-.indigo-text.text-darken-2 {
+.blue-text.text-darken-2 {
   color: #303f9f !important;
 }
 
-.indigo.darken-3 {
+.blue.darken-3 {
   background-color: #283593 !important;
 }
 
-.indigo-text.text-darken-3 {
+.blue-text.text-darken-3 {
   color: #283593 !important;
 }
 
-.indigo.darken-4 {
+.blue.darken-4 {
   background-color: #1a237e !important;
 }
 
-.indigo-text.text-darken-4 {
+.blue-text.text-darken-4 {
   color: #1a237e !important;
 }
 
-.indigo.accent-1 {
+.blue.accent-1 {
   background-color: #8c9eff !important;
 }
 
-.indigo-text.text-accent-1 {
+.blue-text.text-accent-1 {
   color: #8c9eff !important;
 }
 
-.indigo.accent-2 {
+.blue.accent-2 {
   background-color: #536dfe !important;
 }
 
-.indigo-text.text-accent-2 {
+.blue-text.text-accent-2 {
   color: #536dfe !important;
 }
 
-.indigo.accent-3 {
+.blue.accent-3 {
   background-color: #3d5afe !important;
 }
 
-.indigo-text.text-accent-3 {
+.blue-text.text-accent-3 {
   color: #3d5afe !important;
 }
 
-.indigo.accent-4 {
+.blue.accent-4 {
   background-color: #304ffe !important;
 }
 
-.indigo-text.text-accent-4 {
+.blue-text.text-accent-4 {
   color: #304ffe !important;
 }
 
@@ -8309,10 +8309,19 @@ input[type=range]:focus::-ms-fill-upper {
   visibility: visible;
   -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
           animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-  -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
 }
 
 .tap-target {
@@ -8365,10 +8374,19 @@ input[type=range]:focus::-ms-fill-upper {
 
 .tap-target-wave::after {
   visibility: hidden;
-  -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s;
-  transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s,
+ -webkit-transform .3s;
   z-index: -1;
 }
 
