@@ -68,8 +68,17 @@
         OneSignal.push(function () {
             OneSignal.init({
                 appId: "153d5f89-a5c0-4070-8b40-30971ec139de",
+                notifyButton: {
+                    enable: true
+                },
             });
         });
+        OneSignal.push(function () {
+        OneSignal.SERVICE_WORKER_PARAM = { scope: '/oneuicric/' };
+        OneSignal.SERVICE_WORKER_PATH = 'oneuicric/OneSignalSDKWorker.js'
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = 'oneuicric/OneSignalSDKUpdaterWorker.js'
+        OneSignal.init(initConfig);
+    });
     </script>
 </head>
 
