@@ -82,9 +82,9 @@
             <i class="large material-icons">more_vert</i>
           </a>
           <ul>
-            <li><a class="btn-floating teal lighten-1 btn tooltipped" data-position="left" data-delay="50"
+            <!-- <li><a class="btn-floating teal lighten-1 btn tooltipped" data-position="left" data-delay="50"
                 data-tooltip="Dark/Light" href="about-dark.html"><i class="material-icons white-text">toggle_off</i></a>
-            </li>
+            </li> -->
             <li><a class="btn-floating teal lighten-1 btn tooltipped" data-position="left" data-delay="50"
                 data-tooltip="Home" href="index.html"><i class="material-icons white-text">home</i></a></li>
           </ul>
@@ -138,12 +138,51 @@
             </tr>
           </tbody>
         </table>
-        <h4 id="term"></h4>
-        <p></p>
+        <h4 id="term" class="center">Your Valuable Feedback</h4>
+        <h6 class="center"><span class="red-text">Required fields</span></h6>
+        <div class="row">
+          <form method="POST" autocomplete="off" name="google-sheet">
+            <div class="form">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="icon_prefix" name="Name" type="text" required>
+                <label for="icon_prefix">Name <span class="red-text">*</span></label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">email</i>
+                <input id="icon_prefix" name="Email" type="email" required>
+                <label for="icon_prefix">Email <span class="red-text">*</span></label>
+              </div>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">message</i>
+                <input id="icon_prefix" name="Message" type="text">
+                <label for="icon_prefix">Message</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="msg" name="submit" type="submit" class="oui-button black-text">
+              </div>
+            </div>
+        </div>
+        </form>
       </div>
       <p class="grey-text text-darken-1">&copy; 2021, All Rights reserved.</p>
     </div><br>
   </main>
+  <script>
+    const scriptURL =
+      'https://script.google.com/macros/s/AKfycbzExp22NcuUNYzs5V3_Uv1NJwxRHiE17Y2kNSr1PtRoEuIU1DDNfQKgbRORJ-ICAex-/exec'
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+        .then(response => alert("Thanks for your valuable Feedback..! Stay tuned for further updates"))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 
 </html>
