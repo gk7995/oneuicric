@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="OneUI/oui.min.css">
     <link rel="stylesheet" href="materialize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="icon" href="OUC.ico">
     <link rel="manifest" href="manifest.json">
     <meta name="mobile-web-app-capable" content="yes">
@@ -63,12 +65,9 @@
         })
     </script>
 </head>
-
-<!-- <body oncontextmenu="return false;" onload="Materialize.toast('Redirecting in 5 seconds...', 8800,'rounded')"> -->
-
 <body oncontextmenu="return false;"
-    onload="Materialize.toast('IPL 2021 have been postponed..', 5000,'rounded')">
-    <!--main class="containr">
+    onload="Materialize.toast('Go to Menu>Scorecard for detailed scores', 5000,'rounded')">
+    <main class="containr">
         <div class="oui-interaction center-align">
             <div class="fixed-action-btn">
                 <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5" data-position="left" data-delay="50"
@@ -79,14 +78,20 @@
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="top" data-delay="50" data-tooltip="About"
                             href="about.html"><i class="material-icons">info</i></a></li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Scorecard 1" href="live.html"><i class="material-icons">live_tv&#185;</i></a>
+                            data-tooltip="Scorecard 4" href="ipllive4.html"><i class="material-icons">live_tv&#8308;</i></a>
+                    </li>
+                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
+                            data-tooltip="Scorecard 3" href="ipllive3.html"><i class="material-icons">live_tv&#179;</i></a>
                     </li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
                             data-tooltip="Scorecard 2" href="ipllive.html"><i class="material-icons">live_tv&#178;</i></a>
                     </li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Int'l Schedules" href="schedule.html"><i class="material-icons">view_list</i></a>
+                            data-tooltip="Scorecard 1" href="live.html"><i class="material-icons">live_tv&#185;</i></a>
                     </li>
+                    <!-- <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
+                            data-tooltip="Int'l Schedules" href="schedule.html"><i class="material-icons">view_list</i></a>
+                    </li> -->
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
                             data-tooltip="IPL Schedule" href="ipltt.html"><i class="material-icons">view_list</i></a>
                     </li>
@@ -101,24 +106,28 @@
                     </li>
                 </ul>
             </div>
-            <div class="oui-bubble green accent-4">
-                    <div class="oui-bubble">
-                    <!-- <h5 class="center"><b>LIVE SCORECARD 1 MINI<sup>*</sup></b></h5>
-                    <iframe src="" width="100%" height="160px" scrolling="no"></iframe>
+            <div class="oui-bubble blue-grey darken-4">
+                    <h4 class="amber-text text-accent-2"><b>ICC WORLD TEST CHAMPIONSHIP FINAL 2021</b></h4>
+                    <h5 class="amber-text text-accent-2"><b>LIVE SCORECARD 1 MINI</b></h5>
+                    <div class="oui-bubble show-on-large hide-on-med-and-down blue-grey darken-4">
+                    <iframe src="https://www.cricket.com/live-score/201081/scorecard/ind-vs-nz-final-icc-world-test-championship-2021" width="80%" height="160px" scrolling="no"></iframe>
                     </div>
-                    <div class="oui-bubble">
+                    <div class="oui-bubble show-on-medium-and-down hide-on-large-only blue-grey darken-4">
+                    <iframe src="https://www.cricket.com/live-score/201081/scorecard/ind-vs-nz-final-icc-world-test-championship-2021" width="100%" height="160px" scrolling="no"></iframe>
+                    </div>
                     <!-- <h5 class="center"><b>LIVE SCORECARD 2 MINI<sup>*</sup></b></h5>
-                    <iframe src="" width="100%" height="160px" scrolling="no"></iframe>
-                    </div>
                     <div class="oui-bubble">
-                    <h5 class="center"><b>NO INT'L MATCHES FOUND, REDIRECTING TO IPL 2021</b></h5><h6>in 5 seconds</h6>
-                    <!-- <h5 class="center"><b>STATISTICS</b></h5><h6>(As per Last 3 years data, Above figs. are not incl.)</h6>
+                    <iframe src="" width="100%" height="160px" scrolling="no"></iframe>
+                    </div> -->
+                    <h5 class="amber-text text-accent-2"><b>STATS - COMING SOON</b></h5>
+                    <h6 class="amber-text text-accent-2">(Before 4-5 days from Match start date)</h6>
+                    <div class="oui-bubble blue-grey darken-4">
                     <table class="highlight">
-                        <thead>
+                        <!-- <thead>
                             <tr>
                                 <td><b>TEAM</b></td>
                                 <td><b><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="40px" height="25px"><br> INDIA</b></td>
-                                <td><b><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="40px" height="25px"><br> ENGLAND</b></td>
+                                <td><b><img src="https://images.cricket.com/teams/5_flag_safari.png" alt="NEW ZEALAND" width="40px" height="25px"><br> NEW ZEALAND</b></td>
                             </tr>
                         </thead>
                         <tbody>
@@ -142,11 +151,11 @@
                                 <td><b>S Thakur 6wkts</b></td>
                                 <td><b>M Wood 5wkts</b></td>
                             </tr>
-                        </tbody>
+                        </tbody> -->
                     </table>
                     </div>
-                    <div class="oui-bubble">
-                        <h5 class="center"><b>COMING UP NEXT - ICC TEST CHAMPIONSHIP FINAL</b></h5>
+                    <h5 class="amber-text text-accent-2"><b>COMING UP NEXT - NO NEW SCHEDULE</b></h5>
+                    <!-- <div class="oui-bubble">
                         <table class="centered bordered highlight">
                             <tbody>
                                 <tr>
@@ -157,235 +166,19 @@
                                     <td><b>VENUE</b></td>
                                 </tr>
                                 <tr>
-                                    <td>June 18</td>
-                                    <td>15:30</td>
-                                    <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>IND</td>
-                                    <td><img src="https://images.cricket.com/teams/5_flag_safari.png" alt="NEW ZEALAND" width="25px" height="15px"><br>NZ</td>
-                                    <td>Southampton</td>
+                                    <td></td>
+                                    <td>:</td>
+                                    <td><img src="https://image.cricket.com/teams/4_flag_safari.png" alt="" width="25px" height="15px"><br></td>
+                                    <td><img src="https://image.cricket.com/teams/5_flag_safari.png" alt="" width="25px" height="15px"><br></td>
+                                    <td></td>
                                 </tr>
-                            </tbody>
+                            </tbody> -->
                         </table>
                     </div>
                 </div>
             </div>
         </div>
         <br>
-    </main-->
-    <main class="containr">
-        <div class="oui-interaction center-align">
-            <!-- Interaction area -->
-            <div class="fixed-action-btn">
-                <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5" data-position="left"
-                    data-delay="50" data-tooltip="Menu">
-                    <i class="large material-icons">more_vert</i>
-                </a>
-                <ul>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="top" data-delay="50"
-                            data-tooltip="About" href="about.html"><i class="material-icons">info</i></a></li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Scorecard 4" href="ipllive4.html"><i
-                                class="material-icons">live_tv&#8308;</i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Scorecard 3" href="ipllive3.html"><i
-                                class="material-icons">live_tv&#179;</i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Scorecard 2" href="ipllive.html"><i
-                                class="material-icons">live_tv&#178;</i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Scorecard 1" href="live.html"><i class="material-icons">live_tv&#185;</i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="IPL Schedule" href="ipltt.html"><i class="material-icons">view_list</i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="IPL Results" href="iplresults.html"><i
-                                class="material-icons">emoji_events</i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="OUI Cric Home" href="index.html"><i class="material-icons">home</i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="oui-bubble orange accent-3">
-                <h5 class="white-text"><b>LIVE SCORECARD 1 MINI<sup>*</sup></b></h5>
-                <div class="oui-bubble show-on-large hide-on-med-and-down">
-                    <iframe
-                        src="https://www.cricket.com/live-score/201043/scorecard/srh-vs-mi-match-31-indian-premier-league-2021"
-                        width="80%" height="160px" scrolling="no"></iframe>
-                </div>
-                <div class="oui-bubble show-on-medium-and-down hide-on-large-only">
-                    <iframe
-                        src="https://www.cricket.com/live-score/201043/scorecard/srh-vs-mi-match-31-indian-premier-league-2021"
-                        width="100%" height="160px" scrolling="no"></iframe>
-                </div>
-                <h5 class="white-text"><b>LIVE SCORECARD 2 MINI<sup>*</sup></b></h5>
-                <div class="oui-bubble show-on-large hide-on-med-and-down">
-                    <iframe
-                        src="https://www.cricket.com/live-score/201044/scorecard/rr-vs-csk-match-32-indian-premier-league-2021"
-                        width="80%" height="160px" scrolling="no"></iframe>
-                </div>
-                <div class="oui-bubble show-on-medium-and-down hide-on-large-only">
-                    <iframe
-                        src="https://www.cricket.com/live-score/201044/scorecard/rr-vs-csk-match-32-indian-premier-league-2021"
-                        width="100%" height="160px" scrolling="no"></iframe>
-                </div>
-                <h5 class="white-text"><b>LIVE SCORECARD 3 MINI<sup>*</sup></b></h5>
-                <div class="oui-bubble show-on-large hide-on-med-and-down">
-                    <iframe
-                        src="https://www.cricket.com/live-score/201047/scorecard/rcb-vs-pbks-match-33-indian-premier-league-2021"
-                        width="80%" height="160px" scrolling="no"></iframe>
-                </div>
-                <div class="oui-bubble show-on-medium-and-down hide-on-large-only">
-                    <iframe
-                        src="https://www.cricket.com/live-score/201047/scorecard/rcb-vs-pbks-match-33-indian-premier-league-2021"
-                        width="100%" height="160px" scrolling="no"></iframe>
-                </div>
-                <h5 class="white-text"><b>LIVE SCORECARD 4 MINI<sup>*</sup></b></h5>
-                <div class="oui-bubble show-on-large hide-on-med-and-down">
-                    <iframe
-                        src="https://www.cricket.com/live-score/201050/scorecard/srh-vs-csk-match-34-indian-premier-league-2021"
-                        width="80%" height="160px" scrolling="no"></iframe>
-                </div>
-                <div class="oui-bubble show-on-medium-and-down hide-on-large-only">
-                    <iframe
-                        src="https://www.cricket.com/live-score/201050/scorecard/srh-vs-csk-match-34-indian-premier-league-2021"
-                        width="100%" height="160px" scrolling="no"></iframe>
-                </div>
-                <!-- <h5 class="white-text"><b>FORM (IPL 2021)</b></h5><h6 class="white-text">(Green-Won, Red-Lose, Grey-No Result)</h6> -->
-                <div class="oui-bubble">
-                    <table class="centered">
-                        <tbody>
-                            <!-- <tr>
-                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px" height="15px"><br>CSK</td>
-                                <td style="font-size: x-large;"><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><br>
-                                <span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span></td>
-                                <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px" height="15px"><br>DC</td>
-                                <td style="font-size: x-large;"><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><br>
-                                <span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span></td>
-                            </tr>
-                            <tr>
-                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px" height="15px"><br>KKR</td>
-                                <td style="font-size: x-large;"><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><br>
-                                <span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span></td>
-                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px" height="15px"><br>MI</td>
-                                <td style="font-size: x-large;"><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><br>
-                                <span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span></td>
-                            </tr>
-                            <tr>
-                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px" height="15px"><br>PBKS</td>
-                                <td style="font-size: x-large;"><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><br>
-                                <span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span></td>
-                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px" height="15px"><br>RCB</td>
-                                <td style="font-size: x-large;"><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><br>
-                                <span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span></td>
-                            </tr>
-                            <tr>
-                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px" height="15px"><br>RR</td>
-                                <td style="font-size: x-large;"><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><br>
-                                <span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span></td>
-                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px" height="15px"><br>SRH</td>
-                                <td style="font-size: x-large;"><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><br>
-                                <span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span></td>
-                            </tr> -->
-                            <tr>
-                                <td colspan="4"><b><a href="iplresults.html" class="black-text">VIEW COMPLETE POINTS
-                                            TABLE</a></b></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <h5 class="white-text"><b>WEEK 5: May 3 - 9 [9 Matches]</b></h5>
-                <h6 class="white-text">VENUES: Ahmedabad, Delhi, Bangalore, Kolkata</h6>
-                <div class="oui-bubble">
-                    <table class="centered striped">
-                        <tbody>
-                            <tr>
-                                <td><b>DATE</b></td>
-                                <td><b>HOME TEAM</b></td>
-                                <td><b>AWAY TEAM</b></td>
-                                <td><b>VENUE</b></td>
-                            </tr>
-                            <tr>
-                                <td>May 3<br>&#9790;</td>
-                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" width="25px"
-                                        height="15px"><br>KKR</td>
-                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" width="25px"
-                                        height="15px"><br>RCB</td>
-                                <td>Ahmedabad</td>
-                            </tr>
-                            <tr>
-                                <td>May 4<br>&#9790;</td>
-                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" width="25px"
-                                        height="15px"><br>SRH</td>
-                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" width="25px"
-                                        height="15px"><br>MI</td>
-                                <td>Delhi</td>
-                            </tr>
-                            <tr>
-                                <td>May 5<br>&#9790;</td>
-                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" width="25px"
-                                        height="15px"><br>RR</td>
-                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" width="25px"
-                                        height="15px"><br>CSK</td>
-                                <td>Delhi</td>
-                            </tr>
-                            <tr>
-                                <td>May 6<br>&#9790;</td>
-                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" width="25px"
-                                        height="15px"><br>RCB</td>
-                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" width="25px"
-                                        height="15px"><br>PBKS</td>
-                                <td>Ahmedabad</td>
-                            </tr>
-                            <tr>
-                                <td>May 7<br>&#9790;</td>
-                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" width="25px"
-                                        height="15px"><br>SRH</td>
-                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" width="25px"
-                                        height="15px"><br>CSK</td>
-                                <td>Delhi</td>
-                            </tr>
-                            <tr>
-                                <td>May 8<br>&#9788;</td>
-                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" width="25px"
-                                        height="15px"><br>KKR</td>
-                                <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" width="25px"
-                                        height="15px"><br>DC</td>
-                                <td>Ahmedabad</td>
-                            </tr>
-                            <tr>
-                                <td>May 8<br>&#9790;</td>
-                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" width="25px"
-                                        height="15px"><br>RR</td>
-                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" width="25px"
-                                        height="15px"><br>MI</td>
-                                <td>Delhi</td>
-                            </tr>
-                            <tr>
-                                <td>May 9<br>&#9788;</td>
-                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" width="25px"
-                                        height="15px"><br>CSK</td>
-                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" width="25px"
-                                        height="15px"><br>PBKS</td>
-                                <td>Bangalore</td>
-                            </tr>
-                            <tr>
-                                <td>May 9<br>&#9790;</td>
-                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" width="25px"
-                                        height="15px"><br>RCB</td>
-                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" width="25px"
-                                        height="15px"><br>SRH</td>
-                                <td>Kolkata</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        </div><br>
     </main>
     <script>
         if ('serviceWorker' in navigator) {

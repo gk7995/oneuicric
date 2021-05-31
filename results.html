@@ -39,7 +39,7 @@
     </script>
 </head>
 
-<body oncontextmenu="return false;" onload="Materialize.toast('Ongoing: ENG tour of IND', 5000,'rounded')">
+<body oncontextmenu="return false;" onload="Materialize.toast('Ongoing: ICC WTC 2021 - IND vs NZ', 5000,'rounded')">
     <main class="containr">
         <div class="oui-interaction center-align">
             <!-- Interaction area -->
@@ -52,29 +52,41 @@
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="top" data-delay="50" data-tooltip="About"
                             href="about.html"><i class="material-icons">info</i></a></li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="OUI Cric Home" href="index.html"><i class="material-icons">home</i></a>
+                            data-tooltip="IPL Schedule" href="ipltt.html"><i class="material-icons">view_list</i></a>
                     </li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Schedule" href="schedule.html"><i class="material-icons">view_list</i></a>
+                            data-tooltip="Scorecard 4" href="ipllive4.html"><i class="material-icons">live_tv&#8308;</i></a>
+                    </li>
+                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
+                            data-tooltip="Scorecard 3" href="ipllive3.html"><i class="material-icons">live_tv&#179;</i></a>
+                    </li>
+                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
+                            data-tooltip="Scorecard 2" href="ipllive.html"><i class="material-icons">live_tv&#178;</i></a>
                     </li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
                             data-tooltip="Scorecard 1" href="live.html"><i class="material-icons">live_tv&#185;</i></a>
                     </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Scorecard 2" href="ipltt.html"><i class="material-icons">live_tv&#178;</i></a>
-                    </li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50" 
-                            data-tooltip="IPL Home" href="index.html"><i class="material-icons">sports_cricket</i></a>
+                            data-tooltip="IPL Home" href="iplhome.html"><i class="material-icons">sports_cricket</i></a>
+                    </li>
+                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
+                            data-tooltip="OUI Cric Home" href="index.html"><i class="material-icons">home</i></a>
                     </li>
                 </ul>
             </div>
-            <div class="oui-bubble green accent-4">
-                <div class="oui-bubble">
-                    <table class="centered bordered highlight">
+            <div class="oui-bubble blue-grey darken-4">
+                <h5 class="amber-text text-accent-2"><b>RESULTS</b></h5>
+                <h6 class="amber-text text-accent-2">Sorted in Desc order of Series/ Tournaments</h6>
+                <div class="oui-bubble blue-grey darken-4">
+                    <table class="centered bordered">
                         <tbody>
-                            <tr>
+                            <tr class="amber-text text-accent-2">
                                 <td><b>DATE</b></td>
                                 <td><b>SCORES & MATCH RESULTS</b></td>
+                            </tr>
+                            <tr class="green white-text" id="demo"></tr>
+                            <tr class="grey darken-3 white-text">
+                                <td colspan="2"> WON THE ICC WORLD TEST CHAMPIONSHIP 2021</td>
                             </tr>
                             <tr class="blue white-text">
                                 <td>23-03-21</td>
@@ -1295,10 +1307,10 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="oui-bubble">
+                <div class="oui-bubble blue-grey darken-4">
                 <table class="centered">
                     <tbody>
-                        <tr>
+                        <tr class="amber-text text-accent-2">
                             <td colspan="3"><b>FORMATS ARE DENOTED BY COLORS:</b></td>
                         </tr>
                         <tr>
@@ -1312,6 +1324,35 @@
             </div>
         </div><br>
     </main>
+    <script>
+        let xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let data = JSON.parse(this.responseText).feed.entry;
+
+    let i;
+    for (i = 0; i < data.length; i++) {
+      let date = data[i]["gsx$_cn6ca"]["$t"];
+      let rslt = data[i]["gsx$_cokwr"]["$t"];
+
+      document.getElementById("demo").innerHTML +=
+        "<td>" +
+        date +
+        "</td>" +
+        "<td>" +
+        rslt +
+        "</td>";
+    }
+  }
+};
+
+xmlhttp.open(
+  "GET",
+  "https://spreadsheets.google.com/feeds/list/1_A485VEVdMiMGgONGjulFGEA43L3opEUZGq_lVPQQRg/od6/public/values?alt=json",
+  true
+);
+xmlhttp.send();
+    </script>
 </body>
 
 </html>
