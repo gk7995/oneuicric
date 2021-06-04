@@ -39,7 +39,7 @@
     </script>
 </head>
 
-<body oncontextmenu="return false;" onload="Materialize.toast('RCB vs PBKS', 5000,'rounded')">
+<body oncontextmenu="return false;">
     <main class="containr">
         <div class="oui-interaction center-align">
             <!-- Interaction area -->
@@ -75,15 +75,59 @@
                 </ul>
             </div>
             <div class="oui-bubble orange accent-3">
-                <div class="oui-bubble show-on-large hide-on-med-and-down">
-                    <!-- <iframe src="https://www.cricket.com/live-score/201047/scorecard/rcb-vs-pbks-match-33-indian-premier-league-2021" width="80%" height="3000px" scrolling="no"></iframe> -->
-                </div>
-                <div class="oui-bubble show-on-medium-and-down hide-on-large-only">
-                    <!-- <iframe src="https://www.cricket.com/live-score/201047/scorecard/rcb-vs-pbks-match-33-indian-premier-league-2021" width="100%" height="3000px" scrolling="no"></iframe> -->
-                </div>
+                <div class="oui-bubble show-on-large hide-on-med-and-down" id="demo"></div>
+                <div class="oui-bubble show-on-medium-and-down hide-on-large-only" id="demo1"></div>
             </div>
         </div><br>
     </main>
+    <script>
+        let xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let data = JSON.parse(this.responseText).feed.entry;
+
+    let i;
+    for (i = 0; i < data.length; i++) {
+      let link = data[i]["gsx$_cn6ca"]["$t"];
+
+      document.getElementById("demo").innerHTML +=
+        "<iframe " +
+        link ;
+    }
+  }
+};
+
+xmlhttp.open(
+  "GET",
+  "https://spreadsheets.google.com/feeds/list/1_DvudSGBVSS4tKWumFAIAS333bzJFGplYtQMZU43liQ/od6/public/values?alt=json",
+  true
+);
+xmlhttp.send();
+    </script>
+    <script>
+        let xmlhttp1 = new XMLHttpRequest();
+xmlhttp1.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let data = JSON.parse(this.responseText).feed.entry;
+
+    let i;
+    for (i = 0; i < data.length; i++) {
+      let link1 = data[i]["gsx$_cn6ca"]["$t"];
+
+      document.getElementById("demo1").innerHTML +=
+        "<iframe " +
+        link1 ;
+    }
+  }
+};
+
+xmlhttp1.open(
+  "GET",
+  "https://spreadsheets.google.com/feeds/list/1BWp_3mpbRhm6Ctp_H-08GVDIPRY-1MEfGYaosQw7sus/od6/public/values?alt=json",
+  true
+);
+xmlhttp1.send();
+    </script>
 </body>
 
 </html>
