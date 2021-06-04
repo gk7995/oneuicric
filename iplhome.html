@@ -39,7 +39,7 @@
     </script>
 </head>
 
-<body oncontextmenu="return false;" onload="Materialize.toast('*Go to Menu>Scorecard 1,2,3,4 for detailed scores', 5000,'rounded')">
+<body oncontextmenu="return false;" onload="Materialize.toast('Go to Menu>Scorecard 1,2 for detailed scores', 5000,'rounded')">
     <main class="containr">
         <div class="oui-interaction center-align">
             <!-- Interaction area -->
@@ -52,22 +52,21 @@
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="top" data-delay="50"
                             data-tooltip="About" href="about.html"><i class="material-icons">info</i></a></li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Scorecard 4" href="ipllive4.html"><i
-                                class="material-icons">live_tv&#8308;</i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Scorecard 3" href="ipllive3.html"><i
-                                class="material-icons">live_tv&#179;</i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Scorecard 2" href="ipllive.html"><i
+                            data-tooltip="Scorecard 2" href="ipllive2.html"><i
                                 class="material-icons">live_tv&#178;</i></a>
                     </li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Scorecard 1" href="live.html"><i class="material-icons">live_tv&#185;</i></a>
+                            data-tooltip="Scorecard 1" href="ipllive.html"><i class="material-icons">live_tv&#185;</i></a>
+                    </li>
+                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
+                            data-tooltip="Int'l Schedule" href="schedule.html"><i class="material-icons">view_list</i></a>
                     </li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
                             data-tooltip="IPL Schedule" href="ipltt.html"><i class="material-icons">view_list</i></a>
+                    </li>
+                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
+                            data-tooltip="Int'l Results" href="results.html"><i
+                                class="material-icons">emoji_events</i></a>
                     </li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
                             data-tooltip="IPL Results" href="iplresults.html"><i
@@ -79,95 +78,29 @@
                 </ul>
             </div>
             <div class="oui-bubble orange accent-3">
-                <h5 class="white-text"><b>LIVE SCORECARD 1 MINI<sup>*</sup></b></h5>
-                <div class="oui-bubble show-on-large hide-on-med-and-down">
-                    <iframe
-                        src="https://www.cricket.com/live-score/201043/scorecard/srh-vs-mi-match-31-indian-premier-league-2021"
-                        width="80%" height="160px" scrolling="no"></iframe>
-                </div>
-                <div class="oui-bubble show-on-medium-and-down hide-on-large-only">
-                    <iframe
-                        src="https://www.cricket.com/live-score/201043/scorecard/srh-vs-mi-match-31-indian-premier-league-2021"
-                        width="100%" height="160px" scrolling="no"></iframe>
-                </div>
-                <h5 class="white-text"><b>LIVE SCORECARD 2 MINI<sup>*</sup></b></h5>
-                <div class="oui-bubble show-on-large hide-on-med-and-down">
-                    <iframe
-                        src="https://www.cricket.com/live-score/201044/scorecard/rr-vs-csk-match-32-indian-premier-league-2021"
-                        width="80%" height="160px" scrolling="no"></iframe>
-                </div>
-                <div class="oui-bubble show-on-medium-and-down hide-on-large-only">
-                    <iframe
-                        src="https://www.cricket.com/live-score/201044/scorecard/rr-vs-csk-match-32-indian-premier-league-2021"
-                        width="100%" height="160px" scrolling="no"></iframe>
-                </div>
-                <h5 class="white-text"><b>LIVE SCORECARD 3 MINI<sup>*</sup></b></h5>
-                <div class="oui-bubble show-on-large hide-on-med-and-down">
-                    <iframe
-                        src="https://www.cricket.com/live-score/201047/scorecard/rcb-vs-pbks-match-33-indian-premier-league-2021"
-                        width="80%" height="160px" scrolling="no"></iframe>
-                </div>
-                <div class="oui-bubble show-on-medium-and-down hide-on-large-only">
-                    <iframe
-                        src="https://www.cricket.com/live-score/201047/scorecard/rcb-vs-pbks-match-33-indian-premier-league-2021"
-                        width="100%" height="160px" scrolling="no"></iframe>
-                </div>
-                <h5 class="white-text"><b>LIVE SCORECARD 4 MINI<sup>*</sup></b></h5>
-                <div class="oui-bubble show-on-large hide-on-med-and-down">
-                    <iframe
-                        src="https://www.cricket.com/live-score/201050/scorecard/srh-vs-csk-match-34-indian-premier-league-2021"
-                        width="80%" height="160px" scrolling="no"></iframe>
-                </div>
-                <div class="oui-bubble show-on-medium-and-down hide-on-large-only">
-                    <iframe
-                        src="https://www.cricket.com/live-score/201050/scorecard/srh-vs-csk-match-34-indian-premier-league-2021"
-                        width="100%" height="160px" scrolling="no"></iframe>
-                </div>
-                <!-- <h5 class="white-text"><b>FORM (IPL 2021)</b></h5><h6 class="white-text">(Green-Won, Red-Lose, Grey-No Result)</h6> -->
+                <h5 class="white-text"><b>LIVE SCORECARD MINI</b></h5>
+                <div class="oui-bubble show-on-large hide-on-med-and-down" id="demo"></div>
+                <div class="oui-bubble show-on-medium-and-down hide-on-large-only" id="demo1"></div>
+                <h5 class="white-text"><b>HEAD TO HEAD</b></h5>
                 <div class="oui-bubble">
                     <table class="centered">
-                        <tbody>
-                            <!-- <tr>
-                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px" height="15px"><br>CSK</td>
-                                <td style="font-size: x-large;"><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><br>
-                                <span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span></td>
-                                <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px" height="15px"><br>DC</td>
-                                <td style="font-size: x-large;"><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><br>
-                                <span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span></td>
+                            <tr>
+                                <td><b><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="40px" height="25px"><br>KKR</b></td>
+                                <td><b>TEAM</b></td>
+                                <td><b><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="40px" height="25px"><br>RCB</b></td>
                             </tr>
                             <tr>
-                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px" height="15px"><br>KKR</td>
-                                <td style="font-size: x-large;"><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><br>
-                                <span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span></td>
-                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px" height="15px"><br>MI</td>
-                                <td style="font-size: x-large;"><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><br>
-                                <span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span></td>
+                                <td><b>WON: 14</b></td>
+                                <td><b>MATCHES: 27</b></td>
+                                <td><b>WON: 13</b></td>
                             </tr>
                             <tr>
-                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px" height="15px"><br>PBKS</td>
-                                <td style="font-size: x-large;"><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><br>
-                                <span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span></td>
-                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px" height="15px"><br>RCB</td>
-                                <td style="font-size: x-large;"><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><br>
-                                <span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span></td>
+                                <td colspan="4"><b><a href="iplresults.html" class="black-text">VIEW POINTS
+                                            TABLE 2021</a></b></td>
                             </tr>
-                            <tr>
-                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px" height="15px"><br>RR</td>
-                                <td style="font-size: x-large;"><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><br>
-                                <span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span></td>
-                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px" height="15px"><br>SRH</td>
-                                <td style="font-size: x-large;"><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><br>
-                                <span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span><span class="white-text">&#8226;</span></td>
-                            </tr> -->
-                            <tr>
-                                <td colspan="4"><b><a href="iplresults.html" class="black-text">VIEW COMPLETE POINTS
-                                            TABLE</a></b></td>
-                            </tr>
-                        </tbody>
                     </table>
                 </div>
-                <h5 class="white-text"><b>WEEK 5: May 3 - 9 [9 Matches]</b></h5>
-                <h6 class="white-text">VENUES: Ahmedabad, Delhi, Bangalore, Kolkata</h6>
+                <h5 class="white-text"><b>COMING UP THIS WEEK</b></h5>
                 <div class="oui-bubble">
                     <table class="centered striped">
                         <tbody>
@@ -256,6 +189,54 @@
         </div>
         </div><br>
     </main>
+    <script>
+        let xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let data = JSON.parse(this.responseText).feed.entry;
+
+    let i;
+    for (i = 0; i < data.length; i++) {
+      let link = data[i]["gsx$_cn6ca"]["$t"];
+
+      document.getElementById("demo").innerHTML +=
+        "<iframe " +
+        link ;
+    }
+  }
+};
+
+xmlhttp.open(
+  "GET",
+  "https://spreadsheets.google.com/feeds/list/13TDQzJrnnc18ZRQRFL77P0kYXCw6owyWIV3u6kt4Oq8/od6/public/values?alt=json",
+  true
+);
+xmlhttp.send();
+    </script>
+    <script>
+        let xmlhttp1 = new XMLHttpRequest();
+xmlhttp1.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let data = JSON.parse(this.responseText).feed.entry;
+
+    let i;
+    for (i = 0; i < data.length; i++) {
+      let link1 = data[i]["gsx$_cn6ca"]["$t"];
+
+      document.getElementById("demo1").innerHTML +=
+        "<iframe " +
+        link1 ;
+    }
+  }
+};
+
+xmlhttp1.open(
+  "GET",
+  "https://spreadsheets.google.com/feeds/list/172Gt0V1YN5AYZ8hmpKc5qQqtUe73prQxo9ncyAE40dk/od6/public/values?alt=json",
+  true
+);
+xmlhttp1.send();
+    </script>
 </body>
 
 </html>

@@ -39,7 +39,7 @@
     </script>
 </head>
 
-<body oncontextmenu="return false;" onload="Materialize.toast('ICC WTC FINAL - IND vs NZ', 5000,'rounded')">
+<body oncontextmenu="return false;">
     <main class="containr">
         <div class="oui-interaction center-align">
             <!-- Interaction area -->
@@ -51,9 +51,9 @@
                 <ul>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="top" data-delay="50" data-tooltip="About"
                             href="about.html"><i class="material-icons">info</i></a></li>
-                    <!-- <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
+                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
                             data-tooltip="Int'l Schedule" href="schedule.html"><i class="material-icons">view_list</i></a>
-                    </li> -->
+                    </li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
                             data-tooltip="IPL Schedule" href="ipltt.html"><i class="material-icons">view_list</i></a>
                     </li>
@@ -64,16 +64,7 @@
                             data-tooltip="IPL Results" href="iplresults.html"><i class="material-icons">emoji_events</i></a>
                     </li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50" 
-                            data-tooltip="Scorecard 4" href="ipllive4.html"><i class="material-icons">live_tv&#8308;</i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50" 
-                            data-tooltip="Scorecard 3" href="ipllive3.html"><i class="material-icons">live_tv&#179;</i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50" 
-                            data-tooltip="Scorecard 2" href="ipllive.html"><i class="material-icons">live_tv&#178;</i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50" 
-                            data-tooltip="IPL Home" href="index.html"><i class="material-icons">sports_cricket</i></a>
+                            data-tooltip="IPL Home" href="iplhome.html"><i class="material-icons">sports_cricket</i></a>
                     </li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
                             data-tooltip="OUI Cric Home" href="index.html"><i class="material-icons">home</i></a>
@@ -81,15 +72,59 @@
                 </ul>
             </div>
             <div class="oui-bubble blue-grey darken-4">
-                <div class="oui-bubble show-on-large hide-on-med-and-down blue-grey darken-4">
-                    <iframe src="https://www.cricket.com/live-score/201081/scorecard/ind-vs-nz-final-icc-world-test-championship-2021" width="80%" height="3000px" scrolling="no"></iframe>
-                </div>
-                <div class="oui-bubble show-on-medium-and-down hide-on-large-only blue-grey darken-4">
-                    <iframe src="https://www.cricket.com/live-score/201081/scorecard/ind-vs-nz-final-icc-world-test-championship-2021" width="100%" height="3000px" scrolling="no"></iframe>
-                </div>
+                <div class="oui-bubble show-on-large hide-on-med-and-down blue-grey darken-4" id="demo"></div>
+                <div class="oui-bubble show-on-medium-and-down hide-on-large-only blue-grey darken-4" id="demo1"></div>
             </div>
         </div><br>
     </main>
+    <script>
+        let xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let data = JSON.parse(this.responseText).feed.entry;
+
+    let i;
+    for (i = 0; i < data.length; i++) {
+      let link = data[i]["gsx$_cn6ca"]["$t"];
+
+      document.getElementById("demo").innerHTML +=
+        "<iframe " +
+        link ;
+    }
+  }
+};
+
+xmlhttp.open(
+  "GET",
+  "https://spreadsheets.google.com/feeds/list/1jBsX6dbV85OefgN4RBmSCeZzeJi_SFnnVbHb3geu8ak/od6/public/values?alt=json",
+  true
+);
+xmlhttp.send();
+    </script>
+    <script>
+        let xmlhttp1 = new XMLHttpRequest();
+xmlhttp1.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let data = JSON.parse(this.responseText).feed.entry;
+
+    let i;
+    for (i = 0; i < data.length; i++) {
+      let link1 = data[i]["gsx$_cn6ca"]["$t"];
+
+      document.getElementById("demo1").innerHTML +=
+        "<iframe " +
+        link1 ;
+    }
+  }
+};
+
+xmlhttp1.open(
+  "GET",
+  "https://spreadsheets.google.com/feeds/list/1PfbnAHges2EtkdtiKSw0dYf-vclfIa44Oe1MTzlsuuM/od6/public/values?alt=json",
+  true
+);
+xmlhttp1.send();
+    </script>
 </body>
 
 </html>
