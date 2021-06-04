@@ -166,16 +166,8 @@ xmlhttp1.open(
 xmlhttp1.send();
     </script>
     <script>
-        if ('serviceWorker' in navigator) {
-            // Register service worker
-            navigator.serviceWorker.register('sw.js', {
-                scope: '.'
-            });
-        };
-    </script>
-    <script>
-        let xmlhttp3 = new XMLHttpRequest();
-xmlhttp3.onreadystatechange = function () {
+        let xmlhttp2 = new XMLHttpRequest();
+xmlhttp2.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
     let data = JSON.parse(this.responseText).feed.entry;
 
@@ -201,24 +193,16 @@ xmlhttp3.onreadystatechange = function () {
   }
 };
 
-xmlhttp3.open(
+xmlhttp2.open(
   "GET",
   "https://spreadsheets.google.com/feeds/list/1mw1oXXyj1KVK55Itkrz6Ef1d7ra7zEATffn1sZdAo7Y/od6/public/values?alt=json",
   true
 );
-xmlhttp3.send();
+xmlhttp2.send();
     </script>
     <script>
-        if ('serviceWorker' in navigator) {
-            // Register service worker
-            navigator.serviceWorker.register('sw.js', {
-                scope: '.'
-            });
-        };
-    </script>
-    <script>
-        let xmlhttp4 = new XMLHttpRequest();
-xmlhttp4.onreadystatechange = function () {
+        let xmlhttp3 = new XMLHttpRequest();
+xmlhttp3.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
     let data = JSON.parse(this.responseText).feed.entry;
 
@@ -248,12 +232,12 @@ xmlhttp4.onreadystatechange = function () {
   }
 };
 
-xmlhttp4.open(
+xmlhttp3.open(
   "GET",
   "https://spreadsheets.google.com/feeds/list/1vRRt-lirphXmdtMIfps83qiCzfsE9oWC8ZEib7V5Awk/od6/public/values?alt=json",
   true
 );
-xmlhttp4.send();
+xmlhttp3.send();
     </script>
     <script>
         if ('serviceWorker' in navigator) {

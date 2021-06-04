@@ -83,106 +83,13 @@
                 <div class="oui-bubble show-on-medium-and-down hide-on-large-only" id="demo1"></div>
                 <h5 class="white-text"><b>HEAD TO HEAD</b></h5>
                 <div class="oui-bubble">
-                    <table class="centered">
-                            <tr>
-                                <td><b><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="40px" height="25px"><br>KKR</b></td>
-                                <td><b>TEAM</b></td>
-                                <td><b><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="40px" height="25px"><br>RCB</b></td>
-                            </tr>
-                            <tr>
-                                <td><b>WON: 14</b></td>
-                                <td><b>MATCHES: 27</b></td>
-                                <td><b>WON: 13</b></td>
-                            </tr>
-                            <tr>
-                                <td colspan="4"><b><a href="iplresults.html" class="black-text">VIEW POINTS
-                                            TABLE 2021</a></b></td>
-                            </tr>
+                    <table class="centered" id="demo2">
                     </table>
                 </div>
+                <div class="oui-button center waves-effect white black-text" onclick="location.href='iplresults.html'"><b>VIEW POINTS TABLE 2021</b></div>
                 <h5 class="white-text"><b>COMING UP THIS WEEK</b></h5>
                 <div class="oui-bubble">
-                    <table class="centered striped">
-                        <tbody>
-                            <tr>
-                                <td><b>DATE</b></td>
-                                <td><b>HOME TEAM</b></td>
-                                <td><b>AWAY TEAM</b></td>
-                                <td><b>VENUE</b></td>
-                            </tr>
-                            <tr>
-                                <td>May 3<br>&#9790;</td>
-                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" width="25px"
-                                        height="15px"><br>KKR</td>
-                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" width="25px"
-                                        height="15px"><br>RCB</td>
-                                <td>Ahmedabad</td>
-                            </tr>
-                            <tr>
-                                <td>May 4<br>&#9790;</td>
-                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" width="25px"
-                                        height="15px"><br>SRH</td>
-                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" width="25px"
-                                        height="15px"><br>MI</td>
-                                <td>Delhi</td>
-                            </tr>
-                            <tr>
-                                <td>May 5<br>&#9790;</td>
-                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" width="25px"
-                                        height="15px"><br>RR</td>
-                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" width="25px"
-                                        height="15px"><br>CSK</td>
-                                <td>Delhi</td>
-                            </tr>
-                            <tr>
-                                <td>May 6<br>&#9790;</td>
-                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" width="25px"
-                                        height="15px"><br>RCB</td>
-                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" width="25px"
-                                        height="15px"><br>PBKS</td>
-                                <td>Ahmedabad</td>
-                            </tr>
-                            <tr>
-                                <td>May 7<br>&#9790;</td>
-                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" width="25px"
-                                        height="15px"><br>SRH</td>
-                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" width="25px"
-                                        height="15px"><br>CSK</td>
-                                <td>Delhi</td>
-                            </tr>
-                            <tr>
-                                <td>May 8<br>&#9788;</td>
-                                <td><img src="https://images.cricket.com/teams/1106_flag_safari.png" width="25px"
-                                        height="15px"><br>KKR</td>
-                                <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" width="25px"
-                                        height="15px"><br>DC</td>
-                                <td>Ahmedabad</td>
-                            </tr>
-                            <tr>
-                                <td>May 8<br>&#9790;</td>
-                                <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" width="25px"
-                                        height="15px"><br>RR</td>
-                                <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" width="25px"
-                                        height="15px"><br>MI</td>
-                                <td>Delhi</td>
-                            </tr>
-                            <tr>
-                                <td>May 9<br>&#9788;</td>
-                                <td><img src="https://images.cricket.com/teams/1108_flag_safari.png" width="25px"
-                                        height="15px"><br>CSK</td>
-                                <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" width="25px"
-                                        height="15px"><br>PBKS</td>
-                                <td>Bangalore</td>
-                            </tr>
-                            <tr>
-                                <td>May 9<br>&#9790;</td>
-                                <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" width="25px"
-                                        height="15px"><br>RCB</td>
-                                <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" width="25px"
-                                        height="15px"><br>SRH</td>
-                                <td>Kolkata</td>
-                            </tr>
-                        </tbody>
+                    <table class="centered" id="demo3">
                     </table>
                 </div>
             </div>
@@ -236,6 +143,80 @@ xmlhttp1.open(
   true
 );
 xmlhttp1.send();
+    </script>
+    <script>
+        let xmlhttp2 = new XMLHttpRequest();
+xmlhttp2.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let data = JSON.parse(this.responseText).feed.entry;
+
+    let i;
+    for (i = 0; i < data.length; i++) {
+      let col1 = data[i]["gsx$_cn6ca"]["$t"];
+      let col2 = data[i]["gsx$_cokwr"]["$t"];
+      let col3 = data[i]["gsx$_cpzh4"]["$t"];
+
+      document.getElementById("demo2").innerHTML +=
+      "<tr>" +
+        "<td>" +
+        col1 +
+        "</td>" +
+        "<td>" +
+        col2 +
+        "</td>" +
+        "<td>" +
+        col3 +
+        "</td>" +
+        "</tr>";
+    }
+  }
+};
+
+xmlhttp2.open(
+  "GET",
+  "https://spreadsheets.google.com/feeds/list/12rUaDzZ1xLMwKt5br916lWS2XYoPO7NqnwpFvQ0PMQ0/od6/public/values?alt=json",
+  true
+);
+xmlhttp2.send();
+    </script>
+    <script>
+        let xmlhttp3 = new XMLHttpRequest();
+xmlhttp3.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let data = JSON.parse(this.responseText).feed.entry;
+
+    let i;
+    for (i = 0; i < data.length; i++) {
+      let col1 = data[i]["gsx$_cn6ca"]["$t"];
+      let col2 = data[i]["gsx$_cokwr"]["$t"];
+      let col3 = data[i]["gsx$_cpzh4"]["$t"];
+      let col4 = data[i]["gsx$_cre1l"]["$t"];
+
+      document.getElementById("demo3").innerHTML +=
+      "<tr>" +
+        "<td>" +
+        col1 +
+        "</td>" +
+        "<td>" +
+        col2 +
+        "</td>" +
+        "<td>" +
+        col3 +
+        "</td>" +
+        "<td>" +
+        col4 +
+        "</td>" +
+        "</tr>";
+    }
+  }
+};
+
+xmlhttp3.open(
+  "GET",
+  "https://spreadsheets.google.com/feeds/list/1BaNXs45vLw5XAoRV9L0YGaWB-Ztxoyc5xy9WLNhIC7c/od6/public/values?alt=json",
+  true
+);
+xmlhttp3.send();
     </script>
 </body>
 
