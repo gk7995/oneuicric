@@ -73,76 +73,51 @@
             </div>
             <div class="oui-bubble blue-grey darken-4">
                 <div class="oui-bubble blue-grey darken-4">
-                    <table class="centered bordered">
-                        <tbody>
-                            <tr class="amber-text text-accent-2">
-                                <td><b>DATE</b></td>
-                                <td><b>TIME (IST)</b></td>
-                                <td><b>HOME TEAM</b></td>
-                                <td><b>AWAY TEAM</b></td>
-                                <td><b>VENUE</b></td>
-                            </tr>
-                            <tr>
-                                <td colspan="5" class="grey darken-3 white-text"><b>INDIA TOUR OF SRI LANKA 2021 (3 ODI, 3 T20)<br> [To be confirmed]</b></td>
-                            </tr>
-                            <tr>
-                                <td colspan="5" class="grey darken-3 white-text"><b>INDIA tour of ENGLAND 2021 (5 Test)</b></td>
-                            </tr>
-                            <tr class="green white-text">
-                                <td>Aug 4</td>
-                                <td>15:30</td>
-                                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="25px" height="15px"><br>ENG</td>
-                                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>IND</td>
-                                <td>Nottingham</td>
-                            </tr>
-                            <tr class="green white-text">
-                                <td>Aug 12</td>
-                                <td>15:30</td>
-                                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="25px" height="15px"><br>ENG</td>
-                                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>IND</td>
-                                <td>Lords,<br>London</td>
-                            </tr>
-                            <tr class="green white-text">
-                                <td>Aug 25</td>
-                                <td>15:30</td>
-                                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="25px" height="15px"><br>ENG</td>
-                                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>IND</td>
-                                <td>Leeds</td>
-                            </tr>
-                            <tr class="green white-text">
-                                <td>Sept 2</td>
-                                <td>15:30</td>
-                                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="25px" height="15px"><br>ENG</td>
-                                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>IND</td>
-                                <td>Oval,<br>London</td>
-                            </tr>
-                            <tr class="green white-text">
-                                <td>Sept 10</td>
-                                <td>15:30</td>
-                                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENGLAND" width="25px" height="15px"><br>ENG</td>
-                                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="INDIA" width="25px" height="15px"><br>IND</td>
-                                <td>Manchester</td>
-                            </tr>
-                        </tbody>
+                    <table class="centered bordered white-text" id="demo">
                     </table>
-                </div>
-                <div class="oui-bubble blue-grey darken-4">
-                <table class="centered">
-                    <tbody>
-                        <tr class="amber-text text-accent-2">
-                            <td colspan="3"><b>FORMATS ARE DENOTED BY COLORS:</b></td>
-                        </tr>
-                        <tr>
-                            <td class="green white-text"><b>TEST</b></td>
-                            <td class="blue white-text"><b>ODI</b></td>
-                            <td class="orange white-text"><b>T20</b></td>
-                        </tr>
-                    </tbody>
-                </table>
                 </div>
             </div>
         </div><br>
     </main>
+    <script>
+        let xmlhttp3 = new XMLHttpRequest();
+xmlhttp3.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let data = JSON.parse(this.responseText).feed.entry;
+
+    let i;
+    for (i = 0; i < data.length; i++) {
+      let col1 = data[i]["gsx$_cn6ca"]["$t"];
+      let col2 = data[i]["gsx$_cokwr"]["$t"];
+      let col3 = data[i]["gsx$_cpzh4"]["$t"];
+      let col4 = data[i]["gsx$_cre1l"]["$t"];
+
+      document.getElementById("demo").innerHTML +=
+      "<tr>" +
+        "<td" +
+        col1 +
+        "</td>" +
+        "<td" +
+        col2 +
+        "</td>" +
+        "<td" +
+        col3 +
+        "</td>" +
+        "<td" +
+        col4 +
+        "</td>" +
+        "</tr>";
+    }
+  }
+};
+
+xmlhttp3.open(
+  "GET",
+  "https://spreadsheets.google.com/feeds/list/18Bo5Pkhyct5oIuw0PrcyRzZwT3tUgHpSJ49X9HvWWUU/od6/public/values?alt=json",
+  true
+);
+xmlhttp3.send();
+    </script>
 </body>
 
 </html>

@@ -81,10 +81,10 @@
                                 <td><b>DATE</b></td>
                                 <td><b>SCORES & MATCH RESULTS</b></td>
                             </tr>
-                            <tr class="green white-text" id="demo"></tr>
-                            <tr class="grey darken-3 white-text">
-                                <td colspan="2"> WON THE ICC WORLD TEST CHAMPIONSHIP 2021</td>
-                            </tr>
+                            <tbody id="demo">
+                            <!-- <tr class="grey darken-3 white-text">
+                                <td colspan="2"> WON THE ICC WORLD TEST CHAMPIONSHIP 2021</td> -->
+                            </tbody>
                             <tr class="blue white-text">
                                 <td>23-03-21</td>
                                 <td>IND: 317/5 beat ENG: 251 (42.1) by 66 runs</td>
@@ -1333,10 +1333,10 @@ xmlhttp.onreadystatechange = function () {
       let rslt = data[i]["gsx$_cokwr"]["$t"];
 
       document.getElementById("demo").innerHTML +=
-        "<td>" +
+        "<td" +
         date +
         "</td>" +
-        "<td>" +
+        "<td" +
         rslt +
         "</td>";
     }

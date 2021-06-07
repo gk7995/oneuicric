@@ -88,67 +88,13 @@
                         <tbody id="demo"></tbody>
                     </table>
                 </div>
-                <h5 class="white-text"><b>BOUNDARY METER</b></h5><h6 class="white-text">upto PBKS vs DC, Match 29</h6>
+                <h5 class="white-text"><b>BOUNDARY METER</b></h5>
                 <div class="oui-bubble">
-                    <table class="centered">
-                        <tbody>
-                            <tr>
-                                <td><h4><b>Fours &#8227;</b></h4></td>
-                                <td><h3>810</h3></td>
-                            </tr>
-                            <tr>
-                                <td><h4><b>Sixes &#8227;</b></h4></td>
-                                <td><h3>379</h3></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <table class="centered" id="demo2"></table>
                 </div>
-                <h5 class="white-text"><b>STATS</b></h5><h6 class="white-text">upto PBKS vs DC, Match 29</h6>
+                <h5 class="white-text"><b>STATS</b></h5>
                 <div class="oui-bubble">
-                    <table class="centered striped">
-                        <tbody>
-                            <tr>
-                                <td><b>MOST RUNS</b></td>
-                                <td>Shikhar Dhawan&#8227; 380 <br>KL Rahul&#8227; 331</td>
-                            </tr>
-                            <tr>
-                                <td><b>MOST WKTS</b></td>
-                                <td>Harshal Patel&#8227; 17 <br>Avesh Khan&#8227; 14</td>
-                            </tr>
-                            <tr>
-                                <td><b>MOST FOURS</b></td>
-                                <td>Shikhar Dhawan&#8227; 43 <br>Prithvi Shaw&#8227; 37</td>
-                            </tr>
-                            <tr>
-                                <td><b>MOST SIXES</b></td>
-                                <td>KL Rahul&#8227; 16 <br>Jonny Bairstow&#8227; 15</td>
-                            </tr>
-                            <tr>
-                                <td><b>MOST FIFTIES</b></td>
-                                <td>KL Rahul&#8227; 4 <br>Faf du Plessis&#8227; 4</td>
-                            </tr>
-                            <tr>
-                                <td><b>MOST HUNDREDS</b></td>
-                                <td>Sanju Samson&#8227; 1 <br>Jos Buttler&#8227; 1</td>
-                            </tr>
-                            <tr>
-                                <td><b>BEST BOWL FIG.</b></td>
-                                <td>Andre Russell&#8227; 5/15 <br>Harshal Patel&#8227; 5/27</td>
-                            </tr>
-                            <tr>
-                                <td><b>BEST BOWL AVG.</b></td>
-                                <td>Shahbaz Ahmed&#8227; 8.00 <br>Imran Tahir&#8227; 8.00</td>
-                            </tr>
-                            <tr>
-                                <td><b>HIGHEST INN. RUNS</b></td>
-                                <td>Jos Buttler&#8227; 124 <br>Sanju Samson&#8227; 119</td>
-                            </tr>
-                            <tr>
-                                <td><b>BEST BOWL ECON.</b></td>
-                                <td>Imran Tahir&#8227; 4.00 <br>Moises Henriques&#8227; 4.80</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <table class="centered bordered" id="demo3"></table>
                 </div>
                 <h5 class="white-text"><b>PREV SEASONS [13]</b></h5><h6 class="white-text">Archives</h6>
                 <div class="oui-bubble">
@@ -310,6 +256,64 @@ xmlhttp1.open(
   true
 );
 xmlhttp1.send();
+    </script>
+    <script>
+        let xmlhttp2 = new XMLHttpRequest();
+xmlhttp2.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let data = JSON.parse(this.responseText).feed.entry;
+
+    let i;
+    for (i = 0; i < data.length; i++) {
+      let bmc1 = data[i]["gsx$_cn6ca"]["$t"];
+      let bmc2 = data[i]["gsx$_cokwr"]["$t"];
+
+      document.getElementById("demo2").innerHTML +=
+        "<td><h4><b>" +
+        bmc1 +
+        "</td>" +
+        "<td><h3>" +
+        bmc2 +
+        "</td>";
+    }
+  }
+};
+
+xmlhttp2.open(
+  "GET",
+  "https://spreadsheets.google.com/feeds/list/1h2v0WAPWGMvsUHZezA-bIbxYjM5twYrwZ39W1b6e54A/od6/public/values?alt=json",
+  true
+);
+xmlhttp2.send();
+    </script>
+    <script>
+        let xmlhttp3 = new XMLHttpRequest();
+xmlhttp3.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let data = JSON.parse(this.responseText).feed.entry;
+
+    let i;
+    for (i = 0; i < data.length; i++) {
+      let stc1 = data[i]["gsx$_cn6ca"]["$t"];
+      let stc2 = data[i]["gsx$_cokwr"]["$t"];
+
+      document.getElementById("demo3").innerHTML +=
+        "<td><b>" +
+        stc1 +
+        "</td>" +
+        "<td>" +
+        stc2 +
+        "</td>";
+    }
+  }
+};
+
+xmlhttp3.open(
+  "GET",
+  "https://spreadsheets.google.com/feeds/list/1QVWDYcXUBXhxdhxbv-xOMJdf-Urtbb9etwQGX_9rPBs/od6/public/values?alt=json",
+  true
+);
+xmlhttp3.send();
     </script>
     <!-- <script type="text/javascript" src="res.js"></script> -->
 </body>
