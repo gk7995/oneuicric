@@ -36,6 +36,9 @@
                 delay: 50
             });
         })
+        $(document).ready(function(){
+    $('.modal').modal();
+  });
     </script>
 </head>
 
@@ -72,6 +75,21 @@
                 </ul>
             </div>
             <div class="oui-bubble blue-grey darken-4">
+                <ul class="pagination left-align">
+                  <li><a class="amber-text text-accent-2 waves-effect tooltipped" onclick="location.href='index.html'" data-tooltip="Back to Home" data-position="bottom"><i class="material-icons">chevron_left</i></a></li>
+                  <li><a class="amber-text text-accent-2 waves-effect tooltipped" onclick="location.reload()" data-tooltip="Refresh" data-position="bottom"><i class="material-icons">change_circle</i></a></li>
+                  <li><a class="amber-text text-accent-2 waves-effect modal-trigger tooltipped" href="#modal1" data-tooltip="Notifications" data-position="bottom"><i class="material-icons">notifications<sup id="nbdg"></sup></i></a></li>
+                </ul>
+                <div id="modal1" class="modal modal-fixed-footer">
+                  <div class="modal-content blue-grey darken-4 amber-text text-accent-2">
+                    <h4>Notifications</h4>
+                    <table class="transparent bordered white-text" id="noti"></table>
+                  </div>
+                  <div class="modal-footer blue-grey darken-4 amber-text text-accent-2">
+                    <a href="#!" class="modal-close waves-effect white-text">CLOSE</a>
+                  </div>
+                </div>
+                <h5></h5>
                 <div class="oui-bubble show-on-large hide-on-med-and-down blue-grey darken-4" id="demo"></div>
                 <div class="oui-bubble show-on-medium-and-down hide-on-large-only blue-grey darken-4" id="demo1"></div>
             </div>
@@ -125,6 +143,63 @@ xmlhttp1.open(
 );
 xmlhttp1.send();
     </script>
+    <!-- Noti Badge -->
+    <script>
+      let xmlhttp4 = new XMLHttpRequest();
+xmlhttp4.onreadystatechange = function () {
+if (this.readyState == 4 && this.status == 200) {
+  let data = JSON.parse(this.responseText).feed.entry;
+
+  let i;
+  for (i = 0; i < data.length; i++) {
+    let bdge = data[i]["gsx$_cn6ca"]["$t"];
+
+    document.getElementById("nbdg").innerHTML +=
+      "" +
+      bdge ;
+  }
+}
+};
+
+xmlhttp4.open(
+"GET",
+"https://spreadsheets.google.com/feeds/list/1JslXvAH1yj7B2R2zViqZofolgdoIKEa8k6zqhkTxP6Q/od6/public/values?alt=json",
+true
+);
+xmlhttp4.send();
+  </script>
+  <!-- Notification -->
+    <script>
+      let xmlhttp5 = new XMLHttpRequest();
+xmlhttp5.onreadystatechange = function () {
+if (this.readyState == 4 && this.status == 200) {
+  let data = JSON.parse(this.responseText).feed.entry;
+
+  let i;
+  for (i = 0; i < data.length; i++) {
+    let col1 = data[i]["gsx$_cn6ca"]["$t"];
+    let col2 = data[i]["gsx$_cokwr"]["$t"];
+
+    document.getElementById("noti").innerHTML +=
+      "<tr> " +
+      "<td> " +
+      col1 +
+      "</td>" +
+      "<td> " +
+      col2 +
+      "</td>" +
+      "</tr>";
+  }
+}
+};
+
+xmlhttp5.open(
+"GET",
+"https://spreadsheets.google.com/feeds/list/11v4aGU4I9KtQGMHvCLf6BNoTGTT2wxFyLkfC-UjlQm0/od6/public/values?alt=json",
+true
+);
+xmlhttp5.send();
+  </script>
 </body>
 
 </html>
