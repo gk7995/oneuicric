@@ -95,6 +95,7 @@
                   <a href="#!" class="modal-close waves-effect white-text">CLOSE</a>
                 </div>
               </div>
+                <h4 class="white-text" id="now"></h4>
                 <h5 class="white-text"><b>LIVE SCORECARD MINI</b></h5>
                 <div class="oui-bubble show-on-large hide-on-med-and-down" id="demo"></div>
                 <div class="oui-bubble show-on-medium-and-down hide-on-large-only" id="demo1"></div>
@@ -104,7 +105,7 @@
                     </table>
                 </div>
                 <div class="oui-button center waves-effect white black-text" onclick="location.href='iplresults.html'"><b>VIEW POINTS TABLE 2021</b></div>
-                <h5 class="white-text"><b>COMING UP THIS WEEK</b></h5>
+                <h5 class="white-text"><b>COMING UP NEXT</b></h5>
                 <div class="oui-bubble">
                     <table class="centered" id="demo3">
                     </table>
@@ -235,6 +236,31 @@ xmlhttp3.open(
 );
 xmlhttp3.send();
     </script>
+    <!-- Now -->
+    <script>
+      let xmlhttp5 = new XMLHttpRequest();
+xmlhttp5.onreadystatechange = function () {
+if (this.readyState == 4 && this.status == 200) {
+  let data = JSON.parse(this.responseText).feed.entry;
+
+  let i;
+  for (i = 0; i < data.length; i++) {
+    let col = data[i]["gsx$_cn6ca"]["$t"];
+
+    document.getElementById("now").innerHTML +=
+      "" +
+      col ;
+  }
+}
+};
+
+xmlhttp5.open(
+"GET",
+"https://spreadsheets.google.com/feeds/list/1NP0WfIUAleb0m9qpew10I2Z4aXl48wBJzwUS0dqHovM/od6/public/values?alt=json",
+true
+);
+xmlhttp5.send();
+  </script>
     <!-- Noti Badge -->
     <script>
       let xmlhttp4 = new XMLHttpRequest();
