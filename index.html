@@ -262,8 +262,8 @@ xmlhttp3.send();
     </script>
     <!-- Now -->
     <script>
-      let xmlhttp5 = new XMLHttpRequest();
-xmlhttp5.onreadystatechange = function () {
+      let xmlhttp6 = new XMLHttpRequest();
+xmlhttp6.onreadystatechange = function () {
 if (this.readyState == 4 && this.status == 200) {
   let data = JSON.parse(this.responseText).feed.entry;
 
@@ -278,12 +278,12 @@ if (this.readyState == 4 && this.status == 200) {
 }
 };
 
-xmlhttp5.open(
+xmlhttp6.open(
 "GET",
 "https://spreadsheets.google.com/feeds/list/1L2R4IZ52jqVtT6SPuKphHqa-7Fq51cO5eNlaRxOlrdU/od6/public/values?alt=json",
 true
 );
-xmlhttp5.send();
+xmlhttp6.send();
   </script>
     <!-- Noti Badge -->
     <script>
