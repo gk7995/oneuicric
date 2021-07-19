@@ -6,7 +6,10 @@
   <title>About - One UI Cricket</title>
   <link rel="stylesheet" href="OneUI/oui.min.css">
   <link rel="stylesheet" href="materialize.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css">
   <link rel="icon" href="OUC.ico">
   <style>
     @font-face {
@@ -76,7 +79,7 @@
   <main class="containr">
     <div class="oui-viewing center-align">
       <h4>One UI Cricket</h4>
-      <h5 class="grey-text text-darken-1">Version 2021.1.8</h5>
+      <h5 class="grey-text text-darken-1">Version 2021.1.9 beta</h5>
     </div>
     <div class="oui-interaction center-align">
       <!-- Interaction area -->
@@ -84,14 +87,14 @@
         <div class="fixed-action-btn">
           <a class="btn-floating btn-large teal lighten-1 btn tooltipped" data-position="left" data-delay="50"
             data-tooltip="Menu">
-            <i class="large material-icons">more_vert</i>
+            <i class="large fas fa-bars"></i>
           </a>
           <ul>
             <!-- <li><a class="btn-floating teal lighten-1 btn tooltipped" data-position="left" data-delay="50"
-                data-tooltip="Dark/Light" href="about-dark.html"><i class="material-icons white-text">toggle_off</i></a>
+                data-tooltip="Dark/Light" href="about-dark.html"><i class="fas fa-toggle-off white-text"></i></a>
             </li> -->
             <li><a class="btn-floating teal lighten-1 btn tooltipped" data-position="left" data-delay="50"
-                data-tooltip="Home" href="index.html"><i class="material-icons white-text">home</i></a></li>
+                data-tooltip="Home" href="index.html"><i class="fas fa-home white-text"></i></a></li>
           </ul>
         </div>
         <h5>Website Developed by</h5>
@@ -113,6 +116,10 @@
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td>2021.1.9 beta</td>
+              <td>Testing: Icons loading bugs & Menu/ UI changes</td>
+            </tr>
             <tr>
               <td>2021.1.8</td>
               <td>Added Notifications, Refresh & made few fixes to load pages faster</td>
@@ -157,17 +164,17 @@
           <form method="POST" autocomplete="off" name="google-sheet">
             <div class="form">
               <div class="input-field col s6">
-                <i class="material-icons prefix">account_circle</i>
+                <i class="fas fa-user-circle prefix"></i>
                 <input id="icon_prefix" name="Name" type="text" required>
                 <label for="icon_prefix">Name <span class="red-text">*</span></label>
               </div>
               <div class="input-field col s6">
-                <i class="material-icons prefix">email</i>
+                <i class="fas fa-envelope prefix"></i>
                 <input id="icon_prefix" name="Email" type="email" required>
                 <label for="icon_prefix">Email <span class="red-text">*</span></label>
               </div>
               <div class="input-field col s12">
-                <i class="material-icons prefix">message</i>
+                <i class="fas fa-comment-alt prefix"></i>
                 <input id="icon_prefix" name="Message" type="text">
                 <label for="icon_prefix">Message</label>
               </div>

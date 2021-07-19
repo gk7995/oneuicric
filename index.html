@@ -8,7 +8,10 @@
     <title>One UI Cricket</title>
     <link rel="stylesheet" href="OneUI/oui.min.css">
     <link rel="stylesheet" href="materialize.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="icon" href="OUC.ico">
@@ -70,6 +73,7 @@
         })
         $(document).ready(function(){
     $('.modal').modal();
+    $('#modal2').modal();
   });
     </script>
 </head>
@@ -78,38 +82,38 @@
     <main class="containr">
         <div class="oui-interaction center-align">
             <div class="fixed-action-btn">
-                <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                    data-tooltip="Menu">
-                    <i class="large material-icons">more_vert</i>
+                <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5 modal-trigger" data-position="top" data-delay="50"
+                    data-tooltip="Menu" href="#modal2">
+                    <i class="large fas fa-bars"></i>
                 </a>
-                <ul>
+                <!-- <ul>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="top" data-delay="50" data-tooltip="About"
-                            href="about.html"><i class="material-icons">info</i></a></li>
+                            href="about.html"><i class="fas fa-info-circle"></i></a></li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Scorecard" href="live.html"><i class="material-icons">live_tv</i></a>
+                            data-tooltip="Scorecard" href="live.html"><i class="fas fa-tv"></i></a>
                     </li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Int'l Schedule" href="schedule.html"><i class="material-icons">view_list</i></a>
+                            data-tooltip="Int'l Schedule" href="schedule.html"><i class="fas fa-list"></i></a>
                     </li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="IPL Schedule" href="ipltt.html"><i class="material-icons">view_list</i></a>
+                            data-tooltip="IPL Schedule" href="ipltt.html"><i class="fas fa-list"></i></a>
                     </li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Int'l Results" href="results.html"><i class="material-icons">emoji_events</i></a>
+                            data-tooltip="Int'l Results" href="results.html"><i class="fas fa-trophy"></i></a>
                     </li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="IPL Results" href="iplresults.html"><i class="material-icons">emoji_events</i></a>
+                            data-tooltip="IPL Results" href="iplresults.html"><i class="fas fa-trophy"></i></a>
                     </li>
                     <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50" 
-                            data-tooltip="IPL Home" href="iplhome.html"><i class="material-icons">sports_cricket</i></a>
+                            data-tooltip="IPL Home" href="iplhome.html"><i class="fas fa-passport"></i></a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
             <div class="oui-bubble blue-grey darken-4">
-              <ul class="pagination left-align">
-                <li><a class="amber-text text-accent-2 waves-effect tooltipped" onclick="location.reload()" data-tooltip="Refresh" data-position="bottom"><i class="material-icons">change_circle</i></a></li>
-                <li><a class="amber-text text-accent-2 waves-effect modal-trigger tooltipped" href="#modal1" data-tooltip="Notifications" data-position="bottom"><i class="material-icons">notifications<sup id="nbdg"></sup></i></a></li>
-              </ul>
+              <!-- <ul class="pagination left-align">
+                <li><a class="amber-text text-accent-2 waves-effect tooltipped" onclick="location.reload()" data-tooltip="Refresh" data-position="bottom"><i class="fas fa-sync-alt"></i></a></li>
+                <li><a class="amber-text text-accent-2 waves-effect modal-trigger tooltipped" href="#modal1" data-tooltip="Notifications" data-position="bottom"><i class="fas fa-bell"><sup id="nbdg"></sup></i></a></li>
+              </ul> -->
               <div id="modal1" class="modal modal-fixed-footer">
                 <div class="modal-content blue-grey darken-4 amber-text text-accent-2">
                   <h4>Notifications</h4>
@@ -117,6 +121,50 @@
                 </div>
                 <div class="modal-footer blue-grey darken-4 amber-text text-accent-2">
                   <a href="#!" class="modal-close waves-effect white-text">CLOSE</a>
+                </div>
+              </div>
+              <!--Menu-->
+              <div id="modal2" class="modal bottom-sheet right-align blue-grey darken-4 amber-text text-accent-2">
+                <div class="modal-content">
+                    <a href="#!" onclick="location.reload()" class="amber-text text-accent-2 tooltipped" data-tooltip="Refresh" data-position="top"><i class="small fas fa-sync-alt"></i></a>
+                    <a href="#modal1" class="modal-trigger amber-text text-accent-2 tooltipped" data-tooltip="Notifications" data-position="top"><i class="small fas fa-bell"></i></a>
+                  <ul class="collection left-align">
+                  <li class="collection-item avatar blue-grey darken-4" onclick="location.href='iplhome.html'">
+                    <i class="fas fa-passport circle blue darken-4"></i>
+                    <p style="font-size: x-large;">IPL Home</p>
+                    <p>Scorecard Mini, Head to Head, Coming up Next</p>
+                  </li>
+                  <li class="collection-item avatar blue-grey darken-4" onclick="location.href='iplresults.html'">
+                    <i class="fas fa-trophy circle blue darken-4"></i>
+                    <p style="font-size: x-large;">IPL Results</p>
+                    <p>Scores & Results of All IPL Matches</p>
+                  </li>
+                  <li class="collection-item avatar blue-grey darken-4" onclick="location.href='results.html'">
+                    <i class="fas fa-trophy circle blue darken-4"></i>
+                    <p style="font-size: x-large;">Int'l Results</p>
+                    <p>Scores & Results of India's International Matches</p>
+                  </li>
+                  <li class="collection-item avatar blue-grey darken-4" onclick="location.href='ipltt.html'">
+                    <i class="fas fa-list circle blue darken-4"></i>
+                    <p style="font-size: x-large;">IPL Schedule</p>
+                    <p>Season Schedule of IPL</p>
+                  </li>
+                  <li class="collection-item avatar blue-grey darken-4" onclick="location.href='schedule.html'">
+                    <i class="fas fa-list circle blue darken-4"></i>
+                    <p style="font-size: x-large;">Int'l Schedule</p>
+                    <p>Series Schedule of India's Matches</p>
+                  </li>
+                  <li class="collection-item avatar blue-grey darken-4" onclick="location.href='live.html'">
+                    <i class="fas fa-tv circle blue darken-4"></i>
+                    <p style="font-size: x-large;">Scorecard</p>
+                    <p>Live Scores with Stats, Info</p>
+                  </li>
+                  <li class="collection-item avatar blue-grey darken-4" onclick="location.href='about.html'">
+                    <i class="fas fa-info circle blue darken-4"></i>
+                    <p style="font-size: x-large;">About</p>
+                    <p>About this Website</p>
+                  </li>
+                </ul>
                 </div>
               </div>
                     <h4 class="amber-text text-accent-2" id="now"></h4>
