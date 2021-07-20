@@ -72,6 +72,10 @@
         delay: 50
       });
     })
+        $(document).ready(function(){
+    $('.modal').modal();
+    $('#modal2').modal();
+  });
   </script>
 </head>
 
@@ -79,23 +83,35 @@
   <main class="containr">
     <div class="oui-viewing center-align">
       <h4>One UI Cricket</h4>
-      <h5 class="grey-text text-darken-1">Version 2021.1.9 beta</h5>
+      <h5 class="grey-text text-darken-1">Version 2021.2 beta</h5>
     </div>
     <div class="oui-interaction center-align">
       <!-- Interaction area -->
       <div class="oui-bubble">
         <div class="fixed-action-btn">
-          <a class="btn-floating btn-large teal lighten-1 btn tooltipped" data-position="left" data-delay="50"
-            data-tooltip="Menu">
+          <a class="btn-floating btn-large teal lighten-1 btn tooltipped modal-trigger" data-position="left" data-delay="50"
+            data-tooltip="Menu" href="#modal2">
             <i class="large fas fa-bars"></i>
           </a>
           <ul>
             <!-- <li><a class="btn-floating teal lighten-1 btn tooltipped" data-position="left" data-delay="50"
                 data-tooltip="Dark/Light" href="about-dark.html"><i class="fas fa-toggle-off white-text"></i></a>
-            </li> -->
+            </li>
             <li><a class="btn-floating teal lighten-1 btn tooltipped" data-position="left" data-delay="50"
-                data-tooltip="Home" href="index.html"><i class="fas fa-home white-text"></i></a></li>
+                data-tooltip="Home" href="index.html"><i class="fas fa-home white-text"></i></a></li> -->
           </ul>
+        </div>
+        <!--Menu-->
+        <div id="modal2" class="modal bottom-sheet right-align">
+          <div class="modal-content">
+            <ul class="collection left-align">
+            <li class="collection-item avatar" onclick="location.href='index.html'">
+              <a href="#!"><i class="fas fa-home circle teal lighten-1"></i></a>
+              <p style="font-size: x-large;">OUI Cricket Home</p>
+              <p>Go to Home Page</p>
+            </li>
+          </ul>
+          </div>
         </div>
         <h5>Website Developed by</h5>
         <img src="GK Logo New 2020 whitebg.png" class="responsive-img" alt="GK" width="20%" height="20%" id="image">
@@ -116,6 +132,10 @@
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td>2021.2 beta</td>
+              <td>Previous version Testing yet ongoing, Added Event - Olympic Games 2020</td>
+            </tr>
             <tr>
               <td>2021.1.9 beta</td>
               <td>Testing: Icons loading bugs & Menu/ UI changes</td>

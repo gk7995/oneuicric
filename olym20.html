@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>One UI Cricket - Olympic Games Tokyo 2020</title>
+    <link rel="stylesheet" href="OneUI/oui.min.css">
+    <link rel="stylesheet" href="materialize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css">
+    <link rel="icon" href="OUC.ico">
+    <style>
+        @font-face {
+            font-family: 'SamsungOne 400';
+            src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+        }
+
+        @font-face {
+          font-family: 'Material Icons';
+          src: local('Material Icons'), url('matico.woff2') format('woff2');
+        }
+
+        * {
+            font-family: 'SamsungOne 400';
+            font-size: larger;
+        }
+
+        .oui-button {
+            font-family: 'SamsungOne 400';
+         }
+    </style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="materialize.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.fixed-action-btn').openFAB();
+            $('.fixed-action-btn').closeFAB();
+            $('.fixed-action-btn.toolbar').openToolbar();
+            $('.fixed-action-btn.toolbar').closeToolbar();
+            $('.tooltipped').tooltip({
+                delay: 50
+            });
+        })
+        $(document).ready(function(){
+    $('.modal').modal();
+    $('#modal2').modal();
+  });
+    </script>
+</head>
+
+<body oncontextmenu="return false;" onload="Materialize.toast('*2020 Olympics',5000,'rounded')">
+    <main class="containr">
+        <div class="oui-interaction center-align">
+            <!-- Interaction area -->
+            <div class="fixed-action-btn">
+                <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5 modal-trigger" data-position="left" data-delay="50"
+                    data-tooltip="Menu" href="#modal2">
+                    <i class="large fas fa-bars"></i>
+                </a>
+                <!-- <ul>
+                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="top" data-delay="50" data-tooltip="About"
+                            href="about.html"><i class="material-icons">info</i></a></li>
+                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
+                            data-tooltip="Int'l Schedule" href="schedule.html"><i class="material-icons">view_list</i></a>
+                    </li>
+                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
+                            data-tooltip="IPL Schedule" href="ipltt.html"><i class="material-icons">view_list</i></a>
+                    </li>
+                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
+                            data-tooltip="Scorecard 2" href="ipllive2.html"><i class="material-icons">live_tv&#178;</i></a>
+                    </li>
+                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
+                            data-tooltip="Scorecard 1" href="ipllive.html"><i class="material-icons">live_tv&#185;</i></a>
+                    </li>
+                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
+                            data-tooltip="Int'l Results" href="results.html"><i class="material-icons">emoji_events</i></a>
+                    </li>
+                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50" 
+                            data-tooltip="OUI Cric Home" href="index.html"><i class="material-icons">home</i></a>
+                    </li>
+                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50" 
+                            data-tooltip="IPL Home" href="iplhome.html"><i class="material-icons">sports_cricket</i></a>
+                    </li>
+                </ul> -->
+            </div>
+            <div class="oui-bubble blue darken-4">
+                <!-- <ul class="pagination left-align">
+                    <li><a class="white-text waves-effect tooltipped" onclick="location.href='index.html'" data-tooltip="Back to Home" data-position="bottom"><i class="fas fa-chevron-left"></i></a></li>
+                  <li><a class="white-text waves-effect tooltipped" onclick="location.reload()" data-tooltip="Refresh" data-position="bottom"><i class="fas fa-sync-alt"></i></a></li>
+                  <li><a class="white-text waves-effect modal-trigger tooltipped" href="#modal1" data-tooltip="Notifications" data-position="bottom"><i class="fas fa-bell"><sup id="nbdg"></sup></i></a></li>
+                </ul> -->
+                <div id="modal1" class="modal modal-fixed-footer">
+                  <div class="modal-content blue-grey darken-4 amber-text text-accent-2">
+                    <h4>Notifications</h4>
+                    <table class="transparent bordered white-text" id="noti"></table>
+                  </div>
+                  <div class="modal-footer blue-grey darken-4 amber-text text-accent-2">
+                    <a href="#!" class="modal-close waves-effect white-text">CLOSE</a>
+                  </div>
+                </div>
+                <!--Menu-->
+                <div id="modal2" class="modal bottom-sheet right-align blue darken-4 white-text">
+                  <div class="modal-content">
+                      <a href="#!" onclick="location.reload()" class="white-text tooltipped" data-tooltip="Refresh" data-position="top"><i class="small fas fa-sync-alt"></i></a>
+                      <a href="#modal1" class="modal-trigger white-text tooltipped" data-tooltip="Notifications" data-position="top"><i class="small fas fa-bell"></i></a>
+                    <ul class="collection left-align">
+                    <li class="collection-item avatar blue-grey darken-4" onclick="location.href='index.html'">
+                      <a href="#!"><i class="fas fa-home circle blue darken-4"></i></a>
+                      <p style="font-size: x-large;">OUI Cricket Home</p>
+                      <p>Back to Home Page</p>
+                    </li>
+                    <li class="collection-item avatar blue-grey darken-4" onclick="location.href='about.html'">
+                      <a href="#!"><i class="fas fa-info circle blue darken-4"></i></a>
+                      <p style="font-size: x-large;">About</p>
+                      <p>About this Website</p>
+                    </li>
+                  </ul>
+                  </div>
+                </div>
+                <h5 class="white-text"><b>INDIA'S MEDAL TALLY 2021<sup>*</sup></b></h5>
+                <div class="oui-bubble">
+                  <table class="centered bordered striped">
+                    <tbody id="demo2"></tbody>
+                  </table>
+                </div>
+                <h5 class="white-text"><b>MEDAL TALLY 2021<sup>*</sup></b></h5>
+                <div class="oui-bubble">
+                    <table class="centered bordered striped">
+                        <tbody id="demo1"></tbody>
+                    </table>
+                </div>
+                <h5 class="white-text"><b>SCHEDULE (Jul 21 to Aug 8)</b></h5>
+                <h6 class="white-text">Opening Ceremony: Jul 23, Closing Ceremony: Aug 8</h6>
+                <div class="oui-bubble">
+                    <table class="centered bordered striped">
+                        <tbody id="demo"></tbody>
+                    </table>
+                </div>
+                <h5 class="white-text"><b>MEDALS WON BY INDIAN ATHLETES</b></h5>
+                <div class="oui-bubble">
+                    <table class="centered bordered striped" id="demo3"></table>
+                </div>
+                <h5 class="white-text"><b>INDIAN ATHLETES (PLAYERS) [Total 125]</b></h5>
+                <div class="oui-bubble">
+                <table class="bordered striped">
+                    <tbody>
+                        <tr>
+                            <td><b>ATHLETE (PLAYER) NAME</b></td>
+                            <td><b>SPORT/ DISCIPLINE</b></td>
+                        </tr>
+                        <tr>
+                          <td>DAS Atanu</td>
+                          <td> Archery</td>
+                        </tr>
+                        <tr>
+                          <td>JADHAV Pravin</td>
+                          <td> Archery</td>
+                        </tr>
+                        <tr>
+                          <td>KUMARI Deepika</td>
+                          <td> Archery</td>
+                        </tr>
+                        <tr>
+                          <td>RAI Tarundeep</td>
+                          <td> Archery</td>
+                        </tr>
+                        <tr>
+                          <td>NAYAK Pranati</td>
+                          <td> Artistic Gymnastics</td>
+                        </tr>
+                        <tr>
+                          <td>ANTONY Alex</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>BHAMBRI Sarthak</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>CHAND Dutee</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>CHOPRA Neeraj</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>JACOB Amoj</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>JAT Bhawna</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>KAUR Kamalpreet</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>KOLOTHUM THODI Irfan</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>KUMAR Sandeep</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>MADARI PALLIYALIL Jabir</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>PANDI Naganathan</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>PRIYANKA .</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>PUNIA Seema</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>RAHUL .</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>RAJIV Arokia</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>RANI Annu</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>SABLE Avinash Mukund</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>SEKAR Dhanalakshmi</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>SINGH Gurpreet</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>SINGH Shivpal</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>SREESHANKAR .</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>TOM Noah Nirmal</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>TOOR Tajinderpal Singh</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>VEERAMANI Revathi</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>VENKATESAN Subha</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>YAHIYA Muhammed Anas</td>
+                          <td> Athletics</td>
+                        </tr>
+                        <tr>
+                          <td>B. Sai Praneeth</td>
+                          <td> Badminton</td>
+                        </tr>
+                        <tr>
+                          <td>PUSARLA V. Sindhu</td>
+                          <td> Badminton</td>
+                        </tr>
+                        <tr>
+                          <td>RANKIREDDY Satwiksairaj</td>
+                          <td> Badminton</td>
+                        </tr>
+                        <tr>
+                          <td>SHETTY Chirag</td>
+                          <td> Badminton</td>
+                        </tr>
+                        <tr>
+                          <td>AMIT Amit</td>
+                          <td> Boxing</td>
+                        </tr>
+                        <tr>
+                          <td>ASHISH KUMAR Ashish Kumar</td>
+                          <td> Boxing</td>
+                        </tr>
+                        <tr>
+                          <td>BAATTH Simranjit Kaur</td>
+                          <td> Boxing</td>
+                        </tr>
+                        <tr>
+                          <td>BORGOHAIN Lovlina</td>
+                          <td> Boxing</td>
+                        </tr>
+                        <tr>
+                          <td>HMANGTE Chungneijang Mery Kom</td>
+                          <td> Boxing</td>
+                        </tr>
+                        <tr>
+                          <td>KAUSHIK Manish</td>
+                          <td> Boxing</td>
+                        </tr>
+                        <tr>
+                          <td>POOJA RANI Pooja Rani</td>
+                          <td> Boxing</td>
+                        </tr>
+                        <tr>
+                          <td>SATISH KUMAR Satish Kumar</td>
+                          <td> Boxing</td>
+                        </tr>
+                        <tr>
+                          <td>VIKAS Krishan</td>
+                          <td> Boxing</td>
+                        </tr>
+                        <tr>
+                          <td>MIRZA Fouaad</td>
+                          <td> Equestrian</td>
+                        </tr>
+                        <tr>
+                          <td>CHADALAVADA ANANDHA SUNDH Bhavani .</td>
+                          <td> Fencing</td>
+                        </tr>
+                        <tr>
+                          <td>ASHOK Aditi</td>
+                          <td> Golf</td>
+                        </tr>
+                        <tr>
+                          <td>LAHIRI Anirban</td>
+                          <td> Golf</td>
+                        </tr>
+                        <tr>
+                          <td>MANE Udayan</td>
+                          <td> Golf</td>
+                        </tr>
+                        <tr>
+                          <td>DEVI Sharmila</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>EKKA Deep Grace</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>KATARIYA Vandana</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>KAUR Gurjit</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>KAUR Navjot</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>KAUR Navneet</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>KHOKHAR Reena</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>KUMAR Surender</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>KUMAR Varun</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>LAKRA Birendra</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>LALREMSIAMI</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>MONIKA</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>NEHA Neha</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>NISHA</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>PARATTU RAVEENDRAN Sreejesh</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>PRADHAN Nikki</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>PRASAD Vivek Sagar</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>PUKHRAMBAM Sushila Chanu</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>RANI</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>ROHIDAS Amit</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>SAVITA</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>SHARMA Nilakanta</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>SINGH Dilpreet</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>SINGH Gurjant</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>SINGH Hardik</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>SINGH Harmanpreet</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>SINGH Mandeep</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>SINGH Manpreet</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>SINGH Rupinder Pal</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>SINGH Shamsher</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>SINGH Simranjeet</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>SUMIT</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>TETE Salima</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>TOPPO Namita</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>UDITA</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>UPADHYAY Lalit Kumar</td>
+                          <td> Hockey</td>
+                        </tr>
+                        <tr>
+                          <td>LIKMABAM Shushila Devi</td>
+                          <td> Judo</td>
+                        </tr>
+                        <tr>
+                          <td>LAL JAT Arjun</td>
+                          <td> Rowing</td>
+                        </tr>
+                        <tr>
+                          <td>SINGH Arvind</td>
+                          <td> Rowing</td>
+                        </tr>
+                        <tr>
+                          <td>KELAPANDA Ganapathy</td>
+                          <td> Sailing</td>
+                        </tr>
+                        <tr>
+                          <td>KUMANAN Nethra</td>
+                          <td> Sailing</td>
+                        </tr>
+                        <tr>
+                          <td>SARAVANAN Vishnu</td>
+                          <td> Sailing</td>
+                        </tr>
+                        <tr>
+                          <td>THAKKAR Varun</td>
+                          <td> Sailing</td>
+                        </tr>
+                        <tr>
+                          <td>BAJWA Angad Vir Singh</td>
+                          <td> Shooting</td>
+                        </tr>
+                        <tr>
+                          <td>BHAKER Manu</td>
+                          <td> Shooting</td>
+                        </tr>
+                        <tr>
+                          <td>CHANDELA Apurvi</td>
+                          <td> Shooting</td>
+                        </tr>
+                        <tr>
+                          <td>DESWAL Yashaswini Singh</td>
+                          <td> Shooting</td>
+                        </tr>
+                        <tr>
+                          <td>KHAN Mairaj Ahmad</td>
+                          <td> Shooting</td>
+                        </tr>
+                        <tr>
+                          <td>KUMAR Deepak</td>
+                          <td> Shooting</td>
+                        </tr>
+                        <tr>
+                          <td>MOUDGIL Anjum</td>
+                          <td> Shooting</td>
+                        </tr>
+                        <tr>
+                          <td>PANWAR Divyansh Singh</td>
+                          <td> Shooting</td>
+                        </tr>
+                        <tr>
+                          <td>RAJPUT Sanjeev</td>
+                          <td> Shooting</td>
+                        </tr>
+                        <tr>
+                          <td>SARNOBAT Rahi</td>
+                          <td> Shooting</td>
+                        </tr>
+                        <tr>
+                          <td>SAURABH Chaudhary</td>
+                          <td> Shooting</td>
+                        </tr>
+                        <tr>
+                          <td>SAWANT Tejaswini</td>
+                          <td> Shooting</td>
+                        </tr>
+                        <tr>
+                          <td>TOMAR Aishwary Pratap Singh</td>
+                          <td> Shooting</td>
+                        </tr>
+                        <tr>
+                          <td>VALARIVAN Elavenil</td>
+                          <td> Shooting</td>
+                        </tr>
+                        <tr>
+                          <td>VERMA Abhishek</td>
+                          <td> Shooting</td>
+                        </tr>
+                        <tr>
+                          <td>NATARAJ Srihari</td>
+                          <td> Swimming</td>
+                        </tr>
+                        <tr>
+                          <td>PATEL Maana Patel</td>
+                          <td> Swimming</td>
+                        </tr>
+                        <tr>
+                          <td>PRAKASH Sajan</td>
+                          <td> Swimming</td>
+                        </tr>
+                        <tr>
+                          <td>ACHANTA Kamal</td>
+                          <td> Table Tennis</td>
+                        </tr>
+                        <tr>
+                          <td>BATRA Manika</td>
+                          <td> Table Tennis</td>
+                        </tr>
+                        <tr>
+                          <td>GNANASEKARAN Sathiyan</td>
+                          <td> Table Tennis</td>
+                        </tr>
+                        <tr>
+                          <td>MUKHERJEE Sutirtha</td>
+                          <td> Table Tennis</td>
+                        </tr>
+                        <tr>
+                          <td>MIRZA Sania</td>
+                          <td> Tennis</td>
+                        </tr>
+                        <tr>
+                          <td>NAGAL Sumit</td>
+                          <td> Tennis</td>
+                        </tr>
+                        <tr>
+                          <td>RAINA Ankita</td>
+                          <td> Tennis</td>
+                        </tr>
+                        <tr>
+                          <td>MIRABAI Chanu Saikhom</td>
+                          <td> Weightlifting</td>
+                        </tr>
+                        <tr>
+                          <td>ANSHU Anshu</td>
+                          <td> Wrestling</td>
+                        </tr>
+                        <tr>
+                          <td>BAJRANG Bajrang</td>
+                          <td> Wrestling</td>
+                        </tr>
+                        <tr>
+                          <td>PUNIA Deepak</td>
+                          <td> Wrestling</td>
+                        </tr>
+                        <tr>
+                          <td>RAVI Kumar</td>
+                          <td> Wrestling</td>
+                        </tr>
+                        <tr>
+                          <td>SEEMA Seema</td>
+                          <td> Wrestling</td>
+                        </tr>
+                        <tr>
+                          <td>SONAM Sonam</td>
+                          <td> Wrestling</td>
+                        </tr>
+                        <tr>
+                          <td>VINESH Vinesh</td>
+                          <td> Wrestling</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div><br>
+    </main>
+    <script>
+        let xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let data = JSON.parse(this.responseText).feed.entry;
+
+    let i;
+    for (i = 0; i < data.length; i++) {
+      let date = data[i]["gsx$_cn6ca"]["$t"];
+      let rslt = data[i]["gsx$_cokwr"]["$t"];
+      let marg = data[i]["gsx$_cpzh4"]["$t"];
+
+      document.getElementById("demo").innerHTML +=
+        "<tr>" +
+        "<td>" +
+        date +
+        "</td>" +
+        "<td>" +
+        rslt +
+        "</td>" +
+        "<td>" +
+        marg +
+        "</td>" +
+        "</tr>";
+    }
+  }
+};
+
+xmlhttp.open(
+  "GET",
+  "https://spreadsheets.google.com/feeds/list/16caGXBliTXV4Pmqk9E0pqVG2X8wqqZ97qBmv5ntXkVQ/od6/public/values?alt=json",
+  true
+);
+xmlhttp.send();
+    </script>
+    <script>
+        let xmlhttp1 = new XMLHttpRequest();
+xmlhttp1.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let data = JSON.parse(this.responseText).feed.entry;
+
+    let i;
+    for (i = 0; i < data.length; i++) {
+      let col1 = data[i]["gsx$_cn6ca"]["$t"];
+      let col2 = data[i]["gsx$_cokwr"]["$t"];
+      let col3 = data[i]["gsx$_cpzh4"]["$t"];
+      let col4 = data[i]["gsx$_cre1l"]["$t"];
+      let col5 = data[i]["gsx$_chk2m"]["$t"];
+
+      document.getElementById("demo1").innerHTML +=
+        "<tr>" +
+        "<td>" +
+        col1 +
+        "</td>" +
+        "<td>" +
+        col2 +
+        "</td>" +
+        "<td>" +
+        col3 +
+        "</td>" +
+        "<td>" +
+        col4 +
+        "</td>" +
+        "<td>" +
+        col5 +
+        "</td>" +
+        "</tr>";
+    }
+  }
+};
+
+xmlhttp1.open(
+  "GET",
+  "https://spreadsheets.google.com/feeds/list/1FPjyeh4GAVV5qTxEX9Q-_JYZfkGkVnwGpu81k6Xf-Hs/od6/public/values?alt=json",
+  true
+);
+xmlhttp1.send();
+    </script>
+    <script>
+        let xmlhttp2 = new XMLHttpRequest();
+xmlhttp2.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let data = JSON.parse(this.responseText).feed.entry;
+
+    let i;
+    for (i = 0; i < data.length; i++) {
+      let col1 = data[i]["gsx$_cn6ca"]["$t"];
+      let col2 = data[i]["gsx$_cokwr"]["$t"];
+      let col3 = data[i]["gsx$_cpzh4"]["$t"];
+      let col4 = data[i]["gsx$_cre1l"]["$t"];
+
+      document.getElementById("demo2").innerHTML +=
+      "<tr>" +
+        "<td>" +
+        col1 +
+        "</td>" +
+        "<td>" +
+        col2 +
+        "</td>" +
+        "<td>" +
+        col3 +
+        "</td>" +
+        "<td>" +
+        col4 +
+        "</td>" +
+        "</tr>";
+    }
+  }
+};
+
+xmlhttp2.open(
+  "GET",
+  "https://spreadsheets.google.com/feeds/list/1LtKWEldJARMHdlPZP91GsGlfrpFWUWQdXX88klPR3aU/od6/public/values?alt=json",
+  true
+);
+xmlhttp2.send();
+    </script>
+    <script>
+        let xmlhttp3 = new XMLHttpRequest();
+xmlhttp3.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let data = JSON.parse(this.responseText).feed.entry;
+
+    let i;
+    for (i = 0; i < data.length; i++) {
+      let col1 = data[i]["gsx$_cn6ca"]["$t"];
+      let col2 = data[i]["gsx$_cokwr"]["$t"];
+      let col3 = data[i]["gsx$_cpzh4"]["$t"];
+
+      document.getElementById("demo3").innerHTML +=
+        "<td>" +
+        col1 +
+        "</td>" +
+        "<td>" +
+        col2 +
+        "</td>" +
+        "<td>" +
+        col3 +
+        "</td>";
+    }
+  }
+};
+
+xmlhttp3.open(
+  "GET",
+  "https://spreadsheets.google.com/feeds/list/1BVwotJTUNH2vlC5KArrNTa4PNTqIQNkJ1oOY_Efvfcs/od6/public/values?alt=json",
+  true
+);
+xmlhttp3.send();
+    </script>
+    <!-- Noti Badge -->
+    <script>
+      let xmlhttp4 = new XMLHttpRequest();
+xmlhttp4.onreadystatechange = function () {
+if (this.readyState == 4 && this.status == 200) {
+  let data = JSON.parse(this.responseText).feed.entry;
+
+  let i;
+  for (i = 0; i < data.length; i++) {
+    let bdge = data[i]["gsx$_cn6ca"]["$t"];
+
+    document.getElementById("nbdg").innerHTML +=
+      "" +
+      bdge ;
+  }
+}
+};
+
+xmlhttp4.open(
+"GET",
+"https://spreadsheets.google.com/feeds/list/1JslXvAH1yj7B2R2zViqZofolgdoIKEa8k6zqhkTxP6Q/od6/public/values?alt=json",
+true
+);
+xmlhttp4.send();
+  </script>
+  <!-- Notification -->
+    <script>
+      let xmlhttp5 = new XMLHttpRequest();
+xmlhttp5.onreadystatechange = function () {
+if (this.readyState == 4 && this.status == 200) {
+  let data = JSON.parse(this.responseText).feed.entry;
+
+  let i;
+  for (i = 0; i < data.length; i++) {
+    let col1 = data[i]["gsx$_cn6ca"]["$t"];
+    let col2 = data[i]["gsx$_cokwr"]["$t"];
+
+    document.getElementById("noti").innerHTML +=
+      "<tr> " +
+      "<td> " +
+      col1 +
+      "</td>" +
+      "<td> " +
+      col2 +
+      "</td>" +
+      "</tr>";
+  }
+}
+};
+
+xmlhttp5.open(
+"GET",
+"https://spreadsheets.google.com/feeds/list/11v4aGU4I9KtQGMHvCLf6BNoTGTT2wxFyLkfC-UjlQm0/od6/public/values?alt=json",
+true
+);
+xmlhttp5.send();
+  </script>
+</body>
+
+</html>
