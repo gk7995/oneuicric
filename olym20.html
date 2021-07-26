@@ -35,6 +35,30 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="materialize.js"></script>
     <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+  
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+  
+            // Store hash
+            var hash = this.hash;
+  
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function () {
+  
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
         $(document).ready(function () {
             $('.fixed-action-btn').openFAB();
             $('.fixed-action-btn').closeFAB();
@@ -124,12 +148,7 @@
                 <h5 class="blue-text text-darken-4"><b>TOKYO OLYMPICS 2020</b></h5>
                 <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202107/Olympic-Schedule-1.jpg?cKs11nxhUsoYw5dRAFAkADcH1FgQc2TH&size=770:433" width="125px" height="75px">
                 </div>
-                <h5 class="white-text"><img src="https://www.mykhel.com/common_dynamic/images/olympics/country_flag/IND.svg" width="30px" height="18px"> <b>INDIA'S MEDAL TALLY 2021<sup>*</sup></b></h5>
-                <div class="oui-bubble">
-                  <table class="centered bordered striped">
-                    <tbody id="demo2"></tbody>
-                  </table>
-                </div>
+                <div class="oui-button blue darken-4 waves-effect z-depth-5"><a href="#ind" class="white-text"><i class="fas fa-angle-double-down"></i> Scroll down to <img src="https://www.mykhel.com/common_dynamic/images/olympics/country_flag/IND.svg" width="25px" height="15px"> INDIA in Olympics <i class="fas fa-angle-double-down"></i></a></div>
                 <h5 class="white-text"><b>MEDAL TALLY 2021<sup>*</sup></b></h5>
                 <div class="oui-bubble">
                     <table class="centered bordered striped">
@@ -143,11 +162,24 @@
                         <tbody id="demo"></tbody>
                     </table>
                 </div>
-                <h5 class="white-text"><b>MEDALS WON BY INDIAN ATHLETES</b></h5>
+                <h5 class="white-text" id="ind"><img src="https://www.mykhel.com/common_dynamic/images/olympics/country_flag/IND.svg" width="30px" height="18px"> <b>INDIA in OLYMPICS - MEDAL TALLY 2021<sup>*</sup></b></h5>
+                <div class="oui-bubble">
+                  <table class="centered bordered striped">
+                    <tbody id="demo2"></tbody>
+                  </table>
+                </div>
+                <h5 class="white-text"><img src="https://www.mykhel.com/common_dynamic/images/olympics/country_flag/IND.svg" width="30px" height="18px"> <b>INDIA in OLYMPICS - SCHEDULE (Jul 23 to Aug 8)</b></h5>
+                <h6 class="white-text">All Timings are as per IST</h6>
+                <div class="oui-bubble">
+                    <table class="centered bordered striped">
+                        <tbody id="demo4"></tbody>
+                    </table>
+                </div>
+                <h5 class="white-text"><img src="https://www.mykhel.com/common_dynamic/images/olympics/country_flag/IND.svg" width="30px" height="18px"> <b>MEDALS WON BY INDIAN ATHLETES</b></h5>
                 <div class="oui-bubble">
                     <table class="centered bordered striped" id="demo3"></table>
                 </div>
-                <h5 class="white-text"><b>INDIAN ATHLETES (PLAYERS) [Total 125]</b></h5>
+                <h5 class="white-text"><img src="https://www.mykhel.com/common_dynamic/images/olympics/country_flag/IND.svg" width="30px" height="18px"> <b>INDIAN ATHLETES (PLAYERS) [Total 125]</b></h5>
                 <div class="oui-bubble">
                 <table class="bordered striped">
                     <tbody>
@@ -695,6 +727,41 @@ xmlhttp.open(
   true
 );
 xmlhttp.send();
+    </script>
+    <script>
+        let xmlhttp6 = new XMLHttpRequest();
+xmlhttp6.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let data = JSON.parse(this.responseText).feed.entry;
+
+    let i;
+    for (i = 0; i < data.length; i++) {
+      let date = data[i]["gsx$_cn6ca"]["$t"];
+      let rslt = data[i]["gsx$_cokwr"]["$t"];
+      let marg = data[i]["gsx$_cpzh4"]["$t"];
+
+      document.getElementById("demo4").innerHTML +=
+        "<tr>" +
+        "<td>" +
+        date +
+        "</td>" +
+        "<td>" +
+        rslt +
+        "</td>" +
+        "<td>" +
+        marg +
+        "</td>" +
+        "</tr>";
+    }
+  }
+};
+
+xmlhttp6.open(
+  "GET",
+  "https://spreadsheets.google.com/feeds/list/1BtJI17USLfffHRBtJLrSKthMX-xoX1iRBIDKcpgDO7M/od6/public/values?alt=json",
+  true
+);
+xmlhttp6.send();
     </script>
     <script>
         let xmlhttp1 = new XMLHttpRequest();
