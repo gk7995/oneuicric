@@ -47,12 +47,8 @@
       src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
     }
 
-    @font-face {
-      font-family: 'Material Icons';
-      src: local('Material Icons'), url('matico.woff2') format('woff2');
-    }
-
-    * {
+    *,
+    body {
       font-family: 'SamsungOne 400';
       font-size: larger;
     }
@@ -93,38 +89,12 @@
           data-delay="50" data-tooltip="Menu" href="#modal2">
           <i class="large fas fa-bars"></i>
         </a>
-        <!-- <ul>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="top" data-delay="50" data-tooltip="About"
-                            href="about.html"><i class="fas fa-info-circle"></i></a></li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Scorecard" href="live.html"><i class="fas fa-tv"></i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Int'l Schedule" href="schedule.html"><i class="fas fa-list"></i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="IPL Schedule" href="ipltt.html"><i class="fas fa-list"></i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Int'l Results" href="results.html"><i class="fas fa-trophy"></i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="IPL Results" href="iplresults.html"><i class="fas fa-trophy"></i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50" 
-                            data-tooltip="IPL Home" href="iplhome.html"><i class="fas fa-passport"></i></a>
-                    </li>
-                </ul> -->
       </div>
       <div class="oui-bubble blue-grey darken-4">
-        <!-- <ul class="pagination left-align">
-                <li><a class="amber-text text-accent-2 waves-effect tooltipped" onclick="location.reload()" data-tooltip="Refresh" data-position="bottom"><i class="fas fa-sync-alt"></i></a></li>
-                <li><a class="amber-text text-accent-2 waves-effect modal-trigger tooltipped" href="#modal1" data-tooltip="Notifications" data-position="bottom"><i class="fas fa-bell"><sup id="nbdg"></sup></i></a></li>
-              </ul> -->
         <div id="modal1" class="modal modal-fixed-footer">
           <div class="modal-content blue-grey darken-4 amber-text text-accent-2">
             <h4>Notifications</h4>
-            <table class="transparent bordered white-text" id="noti"></table>
+            <table class="transparent bordered white-text"></table>
           </div>
           <div class="modal-footer blue-grey darken-4 amber-text text-accent-2">
             <a href="#!" class="modal-close waves-effect white-text">CLOSE</a>
@@ -186,32 +156,58 @@
           </div>
         </div>
         <h1 class="hide">LIVE SCORECARD MINI</h1>
-        <h4 class="amber-text text-accent-2" id="now">ENG vs IND, 3rd TEST</h4>
+        <h4 class="amber-text text-accent-2"><b>ENG vs IND, 4th TEST</b></h4>
         <h5 class="amber-text text-accent-2"><b>LIVE SCORECARD MINI</b></h5>
-        <div class="show-on-large hide-on-med-and-down blue-grey darken-4" id="demo">
+        <div class="show-on-large hide-on-med-and-down">
           <iframe
-            src="https://www.cricket.com/live-score/199051/commentary/eng-vs-ind-1st-test-india-tour-of-england-2021"
+            src="https://www.cricket.com/live-score/199052/commentary/eng-vs-ind-1st-test-india-tour-of-england-2021"
             width="70%" height="160px" scrolling="no"></iframe>
         </div>
-        <div class="show-on-medium-and-down hide-on-large-only blue-grey darken-4" id="demo1">
+        <div class="show-on-medium-and-down hide-on-large-only">
           <iframe
-            src="https://www.cricket.com/live-score/199051/commentary/eng-vs-ind-1st-test-india-tour-of-england-2021"
+            src="https://www.cricket.com/live-score/199052/commentary/eng-vs-ind-1st-test-india-tour-of-england-2021"
             width="100%" height="160px" scrolling="no"></iframe>
         </div>
         <h5 class="amber-text text-accent-2"><b>HEAD TO HEAD</b></h5>
-        <div class="blue-grey darken-4 white-text">
-          <iframe
-            src="https://docs.google.com/spreadsheets/d/1mw1oXXyj1KVK55Itkrz6Ef1d7ra7zEATffn1sZdAo7Y/edit#gid=460122199"
-            scrolling="no" width="100%" height="300px"></iframe>
-          <table class="centered" id="demo2">
+        <h6 class="amber-text text-accent-2">Upto ENG vs IND, 3rd Test</h6>
+        <div class="oui-bubble blue-grey darken-4 white-text">
+          <table class="centered bordered">
+            <tbody>
+              <tr>
+                <td><br>ENGLAND</td>
+                <td><b>TEAMS</b></td>
+                <td><br>INDIA</td>
+              </tr>
+              <tr>
+                <td><b>WON:</b> 49</td>
+                <td><b>MATCHES:</b> 129 <br><b>NO RESULT:</b> 50</td>
+                <td><b>WON:</b> 30</td>
+              </tr>
+              <tr>
+                <td><b>4</b></td>
+                <td><b>ICC RANK</b></td>
+                <td><b>2</b></td>
+              </tr>
+            </tbody>
           </table>
         </div>
         <h5 class="amber-text text-accent-2"><b>COMING UP NEXT</b></h5>
-        <div class="blue-grey darken-4 white-text">
-          <iframe
-            src="https://docs.google.com/spreadsheets/d/1vRRt-lirphXmdtMIfps83qiCzfsE9oWC8ZEib7V5Awk/edit#gid=1997004301"
-            scrolling="no" width="100%" height="500px"></iframe>
-          <table class="centered bordered" id="demo3">
+        <div class="oui-bubble blue-grey darken-4 white-text">
+          <table class="centered bordered">
+            <tbody>
+              <tr>
+                <td><b>DATE <br>TIME (IST)</b></td>
+                <td><b>HOME TEAM</b></td>
+                <td><b>AWAY TEAM</b></td>
+                <td><b>VENUE <br>FORMAT</b></td>
+              </tr>
+              <tr>
+                <td>Sept 10 <br>15:30</td>
+                <td>ENG</td>
+                <td>IND</td>
+                <td>MANCHESTER <br>5th Test</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
@@ -219,210 +215,6 @@
     </div>
     <br>
   </main>
-  <script>
-    let xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        let data = JSON.parse(this.responseText).feed.entry;
-
-        let i;
-        for (i = 0; i < data.length; i++) {
-          let link = data[i]["gsx$_cn6ca"]["$t"];
-
-          document.getElementById("demo").innerHTML +=
-            "<iframe " +
-            link;
-        }
-      }
-    };
-
-    xmlhttp.open(
-      "GET",
-      "https://spreadsheets.google.com/feeds/list/1Fo1YQLl26WsyC5jyBz09sg3TQqWhhScD0R-3ZeKXaU0/od6/public/values?alt=json",
-      true
-    );
-    xmlhttp.send();
-  </script>
-  <script>
-    let xmlhttp1 = new XMLHttpRequest();
-    xmlhttp1.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        let data = JSON.parse(this.responseText).feed.entry;
-
-        let i;
-        for (i = 0; i < data.length; i++) {
-          let link1 = data[i]["gsx$_cn6ca"]["$t"];
-
-          document.getElementById("demo1").innerHTML +=
-            "<iframe " +
-            link1;
-        }
-      }
-    };
-
-    xmlhttp1.open(
-      "GET",
-      "https://spreadsheets.google.com/feeds/list/1wDPAobQRkkKOA7N7VNyA4O1x7xqL3VDPIl7SFL5oVq4/od6/public/values?alt=json",
-      true
-    );
-    xmlhttp1.send();
-  </script>
-  <script>
-    let xmlhttp2 = new XMLHttpRequest();
-    xmlhttp2.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        let data = JSON.parse(this.responseText).feed.entry;
-
-        let i;
-        for (i = 0; i < data.length; i++) {
-          let col1 = data[i]["gsx$_cn6ca"]["$t"];
-          let col2 = data[i]["gsx$_cokwr"]["$t"];
-          let col3 = data[i]["gsx$_cpzh4"]["$t"];
-
-          document.getElementById("demo2").innerHTML +=
-            "<tr>" +
-            "<td>" +
-            col1 +
-            "</td>" +
-            "<td>" +
-            col2 +
-            "</td>" +
-            "<td>" +
-            col3 +
-            "</td>" +
-            "</tr>";
-        }
-      }
-    };
-
-    xmlhttp2.open(
-      "GET",
-      "https://spreadsheets.google.com/feeds/list/1mw1oXXyj1KVK55Itkrz6Ef1d7ra7zEATffn1sZdAo7Y/od6/public/values?alt=json",
-      true
-    );
-    xmlhttp2.send();
-  </script>
-  <script>
-    let xmlhttp3 = new XMLHttpRequest();
-    xmlhttp3.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        let data = JSON.parse(this.responseText).feed.entry;
-
-        let i;
-        for (i = 0; i < data.length; i++) {
-          let col1 = data[i]["gsx$_cn6ca"]["$t"];
-          let col2 = data[i]["gsx$_cokwr"]["$t"];
-          let col3 = data[i]["gsx$_cpzh4"]["$t"];
-          let col4 = data[i]["gsx$_cre1l"]["$t"];
-
-          document.getElementById("demo3").innerHTML +=
-            "<tr>" +
-            "<td>" +
-            col1 +
-            "</td>" +
-            "<td>" +
-            col2 +
-            "</td>" +
-            "<td>" +
-            col3 +
-            "</td>" +
-            "<td>" +
-            col4 +
-            "</td>" +
-            "</tr>";
-        }
-      }
-    };
-
-    xmlhttp3.open(
-      "GET",
-      "https://spreadsheets.google.com/feeds/list/1vRRt-lirphXmdtMIfps83qiCzfsE9oWC8ZEib7V5Awk/od6/public/values?alt=json",
-      true
-    );
-    xmlhttp3.send();
-  </script>
-  <!-- Now -->
-  <script>
-    let xmlhttp6 = new XMLHttpRequest();
-    xmlhttp6.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        let data = JSON.parse(this.responseText).feed.entry;
-
-        let i;
-        for (i = 0; i < data.length; i++) {
-          let col = data[i]["gsx$_cn6ca"]["$t"];
-
-          document.getElementById("now").innerHTML +=
-            "" +
-            col;
-        }
-      }
-    };
-
-    xmlhttp6.open(
-      "GET",
-      "https://spreadsheets.google.com/feeds/list/1L2R4IZ52jqVtT6SPuKphHqa-7Fq51cO5eNlaRxOlrdU/od6/public/values?alt=json",
-      true
-    );
-    xmlhttp6.send();
-  </script>
-  <!-- Noti Badge -->
-  <script>
-    let xmlhttp4 = new XMLHttpRequest();
-    xmlhttp4.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        let data = JSON.parse(this.responseText).feed.entry;
-
-        let i;
-        for (i = 0; i < data.length; i++) {
-          let bdge = data[i]["gsx$_cn6ca"]["$t"];
-
-          document.getElementById("nbdg").innerHTML +=
-            "" +
-            bdge;
-        }
-      }
-    };
-
-    xmlhttp4.open(
-      "GET",
-      "https://spreadsheets.google.com/feeds/list/1JslXvAH1yj7B2R2zViqZofolgdoIKEa8k6zqhkTxP6Q/od6/public/values?alt=json",
-      true
-    );
-    xmlhttp4.send();
-  </script>
-  <!-- Notification -->
-  <script>
-    let xmlhttp5 = new XMLHttpRequest();
-    xmlhttp5.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        let data = JSON.parse(this.responseText).feed.entry;
-
-        let i;
-        for (i = 0; i < data.length; i++) {
-          let col1 = data[i]["gsx$_cn6ca"]["$t"];
-          let col2 = data[i]["gsx$_cokwr"]["$t"];
-
-          document.getElementById("noti").innerHTML +=
-            "<tr> " +
-            "<td> " +
-            col1 +
-            "</td>" +
-            "<td> " +
-            col2 +
-            "</td>" +
-            "</tr>";
-        }
-      }
-    };
-
-    xmlhttp5.open(
-      "GET",
-      "https://spreadsheets.google.com/feeds/list/11v4aGU4I9KtQGMHvCLf6BNoTGTT2wxFyLkfC-UjlQm0/od6/public/values?alt=json",
-      true
-    );
-    xmlhttp5.send();
-  </script>
   <script>
     if ('serviceWorker' in navigator) {
       // Register service worker

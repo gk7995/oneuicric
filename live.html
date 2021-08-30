@@ -2,269 +2,148 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <title>One UI Cricket - Live Scorecard 1</title>
-    <link rel="stylesheet" href="OneUI/oui.min.css">
-    <link rel="stylesheet" href="materialize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css">
-    <link rel="icon" href="OUC.ico">
-    <style>
-        @font-face {
-            font-family: 'SamsungOne 400';
-            src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <title>One UI Cricket - Live Scorecard 1</title>
+  <link rel="stylesheet" href="OneUI/oui.min.css">
+  <link rel="stylesheet" href="materialize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css">
+  <link rel="icon" href="OUC.ico">
+  <style>
+    @font-face {
+      font-family: 'SamsungOne 400';
+      src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+    }
 
-        @font-face {
-          font-family: 'Material Icons';
-          src: local('Material Icons'), url('matico.woff2') format('woff2');
-        }
+    @font-face {
+      font-family: 'Material Icons';
+      src: local('Material Icons'), url('matico.woff2') format('woff2');
+    }
 
-        * {
-            font-family: 'SamsungOne 400';
-            font-size: larger;
-        }
+    * {
+      font-family: 'SamsungOne 400';
+      font-size: larger;
+    }
 
-        .oui-button {
-            font-family: 'SamsungOne 400';
-         }
+    .oui-button {
+      font-family: 'SamsungOne 400';
+    }
 
-         iframe {
-           border-radius: 25px;
-         }
-    </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="materialize.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.fixed-action-btn').openFAB();
-            $('.fixed-action-btn').closeFAB();
-            $('.fixed-action-btn.toolbar').openToolbar();
-            $('.fixed-action-btn.toolbar').closeToolbar();
-            $('.tooltipped').tooltip({
-                delay: 50
-            });
-        })
-        $(document).ready(function(){
-    $('.modal').modal();
-    $('#modal2').modal();
-  });
-    </script>
+    iframe {
+      border-radius: 25px;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="materialize.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.fixed-action-btn').openFAB();
+      $('.fixed-action-btn').closeFAB();
+      $('.fixed-action-btn.toolbar').openToolbar();
+      $('.fixed-action-btn.toolbar').closeToolbar();
+      $('.tooltipped').tooltip({
+        delay: 50
+      });
+    })
+    $(document).ready(function () {
+      $('.modal').modal();
+      $('#modal2').modal();
+    });
+  </script>
 </head>
 
 <body oncontextmenu="return false;">
-    <main class="containr">
-        <div class="oui-interaction center-align">
-            <!-- Interaction area -->
-            <div class="fixed-action-btn">
-                <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5 modal-trigger" data-position="left" data-delay="50"
-                    data-tooltip="Menu" href="#modal2">
-                    <i class="large fas fa-bars"></i>
-                </a>
-                <!-- <ul>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="top" data-delay="50" data-tooltip="About"
-                            href="about.html"><i class="material-icons">info</i></a></li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Int'l Schedule" href="schedule.html"><i class="material-icons">view_list</i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="IPL Schedule" href="ipltt.html"><i class="material-icons">view_list</i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="Int'l Results" href="results.html"><i class="material-icons">emoji_events</i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="IPL Results" href="iplresults.html"><i class="material-icons">emoji_events</i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50" 
-                            data-tooltip="IPL Home" href="iplhome.html"><i class="material-icons">sports_cricket</i></a>
-                    </li>
-                    <li><a class="btn-floating btn blue darken-4 tooltipped pulse z-depth-5" data-position="left" data-delay="50"
-                            data-tooltip="OUI Cric Home" href="index.html"><i class="material-icons">home</i></a>
-                    </li>
-                </ul> -->
-            </div>
-            <div class="oui-bubble blue-grey darken-4">
-                <!-- <ul class="pagination left-align">
-                  <li><a class="amber-text text-accent-2 waves-effect tooltipped" onclick="location.href='index.html'" data-tooltip="Back to Home" data-position="bottom"><i class="fas fa-chevron-left"></i></a></li>
-                  <li><a class="amber-text text-accent-2 waves-effect tooltipped" onclick="location.reload()" data-tooltip="Refresh" data-position="bottom"><i class="fas fa-sync-alt"></i></a></li>
-                  <li><a class="amber-text text-accent-2 waves-effect modal-trigger tooltipped" href="#modal1" data-tooltip="Notifications" data-position="bottom"><i class="fas fa-bell"><sup id="nbdg"></sup></i></a></li>
-                </ul> -->
-                <div id="modal1" class="modal modal-fixed-footer">
-                  <div class="modal-content blue-grey darken-4 amber-text text-accent-2">
-                    <h4>Notifications</h4>
-                    <table class="transparent bordered white-text" id="noti"></table>
-                  </div>
-                  <div class="modal-footer blue-grey darken-4 amber-text text-accent-2">
-                    <a href="#!" class="modal-close waves-effect white-text">CLOSE</a>
-                  </div>
-                </div>
-                <!--Menu-->
-                <div id="modal2" class="modal bottom-sheet right-align blue-grey darken-4 amber-text text-accent-2">
-                  <div class="modal-content">
-                      <a href="#!" onclick="location.reload()" class="amber-text text-accent-2 tooltipped" data-tooltip="Refresh" data-position="top"><i class="small fas fa-sync-alt"></i></a>
-                      <a href="#modal1" class="modal-trigger amber-text text-accent-2 tooltipped" data-tooltip="Notifications" data-position="top"><i class="small fas fa-bell"></i></a>
-                    <ul class="collection left-align" style="border-width: 0px;">
-                    <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='olym20.html'">
-                      <a href="#!"><i class="fas fa-medal circle blue darken-4"></i></a>
-                      <p style="font-size: x-large;">Olympics & Paralympics 2020 <img src="https://icon-library.com/images/new-icon-gif/new-icon-gif-9.jpg" width="35px" height="25px"></p>
-                      <p>India/ World Medal Tally, Schedule, Indian Players list</p>
-                    </li>
-                    <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='index.html'">
-                      <a href="#!"><i class="fas fa-home circle blue darken-4"></i></a>
-                      <p style="font-size: x-large;">OUI Cricket Home</p>
-                      <p>Back to Home</p>
-                    </li>
-                    <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='iplhome.html'">
-                      <a href="#!"><i class="fas fa-passport circle blue darken-4"></i></a>
-                      <p style="font-size: x-large;">IPL Home</p>
-                      <p>Scorecard Mini, Head to Head, Coming up Next</p>
-                    </li>
-                    <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='iplresults.html'">
-                      <a href="#!"><i class="fas fa-trophy circle blue darken-4"></i></a>
-                      <p style="font-size: x-large;">IPL Results</p>
-                      <p>Scores & Results of All IPL Matches</p>
-                    </li>
-                    <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='results.html'">
-                      <a href="#!"><i class="fas fa-trophy circle blue darken-4"></i></a>
-                      <p style="font-size: x-large;">Int'l Results</p>
-                      <p>Scores & Results of India's International Matches</p>
-                    </li>
-                    <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='ipltt.html'">
-                      <a href="#!"><i class="fas fa-list circle blue darken-4"></i></a>
-                      <p style="font-size: x-large;">IPL Schedule</p>
-                      <p>Season Schedule of IPL</p>
-                    </li>
-                    <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='schedule.html'">
-                      <a href="#!"><i class="fas fa-list circle blue darken-4"></i></a>
-                      <p style="font-size: x-large;">Int'l Schedule</p>
-                      <p>Series Schedule of India's Matches</p>
-                    </li>
-                    <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='about.html'">
-                      <a href="#!"><i class="fas fa-info circle blue darken-4"></i></a>
-                      <p style="font-size: x-large;">About</p>
-                      <p>About this Website</p>
-                    </li><li class="collection-item blue-grey darken-4"></li>
-                  </ul>
-                  </div>
-                </div>
-                <div class="show-on-large hide-on-med-and-down blue-grey darken-4" id="demo">
-                  <iframe src="https://www.cricket.com/live-score/199051/commentary/eng-vs-ind-1st-test-india-tour-of-england-2021" width="70%" height="3000px" scrolling="no"></iframe>
-                </div>
-                <div class="show-on-medium-and-down hide-on-large-only blue-grey darken-4" id="demo1">
-                  <iframe src="https://www.cricket.com/live-score/199051/commentary/eng-vs-ind-1st-test-india-tour-of-england-2021" width="100%" height="3000px" scrolling="no" onload="Materialize.toast('ENG vs IND, 3rd Test',5000,'rounded')"></iframe>
-                </div>
-            </div>
-        </div><br>
-    </main>
-    <script>
-        let xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function () {
-  if (this.readyState == 4 && this.status == 200) {
-    let data = JSON.parse(this.responseText).feed.entry;
-
-    let i;
-    for (i = 0; i < data.length; i++) {
-      let link = data[i]["gsx$_cn6ca"]["$t"];
-
-      document.getElementById("demo").innerHTML +=
-        "<iframe " +
-        link ;
-    }
-  }
-};
-
-xmlhttp.open(
-  "GET",
-  "https://spreadsheets.google.com/feeds/list/1jBsX6dbV85OefgN4RBmSCeZzeJi_SFnnVbHb3geu8ak/od6/public/values?alt=json",
-  true
-);
-xmlhttp.send();
-    </script>
-    <script>
-        let xmlhttp1 = new XMLHttpRequest();
-xmlhttp1.onreadystatechange = function () {
-  if (this.readyState == 4 && this.status == 200) {
-    let data = JSON.parse(this.responseText).feed.entry;
-
-    let i;
-    for (i = 0; i < data.length; i++) {
-      let link1 = data[i]["gsx$_cn6ca"]["$t"];
-
-      document.getElementById("demo1").innerHTML +=
-        "<iframe " +
-        link1 ;
-    }
-  }
-};
-
-xmlhttp1.open(
-  "GET",
-  "https://spreadsheets.google.com/feeds/list/1PfbnAHges2EtkdtiKSw0dYf-vclfIa44Oe1MTzlsuuM/od6/public/values?alt=json",
-  true
-);
-xmlhttp1.send();
-    </script>
-    <!-- Noti Badge -->
-    <script>
-      let xmlhttp4 = new XMLHttpRequest();
-xmlhttp4.onreadystatechange = function () {
-if (this.readyState == 4 && this.status == 200) {
-  let data = JSON.parse(this.responseText).feed.entry;
-
-  let i;
-  for (i = 0; i < data.length; i++) {
-    let bdge = data[i]["gsx$_cn6ca"]["$t"];
-
-    document.getElementById("nbdg").innerHTML +=
-      "" +
-      bdge ;
-  }
-}
-};
-
-xmlhttp4.open(
-"GET",
-"https://spreadsheets.google.com/feeds/list/1JslXvAH1yj7B2R2zViqZofolgdoIKEa8k6zqhkTxP6Q/od6/public/values?alt=json",
-true
-);
-xmlhttp4.send();
-  </script>
-  <!-- Notification -->
-    <script>
-      let xmlhttp5 = new XMLHttpRequest();
-xmlhttp5.onreadystatechange = function () {
-if (this.readyState == 4 && this.status == 200) {
-  let data = JSON.parse(this.responseText).feed.entry;
-
-  let i;
-  for (i = 0; i < data.length; i++) {
-    let col1 = data[i]["gsx$_cn6ca"]["$t"];
-    let col2 = data[i]["gsx$_cokwr"]["$t"];
-
-    document.getElementById("noti").innerHTML +=
-      "<tr> " +
-      "<td> " +
-      col1 +
-      "</td>" +
-      "<td> " +
-      col2 +
-      "</td>" +
-      "</tr>";
-  }
-}
-};
-
-xmlhttp5.open(
-"GET",
-"https://spreadsheets.google.com/feeds/list/11v4aGU4I9KtQGMHvCLf6BNoTGTT2wxFyLkfC-UjlQm0/od6/public/values?alt=json",
-true
-);
-xmlhttp5.send();
-  </script>
+  <main class="containr">
+    <div class="oui-interaction center-align">
+      <!-- Interaction area -->
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5 modal-trigger"
+          data-position="left" data-delay="50" data-tooltip="Menu" href="#modal2">
+          <i class="large fas fa-bars"></i>
+        </a>
+      </div>
+      <div class="oui-bubble blue-grey darken-4">
+        <div id="modal1" class="modal modal-fixed-footer">
+          <div class="modal-content blue-grey darken-4 amber-text text-accent-2">
+            <h4>Notifications</h4>
+            <table class="transparent bordered white-text" id="noti"></table>
+          </div>
+          <div class="modal-footer blue-grey darken-4 amber-text text-accent-2">
+            <a href="#!" class="modal-close waves-effect white-text">CLOSE</a>
+          </div>
+        </div>
+        <!--Menu-->
+        <div id="modal2" class="modal bottom-sheet right-align blue-grey darken-4 amber-text text-accent-2">
+          <div class="modal-content">
+            <a href="#!" onclick="location.reload()" class="amber-text text-accent-2 tooltipped" data-tooltip="Refresh"
+              data-position="top"><i class="small fas fa-sync-alt"></i></a>
+            <a href="#modal1" class="modal-trigger amber-text text-accent-2 tooltipped" data-tooltip="Notifications"
+              data-position="top"><i class="small fas fa-bell"></i></a>
+            <ul class="collection left-align" style="border-width: 0px;">
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='olym20.html'">
+                <a href="#!"><i class="fas fa-medal circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">Olympics & Paralympics 2020 <img
+                    src="https://icon-library.com/images/new-icon-gif/new-icon-gif-9.jpg" width="35px" height="25px">
+                </p>
+                <p>India/ World Medal Tally, Schedule, Indian Players list</p>
+              </li>
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='index.html'">
+                <a href="#!"><i class="fas fa-home circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">OUI Cricket Home</p>
+                <p>Back to Home</p>
+              </li>
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='iplhome.html'">
+                <a href="#!"><i class="fas fa-passport circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">IPL Home</p>
+                <p>Scorecard Mini, Head to Head, Coming up Next</p>
+              </li>
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble"
+                onclick="location.href='iplresults.html'">
+                <a href="#!"><i class="fas fa-trophy circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">IPL Results</p>
+                <p>Scores & Results of All IPL Matches</p>
+              </li>
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='results.html'">
+                <a href="#!"><i class="fas fa-trophy circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">Int'l Results</p>
+                <p>Scores & Results of India's International Matches</p>
+              </li>
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='ipltt.html'">
+                <a href="#!"><i class="fas fa-list circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">IPL Schedule</p>
+                <p>Season Schedule of IPL</p>
+              </li>
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='schedule.html'">
+                <a href="#!"><i class="fas fa-list circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">Int'l Schedule</p>
+                <p>Series Schedule of India's Matches</p>
+              </li>
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='about.html'">
+                <a href="#!"><i class="fas fa-info circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">About</p>
+                <p>About this Website</p>
+              </li>
+              <li class="collection-item blue-grey darken-4"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="show-on-large hide-on-med-and-down blue-grey darken-4">
+          <iframe
+            src="https://www.cricket.com/live-score/199052/commentary/eng-vs-ind-1st-test-india-tour-of-england-2021"
+            width="70%" height="3000px" scrolling="no"></iframe>
+        </div>
+        <div class="show-on-medium-and-down hide-on-large-only blue-grey darken-4">
+          <iframe
+            src="https://www.cricket.com/live-score/199052/commentary/eng-vs-ind-1st-test-india-tour-of-england-2021"
+            width="100%" height="3000px" scrolling="no"
+            onload="Materialize.toast('ENG vs IND, 4th Test',5000,'rounded')"></iframe>
+        </div>
+      </div>
+    </div><br>
+  </main>
 </body>
 
 </html>
