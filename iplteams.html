@@ -19,8 +19,8 @@
         }
 
         @font-face {
-          font-family: 'Material Icons';
-          src: local('Material Icons'), url('matico.woff2') format('woff2');
+            font-family: 'Material Icons';
+            src: local('Material Icons'), url('matico.woff2') format('woff2');
         }
 
         * {
@@ -44,10 +44,10 @@
                 delay: 50
             });
         })
-        $(document).ready(function(){
-    $('.modal').modal();
-    $('#modal2').modal();
-  });
+        $(document).ready(function () {
+            $('.modal').modal();
+            $('#modal2').modal();
+        });
     </script>
 </head>
 
@@ -56,114 +56,146 @@
         <div class="oui-interaction center-align">
             <!-- Interaction area -->
             <div class="fixed-action-btn">
-                <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5 modal-trigger" data-position="left" data-delay="50"
-                    data-tooltip="Menu" href="#modal2">
+                <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5 modal-trigger"
+                    data-position="left" data-delay="50" data-tooltip="Menu" href="#modal2">
                     <i class="large fas fa-bars"></i>
                 </a>
             </div>
             <div class="oui-bubble orange accent-3">
                 <div id="modal1" class="modal modal-fixed-footer">
-                  <div class="modal-content blue-grey darken-4 amber-text text-accent-2">
-                    <h4>Notifications</h4>
-                    <table class="transparent bordered white-text">
-              <tr>
-                <td><span style="font-size: x-large;" onclick="location.href='schedule.html'">ICC WCT20 Schedule Announced</span><br><span style="font-size: smaller;">Cricket's shortest international format is back, 1st ICC WC Event after 2019</span></td>
-                <td><span style="font-size: smaller;">Aug 16</span></td>
-              </tr>
-              <tr>
-                <td><span style="font-size: x-large;" onclick="location.href='ipltt.html'">IPL 2021 Schedule Announced</span><br><span style="font-size: smaller;">Unfinished season will resume from Sept 19</span></td>
-                <td><span style="font-size: smaller;">Jul 26</span></td>
-              </tr>
-              <tr>
-                <td><span style="font-size: x-large;">SL vs IND not to begin from Tuesday</span><br><span style="font-size: smaller;">Scheduled date changes are out, 1st ODI from Jul 18</span></td>
-                <td><span style="font-size: smaller;">Jul 12</span></td>
-              </tr>
-              <tr>
-                <td><span style="font-size: x-large;">ICC WTC '21 - IND XI, Weather, Time update</span><br><span style="font-size: smaller;">India's XI decided, Live Coverage ½ hour early, Rainy Weather expected</span></td>
-                <td><span style="font-size: smaller;">Jun 18</span></td>
-              </tr>
-              <tr>
-                <td><span style="font-size: x-large;">Squad Announcement</span><br><span style="font-size: smaller;">Shikhar Dhawan will lead India in 3 ODIs, 3 T20s Vs Sri Lanka</span></td>
-                <td><span style="font-size: smaller;">Jun 10</span></td>
-              </tr>
-              <tr>
-                <td><span style="font-size: x-large;">World Test Championship - IND vs NZ</span><br><span style="font-size: smaller;">ICC's Test Cricket World Cup Final will be played on Jun 18</span></td>
-                <td><span style="font-size: smaller;">Jun 9</span></td>
-              </tr>
-              <tr>
-                <td><span style="font-size: x-large;">Squad Announcement</span><br><span style="font-size: smaller;">Indian Test Squad announced for WTC 2021, England series</span></td>
-                <td><span style="font-size: smaller;">May 7</span></td>
-              </tr>
-              <tr>
-                <td><span style="font-size: x-large;">IPL 2021 Postponed</span><br><span style="font-size: smaller;">BCCI postponed rest 31 games of IPL as players detect covid positive</span></td>
-                <td><span style="font-size: smaller;">May 4</span></td>
-              </tr>
-            </table>
-                  </div>
-                  <div class="modal-footer blue-grey darken-4 amber-text text-accent-2">
-                    <a href="#!" class="modal-close waves-effect white-text">CLOSE</a>
-                  </div>
+                    <div class="modal-content blue-grey darken-4 amber-text text-accent-2">
+                        <h4>Notifications</h4>
+                        <table class="transparent bordered white-text">
+                            <tr>
+                                <td><span style="font-size: x-large;" onclick="location.href='schedule.html'">ICC WCT20
+                                        Schedule Announced</span><br><span style="font-size: smaller;">Cricket's
+                                        shortest international format is back, 1st ICC WC Event after 2019</span></td>
+                                <td><span style="font-size: smaller;">Aug 16</span></td>
+                            </tr>
+                            <tr>
+                                <td><span style="font-size: x-large;" onclick="location.href='ipltt.html'">IPL 2021
+                                        Schedule Announced</span><br><span style="font-size: smaller;">Unfinished season
+                                        will resume from Sept 19</span></td>
+                                <td><span style="font-size: smaller;">Jul 26</span></td>
+                            </tr>
+                            <tr>
+                                <td><span style="font-size: x-large;">SL vs IND not to begin from
+                                        Tuesday</span><br><span style="font-size: smaller;">Scheduled date changes are
+                                        out, 1st ODI from Jul 18</span></td>
+                                <td><span style="font-size: smaller;">Jul 12</span></td>
+                            </tr>
+                            <tr>
+                                <td><span style="font-size: x-large;">ICC WTC '21 - IND XI, Weather, Time
+                                        update</span><br><span style="font-size: smaller;">India's XI decided, Live
+                                        Coverage ½ hour early, Rainy Weather expected</span></td>
+                                <td><span style="font-size: smaller;">Jun 18</span></td>
+                            </tr>
+                            <tr>
+                                <td><span style="font-size: x-large;">Squad Announcement</span><br><span
+                                        style="font-size: smaller;">Shikhar Dhawan will lead India in 3 ODIs, 3 T20s Vs
+                                        Sri Lanka</span></td>
+                                <td><span style="font-size: smaller;">Jun 10</span></td>
+                            </tr>
+                            <tr>
+                                <td><span style="font-size: x-large;">World Test Championship - IND vs
+                                        NZ</span><br><span style="font-size: smaller;">ICC's Test Cricket World Cup
+                                        Final will be played on Jun 18</span></td>
+                                <td><span style="font-size: smaller;">Jun 9</span></td>
+                            </tr>
+                            <tr>
+                                <td><span style="font-size: x-large;">Squad Announcement</span><br><span
+                                        style="font-size: smaller;">Indian Test Squad announced for WTC 2021, England
+                                        series</span></td>
+                                <td><span style="font-size: smaller;">May 7</span></td>
+                            </tr>
+                            <tr>
+                                <td><span style="font-size: x-large;">IPL 2021 Postponed</span><br><span
+                                        style="font-size: smaller;">BCCI postponed rest 31 games of IPL as players
+                                        detect covid positive</span></td>
+                                <td><span style="font-size: smaller;">May 4</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer blue-grey darken-4 amber-text text-accent-2">
+                        <a href="#!" class="modal-close waves-effect white-text">CLOSE</a>
+                    </div>
                 </div>
                 <!--Menu-->
                 <div id="modal2" class="modal bottom-sheet right-align orange accent-3 white-text">
-                  <div class="modal-content">
-                      <a href="#!" onclick="location.reload()" class="white-text tooltipped" data-tooltip="Refresh" data-position="top"><i class="small fas fa-sync-alt"></i></a>
-                      <a href="#modal1" class="modal-trigger white-text tooltipped" data-tooltip="Notifications" data-position="top"><i class="small fas fa-bell"></i></a>
-                    <ul class="collection left-align" style="border-width: 0px;">
-                    <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='olym20.html'">
-                      <a href="#!"><i class="fas fa-medal circle blue darken-4"></i></a>
-                      <p style="font-size: x-large;">Olympics & Paralympics 2020 <img src="https://icon-library.com/images/new-icon-gif/new-icon-gif-9.jpg" width="35px" height="25px"></p>
-                      <p>India/ World Medal Tally, Schedule, Indian Players list</p>
-                    </li>
-                    <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='iplhome.html'">
-                      <a href="#!"><i class="fas fa-passport circle blue darken-4"></i></a>
-                      <p style="font-size: x-large;">IPL Home</p>
-                      <p>Scorecard Mini, Head to Head, Coming up Next</p>
-                    </li>
-                    <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='iplresults.html'">
-                      <a href="#!"><i class="fas fa-trophy circle blue darken-4"></i></a>
-                      <p style="font-size: x-large;">IPL Results</p>
-                      <p>Scores & Results of All IPL Matches</p>
-                    </li>
-                    <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='results.html'">
-                      <a href="#!"><i class="fas fa-trophy circle blue darken-4"></i></a>
-                      <p style="font-size: x-large;">Int'l Results</p>
-                      <p>Scores & Results of India's International Matches</p>
-                    </li>
-                    <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='ipltt.html'">
-                      <a href="#!"><i class="fas fa-list circle blue darken-4"></i></a>
-                      <p style="font-size: x-large;">IPL Schedule</p>
-                      <p>Season Schedule of IPL</p>
-                    </li>
-                    <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='schedule.html'">
-                      <a href="#!"><i class="fas fa-list circle blue darken-4"></i></a>
-                      <p style="font-size: x-large;">Int'l Schedule</p>
-                      <p>Series Schedule of India's Matches</p>
-                    </li>
-                    <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='ipllive2.html'">
-                      <a href="#!"><i class="fas fa-tv circle blue darken-4"></i></a>
-                      <p style="font-size: x-large;">Scorecard 2</p>
-                      <p>Live Scores with Stats, Info</p>
-                    </li>
-                    <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='ipllive.html'">
-                      <a href="#!"><i class="fas fa-tv circle blue darken-4"></i></a>
-                      <p style="font-size: x-large;">Scorecard 1</p>
-                      <p>Live Scores with Stats, Info</p>
-                    </li>
-                    <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='about.html'">
-                      <a href="#!"><i class="fas fa-info circle blue darken-4"></i></a>
-                      <p style="font-size: x-large;">About</p>
-                      <p>About this Website</p>
-                    </li><li class="collection-item orange accent-3"></li>
-                  </ul>
-                  </div>
+                    <div class="modal-content">
+                        <a href="#!" onclick="location.reload()" class="white-text tooltipped" data-tooltip="Refresh"
+                            data-position="top"><i class="small fas fa-sync-alt"></i></a>
+                        <a href="#modal1" class="modal-trigger white-text tooltipped" data-tooltip="Notifications"
+                            data-position="top"><i class="small fas fa-bell"></i></a>
+                        <ul class="collection left-align" style="border-width: 0px;">
+                            <li class="collection-item avatar orange accent-3 oui-bubble"
+                                onclick="location.href='olym20.html'">
+                                <a href="#!"><i class="fas fa-medal circle blue darken-4"></i></a>
+                                <p style="font-size: x-large;">Olympics & Paralympics 2020 <img
+                                        src="https://icon-library.com/images/new-icon-gif/new-icon-gif-9.jpg"
+                                        width="35px" height="25px"></p>
+                                <p>India/ World Medal Tally, Schedule, Indian Players list</p>
+                            </li>
+                            <li class="collection-item avatar orange accent-3 oui-bubble"
+                                onclick="location.href='iplhome.html'">
+                                <a href="#!"><i class="fas fa-passport circle blue darken-4"></i></a>
+                                <p style="font-size: x-large;">IPL Home</p>
+                                <p>Scorecard Mini, Head to Head, Coming up Next</p>
+                            </li>
+                            <li class="collection-item avatar orange accent-3 oui-bubble"
+                                onclick="location.href='iplresults.html'">
+                                <a href="#!"><i class="fas fa-trophy circle blue darken-4"></i></a>
+                                <p style="font-size: x-large;">IPL Results</p>
+                                <p>Scores & Results of All IPL Matches</p>
+                            </li>
+                            <li class="collection-item avatar orange accent-3 oui-bubble"
+                                onclick="location.href='results.html'">
+                                <a href="#!"><i class="fas fa-trophy circle blue darken-4"></i></a>
+                                <p style="font-size: x-large;">Int'l Results</p>
+                                <p>Scores & Results of India's International Matches</p>
+                            </li>
+                            <li class="collection-item avatar orange accent-3 oui-bubble"
+                                onclick="location.href='ipltt.html'">
+                                <a href="#!"><i class="fas fa-list circle blue darken-4"></i></a>
+                                <p style="font-size: x-large;">IPL Schedule</p>
+                                <p>Season Schedule of IPL</p>
+                            </li>
+                            <li class="collection-item avatar orange accent-3 oui-bubble"
+                                onclick="location.href='schedule.html'">
+                                <a href="#!"><i class="fas fa-list circle blue darken-4"></i></a>
+                                <p style="font-size: x-large;">Int'l Schedule</p>
+                                <p>Series Schedule of India's Matches</p>
+                            </li>
+                            <li class="collection-item avatar orange accent-3 oui-bubble"
+                                onclick="location.href='ipllive2.html'">
+                                <a href="#!"><i class="fas fa-tv circle blue darken-4"></i></a>
+                                <p style="font-size: x-large;">Scorecard 2</p>
+                                <p>Live Scores with Stats, Info</p>
+                            </li>
+                            <li class="collection-item avatar orange accent-3 oui-bubble"
+                                onclick="location.href='ipllive.html'">
+                                <a href="#!"><i class="fas fa-tv circle blue darken-4"></i></a>
+                                <p style="font-size: x-large;">Scorecard 1</p>
+                                <p>Live Scores with Stats, Info</p>
+                            </li>
+                            <li class="collection-item avatar orange accent-3 oui-bubble"
+                                onclick="location.href='about.html'">
+                                <a href="#!"><i class="fas fa-info circle blue darken-4"></i></a>
+                                <p style="font-size: x-large;">About</p>
+                                <p>About this Website</p>
+                            </li>
+                            <li class="collection-item orange accent-3"></li>
+                        </ul>
+                    </div>
                 </div>
                 <h5 class="center white-text"><b>IPL SQUADS 2021</b></h5>
                 <div class="oui-bubble">
                     <table class="bordered highlight">
                         <tbody>
                             <tr id="csk">
-                                <td class="center" colspan="2"><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px" height="15px"><b> CHENNAI SUPER KINGS</b></td>
+                                <td class="center" colspan="2"><img
+                                        src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK"
+                                        width="25px" height="15px"><b> CHENNAI SUPER KINGS</b></td>
                             </tr>
                             <tr>
                                 <td>&#8227; MS Dhoni (Captain)</td>
@@ -272,7 +304,9 @@
                     <table class="bordered highlight">
                         <tbody>
                             <tr id="dc">
-                                <td class="center" colspan="2"><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px" height="15px"><b> DELHI CAPITALS</b></td>
+                                <td class="center" colspan="2"><img
+                                        src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC"
+                                        width="25px" height="15px"><b> DELHI CAPITALS</b></td>
                             </tr>
                             <tr>
                                 <td>&#8227; Rishabh Pant (Captain)</td>
@@ -381,7 +415,9 @@
                     <table class="bordered highlight">
                         <tbody>
                             <tr id="kkr">
-                                <td class="center" colspan="2"><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px" height="15px"><b> KOLKATA KNIGHT RIDERS</b></td>
+                                <td class="center" colspan="2"><img
+                                        src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR"
+                                        width="25px" height="15px"><b> KOLKATA KNIGHT RIDERS</b></td>
                             </tr>
                             <tr>
                                 <td>&#8227; Eoin Morgan (Captain) &#9992;</td>
@@ -490,7 +526,9 @@
                     <table class="bordered highlight">
                         <tbody>
                             <tr id="mi">
-                                <td class="center" colspan="2"><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px" height="15px"><b> MUMBAI INDIANS</b></td>
+                                <td class="center" colspan="2"><img
+                                        src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI"
+                                        width="25px" height="15px"><b> MUMBAI INDIANS</b></td>
                             </tr>
                             <tr>
                                 <td>&#8227; Rohit Sharma (Captain)</td>
@@ -599,7 +637,9 @@
                     <table class="bordered highlight">
                         <tbody>
                             <tr id="pbks">
-                                <td class="center" colspan="2"><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px" height="15px"><b> PUNJAB KINGS</b></td>
+                                <td class="center" colspan="2"><img
+                                        src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS"
+                                        width="25px" height="15px"><b> PUNJAB KINGS</b></td>
                             </tr>
                             <tr>
                                 <td>&#8227; KL Rahul (Captain)</td>
@@ -708,7 +748,9 @@
                     <table class="bordered highlight">
                         <tbody>
                             <tr id="rr">
-                                <td class="center" colspan="2"><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px" height="15px"><b> RAJASTHAN ROYALS</b></td>
+                                <td class="center" colspan="2"><img
+                                        src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR"
+                                        width="25px" height="15px"><b> RAJASTHAN ROYALS</b></td>
                             </tr>
                             <tr>
                                 <td>&#8227; Sanju Samson (Captain)</td>
@@ -813,7 +855,9 @@
                     <table class="bordered highlight">
                         <tbody>
                             <tr id="rcb">
-                                <td class="center" colspan="2"><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px" height="15px"><b> ROYAL CHALLENGERS BANGALORE</b></td>
+                                <td class="center" colspan="2"><img
+                                        src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB"
+                                        width="25px" height="15px"><b> ROYAL CHALLENGERS BANGALORE</b></td>
                             </tr>
                             <tr>
                                 <td>&#8227; Virat Kohli (Captain)</td>
@@ -910,7 +954,9 @@
                     <table class="bordered highlight">
                         <tbody>
                             <tr id="srh">
-                                <td class="center" colspan="2"><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px" height="15px"><b> SUNRISERS HYDERABAD</b></td>
+                                <td class="center" colspan="2"><img
+                                        src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH"
+                                        width="25px" height="15px"><b> SUNRISERS HYDERABAD</b></td>
                             </tr>
                             <tr>
                                 <td>&#8227; David Warner (Captain) &#9992;</td>
