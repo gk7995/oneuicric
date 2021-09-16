@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
   <meta name="description" content="Cricket Scores, Schedule, Results with IPL & Sport Events & in One UI Look">
   <meta name="msvalidate.01" content="FC10FA22248EFBF4FA3A591D08BDD039" />
-  <meta http-equiv="refresh" content="8;url=iplhome.html">
+  <meta http-equiv="refresh" content="4;url=iplhome.html">
   <title lang="en-us">One UI Cricket Home - Live Scores, Schedules, Results, Stats & more..</title>
   <link rel="stylesheet" href="OneUI/oui.min.css">
   <link rel="stylesheet" href="materialize.css">
@@ -77,11 +77,12 @@
       $('.modal').modal();
       $('#modal2').modal();
     });
+    var $toastHTML = '<span>No Matches here, Opening IPL 2021...<br>कोई मैच यहाँ नहीं, आईपीएल 2021 खुल रहा है...</span>'
   </script>
 </head>
 
 <body oncontextmenu="return false;"
-  onload="Materialize.toast('Redirecting to IPL 2021...', 5000,'rounded')">
+  onload="Materialize.toast($toastHTML, 5000,'rounded')">
   <main class="containr">
     <div class="oui-interaction center-align">
       <div class="fixed-action-btn">
