@@ -35,6 +35,10 @@
     iframe {
       border-radius: 25px;
     }
+
+    .fixed-action-btn {
+      margin-bottom: 30px;
+    }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="text/javascript" src="materialize.js"></script>
@@ -206,17 +210,365 @@
         <div class="oui-bubble">
           <table class="centered">
             <tr>
+              <td><b><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="40px"
+                    height="25px"><br>KKR</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="40px"
+                    height="25px"><br>RCB</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 14</b></td>
+              <td><b>MATCHES: 27</b></td>
+              <td><b>WON: 13</b></td>
+            </tr>
+            <!-- <tr>
+              <td><b><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="40px"
+                    height="25px"><br>PBKS</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="40px"
+                    height="25px"><br>RR</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 10</b></td>
+              <td><b>MATCHES: 22</b></td>
+              <td><b>WON: 12</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="40px"
+                    height="25px"><br>DC</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="40px"
+                    height="25px"><br>SRH</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 8</b></td>
+              <td><b>MATCHES: 19</b></td>
+              <td><b>WON: 11</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="40px"
+                    height="25px"><br>MI</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="40px"
+                    height="25px"><br>KKR</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 22</b></td>
+              <td><b>MATCHES: 28</b></td>
+              <td><b>WON: 6</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="40px"
+                    height="25px"><br>RCB</b></td>
+              <td><b>TEAM</b></td>
               <td><b><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="40px"
                     height="25px"><br>CSK</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 9</b></td>
+              <td><b>MATCHES: 27<br>NO RESULT: 1</b></td>
+              <td><b>WON: 17</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="40px"
+                    height="25px"><br>DC</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="40px"
+                    height="25px"><br>RR</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 11</b></td>
+              <td><b>MATCHES: 23</b></td>
+              <td><b>WON: 12</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="40px"
+                    height="25px"><br>SRH</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="40px"
+                    height="25px"><br>PBKS</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 12</b></td>
+              <td><b>MATCHES: 17</b></td>
+              <td><b>WON: 5</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="40px"
+                    height="25px"><br>CSK</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="40px"
+                    height="25px"><br>KKR</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 15</b></td>
+              <td><b>MATCHES: 24<br>NO RESULT: 1</b></td>
+              <td><b>WON: 8</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="40px"
+                    height="25px"><br>RCB</b></td>
               <td><b>TEAM</b></td>
               <td><b><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="40px"
                     height="25px"><br>MI</b></td>
             </tr>
             <tr>
-              <td><b>WON: 13</b></td>
-              <td><b>MATCHES: 32</b></td>
-              <td><b>WON: 19</b></td>
+              <td><b>WON: 11</b></td>
+              <td><b>MATCHES: 28</b></td>
+              <td><b>WON: 17</b></td>
             </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="40px"
+                    height="25px"><br>SRH</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="40px"
+                    height="25px"><br>RR</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 7</b></td>
+              <td><b>MATCHES: 14</b></td>
+              <td><b>WON: 7</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="40px"
+                    height="25px"><br>KKR</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="40px"
+                    height="25px"><br>DC</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 14</b></td>
+              <td><b>MATCHES: 27<br>NO RESULT: 1</b></td>
+              <td><b>WON: 12</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="40px"
+                    height="25px"><br>MI</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="40px"
+                    height="25px"><br>PBKS</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 14</b></td>
+              <td><b>MATCHES: 27</b></td>
+              <td><b>WON: 13</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="40px"
+                    height="25px"><br>RR</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="40px"
+                    height="25px"><br>RCB</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 10</b></td>
+              <td><b>MATCHES: 24<br>NO RESULT: 3</b></td>
+              <td><b>WON: 11</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="40px"
+                    height="25px"><br>SRH</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="40px"
+                    height="25px"><br>CSK</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 4</b></td>
+              <td><b>MATCHES: 15</b></td>
+              <td><b>WON: 11</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="40px"
+                    height="25px"><br>KKR</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="40px"
+                    height="25px"><br>PBKS</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 19</b></td>
+              <td><b>MATCHES: 28</b></td>
+              <td><b>WON: 9</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="40px"
+                    height="25px"><br>MI</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="40px"
+                    height="25px"><br>DC</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 16</b></td>
+              <td><b>MATCHES: 29</b></td>
+              <td><b>WON: 13</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="40px"
+                    height="25px"><br>RR</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="40px"
+                    height="25px"><br>CSK</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 9</b></td>
+              <td><b>MATCHES: 24</b></td>
+              <td><b>WON: 15</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="40px"
+                    height="25px"><br>RCB</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="40px"
+                    height="25px"><br>PBKS</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 12</b></td>
+              <td><b>MATCHES: 27</b></td>
+              <td><b>WON: 15</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="40px"
+                    height="25px"><br>KKR</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="40px"
+                    height="25px"><br>SRH</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 13</b></td>
+              <td><b>MATCHES: 20</b></td>
+              <td><b>WON: 7</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="40px"
+                    height="25px"><br>DC</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="40px"
+                    height="25px"><br>CSK</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 9</b></td>
+              <td><b>MATCHES: 24</b></td>
+              <td><b>WON: 15</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="40px"
+                    height="25px"><br>RR</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="40px"
+                    height="25px"><br>MI</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 11</b></td>
+              <td><b>MATCHES: 24<br>NO RESULT: 1</b></td>
+              <td><b>WON: 12</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="40px"
+                    height="25px"><br>RCB</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="40px"
+                    height="25px"><br>SRH</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 8</b></td>
+              <td><b>MATCHES: 19<br>NO RESULT: 1</b></td>
+              <td><b>WON: 10</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="40px"
+                    height="25px"><br>CSK</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="40px"
+                    height="25px"><br>PBKS</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 15</b></td>
+              <td><b>MATCHES: 24</b></td>
+              <td><b>WON: 9</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="40px"
+                    height="25px"><br>KKR</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="40px"
+                    height="25px"><br>RR</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 12</b></td>
+              <td><b>MATCHES: 24<br>NO RESULT: 1</b></td>
+              <td><b>WON: 11</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="40px"
+                    height="25px"><br>SRH</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="40px"
+                    height="25px"><br>MI</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 8</b></td>
+              <td><b>MATCHES: 17</b></td>
+              <td><b>WON: 9</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="40px"
+                    height="25px"><br>RCB</b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="40px"
+                    height="25px"><br>DC</b></td>
+            </tr>
+            <tr>
+              <td><b>WON: 15</b></td>
+              <td><b>MATCHES: 26<br>NO RESULT: 1</b></td>
+              <td><b>WON: 10</b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/11_flag_safari.png" alt="" width="40px"
+                    height="25px"><br></b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/11_flag_safari.png" alt="" width="40px"
+                    height="25px"><br></b></td>
+            </tr>
+            <tr>
+              <td><b>WON: </b></td>
+              <td><b>MATCHES: </b></td>
+              <td><b>WON: </b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/11_flag_safari.png" alt="" width="40px"
+                    height="25px"><br></b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/11_flag_safari.png" alt="" width="40px"
+                    height="25px"><br></b></td>
+            </tr>
+            <tr>
+              <td><b>WON: </b></td>
+              <td><b>MATCHES: </b></td>
+              <td><b>WON: </b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/11_flag_safari.png" alt="" width="40px"
+                    height="25px"><br></b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/11_flag_safari.png" alt="" width="40px"
+                    height="25px"><br></b></td>
+            </tr>
+            <tr>
+              <td><b>WON: </b></td>
+              <td><b>MATCHES: </b></td>
+              <td><b>WON: </b></td>
+            </tr>
+            <tr>
+              <td><b><img src="https://images.cricket.com/teams/11_flag_safari.png" alt="" width="40px"
+                    height="25px"><br></b></td>
+              <td><b>TEAM</b></td>
+              <td><b><img src="https://images.cricket.com/teams/11_flag_safari.png" alt="" width="40px"
+                    height="25px"><br></b></td>
+            </tr>
+            <tr>
+              <td><b>WON: </b></td>
+              <td><b>MATCHES: </b></td>
+              <td><b>WON: </b></td>
+            </tr> -->
           </table>
         </div>
         <div class="oui-button center waves-effect white black-text" onclick="location.href='iplresults.html'"><b>VIEW
@@ -485,7 +837,7 @@
               <td>08 Oct <br>15:30<br><b>&#9788;</b</td> <td><img
                     src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px"
                     height="15px"><br>SRH</td>
-              <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px"
+              <td><img src="https://images.cricket.com/teams/111111_flag_safari.png" alt="MI" width="25px"
                   height="15px"><br>MI</td>
               <td>ABU DHABI</td>
             </tr>

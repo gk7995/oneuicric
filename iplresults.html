@@ -31,6 +31,10 @@
     .oui-button {
       font-family: 'SamsungOne 400';
     }
+
+    .fixed-action-btn {
+      margin-bottom: 30px;
+    }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="text/javascript" src="materialize.js"></script>
@@ -179,71 +183,82 @@
         <h6 class="white-text"># Tap Teams to view Squads</h6>
         <div class="oui-bubble">
           <table class="centered">
-            <tbody>
-              <tr>
-                <td><b>POS</b></td>
-                <td><b>TEAM</b></td>
-                <td><b>POINTS</b></td>
-                <td><b>NRR</b></td>
-                <td><b>FORM</b></td>
-              </tr>
-              <tr>
-<td><span style="font-size: x-large;">&#10102;</span></td>
-        <td><a href="iplteams.html#csk " class="black-text">CSK</a></td>
-        <td>12</td>
-        <td>+1.22</td>
-        <td><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span></td>
-    </tr>
-    <tr>
-        <td><span style="font-size: x-large;">&#10103;</span></td>
-        <td><a href="iplteams.html#dc " class="black-text">DC</a></td>
-        <td>12</td>
-        <td>+0.54</td>
-        <td><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span></td>
-    </tr>
-    <tr>
-        <td><span style="font-size: x-large;">&#10104;</span></td>
-        <td><a href="iplteams.html#rcb " class="black-text">RCB</a></td>
-        <td>10</td>
-        <td>-0.17</td>
-        <td><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span></td>
-    </tr>
-    <tr>
-        <td><span style="font-size: x-large;">&#10105;</span></td>
-        <td><a href="iplteams.html#mi " class="black-text">MI</a></td>
-        <td>8</td>
-        <td>-0.07</td>
-        <td><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span></td>
-    </tr>
-    <tr>
-        <td><span style="font-size: x-large;">&#10106;</span></td>
-        <td><a href="iplteams.html#rr " class="black-text">RR</a></td>
-        <td>6</td>
-        <td>-0.19</td>
-        <td><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span></td>
-    </tr>
-    <tr>
-        <td><span style="font-size: x-large;">&#10107;</span></td>
-        <td><a href="iplteams.html#pbks " class="black-text">PBKS</a></td>
-        <td>6</td>
-        <td>-0.36</td>
-        <td><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span></td>
-    </tr>
-    <tr>
-        <td><span style="font-size: x-large;">&#10108;</span></td>
-        <td><a href="iplteams.html#kkr " class="black-text">KKR</a></td>
-        <td>4</td>
-        <td>-0.49</td>
-        <td><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span></td>
-    </tr>
-    <tr>
-        <td><span style="font-size: x-large;">&#10109;</span></td>
-        <td><a href="iplteams.html#srh " class="black-text">SRH</a></td>
-        <td>2</td>
-        <td>-0.62</td>
-        <td><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span><span class="red-text">&#8226;</span></td>
-    </tr>
-            </tbody>
+            <tr>
+              <td><b>POS</b></td>
+              <td><b>TEAM</b></td>
+              <td><b>POINTS</b></td>
+              <td><b>NRR</b></td>
+              <td><b>FORM</b></td>
+            </tr>
+            <tr>
+              <td><span style="font-size: x-large;">&#10102;</span></td>
+              <td><a href="iplteams.html#csk" class="black-text">CSK</a></td>
+              <td>12</td>
+              <td>+1.22</td>
+              <td><span class="red-text">&#8226;</span><span
+                  class="green-text">&#8226;&#8226;&#8226;&#8226;&#8226;</span><span
+                  class="red-text">&#8226;</span><br><span class="green-text">&#8226;</span></td>
+            </tr>
+            <tr>
+              <td><span style="font-size: x-large;">&#10103;</span></td>
+              <td><a href="iplteams.html#dc" class="black-text">DC</a></td>
+              <td>12</td>
+              <td>+0.54</td>
+              <td><span class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span
+                  class="green-text">&#8226;&#8226;&#8226;</span><span class="red-text">&#8226;</span><span
+                  class="green-text">&#8226;</span><br><span class="green-text">&#8226;</span></td>
+            </tr>
+            <tr>
+              <td><span style="font-size: x-large;">&#10104;</span></td>
+              <td><a href="iplteams.html#rcb" class="black-text">RCB</a></td>
+              <td>10</td>
+              <td>-0.17</td>
+              <td><span class="green-text">&#8226;&#8226;&#8226;&#8226;</span><span class="red-text">&#8226;</span><span
+                  class="green-text">&#8226;</span><span class="red-text">&#8226;</span><br></td>
+            </tr>
+            <tr>
+              <td><span style="font-size: x-large;">&#10105;</span></td>
+              <td><a href="iplteams.html#mi" class="black-text">MI</a></td>
+              <td>8</td>
+              <td>-0.07</td>
+              <td><span class="red-text">&#8226;</span><span class="green-text">&#8226;&#8226;</span><span
+                  class="red-text">&#8226;&#8226;</span><span class="green-text">&#8226;&#8226;</span><br><span
+                  class="red-text">&#8226;</span></td>
+            </tr>
+            <tr>
+              <td><span style="font-size: x-large;">&#10106;</span></td>
+              <td><a href="iplteams.html#rr" class="black-text">RR</a></td>
+              <td>6</td>
+              <td>-0.19</td>
+              <td><span class="red-text">&#8226;</span><span class="green-text">&#8226;</span><span
+                  class="red-text">&#8226;&#8226;</span><span class="green-text">&#8226;</span><span
+                  class="red-text">&#8226;</span><span class="green-text">&#8226;</span><br></td>
+            </tr>
+            <tr>
+              <td><span style="font-size: x-large;">&#10107;</span></td>
+              <td><a href="iplteams.html#pbks" class="black-text">PBKS</a></td>
+              <td>6</td>
+              <td>-0.36</td>
+              <td><span class="green-text">&#8226;</span><span class="red-text">&#8226;&#8226;&#8226;</span><span
+                  class="green-text">&#8226;</span><span class="red-text">&#8226;</span><span
+                  class="green-text">&#8226;</span><br><span class="red-text">&#8226;</span></td>
+            </tr>
+            <tr>
+              <td><span style="font-size: x-large;">&#10108;</span></td>
+              <td><a href="iplteams.html#kkr" class="black-text">KKR</a></td>
+              <td>4</td>
+              <td>-0.49</td>
+              <td><span class="green-text">&#8226;</span><span class="red-text">&#8226;&#8226;&#8226;&#8226;</span><span
+                  class="green-text">&#8226;</span><span class="red-text">&#8226;</span><br></td>
+            </tr>
+            <tr>
+              <td><span style="font-size: x-large;">&#10109;</span></td>
+              <td><a href="iplteams.html#srh" class="black-text">SRH</a></td>
+              <td>2</td>
+              <td>-0.62</td>
+              <td><span class="red-text">&#8226;&#8226;&#8226;</span><span class="green-text">&#8226;</span><span
+                  class="red-text">&#8226;&#8226;&#8226;</span><br></td>
+            </tr>
           </table>
         </div>
         <div class="oui-bubble">
@@ -636,7 +651,7 @@
                 <td>Sept 19
                   <br>&#9790;</td>
                 <td><b>CSK</b>:156/6
-                  <br><b>MI</b>:  136/8
+                  <br><b>MI</b>: 136/8
                   <br>
                   <br>Ruturaj Gaikwad
                   <br>(88 runs)</td>
@@ -645,6 +660,396 @@
                   <br>
                   <br>20 RUNS</td>
               </tr>
+              <!-- <tr>
+                <td>Sept 20
+                  <br>&#9790;</td>
+                <td><b>KKR</b>
+                  <br><b>RCB</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Sept 21
+                  <br>&#9790;</td>
+                <td><b>PBKS</b>
+                  <br><b>RR</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Sept 22
+                  <br>&#9790;</td>
+                <td><b>DC</b>
+                  <br><b>SRH</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Sept 23
+                  <br>&#9790;</td>
+                <td><b>MI</b>
+                  <br><b>KKR</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Sept 24
+                  <br>&#9790;</td>
+                <td><b>RCB</b>
+                  <br><b>CSK</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Sept 25
+                  <br>&#9788;</td>
+                <td><b>DC</b>
+                  <br><b>RR</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Sept 25
+                  <br>&#9790;</td>
+                <td><b>SRH</b>
+                  <br><b>PBKS</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Sept 26
+                  <br>&#9788;</td>
+                <td><b>CSK</b>
+                  <br><b>KKR</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Sept 26
+                  <br>&#9790;</td>
+                <td><b>RCB</b>
+                  <br><b>MI</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Sept 27
+                  <br>&#9790;</td>
+                <td><b>SRH</b>
+                  <br><b>RR</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Sept 28
+                  <br>&#9788;</td>
+                <td><b>KKR</b>
+                  <br><b>DC</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Sept 28
+                  <br>&#9790;</td>
+                <td><b>MI</b>
+                  <br><b>PBKS</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Sept 29
+                  <br>&#9790;</td>
+                <td><b>RR</b>
+                  <br><b>RCB</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Sept 30
+                  <br>&#9790;</td>
+                <td><b>SRH</b>
+                  <br><b>CSK</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Oct 1
+                  <br>&#9790;</td>
+                <td><b>KKR</b>
+                  <br><b>PBKS</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Oct 2
+                  <br>&#9788;</td>
+                <td><b>MI</b>
+                  <br><b>DC</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Oct 2
+                  <br>&#9790;</td>
+                <td><b>RR</b>
+                  <br><b>CSK</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Oct 3
+                  <br>&#9788;</td>
+                <td><b>RCB</b>
+                  <br><b>PBKS</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Oct 3
+                  <br>&#9790;</td>
+                <td><b>KKR</b>
+                  <br><b>SRH</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Oct 4
+                  <br>&#9790;</td>
+                <td><b>DC</b>
+                  <br><b>CSK</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Oct 5
+                  <br>&#9790;</td>
+                <td><b>RR</b>
+                  <br><b>MI</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Oct 6
+                  <br>&#9790;</td>
+                <td><b>RCB</b>
+                  <br><b>SRH</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Oct 7
+                  <br>&#9788;</td>
+                <td><b>CSK</b>
+                  <br><b>PBKS</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Oct 7
+                  <br>&#9790;</td>
+                <td><b>KKR</b>
+                  <br><b>RR</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Oct 8
+                  <br>&#9788;</td>
+                <td><b>SRH</b>
+                  <br><b>MI</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Oct 8
+                  <br>&#9790;</td>
+                <td><b>RCB</b>
+                  <br><b>DC</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Oct 10
+                  <br>&#9790;</td>
+                <td><b>-</b>
+                  <br><b>-</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Oct 11
+                  <br>&#9790;</td>
+                <td><b>-</b>
+                  <br><b>-</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Oct 13
+                  <br>&#9790;</td>
+                <td><b>-</b>
+                  <br><b>-</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr>
+              <tr>
+                <td>Oct 15
+                  <br>&#9790;</td>
+                <td><b>-</b>
+                  <br><b>-</b>
+                  <br>
+                  <br>
+                  <br>()</td>
+                <td><img src=" https://images.cricket.com/teams/110_flag_safari.png " width=" 25px " height=" 15px ">
+                  <br><b></b>
+                  <br>
+                  <br></td>
+              </tr> -->
             </tbody>
           </table>
         </div>
