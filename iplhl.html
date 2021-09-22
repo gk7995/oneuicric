@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <title>One UI Cricket - IPL 2021 Match Highlights</title>
+  <link rel="stylesheet" href="OneUI/oui.min.css">
+  <link rel="stylesheet" href="materialize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css">
+  <link rel="icon" href="OUC.ico">
+  <style>
+    @font-face {
+      font-family: 'SamsungOne 400';
+      src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Material Icons';
+      src: local('Material Icons'), url('matico.woff2') format('woff2');
+    }
+
+    * {
+      font-family: 'SamsungOne 400';
+      font-size: larger;
+    }
+
+    .oui-button {
+      font-family: 'SamsungOne 400';
+    }
+
+    .fixed-action-btn {
+      margin-bottom: 30px;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="materialize.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.fixed-action-btn').openFAB();
+      $('.fixed-action-btn').closeFAB();
+      $('.fixed-action-btn.toolbar').openToolbar();
+      $('.fixed-action-btn.toolbar').closeToolbar();
+      $('.tooltipped').tooltip({
+        delay: 50
+      });
+    })
+    $(document).ready(function () {
+      $('.modal').modal();
+      $('#modal2').modal();
+    });
+  </script>
+</head>
+
+<body oncontextmenu="return false;" onload="Materialize.toast('Results, Points Table in Menu>IPL Results', 5000,'rounded')">
+  <main class="containr">
+    <div class="oui-interaction center-align">
+      <!-- Interaction area -->
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5 modal-trigger"
+          data-position="left" data-delay="50" data-tooltip="Menu" href="#modal2">
+          <i class="large fas fa-bars"></i>
+        </a>
+      </div>
+      <div class="oui-bubble orange accent-3">
+        <div id="modal1" class="modal modal-fixed-footer">
+          <div class="modal-content blue-grey darken-4 amber-text text-accent-2">
+            <h4>Notifications</h4>
+            <table class="transparent bordered white-text">
+              <tr>
+                <td><span style="font-size: x-large;" onclick="location.href='schedule.html'">ICC WCT20 Schedule
+                    Announced</span><br><span style="font-size: smaller;">Cricket's shortest international format is
+                    back, 1st ICC WC Event after 2019</span></td>
+                <td><span style="font-size: smaller;">Aug 16</span></td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;" onclick="location.href='ipltt.html'">IPL 2021 Schedule
+                    Announced</span><br><span style="font-size: smaller;">Unfinished season will resume from Sept
+                    19</span></td>
+                <td><span style="font-size: smaller;">Jul 26</span></td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">SL vs IND not to begin from Tuesday</span><br><span
+                    style="font-size: smaller;">Scheduled date changes are out, 1st ODI from Jul 18</span></td>
+                <td><span style="font-size: smaller;">Jul 12</span></td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">ICC WTC '21 - IND XI, Weather, Time update</span><br><span
+                    style="font-size: smaller;">India's XI decided, Live Coverage ½ hour early, Rainy Weather
+                    expected</span></td>
+                <td><span style="font-size: smaller;">Jun 18</span></td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">Squad Announcement</span><br><span
+                    style="font-size: smaller;">Shikhar Dhawan will lead India in 3 ODIs, 3 T20s Vs Sri Lanka</span>
+                </td>
+                <td><span style="font-size: smaller;">Jun 10</span></td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">World Test Championship - IND vs NZ</span><br><span
+                    style="font-size: smaller;">ICC's Test Cricket World Cup Final will be played on Jun 18</span></td>
+                <td><span style="font-size: smaller;">Jun 9</span></td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">Squad Announcement</span><br><span
+                    style="font-size: smaller;">Indian Test Squad announced for WTC 2021, England series</span></td>
+                <td><span style="font-size: smaller;">May 7</span></td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">IPL 2021 Postponed</span><br><span
+                    style="font-size: smaller;">BCCI postponed rest 31 games of IPL as players detect covid
+                    positive</span></td>
+                <td><span style="font-size: smaller;">May 4</span></td>
+              </tr>
+            </table>
+          </div>
+          <div class="modal-footer blue-grey darken-4 amber-text text-accent-2">
+            <a href="#!" class="modal-close waves-effect white-text">CLOSE</a>
+          </div>
+        </div>
+        <!--Menu-->
+        <div id="modal2" class="modal bottom-sheet right-align orange accent-3 white-text">
+          <div class="modal-content">
+            <a href="#!" onclick="location.reload()" class="white-text tooltipped" data-tooltip="Refresh"
+              data-position="top"><i class="small fas fa-sync-alt"></i></a>
+            <a href="#modal1" class="modal-trigger white-text tooltipped" data-tooltip="Notifications"
+              data-position="top"><i class="small fas fa-bell"></i></a>
+            <ul class="collection left-align" style="border-width: 0px;">
+              <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='olym20.html'">
+                <a href="#!"><i class="fas fa-medal circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">Olympics & Paralympics 2020</p>
+                <p>India/ World Medal Tally, Schedule, Indian Players list</p>
+              </li>
+              <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='iplhome.html'">
+                <a href="#!"><i class="fas fa-passport circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">IPL Home</p>
+                <p>Scorecard Mini, Head to Head, Coming up Next</p>
+              </li>
+              <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='index.html'">
+                <a href="#!"><i class="fas fa-home circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">OUI Cricket Home</p>
+                <p>Back to Home</p>
+              </li>
+              <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='iplresults.html'">
+                <a href="#!"><i class="fas fa-trophy circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">IPL Results</p>
+                <p>Scores & Results of All IPL Matches</p>
+              </li>
+              <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='results.html'">
+                <a href="#!"><i class="fas fa-trophy circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">Int'l Results</p>
+                <p>Scores & Results of India's International Matches</p>
+              </li>
+              <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='schedule.html'">
+                <a href="#!"><i class="fas fa-list circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">Int'l Schedule</p>
+                <p>Series Schedule of India's Matches</p>
+              </li>
+              <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='ipllive2.html'">
+                <a href="#!"><i class="fas fa-tv circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">Scorecard 2</p>
+                <p>Live Scores with Stats, Info</p>
+              </li>
+              <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='ipllive.html'">
+                <a href="#!"><i class="fas fa-tv circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">Scorecard 1</p>
+                <p>Live Scores with Stats, Info</p>
+              </li>
+              <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='about.html'">
+                <a href="#!"><i class="fas fa-info circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">About</p>
+                <p>About this Website</p>
+              </li>
+              <li class="collection-item orange accent-3"></li>
+            </ul>
+          </div>
+        </div>
+        <h5 class="white-text"><b>IPL 2021 Highlights Link</b></h5>
+        <div class="oui-bubble">
+          <table class="centered bordered">
+            <tr>
+              <td><b>DATE<br>TIME (IST)</b></td>
+              <td><b>HOME TEAM</b></td>
+              <td><b>AWAY TEAM</b></td>
+              <td><b>LINK</b></td>
+            </tr>
+            <tr>
+              <td>09 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1111_flag_safari.png " alt=" MI " width=" 25px "
+                  height=" 15px">
+                <br>MI</td>
+              <td><img src=" https://images.cricket.com/teams/1105_flag_safari.png " alt=" RCB " width=" 25px "
+                  height=" 15px">
+                <br>RCB</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>10 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1108_flag_safari.png " alt=" CSK " width=" 25px "
+                  height=" 15px">
+                <br>CSK</td>
+              <td><img src=" https://images.cricket.com/teams/1109_flag_safari.png " alt=" DC " width=" 25px "
+                  height=" 15px">
+                <br>DC</td>
+              <td><a href="https://www.iplt20.com/video/229170" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>11 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1379_flag_safari.png " alt=" SRH " width=" 25px "
+                  height=" 15px">
+                <br>SRH</td>
+              <td><img src=" https://images.cricket.com/teams/1106_flag_safari.png " alt=" KKR " width=" 25px "
+                  height=" 15px">
+                <br>KKR</td>
+              <td><a href="https://www.iplt20.com/video/229483" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>12 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1110_flag_safari.png " alt=" RR " width=" 25px "
+                  height=" 15px">
+                <br>RR</td>
+              <td><img src=" https://images.cricket.com/teams/1107_flag_safari.png " alt=" PBKS " width=" 25px "
+                  height=" 15px">
+                <br>PBKS</td>
+              <td><a href="https://www.iplt20.com/video/229844" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>13 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1106_flag_safari.png " alt=" KKR " width=" 25px "
+                  height=" 15px">
+                <br>KKR</td>
+              <td><img src=" https://images.cricket.com/teams/1111_flag_safari.png " alt=" MI " width=" 25px "
+                  height=" 15px">
+                <br>MI</td>
+              <td><a href="https://www.iplt20.com/video/230172" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>14 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1379_flag_safari.png " alt=" SRH " width=" 25px "
+                  height=" 15px">
+                <br>SRH</td>
+              <td><img src=" https://images.cricket.com/teams/1105_flag_safari.png " alt=" RCB " width=" 25px "
+                  height=" 15px">
+                <br>RCB</td>
+              <td><a href="https://www.iplt20.com/video/230485" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>15 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1110_flag_safari.png " alt=" RR " width=" 25px "
+                  height=" 15px">
+                <br>RR</td>
+              <td><img src=" https://images.cricket.com/teams/1109_flag_safari.png " alt=" DC " width=" 25px "
+                  height=" 15px">
+                <br>DC</td>
+              <td><a href="https://www.iplt20.com/video/230789" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>16 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1107_flag_safari.png " alt=" PBKS " width=" 25px "
+                  height=" 15px">
+                <br>PBKS</td>
+              <td><img src=" https://images.cricket.com/teams/1108_flag_safari.png " alt=" CSK " width=" 25px "
+                  height=" 15px">
+                <br>CSK</td>
+              <td><a href="https://www.iplt20.com/video/231062" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>17 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1111_flag_safari.png " alt=" MI " width=" 25px "
+                  height=" 15px">
+                <br>MI</td>
+              <td><img src=" https://images.cricket.com/teams/1379_flag_safari.png " alt=" SRH " width=" 25px "
+                  height=" 15px">
+                <br>SRH</td>
+              <td><a href="https://www.iplt20.com/video/231423" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>18 Apr
+                <br>15:30
+                <br><b>&#9788;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1105_flag_safari.png " alt=" RCB " width=" 25px "
+                  height=" 15px">
+                <br>RCB</td>
+              <td><img src=" https://images.cricket.com/teams/1106_flag_safari.png " alt=" KKR " width=" 25px "
+                  height=" 15px">
+                <br>KKR</td>
+              <td><a href="https://www.iplt20.com/video/231817" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>18 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1109_flag_safari.png " alt=" DC " width=" 25px "
+                  height=" 15px">
+                <br>DC</td>
+              <td><img src=" https://images.cricket.com/teams/1107_flag_safari.png " alt=" PBKS " width=" 25px "
+                  height=" 15px">
+                <br>PBKS</td>
+              <td><a href="https://www.iplt20.com/video/232089" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>19 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1108_flag_safari.png " alt=" CSK " width=" 25px "
+                  height=" 15px">
+                <br>CSK</td>
+              <td><img src=" https://images.cricket.com/teams/1110_flag_safari.png " alt=" RR " width=" 25px "
+                  height=" 15px">
+                <br>RR</td>
+              <td><a href="https://www.iplt20.com/video/232472" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>20 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1109_flag_safari.png " alt=" DC " width=" 25px "
+                  height=" 15px">
+                <br>DC</td>
+              <td><img src=" https://images.cricket.com/teams/1111_flag_safari.png " alt=" MI " width=" 25px "
+                  height=" 15px">
+                <br>MI</td>
+              <td><a href="https://www.iplt20.com/video/232738" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>21 Apr
+                <br>15:30
+                <br><b>&#9788;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1107_flag_safari.png " alt=" PBKS " width=" 25px "
+                  height=" 15px">
+                <br>PBKS</td>
+              <td><img src=" https://images.cricket.com/teams/1379_flag_safari.png " alt=" SRH " width=" 25px "
+                  height=" 15px">
+                <br>SRH</td>
+              <td><a href="https://www.iplt20.com/video/233022" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>21 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1106_flag_safari.png " alt=" KKR " width=" 25px "
+                  height=" 15px">
+                <br>KKR</td>
+              <td><img src=" https://images.cricket.com/teams/1108_flag_safari.png " alt=" CSK " width=" 25px "
+                  height=" 15px">
+                <br>CSK</td>
+              <td><a href="https://www.iplt20.com/video/233406" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>22 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1105_flag_safari.png " alt=" RCB " width=" 25px "
+                  height=" 15px">
+                <br>RCB</td>
+              <td><img src=" https://images.cricket.com/teams/1110_flag_safari.png " alt=" RR " width=" 25px "
+                  height=" 15px">
+                <br>RR</td>
+              <td><a href="https://www.iplt20.com/video/233727" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>23 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1107_flag_safari.png " alt=" PBKS " width=" 25px "
+                  height=" 15px">
+                <br>PBKS</td>
+              <td><img src=" https://images.cricket.com/teams/1111_flag_safari.png " alt=" MI " width=" 25px "
+                  height=" 15px">
+                <br>MI</td>
+              <td><a href="https://www.iplt20.com/video/233971" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>24 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1110_flag_safari.png " alt=" RR " width=" 25px "
+                  height=" 15px">
+                <br>RR</td>
+              <td><img src=" https://images.cricket.com/teams/1106_flag_safari.png " alt=" KKR " width=" 25px "
+                  height=" 15px">
+                <br>KKR</td>
+              <td><a href="https://www.iplt20.com/video/234319" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>25 Apr
+                <br>15:30
+                <br><b>&#9788;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1108_flag_safari.png " alt=" CSK " width=" 25px "
+                  height=" 15px">
+                <br>CSK</td>
+              <td><img src=" https://images.cricket.com/teams/1105_flag_safari.png " alt=" RCB " width=" 25px "
+                  height=" 15px">
+                <br>RCB</td>
+              <td><a href="https://www.iplt20.com/video/234780" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>25 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1379_flag_safari.png " alt=" SRH " width=" 25px "
+                  height=" 15px">
+                <br>SRH</td>
+              <td><img src=" https://images.cricket.com/teams/1109_flag_safari.png " alt=" DC " width=" 25px "
+                  height=" 15px">
+                <br>DC</td>
+              <td><a href="https://www.iplt20.com/video/235026" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>26 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1107_flag_safari.png " alt=" PBKS " width=" 25px "
+                  height=" 15px">
+                <br>PBKS</td>
+              <td><img src=" https://images.cricket.com/teams/1106_flag_safari.png " alt=" KKR " width=" 25px "
+                  height=" 15px">
+                <br>KKR</td>
+              <td><a href="https://www.iplt20.com/video/235366" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>27 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1109_flag_safari.png " alt=" DC " width=" 25px "
+                  height=" 15px">
+                <br>DC</td>
+              <td><img src=" https://images.cricket.com/teams/1105_flag_safari.png " alt=" RCB " width=" 25px "
+                  height=" 15px">
+                <br>RCB</td>
+              <td><a href="https://www.iplt20.com/video/235673" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>28 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1108_flag_safari.png " alt=" CSK " width=" 25px "
+                  height=" 15px">
+                <br>CSK</td>
+              <td><img src=" https://images.cricket.com/teams/1379_flag_safari.png " alt=" SRH " width=" 25px "
+                  height=" 15px">
+                <br>SRH</td>
+              <td><a href="https://www.iplt20.com/video/236016" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>29 Apr
+                <br>15:30
+                <br><b>&#9788;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1111_flag_safari.png " alt=" MI " width=" 25px "
+                  height=" 15px">
+                <br>MI</td>
+              <td><img src=" https://images.cricket.com/teams/1110_flag_safari.png " alt=" RR " width=" 25px "
+                  height=" 15px">
+                <br>RR</td>
+              <td><a href="https://www.iplt20.com/video/236397" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>29 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1109_flag_safari.png " alt=" DC " width=" 25px "
+                  height=" 15px">
+                <br>DC</td>
+              <td><img src=" https://images.cricket.com/teams/1106_flag_safari.png " alt=" KKR " width=" 25px "
+                  height=" 15px">
+                <br>KKR</td>
+              <td><a href="https://www.iplt20.com/video/236663" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>30 Apr
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1107_flag_safari.png " alt=" PBKS " width=" 25px "
+                  height=" 15px">
+                <br>PBKS</td>
+              <td><img src=" https://images.cricket.com/teams/1105_flag_safari.png " alt=" RCB " width=" 25px "
+                  height=" 15px">
+                <br>RCB</td>
+              <td><a href="https://www.iplt20.com/video/236993" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>01 May
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1111_flag_safari.png " alt=" MI " width=" 25px "
+                  height=" 15px">
+                <br>MI</td>
+              <td><img src=" https://images.cricket.com/teams/1108_flag_safari.png " alt=" CSK " width=" 25px "
+                  height=" 15px">
+                <br>CSK</td>
+              <td><a href="https://www.iplt20.com/video/237490" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>02 May
+                <br>15:30
+                <br><b>&#9788;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1110_flag_safari.png " alt=" RR " width=" 25px "
+                  height=" 15px">
+                <br>RR</td>
+              <td><img src=" https://images.cricket.com/teams/1379_flag_safari.png " alt=" SRH " width=" 25px "
+                  height=" 15px">
+                <br>SRH</td>
+              <td><a href="https://www.iplt20.com/video/237972" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>02 May
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1107_flag_safari.png " alt=" PBKS " width=" 25px "
+                  height=" 15px">
+                <br>PBKS</td>
+              <td><img src=" https://images.cricket.com/teams/1109_flag_safari.png " alt=" DC " width=" 25px "
+                  height=" 15px">
+                <br>DC</td>
+              <td><a href="https://www.iplt20.com/video/238204" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td colspan="4" class="grey darken-3 white-text"><b>Below Matches [31] were postponed</b></td>
+            </tr>
+            <tr>
+              <td>19 Sept
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1108_flag_safari.png " alt=" CSK " width=" 25px "
+                  height=" 15px">
+                <br>CSK</td>
+              <td><img src=" https://images.cricket.com/teams/1111_flag_safari.png " alt=" MI " width="
+                  25px " height=" 15px"> <br>MI</td>
+              <td><a href="https://www.iplt20.com/video/238583" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>20 Sept
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1106_flag_safari.png " alt=" KKR " width=" 25px "
+                  height=" 15px">
+                <br>KKR</td>
+              <td><img src=" https://images.cricket.com/teams/1105_flag_safari.png " alt=" RCB " width="
+                  25px " height=" 15px"> <br>RCB</td>
+              <td><a href="https://www.iplt20.com/video/238801" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>21 Sept
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1107_flag_safari.png " alt=" PBKS " width=" 25px "
+                  height=" 15px">
+                <br>PBKS</td>
+              <td><img src=" https://images.cricket.com/teams/1110_flag_safari.png " alt=" RR " width="
+                  25px " height=" 15px"> <br>RR</td>
+              <td><a href="https://www.iplt20.com/video/239174" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <!-- <tr>
+              <td>22 Sept
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1109_flag_safari.png " alt=" DC " width=" 25px "
+                  height=" 15px">
+                <br>DC</td>
+              <td><img src=" https://images.cricket.com/teams/1379_flag_safari.png " alt=" SRH " width="
+                  25px " height=" 15px"> <br>SRH</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>23 Sept
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1111_flag_safari.png " alt=" MI " width=" 25px "
+                  height=" 15px">
+                <br>MI</td>
+              <td><img src=" https://images.cricket.com/teams/1106_flag_safari.png " alt=" KKR " width="
+                  25px " height=" 15px"> <br>KKR</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>24 Sept
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1105_flag_safari.png " alt=" RCB " width=" 25px "
+                  height=" 15px">
+                <br>RCB</td>
+              <td><img src=" https://images.cricket.com/teams/1108_flag_safari.png " alt=" CSK " width="
+                  25px " height=" 15px"> <br>CSK</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>25 Sept
+                <br>15:30
+                <br><b>&#9788;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1109_flag_safari.png " alt=" DC " width=" 25px "
+                  height=" 15px">
+                <br>DC</td>
+              <td><img src=" https://images.cricket.com/teams/1110_flag_safari.png " alt=" RR " width="
+                  25px " height=" 15px"> <br>RR</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>25 Sept
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1379_flag_safari.png " alt=" SRH " width=" 25px "
+                  height=" 15px">
+                <br>SRH</td>
+              <td><img src=" https://images.cricket.com/teams/1107_flag_safari.png " alt=" PBKS " width="
+                  25px " height=" 15px"> <br>PBKS</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>26 Sept
+                <br>15:30
+                <br><b>&#9788;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1108_flag_safari.png " alt=" CSK " width=" 25px "
+                  height=" 15px">
+                <br>CSK</td>
+              <td><img src=" https://images.cricket.com/teams/1106_flag_safari.png " alt=" KKR " width="
+                  25px " height=" 15px"> <br>KKR</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>26 Sept
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1105_flag_safari.png " alt=" RCB " width=" 25px "
+                  height=" 15px">
+                <br>RCB</td>
+              <td><img src=" https://images.cricket.com/teams/1111_flag_safari.png " alt=" MI " width="
+                  25px " height=" 15px"> <br>MI</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>27 Sept
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1379_flag_safari.png " alt=" SRH " width=" 25px "
+                  height=" 15px">
+                <br>SRH</td>
+              <td><img src=" https://images.cricket.com/teams/1110_flag_safari.png " alt=" RR " width="
+                  25px " height=" 15px"> <br>RR</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>28 Sept
+                <br>15:30
+                <br><b>&#9788;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1106_flag_safari.png " alt=" KKR " width=" 25px "
+                  height=" 15px">
+                <br>KKR</td>
+              <td><img src=" https://images.cricket.com/teams/1109_flag_safari.png " alt=" DC " width="
+                  25px " height=" 15px"> <br>DC</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>28 Sept
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1111_flag_safari.png " alt=" MI " width=" 25px "
+                  height=" 15px">
+                <br>MI</td>
+              <td><img src=" https://images.cricket.com/teams/1107_flag_safari.png " alt=" PBKS " width="
+                  25px " height=" 15px"> <br>PBKS</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>29 Sept
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1110_flag_safari.png " alt=" RR " width=" 25px "
+                  height=" 15px">
+                <br>RR</td>
+              <td><img src=" https://images.cricket.com/teams/1105_flag_safari.png " alt=" RCB " width="
+                  25px " height=" 15px"> <br>RCB</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>30 Sept
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1379_flag_safari.png " alt=" SRH " width=" 25px "
+                  height=" 15px">
+                <br>SRH</td>
+              <td><img src=" https://images.cricket.com/teams/1108_flag_safari.png " alt=" CSK " width="
+                  25px " height=" 15px"> <br>CSK</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>01 Oct
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1106_flag_safari.png " alt=" KKR " width=" 25px "
+                  height=" 15px">
+                <br>KKR</td>
+              <td><img src=" https://images.cricket.com/teams/1107_flag_safari.png " alt=" PBKS " width="
+                  25px " height=" 15px"> <br>PBKS</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>02 Oct
+                <br>15:30
+                <br><b>&#9788;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1111_flag_safari.png " alt=" MI " width=" 25px "
+                  height=" 15px">
+                <br>MI</td>
+              <td><img src=" https://images.cricket.com/teams/1109_flag_safari.png " alt=" DC " width="
+                  25px " height=" 15px"> <br>DC</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>02 Oct
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1110_flag_safari.png " alt=" RR " width=" 25px "
+                  height=" 15px">
+                <br>RR</td>
+              <td><img src=" https://images.cricket.com/teams/1108_flag_safari.png " alt=" CSK " width="
+                  25px " height=" 15px"> <br>CSK</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>03 Oct
+                <br>15:30
+                <br><b>&#9788;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1105_flag_safari.png " alt=" RCB " width=" 25px "
+                  height=" 15px">
+                <br>RCB</td>
+              <td><img src=" https://images.cricket.com/teams/1107_flag_safari.png " alt=" PBKS " width="
+                  25px " height=" 15px"> <br>PBKS</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>03 Oct
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1106_flag_safari.png " alt=" KKR " width=" 25px "
+                  height=" 15px">
+                <br>KKR</td>
+              <td><img src=" https://images.cricket.com/teams/1379_flag_safari.png " alt=" SRH " width="
+                  25px " height=" 15px"> <br>SRH</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>04 Oct
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1109_flag_safari.png " alt=" DC " width=" 25px "
+                  height=" 15px">
+                <br>DC</td>
+              <td><img src=" https://images.cricket.com/teams/1108_flag_safari.png " alt=" CSK " width="
+                  25px " height=" 15px"> <br>CSK</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>05 Oct
+                <br>19:30
+                <br><b>&#9790;</b></td>
+              <td><img src=" https://images.cricket.com/teams/1110_flag_safari.png " alt=" RR " width=" 25px "
+                  height=" 15px">
+                <br>RR</td>
+              <td><img src=" https://images.cricket.com/teams/1111_flag_safari.png " alt=" MI " width="
+                  25px " height=" 15px"> <br>MI</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>06 Oct
+                <br>19:30
+                <br><b>&#9790;</b</td> <td><img src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB"
+                    width="25px" height="15px"><br>RCB</td>
+              <td><img src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px"
+                  height="15px"><br>SRH</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>07 Oct <br>15:30<br><b>&#9788;</b</td> <td><img
+                    src="https://images.cricket.com/teams/1108_flag_safari.png" alt="CSK" width="25px"
+                    height="15px"><br>CSK</td>
+              <td><img src="https://images.cricket.com/teams/1107_flag_safari.png" alt="PBKS" width="25px"
+                  height="15px"><br>PBKS</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>07 Oct <br>19:30<br><b>&#9790;</b</td> <td><img
+                    src="https://images.cricket.com/teams/1106_flag_safari.png" alt="KKR" width="25px"
+                    height="15px"><br>KKR</td>
+              <td><img src="https://images.cricket.com/teams/1110_flag_safari.png" alt="RR" width="25px"
+                  height="15px"><br>RR</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>08 Oct <br>15:30<br><b>&#9788;</b</td> <td><img
+                    src="https://images.cricket.com/teams/1379_flag_safari.png" alt="SRH" width="25px"
+                    height="15px"><br>SRH</td>
+              <td><img src="https://images.cricket.com/teams/1111_flag_safari.png" alt="MI" width="25px"
+                  height="15px"><br>MI</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>08 Oct <br>19:30<br><b>&#9790;</b</td> <td><img
+                    src="https://images.cricket.com/teams/1105_flag_safari.png" alt="RCB" width="25px"
+                    height="15px"><br>RCB</td>
+              <td><img src="https://images.cricket.com/teams/1109_flag_safari.png" alt="DC" width="25px"
+                  height="15px"><br>DC</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>10 Oct <br>19:30<br><b>&#9790;</b></td>
+              <td colspan="2">Qualifier 1</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>11 Oct <br>19:30<br><b>&#9790;</b></td>
+              <td colspan="2">Eliminator</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>13 Oct <br>19:30<br><b>&#9790;</b></td>
+              <td colspan="2">Qualifier 2</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr>
+            <tr>
+              <td>15 Oct <br>19:30<br><b>&#9790;</b></td>
+              <td colspan="2">FINAL</td>
+              <td><a href="https://www.iplt20.com/video/228855" class="oui-button black-text" target="_blank">H/Ls</a></td>
+            </tr> -->
+          </table>
+        </div>
+        <h6 class="white-text"><b>TEAMS' DENOTATIONS:</b></h6>
+        <div class="oui-bubble">
+          <table class="centered striped">
+            <tbody>
+              <tr>
+                <td>8 TEAMS &#8227;&#8227;&#8227;</td>
+                <td>CSK - Chennai Super Kings</td>
+                <td>DC - Delhi Capitals</td>
+              </tr>
+              <tr>
+                <td>KKR - Kolkata Knight Riders</td>
+                <td>MI - Mumbai Indians</td>
+                <td>PBKS - PunjaB KingS</td>
+              </tr>
+              <tr>
+                <td>RR - Rajasthan Royals</td>
+                <td>RCB - Royal Challengers Bangalore</td>
+                <td>SRH - SunRisers Hyderabad</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div><br>
+  </main>
+</body>
+
+</html>
