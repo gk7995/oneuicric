@@ -1,0 +1,2638 @@
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <meta http-equiv="refresh" content="60;">
+  <title lang="en-us">One UI Sports - Pro Kabaddi League 2021</title>
+  <link rel="stylesheet" href="OneUI/oui.min.css">
+  <link rel="stylesheet" href="materialize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css">
+  <link rel="icon" href="images/OUC.ico">
+  <style>
+    @font-face {
+      font-family: 'SamsungOne 400';
+      src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+    }
+
+    * {
+      font-family: 'SamsungOne 400';
+      font-size: larger;
+    }
+
+    .oui-button {
+      font-family: 'SamsungOne 400';
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="materialize.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.fixed-action-btn').openFAB();
+      $('.fixed-action-btn').closeFAB();
+      $('.fixed-action-btn.toolbar').openToolbar();
+      $('.fixed-action-btn.toolbar').closeToolbar();
+      $('.tooltipped').tooltip({
+        delay: 50
+      });
+    })
+    $(document).ready(function () {
+      $('.modal').modal();
+      $('#modal2').modal();
+    });
+  </script>
+</head>
+
+<body oncontextmenu="return false;" onload="location.href='#v1'">
+  <main class="containr">
+    <div class="oui-viewing center-align">
+      <h4>Pro Kabaddi League 2021</h4>
+      <h5>Season 8, Dec 22 2021 - Jan 20 2022</h5>
+      <h6>Auto Refresh in every 60 seconds</h6>
+    </div>
+    <div class="oui-interaction center-align">
+      <!--Interaction area-->
+      <div class="oui-bubble green darken-3" id="view">
+        <div class="fixed-action-btn">
+          <a class="btn-floating btn-large orange accent-3 btn tooltipped pulse z-depth-5 modal-trigger"
+            data-position="top" data-delay="50" data-tooltip="Menu" href="#modal2">
+            <i class="large fas fa-bars"></i>
+          </a>
+        </div>
+        <!--Menu-->
+        <div id="modal2" class="modal bottom-sheet right-align green darken-3 white-text">
+          <div class="modal-content">
+            <ul class="collection left-align" style="border-width: 0px;">
+              <li class="collection-item avatar green darken-3 oui-bubble" onclick="location.href='index.html'">
+                <a href="#!"><i class="fas fa-home circle orange accent-3"></i></a>
+                <p style="font-size: x-large;">OUI Sports Home</p>
+                <p>Back to Sports Home</p>
+              </li>
+              <li class="collection-item avatar green darken-3 oui-bubble" onclick="location.href='about.html'">
+                <a href="#!"><i class="fas fa-info circle orange accent-3"></i></a>
+                <p style="font-size: x-large;">About</p>
+                <p>About this Website</p>
+              </li>
+              <li class="collection-item green darken-3"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab"><a href="#sche" class="active green darken-3 white-text">
+                  <h6>SCHEDULE/ RESULTS<br>2021-22</h6>
+                </a></li>
+              <li class="tab"><a href="#sqad" class="green darken-3 white-text">
+                  <h6>SQUADS</h6>
+                </a></li>
+              <li class="tab"><a href="#stan" class="green darken-3 white-text">
+                  <h6>STANDINGS</h6>
+                </a></li>
+              <div class="indicator orange accent-3"></div>
+            </ul>
+          </div>
+          <div class="col s12" id="sche">
+            <h6 class="white-text">1 Teams in BOLD denotes Winning Team & Both Teams in BOLD denotes Match is Drawn</h6>
+            <table class="centered white-text">
+              <tbody>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 22, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Bengaluru<br>Bulls</td>
+                  <td>30</td>
+                  <td>-</td>
+                  <td>46</td>
+                  <td><b>U<br>Mumba</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 22, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Telugu<br>Titans</b></td>
+                  <td>40</td>
+                  <td>-</td>
+                  <td>40</td>
+                  <td><b>Tamil<br>Thalaivas</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 22, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 21:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Bengal<br>Warriors</b></td>
+                  <td>38</td>
+                  <td>-</td>
+                  <td>33</td>
+                  <td>Up<br>Yoddha</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 23, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Gujarat<br>Giants</b></td>
+                  <td>34</td>
+                  <td>-</td>
+                  <td>27</td>
+                  <td>Jaipur<br>Pink Panthers</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 23, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Dabang<br>Delhi KC</b></td>
+                  <td>41</td>
+                  <td>-</td>
+                  <td>30</td>
+                  <td>Puneri<br>Paltan</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 23, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 21:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Haryana<br>Steelers</td>
+                  <td>39</td>
+                  <td>-</td>
+                  <td>42</td>
+                  <td><b>Patna<br>Pirates</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 24, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>U<br>Mumba</td>
+                  <td>27</td>
+                  <td>-</td>
+                  <td>31</td>
+                  <td><b>Dabang<br>Delhi KC</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 24, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Tamil<br>Thalaivas</td>
+                  <td>30</td>
+                  <td>-</td>
+                  <td>38</td>
+                  <td><b>Bengaluru<br>Bulls</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 24, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 21:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Bengal<br>Warriors</b></td>
+                  <td>31</td>
+                  <td>-</td>
+                  <td>28</td>
+                  <td>Gujarat<br>Giants</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 25, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Patna<br>Pirates</td>
+                  <td>35</td>
+                  <td>-</td>
+                  <td>36</td>
+                  <td><b>Up<br>Yoddha</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 25, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Puneri<br>Paltan</b></td>
+                  <td>34</td>
+                  <td>-</td>
+                  <td>33</td>
+                  <td>Telugu<br>Titans</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 25, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 21:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Jaipur<br>Pink Panthers</b></td>
+                  <td>40</td>
+                  <td>-</td>
+                  <td>38</td>
+                  <td>Haryana<br>Steelers</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 26, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Gujarat<br>Giants</b></td>
+                  <td>24</td>
+                  <td>-</td>
+                  <td>24</td>
+                  <td><b>Dabang<br>Delhi KC</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 26, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Bengaluru<br>Bulls</b></td>
+                  <td>36</td>
+                  <td>-</td>
+                  <td>35</td>
+                  <td>Bengal<br>Warriors</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 27, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Tamil<br>Thalaivas</b></td>
+                  <td>30</td>
+                  <td>-</td>
+                  <td>30</td>
+                  <td><b>U<br>Mumba</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 27, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Up<br>Yoddha</td>
+                  <td>29</td>
+                  <td>-</td>
+                  <td>32</td>
+                  <td><b>Jaipur<br>Pink Panthers</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 28, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Puneri<br>Paltan</td>
+                  <td>26</td>
+                  <td>-</td>
+                  <td>38</td>
+                  <td>Patna<br>Pirates</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 28, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Telugu<br>Titans</td>
+                  <td>37</td>
+                  <td>-</td>
+                  <td>39</td>
+                  <td>Haryana<br>Steelers</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 29, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Dabang<br>Delhi KC</b></td>
+                  <td>52</td>
+                  <td>-</td>
+                  <td>35</td>
+                  <td>Bengal<br>Warriors</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 29, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Up<br>Yoddha</b></td>
+                  <td>32</td>
+                  <td>-</td>
+                  <td>32</td>
+                  <td><b>Gujarat<br>Giants</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 30, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Jaipur<br>Pink Panthers</td>
+                  <td>28</td>
+                  <td>-</td>
+                  <td>37</td>
+                  <td><b>U<br>Mumba</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 30, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Haryana<br>Steelers</td>
+                  <td>28</td>
+                  <td>-</td>
+                  <td>42</td>
+                  <td><b>Bengaluru<br>Bulls</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 31, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Tamil<br>Thalaivas</b></td>
+                  <td>36</td>
+                  <td>-</td>
+                  <td>26</td>
+                  <td>Puneri<br>Paltan</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> December 31, 2021</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Patna<br>Pirates</b></td>
+                  <td>44</td>
+                  <td>-</td>
+                  <td>30</td>
+                  <td>Bengal<br>Warriors</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 1, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>U<br>Mumba</b></td>
+                  <td>28</td>
+                  <td>-</td>
+                  <td>28</td>
+                  <td><b>Up<br>Yoddha</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 1, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Bengaluru<br>Bulls</b></td>
+                  <td>34</td>
+                  <td>-</td>
+                  <td>34</td>
+                  <td><b>Telugu<br>Titans</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 1, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 21:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Dabang<br>Delhi KC</b></td>
+                  <td>30</td>
+                  <td>-</td>
+                  <td>30</td>
+                  <td><b>Tamil<br>Thalaivas</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 2, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Gujarat<br>Giants</td>
+                  <td>36</td>
+                  <td>-</td>
+                  <td>38</td>
+                  <td><b>Haryana<br>Steelers</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 2, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Puneri<br>Paltan</td>
+                  <td>29</td>
+                  <td>-</td>
+                  <td>40</td>
+                  <td><b>Bengaluru<br>Bulls</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 3, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Bengal<br>Warriors</b></td>
+                  <td>31</td>
+                  <td>-</td>
+                  <td>28</td>
+                  <td>Jaipur<br>Pink Panthers</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 3, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Telugu<br>Titans</td>
+                  <td>30</td>
+                  <td>-</td>
+                  <td>31</td>
+                  <td><b>Patna<br>Pirates</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 4, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Haryana<br>Steelers</b></td>
+                  <td>24</td>
+                  <td>-</td>
+                  <td>24</td>
+                  <td><b>U<br>Mumba</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 4, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Up<br>Yoddha</td>
+                  <td>33</td>
+                  <td>-</td>
+                  <td>39</td>
+                  <td><b>Tamil<br>Thalaivas</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 5, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Puneri<br>Paltan</b></td>
+                  <td>33</td>
+                  <td>-</td>
+                  <td>26</td>
+                  <td>Gujarat<br>Giants</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 5, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Dabang<br>Delhi KC</b></td>
+                  <td>36</td>
+                  <td>-</td>
+                  <td>35</td>
+                  <td>Telugu<br>Titans</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 6, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Patna<br>Pirates</b></td>
+                  <td>30</td>
+                  <td>-</td>
+                  <td>30</td>
+                  <td><b>Tamil<br>Thalaivas</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 6, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Bengaluru<br>Bulls</b></td>
+                  <td>38</td>
+                  <td>-</td>
+                  <td>31</td>
+                  <td>Jaipur<br>Pink Panthers</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 7, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Bengal<br>Warriors</td>
+                  <td>37</td>
+                  <td>-</td>
+                  <td>41</td>
+                  <td><b>Haryana<br>Steelers</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 7, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Jaipur<br>Pink Panthers</b></td>
+                  <td>31</td>
+                  <td>-</td>
+                  <td>26</td>
+                  <td>Puneri<br>Paltan</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 8, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Up<br>Yoddha</td>
+                  <td>33</td>
+                  <td>-</td>
+                  <td>37</td>
+                  <td><b>Dabang<br>Delhi KC</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 8, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>U<br>Mumba</b></td>
+                  <td>48</td>
+                  <td>-</td>
+                  <td>38</td>
+                  <td>Telugu<br>Titans</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 8, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 21:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Gujarat<br>Giants</td>
+                  <td>26</td>
+                  <td>-</td>
+                  <td>27</td>
+                  <td><b>Patna<br>Pirates</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 9, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Puneri<br>Paltan</b></td>
+                  <td>39</td>
+                  <td>-</td>
+                  <td>27</td>
+                  <td>Bengal<br>Warriors</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 9, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Bengaluru<br>Bulls</td>
+                  <td>27</td>
+                  <td>-</td>
+                  <td>42</td>
+                  <td><b>Up<br>Yoddha</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 10, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Tamil<br>Thalaivas</b></td>
+                  <td>45</td>
+                  <td>-</td>
+                  <td>26</td>
+                  <td>Haryana<br>Steelers</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 10, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Jaipur<br>Pink Panthers</b></td>
+                  <td>30</td>
+                  <td>-</td>
+                  <td>28</td>
+                  <td>Dabang<br>Delhi KC</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 11, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Patna<br>Pirates</b></td>
+                  <td>43</td>
+                  <td>-</td>
+                  <td>23</td>
+                  <td>U<br>Mumba</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 11, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Telugu<br>Titans</td>
+                  <td>22</td>
+                  <td>-</td>
+                  <td>40</td>
+                  <td><b>Gujarat<br>Giants</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 12, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Haryana<br>Steelers</b></td>
+                  <td>36</td>
+                  <td>-</td>
+                  <td>36</td>
+                  <td><b>Up<br>Yoddha</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 12, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Dabang<br>Delhi KC</td>
+                  <td>22</td>
+                  <td>-</td>
+                  <td>61</td>
+                  <td><b>Bengaluru<br>Bulls</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 13, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Bengal<br>Warriors</b></td>
+                  <td>37</td>
+                  <td>-</td>
+                  <td>28</td>
+                  <td>Tamil<br>Thalaivas</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 13, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>U<br>Mumba</td>
+                  <td>23</td>
+                  <td>-</td>
+                  <td>42</td>
+                  <td><b>Puneri<br>Paltan</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 14, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Jaipur<br>Pink Panthers</b></td>
+                  <td>38</td>
+                  <td>-</td>
+                  <td>28</td>
+                  <td>Patna<br>Pirates</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 14, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Gujarat<br>Giants</td>
+                  <td>37</td>
+                  <td>-</td>
+                  <td>46</td>
+                  <td><b>Bengaluru<br>Bulls</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 15, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Haryana<br>Steelers</td>
+                  <td>25</td>
+                  <td>-</td>
+                  <td>28</td>
+                  <td><b>Dabang<br>Delhi KC</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 15, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Up<br>Yoddha</b></td>
+                  <td>39</td>
+                  <td>-</td>
+                  <td>33</td>
+                  <td>Telugu<br>Titans</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 15, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 21:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>U<br>Mumba</b></td>
+                  <td>32</td>
+                  <td>-</td>
+                  <td>32</td>
+                  <td><b>Bengal<br>Warriors</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 16, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Tamil<br>Thalaivas</b></td>
+                  <td>31</td>
+                  <td>-</td>
+                  <td>31</td>
+                  <td><b>Jaipur<br>Pink Panthers</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 16, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Patna<br>Pirates</b></td>
+                  <td>38</td>
+                  <td>-</td>
+                  <td>31</td>
+                  <td>Bengaluru<br>Bulls</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 17, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Puneri<br>Paltan</td>
+                  <td>40</td>
+                  <td>-</td>
+                  <td>50</td>
+                  <td><b>Up<br>Yoddha</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 17, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Telugu<br>Titans</td>
+                  <td>27</td>
+                  <td>-</td>
+                  <td>28</td>
+                  <td><b>Bengal<br>Warriors</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 18, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Dabang<br>Delhi KC</b></td>
+                  <td>32</td>
+                  <td>-</td>
+                  <td>29</td>
+                  <td>Patna<br>Pirates</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 18, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Gujarat<br>Giants</b></td>
+                  <td>24</td>
+                  <td>-</td>
+                  <td>24</td>
+                  <td><b>U<br>Mumba</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 19, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td><b>Haryana<br>Steelers</b></td>
+                  <td>37</td>
+                  <td>-</td>
+                  <td>30</td>
+                  <td>Puneri<br>Paltan</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 19, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Jaipur<br>Pink Panthers</td>
+                  <td>34</td>
+                  <td>-</td>
+                  <td>35</td>
+                  <td><b>Telugu<br>Titans</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr id="v1">
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 20, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Tamil<br>Thalaivas</td>
+                  <td>35</td>
+                  <td>-</td>
+                  <td>37</td>
+                  <td><b>Gujarat<br>Giants</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 20, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Bengaluru<br>Bulls</td>
+                  <td>39</td>
+                  <td>-</td>
+                  <td>40</td>
+                  <td><b>Bengal<br>Warriors</b></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 21, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Dabang<br>Delhi KC</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Haryana<br>Steelers</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 21, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Bengal<br>Warriors</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Up<br>Yoddha</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 22, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Patna<br>Pirates</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Puneri<br>Paltan</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 22, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>U<br>Mumba</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Telugu<br>Titans</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 22, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 21:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Jaipur<br>Pink Panthers</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Tamil<br>Thalaivas</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 23, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Up<br>Yoddha</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Haryana<br>Steelers</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 23, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Gujarat<br>Giants</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Bengaluru<br>Bulls</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 24, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Bengal<br>Warriors</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Jaipur<br>Pink Panthers</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 24, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Puneri<br>Paltan</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Dabang<br>Delhi KC</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 25, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Haryana<br>Steelers</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Gujarat<br>Giants</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 25, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Telugu<br>Titans</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Patna<br>Pirates</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 26, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Tamil<br>Thalaivas</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>U<br>Mumba</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 26, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Bengaluru<br>Bulls</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Dabang<br>Delhi KC</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 27, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Up<br>Yoddha</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Jaipur<br>Pink Panthers</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 27, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Gujarat<br>Giants</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Puneri<br>Paltan</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 28, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Patna<br>Pirates</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Tamil<br>Thalaivas</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 28, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Puneri<br>Paltan</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Bengal<br>Warriors</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 29, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>U<br>Mumba</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Haryana<br>Steelers</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 29, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Telugu<br>Titans</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Up<br>Yoddha</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 29, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 21:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Dabang<br>Delhi KC</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Gujarat<br>Giants</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 30, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Jaipur<br>Pink Panthers</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Patna<br>Pirates</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 30, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Bengaluru<br>Bulls</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Telugu<br>Titans</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 31, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Haryana<br>Steelers</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Puneri<br>Paltan</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> January 31, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>U<br>Mumba</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Dabang<br>Delhi KC</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> February 1, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Bengal<br>Warriors</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Gujarat<br>Giants</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> February 1, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Tamil<br>Thalaivas</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Bengaluru<br>Bulls</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> February 2, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Up<br>Yoddha</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Patna<br>Pirates</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> February 2, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Puneri<br>Paltan</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>U<br>Mumba</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> February 3, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Dabang<br>Delhi KC</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Jaipur<br>Pink Panthers</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> February 3, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Telugu<br>Titans</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Tamil<br>Thalaivas</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> February 4, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 19:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Haryana<br>Steelers</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Bengal<br>Warriors</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i class="fas fa-calendar-alt"></i> February 4, 2022</td>
+                  <td colspan="2"><i class="fas fa-clock"></i> 20:30 IST</td>
+                </tr>
+                <tr>
+                  <td>Bengaluru<br>Bulls</td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>Up<br>Yoddha</td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <hr>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col s12" id="stan">
+            <h6 class="white-text">Top 6 teams qualify for the playoffs</h6>
+            <table class="bordered white-text">
+              <tbody>
+                <tr>
+                  <td><b>RANK, TEAM</b></td>
+                  <td><b>PLD</b></td>
+                  <td><b>DIFF.</b></td>
+                  <td><b>POINTS</b></td>
+                </tr>
+                <tr>
+                  <td><b>1</b>&#8250; Dabang Delhi</td>
+                  <td>11</td>
+                  <td>2</td>
+                  <td>42</td>
+                </tr>
+                <tr>
+                  <td><b>2</b>&#8250; Bengaluru Bulls</td>
+                  <td>12</td>
+                  <td>50</td>
+                  <td>40</td>
+                </tr>
+                <tr>
+                  <td><b>3</b>&#8250; Patna Pirates</td>
+                  <td>11</td>
+                  <td>44</td>
+                  <td>40</td>
+                </tr>
+                <tr>
+                  <td><b>4</b>&#8250; Bengal Warriors</td>
+                  <td>12</td>
+                  <td>-26</td>
+                  <td>35</td>
+                </tr>
+                <tr>
+                  <td><b>5</b>&#8250; Up Yoddha</td>
+                  <td>11</td>
+                  <td>14</td>
+                  <td>33</td>
+                </tr>
+                <tr>
+                  <td><b>6</b>&#8250; Jaipur Pink Panthers</td>
+                  <td>11</td>
+                  <td>-5</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                  <td><b>7</b>&#8250; Tamil Thalaivas</td>
+                  <td>11</td>
+                  <td>16</td>
+                  <td>31</td>
+                </tr>
+                <tr>
+                  <td><b>8</b>&#8250; U Mumba</td>
+                  <td>11</td>
+                  <td>-8</td>
+                  <td>31</td>
+                </tr>
+                <tr>
+                  <td><b>9</b>&#8250; Haryana Steelers</td>
+                  <td>11</td>
+                  <td>-26</td>
+                  <td>29</td>
+                </tr>
+                <tr>
+                  <td><b>10</b>&#8250; Gujarat Giants</td>
+                  <td>11</td>
+                  <td>5</td>
+                  <td>28</td>
+                </tr>
+                <tr>
+                  <td><b>11</b>&#8250; Puneri Paltan</td>
+                  <td>11</td>
+                  <td>-27</td>
+                  <td>22</td>
+                </tr>
+                <tr>
+                  <td><b>12</b>&#8250; Telugu Titans</td>
+                  <td>11</td>
+                  <td>-39</td>
+                  <td>17</td>
+                </tr>
+              </tbody>
+            </table>
+            <h6 class="white-text"><b>POINTS SYSTEM</b> - Team Won: 5 pts, Tie: 3 pts to each team,
+              Loss by 7 or less: 1 pt to losing team, Loss by more than 7: 0 pts</h6>
+            <h6 class="white-text"><b>Abbreviations</b> - PLD: Played, DIFF.: Score Difference</h6>
+          </div>
+          <div class="col s12" id="sqad">
+            <h5 class="white-text">BENGAL WARRIORS</h5>
+            <table class="centered bordered white-text">
+              <tbody>
+                <tr>
+                  <td>Akash Pikalmunde</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Anand V</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Maninder Singh</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Ravindra Kumawat</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Rishank Devadiga</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Sukesh Hegde</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Darshan J</td>
+                  <td>Defender, right cover</td>
+                </tr>
+                <tr>
+                  <td>Vijin Thangadurai</td>
+                  <td>Defender, right cover</td>
+                </tr>
+                <tr>
+                  <td>Amit</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Parveen</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Sachin Vittala</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Abozar Mohajermighani</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Rinku Narwal</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Rohit Banne</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Esmaeil Nabibakhsh</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Manoj Gowda</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Rohit</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Tapas Pal</td>
+                  <td>Allrounder</td>
+                </tr>
+              </tbody>
+            </table>
+            <h5 class="white-text">BENGALURU BULLS</h5>
+            <table class="centered bordered white-text">
+              <tbody>
+                <tr>
+                  <td>Abolfazi Maghsodloumahali</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Banty</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Chandran Ranjit</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Deepak Narwal</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Dong Geon Lee</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>More GB</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Naseeb</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Pawan Sherawat</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Rohit Sangwan</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Mayur Kadam</td>
+                  <td>Defender, right cover</td>
+                </tr>
+                <tr>
+                  <td>Mohit Sherawat</td>
+                  <td>Defender, right cover</td>
+                </tr>
+                <tr>
+                  <td>Mahendar Singh</td>
+                  <td>Defender, left cover</td>
+                </tr>
+                <tr>
+                  <td>Saurabh Nandal</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Amit Sheoran</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Ankit</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Vikas</td>
+                  <td>Defender</td>
+                </tr>
+              </tbody>
+            </table>
+            <h5 class="white-text">DABANG DELHI KC</h5>
+            <table class="centered bordered white-text">
+              <tbody>
+                <tr>
+                  <td>Ajay Thakur</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Ashu Malik</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Emad Sedaghatnia</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Naveen Kumar</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Neeraj Narwal</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Sushant Sail</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Jeeva Kumar</td>
+                  <td>Defender, right cover</td>
+                </tr>
+                <tr>
+                  <td>Mohit</td>
+                  <td>Defender, right cover</td>
+                </tr>
+                <tr>
+                  <td>Sumit</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Joginder Narwal</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Mohammad Malak</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Vikash Kumar D</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Balram</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Manjeet Chhillar</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Sandeep Narwal</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Vijay Jaglan</td>
+                  <td>Allrounder</td>
+                </tr>
+              </tbody>
+            </table>
+            <h5 class="white-text">GUJARAT GIANTS</h5>
+            <table class="centered bordered white-text">
+              <tbody>
+                <tr>
+                  <td>Ajay Kumar</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Bhuvneshwar Gaur</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Harmanjit Singh</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Harshit Yadav</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Mahendra Rajput</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Maninder Singh</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Pardeep Kumar</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Rakesh Narwal</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Rathan K</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Ankit</td>
+                  <td>Defender, right corner</td>
+                </tr>
+                <tr>
+                  <td>Ravinder Pahal</td>
+                  <td>Defender, right corner</td>
+                </tr>
+                <tr>
+                  <td>Davinder Amar Singh</td>
+                  <td>Defender, left cover</td>
+                </tr>
+                <tr>
+                  <td>Parvesh Bhainswal</td>
+                  <td>Defender, left cover</td>
+                </tr>
+                <tr>
+                  <td>Girish Maruti Ernak</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Sumit</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Soleiman Pahlevani</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Sunil Kumar</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Hadi Oshtorak</td>
+                  <td>Allrounder</td>
+                </tr>
+              </tbody>
+            </table>
+            <h5 class="white-text">HARYANA STEELERS</h5>
+            <table class="centered bordered white-text">
+              <tbody>
+                <tr>
+                  <td>Akshay Kumar</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Ashish</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Mohammad Esmaeil</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Vikash Kandola</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Vinay</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Ravi Kumar</td>
+                  <td>Defender, right cover</td>
+                </tr>
+                <tr>
+                  <td>Chand Singh</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Rajesh Gurjar</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Surender Nada</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Ajay</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Hamid Nader</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Rajesh Narwal</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Rohit Gulia</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Shrikant Tewthia</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Vikas Jaglan</td>
+                  <td>Allrounder</td>
+                </tr>
+              </tbody>
+            </table>
+            <h5 class="white-text">JAIPUR PINK PANTHERS</h5>
+            <table class="centered bordered white-text">
+              <tbody>
+                <tr>
+                  <td>Amin Nosrati</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Amirhossein Maleki</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Arjun Deshwal</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Ashok</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Naveen</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Sushil Gulia</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Amit Nagar</td>
+                  <td>Left Raider</td>
+                </tr>
+                <tr>
+                  <td>Pavan TR</td>
+                  <td>Defender, right cover</td>
+                </tr>
+                <tr>
+                  <td>Amit Hooda</td>
+                  <td>Defender, right corner</td>
+                </tr>
+                <tr>
+                  <td>Elavarasan A</td>
+                  <td>Defender, left cover</td>
+                </tr>
+                <tr>
+                  <td>Sandeep Dhull</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Shaul Kumar</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Amit Kharb</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Dharmaraj Cheralathan</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Vishal Lather</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Deepak Hooda</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Nitin Rawal</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Sachin Narwal</td>
+                  <td>Allrounder</td>
+                </tr>
+              </tbody>
+            </table>
+            <h5 class="white-text">PATNA PIRATES</h5>
+            <table class="centered bordered white-text">
+              <tbody>
+                <tr>
+                  <td>Guman Singh</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Mohit</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Monu</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Monu Goyat</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Prashanth Kumar Rai</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Rajveersinh Chavan</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Sachin Tanwar</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Selvamani K</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Neeraj Kumar</td>
+                  <td>Defender, right corner</td>
+                </tr>
+                <tr>
+                  <td>Sandeep</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Shubham Shinde</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Sourav Gulia</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Sunil</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>C Sajin</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Daniel Omondi Odhiambo</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Sahil Mann</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Shadloui Chianeh</td>
+                  <td>Allrounder</td>
+                </tr>
+              </tbody>
+            </table>
+            <h5 class="white-text">PUNERI PALTAN</h5>
+            <table class="centered bordered white-text">
+              <tbody>
+                <tr>
+                  <td>Mohit Goyal</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Nitin Tomar</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Pankaj Mohite</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Pawan Kumar</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Rahul Chaudhari</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Vishwas</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Abinesh Nadarajan</td>
+                  <td>Defender, right cover</td>
+                </tr>
+                <tr>
+                  <td>Jadhav Shahaji</td>
+                  <td>Defender, right cover</td>
+                </tr>
+                <tr>
+                  <td>Baldev Singh</td>
+                  <td>Defender, right corner</td>
+                </tr>
+                <tr>
+                  <td>Hadi Tajik</td>
+                  <td>Defender, right corner</td>
+                </tr>
+                <tr>
+                  <td>Sourav Kumar</td>
+                  <td>Defender, right corner</td>
+                </tr>
+                <tr>
+                  <td>Sanket Sawant</td>
+                  <td>Defender, left cover</td>
+                </tr>
+                <tr>
+                  <td>Karamvir</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Sombir</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Vishal Bhardwaj</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>E Subash</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Govind Gurjar</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Victor Obiero</td>
+                  <td>Allrounder</td>
+                </tr>
+              </tbody>
+            </table>
+            <h5 class="white-text">TAMIL THALAIVAS</h5>
+            <table class="centered bordered white-text">
+              <tbody>
+                <tr>
+                  <td>Ajinkya Pawar</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Athul MS</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Bhavani Rajput</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>K Prapanjan</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Manjeet</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Sandaruwan Asiri</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>M Abishek</td>
+                  <td>Defender, right cover</td>
+                </tr>
+                <tr>
+                  <td>Surjeet Singh</td>
+                  <td>Defender, right cover</td>
+                </tr>
+                <tr>
+                  <td>Himanshu</td>
+                  <td>Defender, right corner</td>
+                </tr>
+                <tr>
+                  <td>Sagar</td>
+                  <td>Defender, right corner</td>
+                </tr>
+                <tr>
+                  <td>Sahil</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Anwar Saheed Baba</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Sagar Krishna</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Santhapanaselvam</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Sourabh Patil</td>
+                  <td>Allrounder</td>
+                </tr>
+              </tbody>
+            </table>
+            <h5 class="white-text">TELUGU TITANS</h5>
+            <table class="centered bordered white-text">
+              <tbody>
+                <tr>
+                  <td>Amit Chauhan</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Ankit Beniwal</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Galla Raju</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Hyunsu Park</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Rajnish</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Rakesh Gowda</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Rohit Kumar</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Siddharth Desai</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Aakash Dattu Arsul</td>
+                  <td>Defender, right cover</td>
+                </tr>
+                <tr>
+                  <td>Akash Choudhary</td>
+                  <td>Defender, right corner</td>
+                </tr>
+                <tr>
+                  <td>Manish</td>
+                  <td>Defender, left cover</td>
+                </tr>
+                <tr>
+                  <td>Adarsh L</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>C Arun</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Prince D</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Ruturaj Koravi</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Surinder Singh</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Tetsuro Abe</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Sandeep Kandola</td>
+                  <td>Allrounder</td>
+                </tr>
+              </tbody>
+            </table>
+            <h5 class="white-text">U MUMBA</h5>
+            <table class="centered bordered white-text">
+              <tbody>
+                <tr>
+                  <td>Abhishek Singh</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Jashandeep Singh</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Navneet</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Rahul Rana</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>V Ajeet Kumar</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Ajeet</td>
+                  <td>Defender, right cover</td>
+                </tr>
+                <tr>
+                  <td>Harendra Kumar</td>
+                  <td>Defender, left cover</td>
+                </tr>
+                <tr>
+                  <td>Fazel Atrachali</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Sunil Siddhgavali</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Rinku HC</td>
+                  <td>Defender</td>
+                </tr>
+                <tr>
+                  <td>Ajinkya Kapre</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Ashish Kumar</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Mohsen Maghsoudlou</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Pankaj</td>
+                  <td>Allrounder</td>
+                </tr>
+              </tbody>
+            </table>
+            <h5 class="white-text">UP YODDHA</h5>
+            <table class="centered bordered white-text">
+              <tbody>
+                <tr>
+                  <td>Ankit</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Gulveer Singh</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>James Kamweti</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Mohammad Taghi</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Pardeep Narwal</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Sahil</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Shrikant Jadhav</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Surender Gill</td>
+                  <td>Raider</td>
+                </tr>
+                <tr>
+                  <td>Ashu Singh</td>
+                  <td>Defender, right cover</td>
+                </tr>
+                <tr>
+                  <td>Aashish Nagar</td>
+                  <td>Defender, right corner</td>
+                </tr>
+                <tr>
+                  <td>Nitesh Kumar</td>
+                  <td>Defender, right corner</td>
+                </tr>
+                <tr>
+                  <td>Gaurav Kumar</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Sumit</td>
+                  <td>Defender, left corner</td>
+                </tr>
+                <tr>
+                  <td>Gurdeep</td>
+                  <td>Allrounder</td>
+                </tr>
+                <tr>
+                  <td>Nitin Panwar</td>
+                  <td>Allrounder</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </main>
+</body>
+
+</html>

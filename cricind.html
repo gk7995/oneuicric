@@ -1,0 +1,485 @@
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <!-- <meta http-equiv="refresh" content="60;"> -->
+  <title lang="en-us">One UI Sports - Cricket India Scores, Series, Stats & more..</title>
+  <link rel="stylesheet" href="OneUI/oui.min.css">
+  <link rel="stylesheet" href="materialize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css">
+  <link rel="icon" href="images/OUC.ico">
+  <style>
+    @font-face {
+      font-family: 'SamsungOne 400';
+      src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+    }
+
+    * {
+      font-family: 'SamsungOne 400';
+      font-size: larger;
+    }
+
+    .oui-button {
+      font-family: 'SamsungOne 400';
+    }
+
+    iframe {
+      border-radius: 15px;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="materialize.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.fixed-action-btn').openFAB();
+      $('.fixed-action-btn').closeFAB();
+      $('.fixed-action-btn.toolbar').openToolbar();
+      $('.fixed-action-btn.toolbar').closeToolbar();
+      $('.tooltipped').tooltip({
+        delay: 50
+      });
+    })
+    $(document).ready(function () {
+      $('.modal').modal();
+      $('#modal2').modal();
+    });
+  </script>
+</head>
+
+<body oncontextmenu="return false;" onload="location.href='#view'">
+  <main class="containr">
+    <div class="oui-viewing center-align">
+      <h4>Cricket India Home</h4>
+      <h5>IND vs SA</h5>
+      <!-- <h6>Auto Refresh in every 60 seconds</h6> -->
+    </div>
+    <div class="oui-interaction center-align">
+      <!--Interaction area-->
+      <div class="oui-bubble blue-grey darken-4" id="view">
+        <div class="fixed-action-btn">
+          <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5 modal-trigger"
+            data-position="top" data-delay="50" data-tooltip="Menu" href="#modal2">
+            <i class="large fas fa-bars"></i>
+          </a>
+        </div>
+        <!--Menu-->
+        <div id="modal2" class="modal bottom-sheet right-align blue-grey darken-4 amber-text text-accent-2">
+          <div class="modal-content">
+            <ul class="collection left-align" style="border-width: 0px;">
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='index.html'">
+                <a href="#!"><i class="fas fa-trophy circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">One UI Sports Home</p>
+                <p>Back to Sports Home</p>
+              </li>
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='about.html'">
+                <a href="#!"><i class="fas fa-info circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">About</p>
+                <p>About this Website</p>
+              </li>
+              <li class="collection-item blue-grey darken-4"></li>
+            </ul>
+          </div>
+        </div>
+        <h1 class="hide"></h1>
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab"><a href="results.html" target="_blank"
+                  class="blue-grey darken-4 amber-text text-accent-2">
+                  <h6>RESULTS<br>2022 & Prev</h6>
+                </a></li>
+              <li class="tab"><a href="#curr" class="active blue-grey darken-4 amber-text text-accent-2">
+                  <h6>RESULTS<br>IND v SA</h6>
+                </a></li>
+              <li class="tab"><a href="#sche" class="blue-grey darken-4 amber-text text-accent-2">
+                  <h6>MORE<br>Schedules 2022</h6>
+                </a></li>
+              <div class="indicator amber accent-3"></div>
+            </ul>
+          </div>
+          <div class="col s12" id="curr">
+            <div class="row">
+              <div class="col s12">
+                <ul class="tabs tabs-fixed-width">
+                  <li class="tab"><a href="#sch" class="active blue-grey darken-4 amber-text text-accent-2">
+                      <h6>SCHEDULE<br>2021-22</h6>
+                    </a></li>
+                  <li class="tab"><a href="#sco" class="blue-grey darken-4 amber-text text-accent-2">
+                      <h6>SCORECARD</h6>
+                    </a></li>
+                  <li class="tab"><a href="#hh" class="blue-grey darken-4 amber-text text-accent-2">
+                      <h6>HEAD TO HEAD</h6>
+                    </a></li>
+                  <li class="tab"><a href="#sq" class="blue-grey darken-4 amber-text text-accent-2">
+                      <h6>SQUADS</h6>
+                    </a></li>
+                  <div class="indicator amber accent-3"></div>
+                </ul>
+              </div>
+              <div class="col s12" id="sch">
+                <table class="centered bordered white-text">
+                  <tbody>
+                    <tr>
+                      <td>Dec 26<br>13:30 IST</td>
+                      <td>1st TEST</td>
+                      <td><a href="https://www.cricket.com/live-score/205358/scorecard" target="score"
+                          class="oui-button transparent white-text show-on-large hide-on-med-and-down"> Match Centre
+                          &#8250;</a>
+                        <a href="https://www.cricket.com/live-score/205358/scorecard" target="score1"
+                          class="oui-button transparent white-text show-on-medium-and-down hide-on-large-only"> Match
+                          Centre
+                          &#8250;</a><i class="fas fa-map-marker-alt"></i> Centurion</td>
+                    </tr>
+                    <tr>
+                      <td>Jan 3<br>13:30 IST</td>
+                      <td>2nd TEST</td>
+                      <td><a href="https://www.cricket.com/live-score/205360/scorecard" target="score"
+                          class="oui-button transparent white-text show-on-large hide-on-med-and-down"> Match Centre
+                          &#8250;</a>
+                        <a href="https://www.cricket.com/live-score/205360/scorecard" target="score1"
+                          class="oui-button transparent white-text show-on-medium-and-down hide-on-large-only"> Match
+                          Centre
+                          &#8250;</a><i class="fas fa-map-marker-alt"></i> Johannesburg</td>
+                    </tr>
+                    <tr>
+                      <td>Jan 11<br>14:00 IST</td>
+                      <td>3rd TEST</td>
+                      <td><a href="https://www.cricket.com/live-score/205362/scorecard" target="score"
+                          class="oui-button transparent white-text show-on-large hide-on-med-and-down"> Match Centre
+                          &#8250;</a>
+                        <a href="https://www.cricket.com/live-score/205362/scorecard" target="score1"
+                          class="oui-button transparent white-text show-on-medium-and-down hide-on-large-only"> Match
+                          Centre
+                          &#8250;</a><i class="fas fa-map-marker-alt"></i> Cape Town</td>
+                    </tr>
+                    <tr>
+                      <td>Jan 19<br>14:00 IST</td>
+                      <td>1st ODI</td>
+                      <td><a href="https://www.cricket.com/live-score/205368/scorecard" target="score"
+                          class="oui-button transparent white-text show-on-large hide-on-med-and-down"> Match Centre
+                          &#8250;</a>
+                        <a href="https://www.cricket.com/live-score/205368/scorecard" target="score1"
+                          class="oui-button transparent white-text show-on-medium-and-down hide-on-large-only"> Match
+                          Centre
+                          &#8250;</a><i class="fas fa-map-marker-alt"></i> Paarl</td>
+                    </tr>
+                    <tr>
+                      <td>Jan 21<br>14:00 IST</td>
+                      <td>2nd ODI</td>
+                      <td><a href="https://www.cricket.com/live-score/205369/scorecard" target="score"
+                          class="oui-button transparent white-text show-on-large hide-on-med-and-down"> Match Centre
+                          &#8250;</a>
+                        <a href="https://www.cricket.com/live-score/205369/scorecard" target="score1"
+                          class="oui-button transparent white-text show-on-medium-and-down hide-on-large-only"> Match
+                          Centre
+                          &#8250;</a><i class="fas fa-map-marker-alt"></i> Paarl</td>
+                    </tr>
+                    <tr>
+                      <td>Jan 23<br>14:00 IST</td>
+                      <td>3rd ODI</td>
+                      <td><a href="https://www.cricket.com/live-score/205370/scorecard" target="score"
+                          class="oui-button transparent white-text show-on-large hide-on-med-and-down"> Match Centre
+                          &#8250;</a>
+                        <a href="https://www.cricket.com/live-score/205370/scorecard" target="score1"
+                          class="oui-button transparent white-text show-on-medium-and-down hide-on-large-only"> Match Centre
+                          &#8250;</a><i class="fas fa-map-marker-alt"></i> Cape Town</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col s12" id="sco">
+                <div class="show-on-large hide-on-med-and-down">
+                  <iframe src="https://www.cricket.com/live-score/205370/scorecard" name="score" width="35%"
+                    height="3000px" scrolling="no"></iframe>
+                </div>
+                <div class="show-on-medium-and-down hide-on-large-only">
+                  <iframe src="https://www.cricket.com/live-score/205370/scorecard" name="score1" width="100%"
+                    height="3000px" scrolling="no"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="col s12" id="hh">
+              <h6 class="amber-text text-accent-2">*After 3rd TEST | **After 3rd ODI</h6>
+              <table class="centered white-text">
+                <tbody>
+                  <tr>
+                    <td><img src="https://images.cricket.com/teams/7_flag_safari.png" alt="SA" width="40px"
+                        height="25px" style="border-radius: 5px;"><br>SA</td>
+                    <td><b>TEAMS</b></td>
+                    <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="40px"
+                        height="25px" style="border-radius: 5px;"><br>IND</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      <hr><br>IN TESTs</td>
+                  </tr>
+                  <tr>
+                    <td><b>WON: 17*</b></td>
+                    <td><b>MATCHES: 42*</b><br>TIE/ NR: 10</td>
+                    <td><b>WON: 15</b></td>
+                  </tr>
+                  <tr>
+                    <td><b>6</b></td>
+                    <td><b>ICC RANK</b></td>
+                    <td><b>1</b></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      <hr><br>IN ODIs</td>
+                  </tr>
+                  <tr>
+                    <td><b>WON: 49**</b></td>
+                    <td><b>MATCHES: 87**</b><br>TIE/ NR: 3</td>
+                    <td><b>WON: 35</b></td>
+                  </tr>
+                  <tr>
+                    <td><b>5</b></td>
+                    <td><b>ICC RANK</b></td>
+                    <td><b>4</b></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col s12" id="sq">
+            <div class="show-on-large hide-on-med-and-down"><iframe
+                src="https://www.cricket.com/series/domestic/2087/india-tour-of-south-africa-2021-22/squads"
+                scrolling="no" width="35%" height="1900px" style="border-radius: 5px;"></iframe></div>
+            <div class="show-on-medium-and-down hide-on-large-only"><iframe
+                src="https://www.cricket.com/series/domestic/2087/india-tour-of-south-africa-2021-22/squads"
+                scrolling="no" width="100%" height="1900px" style="border-radius: 5px;"></iframe></div>
+          </div>
+        </div>
+        <div class="col s12" id="sche">
+          <table class="centered bordered white-text">
+            <tbody>
+              <tr>
+                <td><b>DATE</b></td>
+                <td><b>HOME TEAM</b></td>
+                <td><b>AWAY TEAM</b></td>
+                <td><b>VENUE</b></td>
+              </tr>
+              <tr>
+                <td colspan="4"><b>WEST INDIES TOUR OF INDIA [3 ODIs]</b></td>
+              </tr>
+              <tr>
+                <td>Feb 6<br>13:00</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td><img src="https://images.cricket.com/teams/9_flag_safari.png" alt="WI" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>WI</td>
+                <td>Ahmedabad<br>1st ODI</td>
+              </tr>
+              <tr>
+                <td>Feb 9<br>13:00</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td><img src="https://images.cricket.com/teams/9_flag_safari.png" alt="WI" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>WI</td>
+                <td>Jaipur<br>2nd ODI</td>
+              </tr>
+              <tr>
+                <td>Feb 12<br>13:00</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td><img src="https://images.cricket.com/teams/9_flag_safari.png" alt="WI" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>WI</td>
+                <td>Kolkata<br>3rd ODI</td>
+              </tr>
+              <tr>
+                <td colspan="4"><b>WEST INDIES TOUR OF INDIA [3 T20s]</b></td>
+              </tr>
+              <tr>
+                <td>Feb 15<br>19:00</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td><img src="https://images.cricket.com/teams/9_flag_safari.png" alt="WI" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>WI</td>
+                <td>Cuttack<br>1st T20</td>
+              </tr>
+              <tr>
+                <td>Feb 18<br>19:00</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td><img src="https://images.cricket.com/teams/9_flag_safari.png" alt="WI" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>WI</td>
+                <td>Vishakhapatnam<br>2nd T20</td>
+              </tr>
+              <tr>
+                <td>Feb 20<br>19:00</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td><img src="https://images.cricket.com/teams/9_flag_safari.png" alt="WI" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>WI</td>
+                <td>Thiruvananthapuram<br>3rd T20</td>
+              </tr>
+              <tr>
+                <td colspan="4"><b>SRI LANKA TOUR OF INDIA [2 TESTs]</b></td>
+              </tr>
+              <tr>
+                <td>Feb 25<br>09:30</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td><img src="https://images.cricket.com/teams/8_flag_safari.png" alt="SL" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>SL</td>
+                <td>Bangalore<br>1st Test</td>
+              </tr>
+              <tr>
+                <td>Mar 5<br>09:30</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td><img src="https://images.cricket.com/teams/8_flag_safari.png" alt="SL" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>SL</td>
+                <td>Mohali<br>2nd Test</td>
+              </tr>
+              <tr>
+                <td colspan="4"><b>SRI LANKA TOUR OF INDIA [3 T20s]</b></td>
+              </tr>
+              <tr>
+                <td>Mar 13<br>19:00</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td><img src="https://images.cricket.com/teams/8_flag_safari.png" alt="SL" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>SL</td>
+                <td>Mohali<br>1st T20</td>
+              </tr>
+              <tr>
+                <td>Mar 15<br>19:00</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td><img src="https://images.cricket.com/teams/8_flag_safari.png" alt="SL" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>SL</td>
+                <td>Dharamsala<br>2nd T20</td>
+              </tr>
+              <tr>
+                <td>Mar 18<br>19:00</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td><img src="https://images.cricket.com/teams/8_flag_safari.png" alt="SL" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>SL</td>
+                <td>Lucknow<br>3rd T20</td>
+              </tr>
+              <tr>
+                <td colspan="4"><b>SOUTH AFRICA TOUR OF INDIA [5 T20s]</b></td>
+              </tr>
+              <tr>
+                <td>Jun 9<br>19:00</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td><img src="https://images.cricket.com/teams/7_flag_safari.png" alt="SA" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>SA</td>
+                <td>Chennai<br>1st T20</td>
+              </tr>
+              <tr>
+                <td>Jun 12<br>19:00</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td><img src="https://images.cricket.com/teams/7_flag_safari.png" alt="SA" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>SA</td>
+                <td>Bangalore<br>2nd T20</td>
+              </tr>
+              <tr>
+                <td>Jun 14<br>19:00</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td><img src="https://images.cricket.com/teams/7_flag_safari.png" alt="SA" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>SA</td>
+                <td>Nagpur<br>3rd T20</td>
+              </tr>
+              <tr>
+                <td>Jun 17<br>19:00</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td><img src="https://images.cricket.com/teams/7_flag_safari.png" alt="SA" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>SA</td>
+                <td>Rajkot<br>4th T20</td>
+              </tr>
+              <tr>
+                <td>Jun 19<br>19:00</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td><img src="https://images.cricket.com/teams/7_flag_safari.png" alt="SA" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>SA</td>
+                <td>Delhi<br>5th T20</td>
+              </tr>
+              <tr>
+                <td colspan="4"><b>INDIA TOUR OF ENGLAND [Rescheduled 5th TEST] [1 TEST]</b></td>
+              </tr>
+              <tr>
+                <td>Jul 1<br>15:30</td>
+                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENG" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>ENG</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td>Birmingham<br>1st Test</td>
+              </tr>
+              <tr>
+                <td colspan="4"><b>INDIA TOUR OF ENGLAND [3 T20s]</b></td>
+              </tr>
+              <tr>
+                <td>Jul 7<br>23:00</td>
+                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENG" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>ENG</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td>Southampton<br>1st T20</td>
+              </tr>
+              <tr>
+                <td>Jul 9<br>19:00</td>
+                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENG" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>ENG</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td>Birmingham<br>2nd T20</td>
+              </tr>
+              <tr>
+                <td>Jul 10<br>23:00</td>
+                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENG" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>ENG</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td>Nottingham<br>3rd T20</td>
+              </tr>
+              <tr>
+                <td colspan="4"><b>INDIA TOUR OF ENGLAND [3 ODIs]</b></td>
+              </tr>
+              <tr>
+                <td>Jul 12<br>15:30</td>
+                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENG" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>ENG</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td>Oval, London<br>1st ODI</td>
+              </tr>
+              <tr>
+                <td>Jul 14<br>17:30</td>
+                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENG" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>ENG</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td>Lords, London<br>2nd ODI</td>
+              </tr>
+              <tr>
+                <td>Jul 17<br>17:30</td>
+                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENG" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>ENG</td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td>Manchester<br>3rd ODI</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <br>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,3053 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <title>One UI Sports - Cricket Results</title>
+  <link rel="stylesheet" href="OneUI/oui.min.css">
+  <link rel="stylesheet" href="materialize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css">
+  <link rel="icon" href="images/OUC.ico">
+  <style>
+    @font-face {
+      font-family: 'SamsungOne 400';
+      src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+    }
+
+    * {
+      font-family: 'SamsungOne 400';
+      font-size: larger;
+    }
+
+    .oui-button {
+      font-family: 'SamsungOne 400';
+    }
+
+    iframe {
+      border-radius: 15px;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="materialize.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.fixed-action-btn').openFAB();
+      $('.fixed-action-btn').closeFAB();
+      $('.fixed-action-btn.toolbar').openToolbar();
+      $('.fixed-action-btn.toolbar').closeToolbar();
+      $('.tooltipped').tooltip({
+        delay: 50
+      });
+    })
+    $(document).ready(function () {
+      $('.modal').modal();
+      $('#modal2').modal();
+    });
+  </script>
+</head>
+
+<body oncontextmenu="return false;" onload="location.href='#view'">
+  <main class="containr">
+    <div class="oui-viewing center-align">
+      <h4>Results</h4>
+      <h5 class="grey-text text-darken-1">of all India's International Series, Tournaments</h5>
+      <h6>Sorted in Descending Order</h6>
+    </div>
+    <div class="oui-interaction center-align">
+      <!-- Interaction area -->
+      <div class="oui-bubble blue-grey darken-4" id="view">
+        <div class="fixed-action-btn">
+          <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5 modal-trigger"
+            data-position="left" data-delay="50" data-tooltip="Menu" href="#modal2">
+            <i class="large fas fa-bars"></i>
+          </a>
+        </div>
+        <!--Menu-->
+        <div id="modal2" class="modal bottom-sheet right-align blue-grey darken-4 amber-text text-accent-2">
+          <div class="modal-content">
+            <ul class="collection left-align" style="border-width: 0px;">
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='index.html'">
+                <a href="#!"><i class="fas fa-home circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">OUI Sports Home</p>
+                <p>Back to Sports Home</p>
+              </li>
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='about.html'">
+                <a href="#!"><i class="fas fa-info circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">About</p>
+                <p>About this Website</p>
+              </li>
+              <li class="collection-item blue-grey darken-4"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab"><a href="iplresults.html" target="_blank"
+                  class="blue-grey darken-4 amber-text text-accent-2">
+                  <h6>IPL 2021<br>Results</h6>
+                </a></li>
+              <li class="tab"><a href="wcresults.html" target="_blank"
+                  class="blue-grey darken-4 amber-text text-accent-2">
+                  <h6>WCT20 2021<br>Results, Standings</h6>
+                </a></li>
+              <li class="tab"><a href="#yr2422" class="active blue-grey darken-4 amber-text text-accent-2">
+                  <h6>2024-2022</h6>
+                </a></li>
+              <li class="tab"><a href="#yr2119" class="blue-grey darken-4 amber-text text-accent-2">
+                  <h6>2021-2019</h6>
+                </a></li>
+              <li class="tab"><a href="#yr1816" class="blue-grey darken-4 amber-text text-accent-2">
+                  <h6>2018-2016<br>Archives</h6>
+                </a></li>
+              <li class="tab"><a href="#yr1513" class="blue-grey darken-4 amber-text text-accent-2">
+                  <h6>2015-2013<br>Archives</h6>
+                </a></li>
+              <li class="tab"><a href="#yr1210" class="blue-grey darken-4 amber-text text-accent-2">
+                  <h6>2012-2010<br>Archives</h6>
+                </a></li>
+              <li class="tab"><a href="#yr0907" class="blue-grey darken-4 amber-text text-accent-2">
+                  <h6>2009-2007<br>Archives</h6>
+                </a></li>
+              <div class="indicator amber accent-3"></div>
+            </ul>
+          </div>
+          <div class="col s12" id="yr2422"><br>
+            <div class="oui-bubble blue-grey darken-4">
+              <table class="centered bordered white-text">
+                <tbody>
+                  <tr>
+                    <td><b>DATE</b></td>
+                    <td><b>SCORES</b></td>
+                    <td><b>WINNER <br>MARGIN</b></td>
+                  </tr>
+                  <tr>
+                    <td>19-01-22</td>
+                    <td><b>SA:</b> 296/4<br><b>IND:</b> 265/8</td>
+                    <td><b>SA</b><br>31 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>21-01-22</td>
+                    <td><b>SA:</b> 288/3 (48.1)<br><b>IND:</b> 287/6</td>
+                    <td><b>SA</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>23-01-22</td>
+                    <td><b>SA:</b> 287 (49.5)<br><b>IND:</b> 283 (49.2)</td>
+                    <td><b>SA</b><br>4 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">SOUTH AFRICA WON THE 3 ODI SERIES BY 3-0</td>
+                  </tr>
+                  <tr>
+                    <td>26-12-21</td>
+                    <td><b>SA:</b> 197 (62.3), 191 (68)<br><b>IND:</b> 327 (105.3), 174 (50.3)</td>
+                    <td><b>IND</b><br>113 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>03-01-22</td>
+                    <td><b>SA:</b> 229 (79.4), 243/3 (67.4)<br><b>IND:</b> 202 (63.1), 266 (60.1)</td>
+                    <td><b>SA</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>11-01-22</td>
+                    <td><b>SA:</b> 210 (76.3), 212/3 (63.3)<br><b>IND:</b> 223 (77.3), 198 (67.3)</td>
+                    <td><b>SA</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">SOUTH AFRICA WON THE 3 TEST SERIES BY 2-1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col s12" id="yr2119"><br>
+            <div class="oui-bubble blue-grey darken-4">
+              <table class="centered bordered white-text">
+                <tbody>
+                  <tr>
+                    <td><b>DATE</b></td>
+                    <td><b>SCORES</b></td>
+                    <td><b>WINNER <br>MARGIN</b></td>
+                  </tr>
+                  <tr>
+                    <td>25-11-21</td>
+                    <td><b>IND:</b> 345 (111.1),<br> 234/7d (81)<br><b>NZ:</b> 296 (142.3),<br> 165/9 (98)</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td>03-12-21</td>
+                    <td><b>IND:</b> 325 (109.5),<br> 276/7d (70)<br><b>NZ:</b> 62 (28.1),<br> 167 (56.3)</td>
+                    <td><b>IND</b><br>372 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 2 TEST SERIES BY 1-0</td>
+                  </tr>
+                  <tr>
+                    <td>17-11-21</td>
+                    <td><b>IND:</b> 166/5 (19.4)<br><b>NZ:</b> 164/6</td>
+                    <td><b>IND</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>19-11-21</td>
+                    <td><b>IND:</b> 155/3 (17.2)<br><b>NZ:</b> 153/6</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>21-11-21</td>
+                    <td><b>IND:</b> 184/7<br><b>NZ:</b> 111 (17.2)</td>
+                    <td><b>IND</b><br>73 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 T20 SERIES BY 3-0</td>
+                  </tr>
+                  <tr>
+                    <td>04-08-21</td>
+                    <td><b>ENG:</b> 183, 303<br><b>IND:</b> 278, 52/1</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td>12-08-21</td>
+                    <td><b>ENG:</b> 391, 120<br><b>IND:</b> 364, 298/8d</td>
+                    <td><b>IND</b><br>151 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>25-08-21</td>
+                    <td><b>ENG:</b> 432<br><b>IND:</b> 78, 278</td>
+                    <td><b>ENG</b><br>INNS & 76 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>02-09-21</td>
+                    <td><b>ENG:</b> 290, 210<br><b>IND:</b> 191, 466</td>
+                    <td><b>IND</b><br>157 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>10-09-21</td>
+                    <td><b>ENG, IND</b></td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">5th TEST is Rescheduled to 01-07-22, IND LEAD SERIES BY 2-1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>25-07-21</td>
+                    <td><b>SL:</b> 126 (18.3)<br><b>IND:</b> 164/5</td>
+                    <td><b>IND</b><br>38 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>28-07-21</td>
+                    <td><b>SL:</b> 133/6 (19.4)<br><b>IND:</b> 132/5</td>
+                    <td><b>SL</b><br>4 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>29-07-21</td>
+                    <td><b>SL:</b> 82/3 (14.3)<br><b>IND:</b> 81/8</td>
+                    <td><b>SL</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">SL WON THE 3 T20 SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>18-07-21</td>
+                    <td><b>SL:</b> 262/9<br><b>IND:</b> 263/3 (36.4)</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>20-07-21</td>
+                    <td><b>SL:</b> 275/9<br><b>IND:</b> 277/7 (49.1)</td>
+                    <td><b>IND</b><br>3 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>23-07-21</td>
+                    <td><b>SL:</b> 277/7 (39/47)<br><b>IND:</b> 225 (43.1/47)</td>
+                    <td><b>SL</b><br>3 WKTS (D/L)/td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 ODI SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>18-06-21</td>
+                    <td><b>NZ:</b> 249, 140/2<br><b>IND:</b> 217, 170</td>
+                    <td><b>NZ</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">NEW ZEALAND WON THE WORLD TEST C'SHIP</td>
+                  </tr>
+                  <tr>
+                    <td>23-03-21</td>
+                    <td><b>IND:</b> 317/5<br><b>ENG:</b> 251 (42.1)</td>
+                    <td><b>IND</b><br>66 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>26-03-21</td>
+                    <td><b>IND:</b> 336/6<br><b>ENG:</b> 337/4 (43.3)</td>
+                    <td><b>ENG</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>28-03-21</td>
+                    <td><b>IND:</b> 329 (48.2)<br><b>ENG:</b> 322/9</td>
+                    <td><b>IND</b><br>7 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 ODI SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>12-03-21</td>
+                    <td><b>IND:</b> 124/7<br><b>ENG:</b> 130/2</td>
+                    <td><b>ENG</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>14-03-21</td>
+                    <td><b>IND:</b> 166/3 (17.5)<br><b>ENG:</b> 164/6</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>16-03-21</td>
+                    <td><b>IND:</b> 156/6<br><b>ENG:</b> 158/2 (18.2)</td>
+                    <td><b>ENG</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>18-03-21</td>
+                    <td><b>IND:</b> 185/8<br><b>ENG:</b> 177/8</td>
+                    <td><b>IND</b><br>8 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>20-03-21</td>
+                    <td><b>IND:</b> 224/2<br><b>ENG:</b> 188/8</td>
+                    <td><b>IND</b><br>36 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 5 T20 SERIES BY 3-2</td>
+                  </tr>
+                  <tr>
+                    <td>05-02-21</td>
+                    <td><b>IND:</b> 337, 192<br><b>ENG:</b> 578, 178</td>
+                    <td><b>ENG</b><br>227 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>13-02-21</td>
+                    <td><b>IND:</b> 329, 286<br><b>ENG:</b> 134, 164</td>
+                    <td><b>IND</b><br>317 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>24-02-21</td>
+                    <td><b>IND:</b> 145, 49/0<br><b>ENG:</b> 112, 81</td>
+                    <td><b>IND</b><br>10 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>04-03-21</td>
+                    <td><b>IND:</b> 365<br><b>ENG:</b> 205, 135</td>
+                    <td><b>IND</b><br>INN & 25 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 4 TEST SERIES BY 3-1</td>
+                  </tr>
+                  <tr>
+                    <td>17-12-20</td>
+                    <td><b>AUS:</b> 191, 93/2<br><b>IND:</b> 244, 36</td>
+                    <td><b>AUS</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>26-12-20</td>
+                    <td><b>AUS:</b> 195, 200<br><b>IND:</b> 326, 70/2</td>
+                    <td><b>IND</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>07-01-21</td>
+                    <td><b>AUS:</b> 338, 312/6d<br><b>IND:</b> 244, 334/5</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td>15-01-21</td>
+                    <td><b>AUS:</b> 369, 294<br><b>IND:</b> 336, 329/7</td>
+                    <td><b>IND</b><br>3 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 4 TEST SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>04-12-20</td>
+                    <td><b>AUS:</b> 150/7<br><b>IND:</b> 161/7</td>
+                    <td><b>IND</b><br>11 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>06-12-20</td>
+                    <td><b>AUS:</b> 194/5<br><b>IND:</b> 195/4 (19.4)</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>08-12-20</td>
+                    <td><b>AUS:</b> 186/5<br><b>IND:</b> 174/7</td>
+                    <td><b>AUS</b><br>12 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 T20 SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>27-11-20</td>
+                    <td><b>AUS:</b> 374/6<br><b>IND:</b> 308/8</td>
+                    <td><b>AUS</b><br>66 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>29-11-20</td>
+                    <td><b>AUS:</b> 389/4<br><b>IND:</b> 338/9</td>
+                    <td><b>AUS</b><br>51 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>02-12-20</td>
+                    <td><b>AUS:</b> 289 (49.3)<br><b>IND:</b> 302/5</td>
+                    <td><b>IND</b><br>13 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">AUSTRALIA WON THE 3 ODI SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>12-03-20</td>
+                    <td><b>IND, SA</b></td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">SERIES DRAWN</td>
+                  </tr>
+                  <tr>
+                    <td>21-02-20</td>
+                    <td><b>NZ:</b> 348, 9/0<br><b>IND:</b> 165, 191</td>
+                    <td><b>NZ</b><br>10 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>29-02-20</td>
+                    <td><b>NZ:</b> 235, 132/3<br><b>IND:</b> 242, 124</td>
+                    <td><b>NZ</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">NEW ZEALAND WON THE 2 TEST SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>05-02-20</td>
+                    <td><b>NZ:</b> 348/6 (48.1)<br><b>IND:</b> 347/4</td>
+                    <td><b>NZ</b><br>4 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>08-02-20</td>
+                    <td><b>NZ:</b> 273/8<br><b>IND:</b> 251 (48.3)</td>
+                    <td><b>NZ</b><br>22 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>11-02-20</td>
+                    <td><b>NZ:</b> 300/5 (47.1)<br><b>IND:</b> 296/7</td>
+                    <td><b>NZ</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">NEW ZEALAND WON THE 3 ODI SERIES BY 3-0</td>
+                  </tr>
+                  <tr>
+                    <td>24-01-20</td>
+                    <td><b>NZ:</b> 203/5<br><b>IND:</b> 204/4 (19)</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>26-01-20</td>
+                    <td><b>NZ:</b> 132/5<br><b>IND:</b> 135/3 (17.3)</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>29-01-20</td>
+                    <td><b>NZ:</b> 179/6<br><b>IND:</b> 179/5</td>
+                    <td><b>IND</b><br>Super Over</td>
+                  </tr>
+                  <tr>
+                    <td>31-01-20</td>
+                    <td><b>NZ:</b> 165/7<br><b>IND:</b> 165/8</td>
+                    <td><b>IND</b><br>Super Over</td>
+                  </tr>
+                  <tr>
+                    <td>02-02-20</td>
+                    <td><b>NZ:</b> 156/9<br><b>IND:</b> 163/3</td>
+                    <td><b>IND</b><br>7 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 5 T20 SERIES BY 5-0</td>
+                  </tr>
+                  <tr>
+                    <td>14-01-20</td>
+                    <td><b>IND:</b> 255 (49.1)<br><b>AUS:</b> 258/0 (37.4)</td>
+                    <td><b>AUS</b><br>10 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>17-01-20</td>
+                    <td><b>IND:</b> 340/6<br><b>AUS:</b> 304 (49.1)</td>
+                    <td><b>IND</b><br>36 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>19-01-20</td>
+                    <td><b>IND:</b> 289/3<br><b>AUS:</b> 286/9</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 ODI SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>05-01-20</td>
+                    <td><b>IND, SL</b></td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td>07-01-20</td>
+                    <td><b>IND:</b> 144/3 (17.3)<br><b>SL:</b> 142/9</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>10-01-20</td>
+                    <td><b>IND:</b> 201/6<br><b>SL:</b> 123 (15.5)</td>
+                    <td><b>IND</b><br>78 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 T20 SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>15-12-19</td>
+                    <td><b>IND:</b> 287/8<br><b>WI:</b> 291/2 (47.5)</td>
+                    <td><b>WI</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>18-12-19</td>
+                    <td><b>IND:</b> 387/5<br><b>WI:</b> 278 (43.3)</td>
+                    <td><b>IND</b><br>107 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>22-12-19</td>
+                    <td><b>IND:</b> 316/6 (48.4)<br><b>WI:</b> 315/5</td>
+                    <td><b>IND</b><br>4 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 ODI SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>06-12-19</td>
+                    <td><b>IND:</b> 209/4 (18.4)<br><b>WI:</b> 207/5</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>08-12-19</td>
+                    <td><b>IND:</b> 170/7<br><b>WI:</b> 173/2 (18.3)</td>
+                    <td><b>WI</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>11-12-19</td>
+                    <td><b>IND:</b> 240/3<br><b>WI:</b> 173/8</td>
+                    <td><b>IND</b><br>67 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 T20 SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>14-11-19</td>
+                    <td><b>IND:</b> 493/6d<br><b>BAN:</b> 150, 213</td>
+                    <td><b>IND</b><br>INN & 130 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>22-11-19</td>
+                    <td><b>IND:</b> 347/9d<br><b>BAN:</b> 106, 195</td>
+                    <td><b>IND</b><br>INN & 46 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 2 TEST SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>03-11-19</td>
+                    <td><b>IND:</b> 148/6<br><b>BAN:</b> 154/3 (19.3)</td>
+                    <td><b>BAN</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>07-11-19</td>
+                    <td><b>IND:</b> 154/2 (15.4)<br><b>BAN:</b> 153/6</td>
+                    <td><b>IND</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>10-11-19</td>
+                    <td><b>IND:</b> 174/5<br><b>BAN:</b> 144 (19.2)</td>
+                    <td><b>IND</b><br>30 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 T20 SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>02-10-19</td>
+                    <td><b>IND:</b> 502/7d, 323/4d<br><b>SA:</b> 431, 191</td>
+                    <td><b>IND</b><br>203 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>10-10-19</td>
+                    <td><b>IND:</b> 601/5d<br><b>SA:</b> 275, 189</td>
+                    <td><b>IND</b><br>INN & 137 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>19-10-19</td>
+                    <td><b>IND:</b> 497/9d<br><b>SA:</b> 162, 133</td>
+                    <td><b>IND</b><br>INN & 202 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 TEST SERIES BY 3-0</td>
+                  </tr>
+                  <tr>
+                    <td>15-09-19</td>
+                    <td><b>IND, SA</b></td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td>18-09-19</td>
+                    <td><b>IND:</b> 151/3 (19)<br><b>SA:</b> 149/5</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>22-09-19</td>
+                    <td><b>IND:</b> 134/9<br><b>SA:</b> 140/1 (16.5)</td>
+                    <td><b>SA</b><br>9 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">3 T20 SERIES LEVEL BY 1-1</td>
+                  </tr>
+                  <tr>
+                    <td>22-08-19</td>
+                    <td><b>WI:</b> 222, 100<br><b>IND:</b> 297, 343/7d</td>
+                    <td><b>IND</b><br>318 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>30-08-19</td>
+                    <td><b>WI:</b> 117, 210<br><b>IND:</b> 416, 168/4d</td>
+                    <td><b>IND</b><br>257 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 2 TEST SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>08-08-19</td>
+                    <td><b>WI: 54/1 (13), IND</b></td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td>11-08-19</td>
+                    <td><b>WI:</b> 210 (42)<br><b>IND:</b> 279/7</td>
+                    <td><b>IND</b><br>59 RUNS (D/L)</td>
+                  </tr>
+                  <tr>
+                    <td>14-08-19</td>
+                    <td><b>WI:</b> 240/7 (35)<br><b>IND:</b> 256/4 (32.3)</td>
+                    <td><b>IND</b><br>6 WKTS (D/L)</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 ODI SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>03-08-19</td>
+                    <td><b>WI:</b> 95/9<br><b>IND:</b> 98/6 (17.2)</td>
+                    <td><b>IND</b><br>4 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>04-08-19</td>
+                    <td><b>WI:</b> 98/4 (15.3)<br><b>IND:</b> 167/5</td>
+                    <td><b>IND</b><br>22 RUNS (D/L)</td>
+                  </tr>
+                  <tr>
+                    <td>06-08-19</td>
+                    <td><b>WI:</b> 146/6<br><b>IND:</b> 150/3 (19.1)</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 T20 SERIES BY 3-0</td>
+                  </tr>
+                  <tr>
+                    <td>02-03-19</td>
+                    <td><b>IND:</b> 240/4 (48.2)<br><b>AUS:</b> 236/7</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>05-03-19</td>
+                    <td><b>IND:</b> 250 (48.2)<br><b>AUS:</b> 242 (49.3)</td>
+                    <td><b>IND</b><br>8 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>08-03-19</td>
+                    <td><b>IND:</b> 281 (48.2)<br><b>AUS:</b> 313/5</td>
+                    <td><b>AUS</b><br>32 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>10-03-19</td>
+                    <td><b>IND:</b> 358/9<br><b>AUS:</b> 359/6 (47.5)</td>
+                    <td><b>AUS</b><br>4 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>13-03-19</td>
+                    <td><b>IND:</b> 237<br><b>AUS:</b> 272/9</td>
+                    <td><b>AUS</b><br>35 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">AUSTRALIA WON THE 5 ODI SERIES BY 3-2</td>
+                  </tr>
+                  <tr>
+                    <td>24-02-19</td>
+                    <td><b>IND:</b> 126/7<br><b>AUS:</b> 127/7</td>
+                    <td><b>AUS</b><br>3 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>27-02-19</td>
+                    <td><b>IND:</b> 190/4<br><b>AUS:</b> 194/3 (19.4)</td>
+                    <td><b>AUS</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">AUSTRALIA WON THE 2 T20 SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>06-02-19</td>
+                    <td><b>NZ:</b> 219/6<br><b>IND:</b> 139 (19.2)</td>
+                    <td><b>NZ</b><br>80 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>08-02-19</td>
+                    <td><b>NZ:</b> 158/8<br><b>IND:</b> 162/3 (18.5)</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>10-02-19</td>
+                    <td><b>NZ:</b> 212/4<br><b>IND:</b> 208/6</td>
+                    <td><b>NZ</b><br>4 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">NEW ZEALAND WON THE 3 T20 SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>23-01-19</td>
+                    <td><b>NZ:</b> 157 (38)<br><b>IND:</b> 156/2 (34.5)</td>
+                    <td><b>IND</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>26-01-19</td>
+                    <td><b>NZ:</b> 234 (40.2)<br><b>IND:</b> 324/4</td>
+                    <td><b>IND</b><br>90 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>28-01-19</td>
+                    <td><b>NZ:</b> 243 (49)<br><b>IND:</b> 245/3 (43)</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>31-01-19</td>
+                    <td><b>NZ:</b> 93/2 (14.4)<br><b>IND:</b> 92 (30.5)</td>
+                    <td><b>NZ</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>03-02-19</td>
+                    <td><b>NZ:</b> 217 (44.1)<br><b>IND:</b> 252 (49.5)</td>
+                    <td><b>IND</b><br>35 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 5 ODI SERIES BY 4-1</td>
+                  </tr>
+                  <tr>
+                    <td>12-01-19</td>
+                    <td><b>AUS:</b> 288/5<br><b>IND:</b> 254/9</td>
+                    <td><b>AUS</b><br>34 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>15-01-19</td>
+                    <td><b>AUS:</b> 298/9<br><b>IND:</b> 299/4 (49.2)</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>18-01-19</td>
+                    <td><b>AUS:</b> 230 (48.4)<br><b>IND:</b> 234/3 (49.2)</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 ODI SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>06-12-18</td>
+                    <td><b>AUS:</b> 235, 291<br><b>IND:</b> 250, 307</td>
+                    <td><b>IND</b><br>31 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>14-12-18</td>
+                    <td><b>AUS:</b> 326, 243<br><b>IND:</b> 283, 140</td>
+                    <td><b>AUS</b><br>146 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>26-12-18</td>
+                    <td><b>AUS:</b> 151, 261<br><b>IND:</b> 443/7d, 106/8d</td>
+                    <td><b>IND</b><br>137 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>03-01-19</td>
+                    <td><b>AUS:</b> 300, 6/0<br><b>IND:</b> 622/7d</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 4 TEST SERIES BY 2-1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col s12" id="yr1816"><br>
+            <div class="oui-bubble blue-grey darken-4">
+              <table class="centered bordered white-text">
+                <tbody>
+                  <tr>
+                    <td><b>DATE</b></td>
+                    <td><b>SCORES</b></td>
+                    <td><b>WINNER <br>MARGIN</b></td>
+                  </tr>
+                  <!--2018-->
+                  <tr>
+                    <td>21-11-18</td>
+                    <td><b>AUS:</b> 158/4 (17)<br><b>IND:</b> 169/7 (17)</td>
+                    <td><b>AUS</b><br>4 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>23-11-18</td>
+                    <td><b>AUS, IND</b></td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td>25-11-18</td>
+                    <td><b>AUS:</b> 164/6<br><b>IND:</b> 168/4 (19.4)</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">3 T20 SERIES LEVEL BY 1-1</td>
+                  </tr>
+                  <tr>
+                    <td>04-11-18</td>
+                    <td><b>IND:</b> 110/5 (17.5)<br><b>WI:</b> 109/8</td>
+                    <td><b>IND</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>06-11-18</td>
+                    <td><b>IND:</b> 195/2<br><b>WI:</b> 124/9</td>
+                    <td><b>IND</b><br>71 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>11-11-18</td>
+                    <td><b>IND:</b> 182/4<br><b>WI:</b> 181/3</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 T20 SERIES BY 3-0</td>
+                  </tr>
+                  <tr>
+                    <td>21-10-18</td>
+                    <td><b>IND:</b> 326/2 (42.1)<br><b>WI:</b> 322/8</td>
+                    <td><b>IND</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>24-10-18</td>
+                    <td><b>IND:</b> 321/6<br><b>WI:</b> 321/7</td>
+                    <td><b>Match</b><br>Tied</td>
+                  </tr>
+                  <tr>
+                    <td>27-10-18</td>
+                    <td><b>IND:</b> 240 (47.4)<br><b>WI:</b> 283/9</td>
+                    <td><b>WI</b><br>43 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>29-10-18</td>
+                    <td><b>IND:</b> 377/5<br><b>WI:</b> 153 (36.2)</td>
+                    <td><b>IND</b><br>224 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>01-11-18</td>
+                    <td><b>IND:</b> 105/1 (14.5)<br><b>WI:</b> 104 (31.5)</td>
+                    <td><b>IND</b><br>9 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 5 ODI SERIES BY 3-1</td>
+                  </tr>
+                  <tr>
+                    <td>04-10-18</td>
+                    <td><b>IND:</b> 649/9d<br><b>WI:</b> 181, 196</td>
+                    <td><b>IND</b><br>INN & 272 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>12-10-18</td>
+                    <td><b>IND:</b> 367, 75/0<br><b>WI:</b> 311, 127</td>
+                    <td><b>IND</b><br>10 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 2 TEST SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>01-08-18</td>
+                    <td><b>ENG:</b> 287, 180<br><b>IND:</b> 274, 162</td>
+                    <td><b>ENG</b><br>31 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>09-08-18</td>
+                    <td><b>ENG:</b> 396/7d<br><b>IND:</b> 107, 130</td>
+                    <td><b>ENG</b><br>INN & 159 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>18-08-18</td>
+                    <td><b>ENG:</b> 161, 317<br><b>IND:</b> 329, 352/7d</td>
+                    <td><b>IND</b><br>203 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>30-08-18</td>
+                    <td><b>ENG:</b> 246, 271<br><b>IND:</b> 273, 184</td>
+                    <td><b>ENG</b><br>60 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>07-09-18</td>
+                    <td><b>ENG:</b> 332, 423/8d<br><b>IND:</b> 292, 345</td>
+                    <td><b>ENG</b><br>118 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">ENGLAND WON THE 5 TEST SERIES BY 4-1</td>
+                  </tr>
+                  <tr>
+                    <td>12-07-18</td>
+                    <td><b>ENG:</b> 268 (49.5)<br><b>IND:</b> 269/2 (40.1)</td>
+                    <td><b>IND</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>14-07-18</td>
+                    <td><b>ENG:</b> 322/7<br><b>IND:</b> 236</td>
+                    <td><b>ENG</b><br>86 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>17-07-18</td>
+                    <td><b>ENG:</b> 260/2 (44.3)<br><b>IND:</b> 256/8</td>
+                    <td><b>ENG</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">ENGLAND WON THE 3 ODI SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>03-07-18</td>
+                    <td><b>ENG:</b> 159/8<br><b>IND:</b> 163/2 (18.2)</td>
+                    <td><b>IND</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>06-07-18</td>
+                    <td><b>ENG:</b> 149/5 (19.4)<br><b>IND:</b> 148/5</td>
+                    <td><b>ENG</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>08-07-18</td>
+                    <td><b>ENG:</b> 198/9<br><b>IND:</b> 201/3 (18.4)</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 T20 SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>27-06-18</td>
+                    <td><b>IRE:</b> 132/9<br><b>IND:</b> 208/5</td>
+                    <td><b>IND</b><br>76 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>29-06-18</td>
+                    <td><b>IRE:</b> 70 (12.3)<br><b>IND:</b> 213/4</td>
+                    <td><b>IND</b><br>143 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 2 T20 SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>14-06-18</td>
+                    <td><b>IND:</b> 474<br><b>AFG: 109, 103</b></td>
+                    <td><b>IND</b><br>INN & 262 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE ONLY TEST</td>
+                  </tr>
+                  <tr>
+                    <td>06-03-18</td>
+                    <td><b>SL:</b> 175/5 (18.3)<br><b>IND:</b> 174/5</td>
+                    <td><b>SL</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>08-03-18</td>
+                    <td><b>IND:</b> 140/4 (18.4)<br><b>BAN:</b> 139/8</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>12-03-18</td>
+                    <td><b>SL:</b> 152/9 (19)<br><b>IND:</b> 153/4 (17.3)</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>14-03-18</td>
+                    <td><b>BAN:</b> 159/6<br><b>IND:</b> 176/3</td>
+                    <td><b>IND</b><br>17 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>18-03-18</td>
+                    <td><b>IND:</b> 168/6<br><b>BAN:</b> 166/8</td>
+                    <td><b>IND</b><br>4 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON</td>
+                  </tr>
+                  <tr>
+                    <td>18-02-18</td>
+                    <td><b>SA:</b> 175/9<br><b>IND:</b> 203/5</td>
+                    <td><b>IND</b><br>28 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>21-02-18</td>
+                    <td><b>SA:</b> 189/4 (18.4)<br><b>IND:</b> 188/4</td>
+                    <td><b>SA</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>24-02-18</td>
+                    <td><b>SA:</b> 165/6<br><b>IND:</b> 172/7</td>
+                    <td><b>IND</b><br>7 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 T20 SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>01-02-18</td>
+                    <td><b>SA:</b> 269/8<br><b>IND:</b> 270/4 (45.3)</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>04-02-18</td>
+                    <td><b>SA:</b> 118 (32.2)<br><b>IND:</b> 119/1 (20.3)</td>
+                    <td><b>IND</b><br>9 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>07-02-18</td>
+                    <td><b>SA:</b> 179 (40)<br><b>IND:</b> 303/6</td>
+                    <td><b>IND</b><br>124 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>10-02-18</td>
+                    <td><b>SA:</b> 207/5 (25.3)<br><b>IND:</b> 289/7</td>
+                    <td><b>SA</b><br>5 WKTS (D/L)</td>
+                  </tr>
+                  <tr>
+                    <td>13-02-18</td>
+                    <td><b>SA:</b> 201 (42.2)<br><b>IND:</b> 274/7</td>
+                    <td><b>IND</b><br>73 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>16-02-18</td>
+                    <td><b>SA:</b> 204 (46.5)<br><b>IND:</b> 206/2 (32.1)</td>
+                    <td><b>IND</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 6 ODI SERIES BY 5-1</td>
+                  </tr>
+                  <tr>
+                    <td>05-01-18</td>
+                    <td><b>SA:</b> 286, 130<br><b>IND:</b> 209, 135</td>
+                    <td><b>SA</b><br>72 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>13-01-18</td>
+                    <td><b>SA:</b> 335, 258<br><b>IND:</b> 307, 151</td>
+                    <td><b>SA</b><br>135 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>24-01-18</td>
+                    <td><b>SA:</b> 194, 177<br><b>IND:</b> 187, 247</td>
+                    <td><b>IND</b><br>63 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">SOUTH AFRICA WON THE 3 TEST SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>20-12-17</td>
+                    <td><b>IND:</b> 180/3<br><b>SL:</b> 87 (16)</td>
+                    <td><b>IND</b><br>93 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>22-12-17</td>
+                    <td><b>IND:</b> 260/5<br><b>SL:</b> 172/9 (17.2)</td>
+                    <td><b>IND</b><br>88 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>24-12-17</td>
+                    <td><b>IND:</b> 139/5 (19.2)<br><b>SL:</b> 135/7</td>
+                    <td><b>IND</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 T20 SERIES BY 3-0</td>
+                  </tr>
+                  <tr>
+                    <td>10-12-17</td>
+                    <td><b>IND:</b> 112 (38.2)<br><b>SL:</b> 114/3 (20.4)</td>
+                    <td><b>SL</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>13-12-17</td>
+                    <td><b>IND:</b> 392/4<br><b>SL:</b> 251/8</td>
+                    <td><b>IND</b><br>141 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>17-12-17</td>
+                    <td><b>IND:</b> 219/2 (32.1)<br><b>SL:</b> 215 (44.5)</td>
+                    <td><b>IND</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 ODI SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>16-11-17</td>
+                    <td><b>IND:</b> 172, 352/8d<br><b>SL:</b> 294, 75/7</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td>24-11-17</td>
+                    <td><b>IND:</b> 610/6d<br><b>SL:</b> 205, 166</td>
+                    <td><b>IND</b><br>INN & 239 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>02-12-17</td>
+                    <td><b>IND:</b> 536/7d, 246/5d<br><b>SL:</b> 373, 299/5</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">IND WON THE 3 TEST SERIES BY 1-0</td>
+                  </tr>
+                  <tr>
+                    <td>01-11-17</td>
+                    <td><b>IND:</b> 202/3<br><b>NZ:</b> 149/8</td>
+                    <td><b>IND</b><br>53 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>04-11-17</td>
+                    <td><b>IND:</b> 156/7<br><b>NZ:</b> 196/2</td>
+                    <td><b>NZ</b><br>40 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>07-11-17</td>
+                    <td><b>IND:</b>67/5 (8)<br><b>NZ:</b> 61/6 (8)</td>
+                    <td><b>IND</b><br>6 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 T20 SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>22-10-17</td>
+                    <td><b>IND:</b> 280/8<br><b>NZ:</b> 284/4 (49)</td>
+                    <td><b>NZ</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>25-10-17</td>
+                    <td><b>IND:</b> 232/4 (46)<br><b>NZ:</b>230/9</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>29-10-17</td>
+                    <td><b>IND:</b> 337/6<br><b>NZ:</b> 331/7</td>
+                    <td><b>IND</b><br>6 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 ODI SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>07-10-17</td>
+                    <td><b>IND:</b> 49/1 (5.3)<br><b>AUS:</b> 118/8 (18.4)</td>
+                    <td><b>IND</b><br>9 WKTS (D/L)</td>
+                  </tr>
+                  <tr>
+                    <td>10-10-17</td>
+                    <td><b>IND:</b> 118<br><b>AUS:</b> 122/2 (15.3)</td>
+                    <td><b>AUS</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>13-10-17</td>
+                    <td><b>IND, AUS</b></td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">SERIES TIED</td>
+                  </tr>
+                  <tr>
+                    <td>17-09-17</td>
+                    <td><b>IND:</b> 281/7<br><b>AUS:</b> 137/9 (21)</td>
+                    <td><b>IND</b><br> 26 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>21-09-17</td>
+                    <td><b>IND:</b> 252<br><b>AUS:</b> 202 (43.1)</td>
+                    <td><b>IND</b><br>50 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>24-09-17</td>
+                    <td><b>IND:</b> 294/5 (47.5)<br><b>AUS:</b> 293/6</td>
+                    <td><b>IND</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>28-09-17</td>
+                    <td><b>IND:</b> 313/8<br><b>AUS:</b> 334/5</td>
+                    <td><b>IND</b><br>21 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>01-10-17</td>
+                    <td><b>IND:</b> 243/3 (42.5)<br><b>AUS:</b> 242/9</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 5 ODI SERIES BY 4-1</td>
+                  </tr>
+                  <tr>
+                    <td>06-09-17</td>
+                    <td><b>SL:</b> 170/7<br><b>IND:</b> 174/3 (19.2)</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE ONLY T20 SERIES BY 1-0</td>
+                  </tr>
+                  <tr>
+                    <td>20-08-17</td>
+                    <td><b>SL:</b> 216 (43.2)<br><b>IND:</b> 220/1 (28.5)</td>
+                    <td><b>IND</b><br>9 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>24-08-17</td>
+                    <td><b>SL:</b> 236/8<br><b>IND:</b> 231/7 (44.2)</td>
+                    <td><b>IND</b><br>3 WKTS (D/L)</td>
+                  </tr>
+                  <tr>
+                    <td>27-08-17</td>
+                    <td><b>SL:</b> 217/9<br><b>IND:</b> 218/4 (45.1)</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>31-08-17</td>
+                    <td><b>SL:</b> 207 (42.4)<br><b>IND:</b> 375/5</td>
+                    <td><b>IND</b><br>168 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>03-09-17</td>
+                    <td><b>SL:</b> 238 (49.4)<br><b>IND:</b> 239/4 (46.3)</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 5 ODI SERIES BY 5-0</td>
+                  </tr>
+                  <tr>
+                    <td>26-07-17</td>
+                    <td><b>SL:</b> 291, 245/8<br><b>IND:</b> 600, 240/3d</td>
+                    <td><b>IND</b><br>304 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>03-08-17</td>
+                    <td><b>SL:</b> 183, 386<br><b>IND:</b> 622/9d</td>
+                    <td><b>IND</b><br>INN & 53 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>12-08-17</td>
+                    <td><b>SL:</b> 135, 181<br><b>IND:</b> 487</td>
+                    <td><b>IND</b><br>INN & 171 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 TEST SERIES BY 3-0</td>
+                  </tr>
+                  <tr>
+                    <td>09-07-17</td>
+                    <td><b>WI:</b> 194/1 (18.3)<br><b>IND:</b> 190/6</td>
+                    <td><b>WI</b><br>9 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">WEST INDIES WON THE ONLY T20 SERIES BY 1-0</td>
+                  </tr>
+                  <tr>
+                    <td>23-06-17</td>
+                    <td><b>WI, IND</b></td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td>25-06-17</td>
+                    <td><b>WI:</b> 205/6 (43)<br><b>IND:</b> 310/5 (43)</td>
+                    <td><b>IND</b><br>105 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>30-06-17</td>
+                    <td><b>WI:</b> 158 (38.1)<br><b>IND:</b> 251/4</td>
+                    <td><b>IND</b><br>93 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>02-07-17</td>
+                    <td><b>WI:</b> 189/9<br><b>IND:</b> 178 (49.4)</td>
+                    <td><b>WI</b><br>11 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>06-07-17</td>
+                    <td><b>WI:</b> 205/9<br><b>IND:</b> 206/2 (36.5)</td>
+                    <td><b>IND</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 5 ODI SERIES BY 3-1</td>
+                  </tr>
+                  <tr>
+                    <td>23-02-17</td>
+                    <td><b>IND:</b> 105, 107<br><b>AUS:</b> 260, 285</td>
+                    <td><b>AUS</b><br>333 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>04-03-17</td>
+                    <td><b>IND:</b> 189, 274<br><b>AUS:</b> 276, 112</td>
+                    <td><b>IND</b><br>75 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>16-03-17</td>
+                    <td><b>IND:</b> 603/9d<br><b>AUS:</b> 451, 204/6</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td>25-03-17</td>
+                    <td><b>IND:</b> 332, 106/2<br><b>AUS:</b> 300, 137</td>
+                    <td><b>IND</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 4 TEST SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>09-02-17</td>
+                    <td><b>IND:</b> 687/6d, 159/4d<br><b>BAN:</b> 388, 250</td>
+                    <td><b>IND</b><br>208 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE ONLY TEST SERIES BY 1-0</td>
+                  </tr>
+                  <tr>
+                    <td>26-01-17</td>
+                    <td><b>IND:</b> 147/7<br><b>ENG:</b> 148/3 (18.1)</td>
+                    <td><b>ENG</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>29-01-17</td>
+                    <td><b>IND:</b> 144/8<br><b>ENG:</b> 139/6</td>
+                    <td><b>IND</b><br>5 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>01-02-17</td>
+                    <td><b>IND:</b> 202/6<br><b>ENG:</b> 127 (16.3)</td>
+                    <td><b>IND</b><br>75 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 T20 SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>15-01-17</td>
+                    <td><b>IND:</b> 356/7 (48.1)<br><b>ENG:</b> 350/7</td>
+                    <td><b>IND</b><br>3 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>19-01-17</td>
+                    <td><b>IND:</b> 381/6<br><b>ENG:</b> 366/8</td>
+                    <td><b>IND</b><br>15 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>22-01-17</td>
+                    <td><b>IND:</b> 316/9<br><b>ENG:</b> 321/8</td>
+                    <td><b>ENG</b><br>5 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 ODI SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>09-11-16</td>
+                    <td><b>IND:</b> 488, 172/6<br><b>ENG:</b> 537, 260/3d</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td>17-11-16</td>
+                    <td><b>IND:</b> 455, 204<br><b>ENG:</b> 255, 158</td>
+                    <td><b>IND</b><br>246 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>26-11-16</td>
+                    <td><b>IND:</b> 417, 104/2<br><b>ENG:</b> 283, 236</td>
+                    <td><b>IND</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>08-12-16</td>
+                    <td><b>IND:</b> 631<br><b>ENG:</b> 400, 195</td>
+                    <td><b>IND</b><br>INN & 36 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>16-12-16</td>
+                    <td><b>IND:</b> 759/7d<br><b>ENG:</b> 477, 207</td>
+                    <td><b>IND</b><br>INN & 75 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 5 TEST SERIES BY 4-0</td>
+                  </tr>
+                  <tr>
+                    <td>16-10-16</td>
+                    <td><b>IND:</b> 194/4 (33.1)<br><b>NZ:</b> 190 (43.5)</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>20-10-16</td>
+                    <td><b>IND:</b> 236 (49.3)<br><b>NZ:</b> 242/9</td>
+                    <td><b>NZ</b><br>6 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>23-10-16</td>
+                    <td><b>IND:</b> 289/3 (48.2)<br><b>NZ:</b> 285 (49.4)</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>26-10-16</td>
+                    <td><b>IND:</b> 241 (48.4)<br><b>NZ:</b> 260/7</td>
+                    <td><b>NZ</b><br>19 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>29-10-16</td>
+                    <td><b>IND:</b> 269/6<br><b>NZ:</b> 79 (23.1)</td>
+                    <td><b>IND</b><br>190 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 5 ODI SERIES BY 3-2</td>
+                  </tr>
+                  <tr>
+                    <td>22-09-16</td>
+                    <td><b>IND:</b> 318, 377/5d<br><b>NZ:</b> 262, 236</td>
+                    <td><b>IND</b><br>197 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>30-09-16</td>
+                    <td><b>IND:</b> 316, 263<br><b>NZ:</b> 204, 197</td>
+                    <td><b>IND</b><br>178 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>08-10-16</td>
+                    <td><b>IND:</b> 557/5d, 216/3d<br><b>NZ:</b> 299, 153</td>
+                    <td><b>IND</b><br>321 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 TEST SERIES BY 3-0</td>
+                  </tr>
+                  <tr>
+                    <td>27-08-16</td>
+                    <td><b>IND:</b> 244/4<br><b>WI:</b> 245/6</td>
+                    <td><b>IND</b><br>1 RUN</td>
+                  </tr>
+                  <tr>
+                    <td>28-08-16</td>
+                    <td><b>IND:</b> 15/0 (2)<br><b>WI:</b> 143 (19.4)</td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">WEST INDIES WON THE 2 T20 SERIES BY 1-0</td>
+                  </tr>
+                  <tr>
+                    <td>21-07-16</td>
+                    <td><b>WI:</b> 243, 231<br><b>IND:</b> 566/8d</td>
+                    <td><b>IND</b><br>INN & 92 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>30-07-16</td>
+                    <td><b>WI:</b> 196, 388/6<br><b>IND:</b> 500/9d</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td>09-08-16</td>
+                    <td><b>WI:</b> 225, 108<br><b>IND:</b> 353, 217/7d</td>
+                    <td><b>IND</b><br>237 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>18-08-16</td>
+                    <td><b>WI:</b> 62/2<br><b>IND</b> </td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 4 TEST SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>18-06-16</td>
+                    <td><b>ZIM:</b> 170/6<br><b>IND:</b> 168/6</td>
+                    <td><b>ZIM</b><br>2 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>20-06-16</td>
+                    <td><b>ZIM:</b> 99/9<br><b>IND:</b> 103/0</td>
+                    <td><b>IND</b><br>10 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>22-06-16</td>
+                    <td><b>ZIM:</b> 135/6<br><b>IND:</b> 138/6</td>
+                    <td><b>IND</b><br>3 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 T20 SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>11-06-16</td>
+                    <td><b>ZIM:</b> 168 (49.5)<br><b>IND:</b> 173/1 (42.3)</td>
+                    <td><b>IND</b><br>9 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>13-06-16</td>
+                    <td><b>ZIM:</b> 126 (34.3)<br><b>IND:</b> 129/2 (26.5)</td>
+                    <td><b>IND</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>15-06-16</td>
+                    <td><b>ZIM:</b> 123 (42.2)<br><b>IND:</b> 126/0 (21.5)</td>
+                    <td><b>IND</b><br>10 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 ODI SERIES BY 3-0</td>
+                  </tr>
+                  <tr>
+                    <td>09-02-16</td>
+                    <td><b>IND:</b> 101 (18.5)<br><b>SL:</b> 105/5 (18)</td>
+                    <td><b>SL</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>12-06-16</td>
+                    <td><b>IND:</b> 196/6<br><b>SL:</b> 127/9</td>
+                    <td><b>IND</b><br>69 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>14-06-16</td>
+                    <td><b>IND:</b> 84/1 (13.5)<br><b>SL:</b> 82 (18)</td>
+                    <td><b>IND</b><br>9 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 T20 SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>26-01-16</td>
+                    <td><b>AUS:</b> 151 (19.3)<br><b>IND:</b> 188/3</td>
+                    <td><b>IND</b><br>37 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>29-01-16</td>
+                    <td><b>AUS:</b> 157/8<br><b>IND:</b> 184/3</td>
+                    <td><b>IND</b><br>27 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>31-01-16</td>
+                    <td><b>AUS:</b> 197/5<br><b>IND:</b> 200/3</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 T20 SERIES BY 3-0</td>
+                  </tr>
+                  <tr>
+                    <td>12-01-16</td>
+                    <td><b>AUS:</b> 310/5 (49.2)<br><b>IND:</b> 309/3</td>
+                    <td><b>AUS</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>15-01-16</td>
+                    <td><b>AUS:</b> 309/3 (49)<br><b>IND:</b> 308/8</td>
+                    <td><b>AUS</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>17-01-16</td>
+                    <td><b>AUS:</b> 296/7 (48.5)<br><b>IND:</b> 295/6</td>
+                    <td><b>AUS</b><br>3 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>20-01-16</td>
+                    <td><b>AUS:</b> 348/8<br><b>IND:</b> 323 (49.2)</td>
+                    <td><b>AUS</b><br>25 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>23-01-16</td>
+                    <td><b>AUS:</b> 330/7<br><b>IND:</b> 331/4 (49.4)</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">AUSTRALIA WON THE 5 ODI SERIES BY 4-1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col s12" id="yr1513"><br>
+            <div class="oui-bubble blue-grey darken-4">
+              <table class="centered bordered white-text">
+                <tbody>
+                  <tr>
+                    <td><b>DATE</b></td>
+                    <td><b>SCORES</b></td>
+                    <td><b>WINNER <br>MARGIN</b></td>
+                  </tr>
+                  <!--2015-->
+                  <tr>
+                    <td>05-11-15</td>
+                    <td><b>IND:</b> 201, 200<br><b>SA:</b> 184, 109</td>
+                    <td><b>IND</b><br>108 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>14-11-15</td>
+                    <td><b>IND:</b> 80/0<br><b>SA:</b> 214</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td>25-11-15</td>
+                    <td><b>IND:</b> 215, 173<br><b>SA:</b> 79, 185</td>
+                    <td><b>IND</b><br>124 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>03-12-15</td>
+                    <td><b>IND:</b> 334, 267/5d<br><b>SA:</b> 121, 143</td>
+                    <td><b>IND</b><br>337 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 4 TEST SERIES BY 3-0</td>
+                  </tr>
+                  <tr>
+                    <td>11-10-15</td>
+                    <td><b>IND:</b> 298/7<br><b>SA:</b> 303/5</td>
+                    <td><b>SA</b><br>5 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>14-10-15</td>
+                    <td><b>IND:</b> 247/9<br><b>SA:</b> 225 (43.4)</td>
+                    <td><b>IND</b><br>22 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>18-10-15</td>
+                    <td><b>IND:</b> 252/6<br><b>SA:</b> 270/7</td>
+                    <td><b>SA</b><br>18 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>22-10-15</td>
+                    <td><b>IND:</b> 299/8<br><b>SA:</b> 264/9</td>
+                    <td><b>IND</b><br>35 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>25-10-15</td>
+                    <td><b>IND:</b> 224 (36)<br><b>SA:</b> 438/4</td>
+                    <td><b>SA</b><br>214 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">SOUTH AFRICA WON THE 5 ODI SERIES BY 3-2</td>
+                  </tr>
+                  <tr>
+                    <td>02-10-15</td>
+                    <td><b>IND:</b> 199/5<br><b>SA:</b> 200/3 (19.4)</td>
+                    <td><b>SA</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>05-10-15</td>
+                    <td><b>IND:</b> 92 (17.2)<br><b>SA:</b> 96/4 (17.1)</td>
+                    <td><b>SA</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>08-10-15</td>
+                    <td><b>IND, SA</b></td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">SOUTH AFRICA WON THE 3 T20 SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>12-08-15</td>
+                    <td><b>SL:</b> 183, 367<br><b>IND:</b> 375, 112</td>
+                    <td><b>SL</b><br>63 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>20-08-15</td>
+                    <td><b>SL:</b> 306, 134<br><b>IND:</b> 393, 325/8d</td>
+                    <td><b>IND</b><br>278 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>28-08-15</td>
+                    <td><b>SL:</b> 201, 268<br><b>IND:</b> 312, 274</td>
+                    <td><b>IND</b><br>117 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 TEST SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>17-07-15</td>
+                    <td>ZIM: 124/7<br><b>IND:</b> 178/5</td>
+                    <td><b>IND</b><br>54 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>19-07-15</td>
+                    <td>ZIM: 145/7<br><b>IND:</b> 135/9</td>
+                    <td><b>ZIM</b><br>10 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">2 T20 SERIES TIED 1-1</td>
+                  </tr>
+                  <tr>
+                    <td>10-07-15</td>
+                    <td>ZIM: 251/7<br><b>IND:</b> 255/6</td>
+                    <td><b>IND</b><br>4 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>12-07-15</td>
+                    <td>ZIM: 209 (49)<br><b>IND:</b> 271/8</td>
+                    <td><b>IND</b><br>62 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>14-07-15</td>
+                    <td>ZIM: 193 (42.4)<br><b>IND:</b> 276/5</td>
+                    <td><b>IND</b><br>83 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 ODI SERIES BY 3-0</td>
+                  </tr>
+                  <tr>
+                    <td>18-06-15</td>
+                    <td><b>BAN:</b> 307 (49.4)<br><b>IND:</b> 228 (46)</td>
+                    <td><b>BAN</b><br>79 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>21-06-15</td>
+                    <td><b>BAN:</b> 200/4 (38)<br><b>IND:</b> 200 (45)</td>
+                    <td><b>BAN</b><br>6 WKTS (D/L)</td>
+                  </tr>
+                  <tr>
+                    <td>24-06-15</td>
+                    <td><b>BAN:</b> 240 (47)<br><b>IND:</b> 317/6</td>
+                    <td><b>IND</b><br>77 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">BANGLADESH WON THE 3 ODI SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>10-06-15</td>
+                    <td><b>BAN:</b> 256, 23/0<br><b>IND:</b> 462/6d</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">ONLY TEST SERIES TIED</td>
+                  </tr>
+                  <tr>
+                    <td>18-01-15</td>
+                    <td><b>AUS:</b> 269/6 (49)<br><b>IND:</b> 267/8</td>
+                    <td><b>AUS</b><br>4 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>20-01-15</td>
+                    <td><b>ENG:</b> 156/1 (27.3)<br><b>IND:</b> 153 (39.3)</td>
+                    <td><b>ENG</b><br>9 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>26-01-15</td>
+                    <td><b>AUS, IND</b></td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td>30-01-15</td>
+                    <td><b>ENG:</b> 201/7 (46.5)<br><b>IND:</b> 200 (48.1)</td>
+                    <td><b>ENG</b><br>3 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">AUSTRALIA WON THE TRI SERIES</td>
+                  </tr>
+                  <tr>
+                    <td>09-12-14</td>
+                    <td><b>AUS:</b> 517/7d, 290/5d<br><b>IND:</b> 444, 315</td>
+                    <td><b>AUS</b><br>48 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>17-12-14</td>
+                    <td><b>AUS:</b> 505, 130/6<br><b>IND:</b> 408, 224</td>
+                    <td><b>AUS</b><br>4 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>26-12-14</td>
+                    <td><b>AUS:</b> 530, 318/9d<br><b>IND:</b> 465, 174/6</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td>06-01-15</td>
+                    <td><b>AUS:</b> 572/7d, 251/6d<br><b>IND:</b> 475, 252/7</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">AUSTRALIA WON THE 4 TEST SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>02-11-14</td>
+                    <td><b>IND:</b> 363/5<br><b>SL:</b> 194 (39.2)</td>
+                    <td><b>IND</b><br>169 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>06-11-14</td>
+                    <td><b>IND:</b> 275/4 (44.3)<br><b>SL:</b> 274/8</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>09-11-14</td>
+                    <td><b>IND:</b> 245/4 (44.1)<br><b>SL:</b> 242 (48.2)</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>13-11-14</td>
+                    <td><b>IND:</b> 404/5<br><b>SL:</b> 251 (43.1)</td>
+                    <td><b>IND</b><br>153 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>16-11-14</td>
+                    <td><b>IND:</b> 288/7 (48.4)<br><b>SL:</b> 286/8</td>
+                    <td><b>IND</b><br>3 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 5 ODI SERIES BY 5-0</td>
+                  </tr>
+                  <tr>
+                    <td>08-10-14</td>
+                    <td><b>IND:</b> 197 (41)<br><b>WI:</b> 321/6</td>
+                    <td><b>WI</b><br>124 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>11-10-14</td>
+                    <td><b>IND:</b> 263/7<br><b>WI:</b> 215 (46.3)</td>
+                    <td><b>IND</b><br>48 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>14-10-14</td>
+                    <td><b>IND, WI</b></td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td>17-10-14</td>
+                    <td><b>IND:</b> 330/6<br><b>WI:</b> 271 (48.1)</td>
+                    <td><b>IND</b><br>59 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 4 ODI SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>09-07-14</td>
+                    <td><b>ENG:</b> 496<br><b>IND:</b> 457, 391/9d</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td>17-07-14</td>
+                    <td><b>ENG:</b> 319, 223<br><b>IND:</b> 295, 342</td>
+                    <td><b>IND</b><br>95 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>27-07-14</td>
+                    <td><b>ENG:</b> 569/7d, 205/4d<br><b>IND:</b> 330, 178</td>
+                    <td><b>ENG</b><br>266 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>07-08-14</td>
+                    <td><b>ENG:</b> 367/9<br><b>IND:</b>152, 161</td>
+                    <td><b>ENG</b><br>INN & 54 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>15-08-14</td>
+                    <td><b>ENG:</b> 486<br><b>IND:</b> 148, 94</td>
+                    <td><b>ENG</b><br>INN & 244 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">ENGLAND WON THE 5 TEST SERIES BY 3-1</td>
+                  </tr>
+                  <tr>
+                    <td>25-08-14</td>
+                    <td><b>ENG, IND</b></td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td>27-08-14</td>
+                    <td><b>ENG:</b> 161 (38.1)<br><b>IND:</b> 304/6</td>
+                    <td><b>IND</b><br>133 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>30-08-14</td>
+                    <td><b>ENG:</b> 227<br><b>IND:</b> 228/4 (43)</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>02-09-14</td>
+                    <td><b>ENG:</b> 206 (49.3)<br><b>IND:</b> 212/1 (30.3)</td>
+                    <td><b>IND</b><br>9 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>05-09-14</td>
+                    <td><b>ENG:</b> 294/7<br><b>IND:</b> 253 (48.4)</td>
+                    <td><b>ENG</b><br>41 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 5 ODI SERIES BY 3-1</td>
+                  </tr>
+                  <tr>
+                    <td>07-09-14</td>
+                    <td><b>ENG:</b> 180/7<br><b>IND:</b> 177/5</td>
+                    <td><b>ENG</b><br>3 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">ENGLAND WON THE ONLY T20</td>
+                  </tr>
+                  <tr>
+                    <td>15-06-14</td>
+                    <td><b>BAN:</b> 272/9<br><b>IND:</b> 153/3 (24.5)</td>
+                    <td><b>IND</b><br>7 WKTS (D/L)</td>
+                  </tr>
+                  <tr>
+                    <td>17-06-14</td>
+                    <td><b>BAN:</b> 58 (17.4)<br><b>IND:</b> 105 (25.3)</td>
+                    <td><b>IND</b><br>47 RUNS (D/L)</td>
+                  </tr>
+                  <tr>
+                    <td>19-06-14</td>
+                    <td><b>BAN, IND</b></td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 ODI SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>19-01-14</td>
+                    <td><b>NZ:</b> 292/7<br><b>IND:</b> 268 (48.4)</td>
+                    <td><b>NZ</b><br>24 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>22-01-14</td>
+                    <td><b>NZ:</b> 271/7 (42)<br><b>IND:</b> 277/9 (41.3)</td>
+                    <td><b>NZ</b><br>15 RUNS (D/L)</td>
+                  </tr>
+                  <tr>
+                    <td>25-01-14</td>
+                    <td><b>NZ:</b> 314<br><b>IND:</b> 314/9</td>
+                    <td><b>Match</b><br>Tied</td>
+                  </tr>
+                  <tr>
+                    <td>28-01-14</td>
+                    <td><b>NZ:</b> 280/3 (48.1)<br><b>IND:</b> 278/5</td>
+                    <td><b>NZ</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>31-01-14</td>
+                    <td><b>NZ:</b> 303/5<br><b>IND:</b> 216 (49.4)</td>
+                    <td><b>NZ</b><br>87 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">NEW ZEALAND WON THE 5 ODI SERIES BY 4-0</td>
+                  </tr>
+                  <tr>
+                    <td>06-02-14</td>
+                    <td><b>NZ:</b> 503, 105<br><b>IND:</b> 202, 366</td>
+                    <td><b>NZ</b><br>40 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>14-02-14</td>
+                    <td><b>NZ:</b> 192, 680/8d<br><b>IND:</b> 438, 166/3</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">NEW ZEALAND WON THE 2 TEST SERIES BY 1-0</td>
+                  </tr>
+                  <tr>
+                    <td>05-12-13</td>
+                    <td><b>SA:</b> 358/4<br><b>IND:</b> 217 (41)</td>
+                    <td><b>SA</b><br>141 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>08-12-13</td>
+                    <td><b>SA:</b> 280/6 (49)<br><b>IND:</b> 146 (35.1)</td>
+                    <td><b>SA</b><br>134 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>11-12-13</td>
+                    <td><b>SA, IND</b></td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">SOUTH AFRICA WON THE 3 ODI SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>18-12-13</td>
+                    <td><b>SA:</b> 244, 450/7<br><b>IND:</b> 280, 421</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td>26-12-13</td>
+                    <td><b>SA:</b> 500, 59/0<br><b>IND:</b> 334, 223</td>
+                    <td><b>SA</b><br>10 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">SOUTH AFRICA WON THE 2 TEST SERIES BY 1-0</td>
+                  </tr>
+                  <tr>
+                    <td>06-11-13</td>
+                    <td><b>IND:</b> 453<br><b>WI:</b> 234, 168</td>
+                    <td><b>IND</b><br>INN & 51 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>14-11-13</td>
+                    <td><b>IND:</b> 495<br><b>WI:</b> 182, 187</td>
+                    <td><b>IND</b><br>INN & 126 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 2 TEST SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>21-11-13</td>
+                    <td><b>IND:</b> 212/4 (35.2)<br><b>WI:</b> 211 (48.5)</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>24-11-13</td>
+                    <td><b>IND:</b> 288/7<br><b>WI:</b> 289/8 (49.3)</td>
+                    <td><b>WI</b><br>2 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>27-11-13</td>
+                    <td><b>IND:</b> 266/5 (46.1)<br><b>WI:</b> 263/5</td>
+                    <td><b>IND</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 ODI SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>10-10-13</td>
+                    <td><b>IND:</b> 202/4 (19.4)<br><b>AUS:</b> 201/7</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE ONLY T20</td>
+                  </tr>
+                  <tr>
+                    <td>13-10-13</td>
+                    <td><b>IND:</b> 232 (49.4)<br><b>AUS:</b> 304/8</td>
+                    <td><b>AUS</b><br>72 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>16-10-13</td>
+                    <td><b>IND:</b> 362/1 (43.3)<br><b>AUS:</b> 359/5</td>
+                    <td><b>IND</b><br>9 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>19-10-13</td>
+                    <td><b>IND:</b> 303/9<br><b>AUS:</b> 304/6 (49.3)</td>
+                    <td><b>AUS</b><br>4 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>23-10-13</td>
+                    <td><b>IND:</b> 27/0 (4.1)<br><b>AUS:</b> 295/8</td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td>26-10-13</td>
+                    <td><b>IND, AUS</b></td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td>30-10-13</td>
+                    <td><b>IND:</b> 351/4 (49.3)<br><b>AUS:</b> 350/6</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>02-11-13</td>
+                    <td><b>IND:</b> 383/6<br><b>AUS:</b> 326 (45.1)</td>
+                    <td><b>IND</b><br>57 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 7 ODI SERIES BY 3-2</td>
+                  </tr>
+                  <tr>
+                    <td>24-07-13</td>
+                    <td>ZIM: 228/7<br><b>IND:</b> 230/4 (44.5)</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>26-07-13</td>
+                    <td>ZIM: 236/9<br><b>IND:</b> 294/8</td>
+                    <td><b>IND</b><br>58 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>28-07-13</td>
+                    <td>ZIM: 183 (46)<br><b>IND:</b> 187/3 (35.3)</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>01-08-13</td>
+                    <td>ZIM: 144 (42.4)<br><b>IND:</b> 145/1 (30.5)</td>
+                    <td><b>IND</b><br>9 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>03-08-13</td>
+                    <td>ZIM: 163 (39.5)<br><b>IND:</b> 167/3 (34)</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 5 ODI SERIES BY 5-0</td>
+                  </tr>
+                  <tr>
+                    <td>30-06-13</td>
+                    <td><b>WI:</b> 230/9 (47.4)<br><b>IND:</b> 229/7</td>
+                    <td><b>WI</b><br>1 WKT</td>
+                  </tr>
+                  <tr>
+                    <td>02-07-13</td>
+                    <td><b>IND:</b> 187 (44.5)<br><b>SL:</b> 348/1</td>
+                    <td><b>SL</b><br>161 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>05-07-13</td>
+                    <td><b>WI:</b> 171 (34)<br><b>IND:</b> 311/7</td>
+                    <td><b>IND</b><br>102 RUNS (D/L)</td>
+                  </tr>
+                  <tr>
+                    <td>09-07-13</td>
+                    <td><b>IND:</b> 119/3 (29)<br><b>SL:</b> 96 (24.4)</td>
+                    <td><b>IND</b><br>81 RUNS (D/L)</td>
+                  </tr>
+                  <tr>
+                    <td>11-07-13</td>
+                    <td><b>IND:</b> 203/9 (49.4)<br><b>SL:</b> 201 (48.5)</td>
+                    <td><b>IND</b><br>1 WKT</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE TRI SERIES</td>
+                  </tr>
+                  <tr>
+                    <td>22-02-13</td>
+                    <td><b>IND:</b> 572, 50/2<br><b>AUS:</b> 380, 241</td>
+                    <td><b>IND</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>02-03-13</td>
+                    <td><b>IND:</b> 503<br><b>AUS:</b> 237/9d, 131</td>
+                    <td><b>IND</b><br>INN & 135 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>14-03-13</td>
+                    <td><b>IND:</b> 499, 136/4<br><b>AUS:</b> 408, 223</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>22-03-13</td>
+                    <td><b>IND:</b> 272, 158/4<br><b>AUS:</b> 262, 164</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 4 TEST SERIES BY 4-0</td>
+                  </tr>
+                  <tr>
+                    <td>25-12-12</td>
+                    <td><b>IND:</b> 133/9<br><b>PAK:</b> 134/5 (19.4)</td>
+                    <td><b>PAK</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>28-12-12</td>
+                    <td><b>IND:</b> 192/5<br><b>PAK:</b> 181/7</td>
+                    <td><b>IND</b><br>11 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">2 T20 SERIES TIED 1-1</td>
+                  </tr>
+                  <tr>
+                    <td>30-12-12</td>
+                    <td><b>IND:</b> 227/6<br><b>PAK:</b> 228/4 (48.1)</td>
+                    <td><b>PAK</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>03-01-13</td>
+                    <td><b>IND:</b> 165 (48)<br><b>PAK:</b> 250 (48.3)</td>
+                    <td><b>PAK</b><br>85 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>06-01-13</td>
+                    <td><b>IND:</b> 167 (43.4)<br><b>PAK:</b> 157 (48.5)</td>
+                    <td><b>IND</b><br>10 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">PAKISTAN WON THE 3 ODI SERIES BY 2-1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col s12" id="yr1210"><br>
+            <div class="oui-bubble blue-grey darken-4">
+              <table class="centered bordered white-text">
+                <tbody>
+                  <tr>
+                    <td><b>DATE</b></td>
+                    <td><b>SCORES</b></td>
+                    <td><b>WINNER <br>MARGIN</b></td>
+                  </tr>
+                  <!--2012-->
+                  <tr>
+                    <td>11-01-13</td>
+                    <td><b>IND:</b> 316/9<br><b>ENG:</b> 325/4</td>
+                    <td><b>ENG</b><br>9 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>15-01-13</td>
+                    <td><b>IND:</b> 285/6<br><b>ENG:</b> 158 (36)</td>
+                    <td><b>IND</b><br>127 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>19-01-13</td>
+                    <td><b>IND:</b> 157/3 (28.1)<br><b>ENG:</b> 155 (42.2)</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>23-01-13</td>
+                    <td><b>IND:</b> 258/5 (47.3)<br><b>ENG:</b> 257/7</td>
+                    <td><b>IND</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>27-01-13</td>
+                    <td><b>IND:</b> 226 (49.4)<br><b>ENG:</b> 227/3 (47.2)</td>
+                    <td><b>ENG</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 5 ODI SERIES BY 3-2</td>
+                  </tr>
+                  <tr>
+                    <td>20-12-12</td>
+                    <td><b>IND:</b> 158/5 (17.5)<br><b>ENG:</b> 157/6</td>
+                    <td><b>IND</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>22-12-12</td>
+                    <td><b>IND:</b> 177/8<br><b>ENG:</b> 181/4</td>
+                    <td><b>ENG</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">2 T20 SERIES TIED 1-1</td>
+                  </tr>
+                  <tr>
+                    <td>15-11-12</td>
+                    <td><b>IND:</b> 521/8d, 80/1<br><b>ENG:</b> 191, 406</td>
+                    <td><b>IND</b><br>9 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>23-11-12</td>
+                    <td><b>IND:</b> 327, 142<br><b>ENG:</b> 413, 58/0</td>
+                    <td><b>ENG</b><br>9 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>05-12-12</td>
+                    <td><b>IND:</b> 316, 247<br><b>ENG:</b> 523, 41/3</td>
+                    <td><b>ENG</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>13-12-12</td>
+                    <td><b>IND:</b> 326/9d<br><b>ENG:</b> 330, 352/4</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">ENGLAND WON THE 4 TEST SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>08-09-12</td>
+                    <td><b>IND, NZ</b></td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td>11-09-12</td>
+                    <td><b>IND:</b> 166/4<br><b>NZ:</b> 167/5</td>
+                    <td><b>NZ</b><br>1 RUN</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">NEW ZEALAND WON THE 2 T20 SERIES BY 1-0</td>
+                  </tr>
+                  <tr>
+                    <td>23-08-12</td>
+                    <td><b>IND:</b> 438<br><b>NZ:</b> 159, 164</td>
+                    <td><b>IND</b><br>INN & 115 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>31-08-12</td>
+                    <td><b>IND:</b> 353, 262/5<br><b>NZ:</b> 365, 248</td>
+                    <td><b>IND</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 2 TEST SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>07-08-12</td>
+                    <td><b>SL:</b> 116 (18)<br><b>IND:</b> 155/3</td>
+                    <td><b>IND</b><br>39 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE ONLY T20</td>
+                  </tr>
+                  <tr>
+                    <td>21-07-12</td>
+                    <td><b>SL:</b> 293/9<br><b>IND:</b> 314/6</td>
+                    <td><b>IND</b><br>21 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>24-07-12</td>
+                    <td><b>SL:</b> 139/1 (19.5)<br><b>IND:</b> 138 (33.3)</td>
+                    <td><b>SL</b><br>9 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>28-07-12</td>
+                    <td><b>SL:</b> 286/5<br><b>IND:</b> 288/5 (49.4)</td>
+                    <td><b>IND</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>31-07-12</td>
+                    <td><b>SL:</b> 251/8<br><b>IND:</b> 255/4 (42.2)</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>04-08-12</td>
+                    <td><b>SL:</b> 274 (45.4)<br><b>IND:</b> 294/7</td>
+                    <td><b>IND</b><br>20 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 5 ODI SERIES BY 4-1</td>
+                  </tr>
+                  <tr>
+                    <td>30-03-12</td>
+                    <td><b>SA:</b> 219/4<br><b>IND:</b> 71/0 (7.5)</td>
+                    <td><b>SA</b><br>11 RUNS (D/L)</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">SOUTH AFRICA WON THE ONLY T20</td>
+                  </tr>
+                  <tr>
+                    <td>05-02-12</td>
+                    <td><b>AUS:</b> 216/5 (32)<br><b>IND:</b> 151 (29.4)</td>
+                    <td><b>AUS</b><br>65 RUNS (D/L)</td>
+                  </tr>
+                  <tr>
+                    <td>08-02-12</td>
+                    <td><b>IND:</b> 234/6 (46.4)<br><b>SL:</b> 233/8</td>
+                    <td><b>IND</b><br>4 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>12-02-12</td>
+                    <td><b>AUS:</b> 269/8<br><b>IND:</b> 270/6 (49.4)</td>
+                    <td><b>IND</b><br>4 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>14-02-12</td>
+                    <td><b>IND:</b> 236/9<br><b>SL:</b> 236/9</td>
+                    <td><b>Match</b><br>Tied</td>
+                  </tr>
+                  <tr>
+                    <td>19-02-12</td>
+                    <td><b>AUS:</b> 288/5<br><b>IND:</b> 178 (43.3)</td>
+                    <td><b>AUS</b><br>110 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>21-02-12</td>
+                    <td><b>IND:</b> 238 (45.1)<br><b>SL:</b> 289/6</td>
+                    <td><b>SL</b><br>51 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>26-02-12</td>
+                    <td><b>AUS:</b> 252/9<br><b>IND:</b> 165 (39.3)</td>
+                    <td><b>AUS</b><br>87 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>28-02-12</td>
+                    <td><b>IND:</b> 321/3 (36.4)<br><b>SL:</b> 320/4</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">AUSTRALIA WON THE TRI SERIES</td>
+                  </tr>
+                  <tr>
+                    <td>01-02-12</td>
+                    <td><b>AUS:</b> 171/4<br><b>IND:</b> 140/6</td>
+                    <td><b>AUS</b><br>31 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>03-02-12</td>
+                    <td><b>AUS:</b> 131 (19.4)<br><b>IND:</b> 135/2 (19.4)</td>
+                    <td><b>IND</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">2 T20 SERIES TIED 1-1</td>
+                  </tr>
+                  <tr>
+                    <td>26-12-11</td>
+                    <td><b>AUS:</b> 333, 240<br><b>IND:</b> 282, 169</td>
+                    <td><b>AUS</b><br>122 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>03-01-12</td>
+                    <td><b>AUS:</b> 659/4d<br><b>IND:</b> 191, 400</td>
+                    <td><b>AUS</b><br>INN & 68 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>13-01-12</td>
+                    <td><b>AUS:</b> 369<br><b>IND:</b> 161, 171</td>
+                    <td><b>AUS</b><br>INN & 37 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>24-01-12</td>
+                    <td><b>AUS:</b> 604/7d, 167/5d<br><b>IND:</b> 272, 201</td>
+                    <td><b>AUS</b><br>298 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">AUSTRALIA WON THE 4 TEST SERIES BY 4-0</td>
+                  </tr>
+                  <tr>
+                    <td>29-11-11</td>
+                    <td><b>IND:</b> 213/9 (48.5)<br><b>WI:</b> 211/9</td>
+                    <td><b>IND</b><br>1 WKT</td>
+                  </tr>
+                  <tr>
+                    <td>02-12-11</td>
+                    <td><b>IND:</b> 270/5 (48.1)<br><b>WI:</b> 269/9</td>
+                    <td><b>IND</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>05-12-11</td>
+                    <td><b>IND:</b> 244 (46.5)<br><b>WI:</b> 260/5</td>
+                    <td><b>WI</b><br>16 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>08-12-11</td>
+                    <td><b>IND:</b> 418/5<br><b>WI:</b> 265 (49.2)</td>
+                    <td><b>IND</b><br>153 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>11-12-11</td>
+                    <td><b>IND:</b> 267/6<br><b>WI:</b> 233 (44.1)</td>
+                    <td><b>IND</b><br>34 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 5 ODI SERIES BY 4-1</td>
+                  </tr>
+                  <tr>
+                    <td>06-11-11</td>
+                    <td><b>IND:</b> 209, 276/5<br><b>WI:</b> 304, 180</td>
+                    <td><b>IND</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>14-11-11</td>
+                    <td><b>IND:</b> 631/7d<br><b>WI:</b> 153, 463 (f/o)</td>
+                    <td><b>IND</b><br>INN & 15 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>22-11-11</td>
+                    <td><b>IND:</b> 482, 242/9<br><b>WI:</b> 590, 134</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 TEST SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>29-10-11</td>
+                    <td><b>IND:</b> 120/9<br><b>ENG:</b> 121/4 (18.4)</td>
+                    <td><b>ENG</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">ENGLAND WON THE ONLY T20</td>
+                  </tr>
+                  <tr>
+                    <td>14-10-11</td>
+                    <td><b>IND:</b> 300/7<br><b>ENG:</b> 174 (36.1)</td>
+                    <td><b>IND</b><br>126 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>17-10-11</td>
+                    <td><b>IND:</b> 238/2 (36.4)<br><b>ENG:</b> 237 (48.2)</td>
+                    <td><b>IND</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>20-10-11</td>
+                    <td><b>IND:</b> 300/5 (49.2)<br><b>ENG:</b> 298/4</td>
+                    <td><b>IND</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>23-10-11</td>
+                    <td><b>IND:</b> 223/4 (40.1)<br><b>ENG:</b> 220 (46.1)</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>25-10-11</td>
+                    <td><b>IND:</b> 271/8<br><b>ENG:</b> 176 (37)</td>
+                    <td><b>IND</b><br>95 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 5 ODI SERIES BY 5-0</td>
+                  </tr>
+                  <tr>
+                    <td>03-09-11</td>
+                    <td><b>ENG:</b> 27/2 (7.2)<br><b>IND:</b> 274/7</td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td>06-09-11</td>
+                    <td><b>ENG:</b> 188/3 (22.1)<br><b>IND:</b> 187/8 (23)</td>
+                    <td><b>ENG</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>09-09-11</td>
+                    <td><b>ENG:</b> 218/7 (41.5)<br><b>IND:</b> 234/7</td>
+                    <td><b>ENG</b><br>3 WKTS (D/L)</td>
+                  </tr>
+                  <tr>
+                    <td>11-09-11</td>
+                    <td><b>ENG:</b> 270/8 (48.5)<br><b>IND:</b> 280/5</td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td>16-09-11</td>
+                    <td><b>ENG:</b> 241/4 (32.2)<br><b>IND:</b> 304/6</td>
+                    <td><b>ENG</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">ENGLAND WON THE 5 ODI SERIES BY 3-0</td>
+                  </tr>
+                  <tr>
+                    <td>31-08-11</td>
+                    <td><b>ENG:</b> 169/4 (19.3)<br><b>IND:</b> 165 (19.4)</td>
+                    <td><b>ENG</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">ENGLAND WON THE ONLY T20</td>
+                  </tr>
+                  <tr>
+                    <td>21-07-11</td>
+                    <td><b>ENG:</b> 474/8d, 269/6d<br><b>IND:</b> 286, 261</td>
+                    <td><b>ENG</b><br>196 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>29-07-11</td>
+                    <td><b>ENG:</b> 221, 544<br><b>IND:</b> 288, 158</td>
+                    <td><b>ENG</b><br>319 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>10-08-11</td>
+                    <td><b>ENG:</b> 710/7d<br><b>IND:</b> 224, 244</td>
+                    <td><b>ENG</b><br>INN & 242 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>18-08-11</td>
+                    <td><b>ENG:</b> 591/6d<br><b>IND:</b> 300, 283 (f/o)</td>
+                    <td><b>ENG</b><br>INN & 8 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">ENGLAND WON THE 4 TEST SERIES BY 4-0</td>
+                  </tr>
+                  <tr>
+                    <td>20-06-11</td>
+                    <td><b>WI:</b> 173, 262<br><b>IND:</b> 246, 252</td>
+                    <td><b>IND</b><br>63 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>28-06-11</td>
+                    <td><b>WI:</b> 190, 202/7<br><b>IND:</b> 201, 269/6d</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td>06-07-11</td>
+                    <td><b>WI:</b> 204, 322<br><b>IND:</b> 347, 94/3</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 TEST SERIES BY 1-0</td>
+                  </tr>
+                  <tr>
+                    <td>06-06-11</td>
+                    <td><b>WI:</b> 214/9<br><b>IND:</b> 217/6 (44.5)</td>
+                    <td><b>IND</b><br>4 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>08-06-11</td>
+                    <td><b>WI:</b> 240/9<br><b>IND:</b> 183/3 (33.4)</td>
+                    <td><b>IND</b><br>7 WKTS (D/L)</td>
+                  </tr>
+                  <tr>
+                    <td>11-06-11</td>
+                    <td><b>WI:</b> 225/8<br><b>IND:</b> 228/7 (46.2)</td>
+                    <td><b>IND</b><br>3 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>13-06-11</td>
+                    <td><b>WI:</b> 249/8<br><b>IND:</b> 146 (39)</td>
+                    <td><b>WI</b><br>103 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>16-06-11</td>
+                    <td><b>WI:</b> 255/3 (48.4)<br><b>IND:</b> 251 (47.3)</td>
+                    <td><b>WI</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 5 ODI SERIES BY 3-2</td>
+                  </tr>
+                  <tr>
+                    <td>04-06-11</td>
+                    <td><b>WI:</b> 143/5<br><b>IND:</b> 159/6</td>
+                    <td><b>IND</b><br>16 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE ONLY T20</td>
+                  </tr>
+                  <tr>
+                    <td>12-01-11</td>
+                    <td><b>SA:</b> 289/9<br><b>IND:</b> 154 (35.4)</td>
+                    <td><b>SA</b><br>135 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>15-01-11</td>
+                    <td><b>SA:</b> 189 (43)<br><b>IND:</b> 190 (47.2)</td>
+                    <td><b>IND</b><br>1 RUN</td>
+                  </tr>
+                  <tr>
+                    <td>18-01-11</td>
+                    <td><b>SA:</b> 220 (49.2)<br><b>IND:</b> 223/8 (48.2)</td>
+                    <td><b>IND</b><br>2 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>21-01-11</td>
+                    <td><b>SA:</b> 265/7<br><b>IND:</b> 142/6 (32.5)</td>
+                    <td><b>SA</b><br>48 RUNS (D/L)</td>
+                  </tr>
+                  <tr>
+                    <td>23-01-11</td>
+                    <td><b>SA:</b> 250/9 (46)<br><b>IND:</b> 234 (40.2)</td>
+                    <td><b>SA</b><br>33 RUNS (D/L)</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">SOUTH AFRICA WON THE 5 ODI SERIES BY 3-2</td>
+                  </tr>
+                  <tr>
+                    <td>09-01-11</td>
+                    <td><b>SA:</b> 147/9<br><b>IND:</b> 168/6</td>
+                    <td><b>IND</b><br>21 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE ONLY T20</td>
+                  </tr>
+                  <tr>
+                    <td>16-12-10</td>
+                    <td><b>SA:</b> 620/4d<br><b>IND:</b> 136, 459</td>
+                    <td><b>SA</b><br>INN & 25 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>26-12-10</td>
+                    <td><b>SA:</b> 131, 215<br><b>IND:</b> 205, 228</td>
+                    <td><b>IND</b><br>87 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>02-01-11</td>
+                    <td><b>SA:</b> 362, 341<br><b>IND:</b> 364, 166/3</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">3 TEST SERIES TIED 1-1</td>
+                  </tr>
+                  <tr>
+                    <td>28-11-10</td>
+                    <td><b>IND:</b> 276 (49)<br><b>NZ:</b> 236 (45.2)</td>
+                    <td><b>IND</b><br>40 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>01-12-10</td>
+                    <td><b>IND:</b> 259/2 (43)<br><b>NZ:</b> 258/8</td>
+                    <td><b>IND</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>04-12-10</td>
+                    <td><b>IND:</b> 229/1 (39.3)<br><b>NZ:</b> 224/9</td>
+                    <td><b>IND</b><br>9 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>07-12-10</td>
+                    <td><b>IND:</b> 321/5 (48.5)<br><b>NZ:</b> 315/7</td>
+                    <td><b>IND</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>10-12-10</td>
+                    <td><b>IND:</b> 107/2 (21.1)<br><b>NZ:</b> 103 (27)</td>
+                    <td><b>IND</b><br>8 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 5 ODI SERIES BY 5-0</td>
+                  </tr>
+                  <tr>
+                    <td>04-11-10</td>
+                    <td><b>IND:</b> 487, 266<br><b>NZ:</b> 459, 22/1</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td>12-11-10</td>
+                    <td><b>IND:</b> 472, 68/0<br><b>NZ:</b> 350, 488/8d</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td>20-11-10</td>
+                    <td><b>IND:</b> 566/8d<br><b>NZ:</b> 193, 175</td>
+                    <td><b>IND</b><br>INN & 198 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 TEST SERIES BY 1-0</td>
+                  </tr>
+                  <tr>
+                    <td>17-10-10</td>
+                    <td><b>IND, AUS</b></td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td>20-10-10</td>
+                    <td><b>IND:</b> 292/5 (48.5)<br><b>AUS:</b> 289/3</td>
+                    <td><b>IND</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>24-10-10</td>
+                    <td><b>IND, AUS</b></td>
+                    <td><b>Match</b><br>Cancelled</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 ODI SERIES BY 1-0</td>
+                  </tr>
+                  <tr>
+                    <td>01-10-10</td>
+                    <td><b>IND:</b> 405, 216/9<br><b>AUS:</b> 428, 192</td>
+                    <td><b>IND</b><br>1 WKT</td>
+                  </tr>
+                  <tr>
+                    <td>09-10-10</td>
+                    <td><b>IND:</b> 495, 207/3<br><b>AUS:</b> 478, 223</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 2 TEST SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>25-09-10</td>
+                    <td><b>BPXI:</b> 177, 174/0<br><b>AUS:</b> 505/8d, 187/6d</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">ONLY TEST DRAWN</td>
+                  </tr>
+                  <tr>
+                    <td>18-07-10</td>
+                    <td><b>SL:</b> 520/8d, 96/0<br><b>IND:</b> 276, 338 (f/o)</td>
+                    <td><b>SL</b><br>10 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>26-07-10</td>
+                    <td><b>SL:</b> 642/4d, 129/3<br><b>IND:</b> 707</td>
+                    <td><b>Match</b><br>Drawn</td>
+                  </tr>
+                  <tr>
+                    <td>03-08-10</td>
+                    <td><b>SL:</b> 425, 267<br><b>IND:</b> 436, 258/5</td>
+                    <td><b>IND</b><br>5 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">3 TEST SERIES TIED 1-1</td>
+                  </tr>
+                  <tr>
+                    <td>12-06-10</td>
+                    <td><b>ZIM:</b> 111/9<br><b>IND:</b> 112/4 (15)</td>
+                    <td><b>IND</b><br>6 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td>13-06-10</td>
+                    <td><b>ZIM:</b> 140/5<br><b>IND:</b> 144/3 (18)</td>
+                    <td><b>IND</b><br>7 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 2 T20 SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td>21-02-10</td>
+                    <td><b>IND:</b> 298/9<br><b>SA:</b> 297</td>
+                    <td><b>IND</b><br>1 RUN</td>
+                  </tr>
+                  <tr>
+                    <td>24-02-10</td>
+                    <td><b>IND:</b> 401/3<br><b>SA:</b> 248 (42.5)</td>
+                    <td><b>IND</b><br>153 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>27-02-10</td>
+                    <td><b>IND:</b> 275 (44.3)<br><b>SA:</b> 365/2</td>
+                    <td><b>SA</b><br>90 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 ODI SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td>06-02-10</td>
+                    <td><b>IND:</b> 233, 319 (f/o)<br><b>SA:</b> 558/6d</td>
+                    <td><b>SA</b><br>INN & 6 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>14-02-10</td>
+                    <td><b>IND:</b> 643/6d<br><b>SA:</b> 296, 290</td>
+                    <td><b>IND</b><br>INN & 57 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">2 TEST SERIES TIED 1-1</td>
+                  </tr>
+                  <tr>
+                    <td>17-01-10</td>
+                    <td><b>BAN:</b> 242, 301<br><b>IND:</b> 243, 413/8d</td>
+                    <td><b>IND</b><br>113 RUNS</td>
+                  </tr>
+                  <tr>
+                    <td>24-01-10</td>
+                    <td><b>BAN:</b> 233, 312<br><b>IND:</b> 544/8d, 2/0</td>
+                    <td><b>IND</b><br>10 WKTS</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 2 TEST SERIES BY 2-0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col s12" id="yr0907"><br>
+            <div class="oui-bubble blue-grey darken-4">
+              <table class="centered white-text">
+                <tbody>
+                  <tr>
+                    <td><b>Year - 2009</b></td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR1.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE 5 ODI SERIES BY 3-1</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR2.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>2 T20 SERIES TIED 1-1</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR3.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE 3 TEST SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR4.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>AUSTRALIA WON THE 7 ODI SERIES BY 4-2</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR5.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE TRI SERIES</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR6.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE 4 ODI SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR7.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE 3 TEST SERIES BY 1-0</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR8.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE 5 ODI SERIES BY 3-1</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR9.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>NEW ZEALAND WON THE 2 T20 SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR10.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE ONLY T20</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR11.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE 5 ODI SERIES BY 4-1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <hr>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Year - 2008</b></td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR12.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE 2 TEST SERIES BY 1-0</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR13.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE 7 ODI SERIES BY 5-0</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR14.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE 4 TEST SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR15.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE 5 ODI SERIES BY 3-2</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR16.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>SRI LANKA WON THE 3 TEST SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR17.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>PAKISTAN WON THE TRI SERIES</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR18.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>3 TEST SERIES TIED 1-1</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR19.png" alt="RESULTS" width="100%"><br>
+                      <img src="images/SR19p.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE TRI SERIES</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR20.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>AUSTRALIA WON THE ONLY T20</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <hr>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Year - 2007</b></td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR21.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>AUSTRALIA WON THE 4 TEST SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR22.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE 3 TEST SERIES BY 1-0</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR23.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE 5 ODI SERIES BY 3-2</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR24.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE ONLY T20</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR25.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>AUSTRALIA WON THE 7 ODI SERIES BY 4-2</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR26.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>ENGLAND WON THE 7 ODI SERIES BY 4-3</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR27.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE ONLY ODI</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR28.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE 3 TEST SERIES BY 1-0</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR29.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>NO RESULT TO ONLY ODI</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR30.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE 3 ODI SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR31.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE ONLY ODI</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR32.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>ASIA XI WON THE 3 ODI SERIES BY 3-0</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR33.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE 2 TEST SERIES BY 1-0</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR34.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE 3 ODI SERIES BY 2-0</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR35.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE 4 ODI SERIES BY 2-1</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/SR36.png" alt="RESULTS" width="100%"></td>
+                  </tr>
+                  <tr>
+                    <td>INDIA WON THE 4 ODI SERIES BY 3-1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><br>
+  </main>
+</body>
+
+</html>

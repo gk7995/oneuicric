@@ -1,0 +1,169 @@
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <!-- <meta http-equiv="refresh" content="60;"> -->
+  <meta name="description" content="Sports Schedules">
+  <meta name="msvalidate.01" content="FC10FA22248EFBF4FA3A591D08BDD039" />
+  <title lang="en-us">One UI Sports - Schedules, Scores & more</title>
+  <link rel="stylesheet" href="OneUI/oui.min.css">
+  <link rel="stylesheet" href="materialize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/OUC.ico">
+  <link rel="manifest" href="manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="One UI Cricket">
+  <meta name="apple-mobile-web-app-title" content="One UI Cricket">
+  <meta name="theme-color" content="#0d47a1">
+  <meta name="msapplication-navbutton-color" content="#0d47a1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-starturl" content="index.html">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/picture3.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="32x32" href="images/picture3.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="images/picture4.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="48x48" href="images/picture4.png">
+  <link rel="icon" type="image/png" sizes="60x60" href="images/picture5.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="images/picture5.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="images/picture6.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="128x128" href="images/picture6.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="images/picture7.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="images/picture7.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="images/picture2.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="256x256" href="images/picture2.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/picture1.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="images/picture1.png">
+  <style>
+    @font-face {
+      font-family: 'SamsungOne 400';
+      src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+    }
+
+    * {
+      font-family: 'SamsungOne 400';
+      font-size: larger;
+    }
+
+    .oui-button {
+      font-family: 'SamsungOne 400';
+    }
+
+    .card-panel {
+      border-radius: 15px;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="materialize.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.fixed-action-btn').openFAB();
+      $('.fixed-action-btn').closeFAB();
+      $('.fixed-action-btn.toolbar').openToolbar();
+      $('.fixed-action-btn.toolbar').closeToolbar();
+      $('.tooltipped').tooltip({
+        delay: 50
+      });
+    })
+    $(document).ready(function () {
+      $('.modal').modal();
+      $('#modal2').modal();
+    });
+  </script>
+</head>
+
+<body oncontextmenu="return false;" onload="location.href='#view'">
+  <main class="containr">
+    <div class="oui-viewing center-align">
+      <h4>One UI Sports</h4>
+      <h5>HOME TO VARIOUS SPORTS</h5>
+      <h6>Click on 'OPEN' button of view any of Sports below</h6>
+    </div>
+    <div class="oui-interaction center-align">
+      <!--Interaction area-->
+      <div class="oui-bubble blue-grey darken-4" id="view">
+        <div class="fixed-action-btn">
+          <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5 modal-trigger"
+            data-position="top" data-delay="50" data-tooltip="Menu" href="#modal2">
+            <i class="large fas fa-bars"></i>
+          </a>
+        </div>
+        <!--Menu-->
+        <div id="modal2" class="modal bottom-sheet right-align blue-grey darken-4 amber-text text-accent-2">
+          <div class="modal-content">
+            <ul class="collection left-align" style="border-width: 0px;">
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='about.html'">
+                <a href="#!"><i class="fas fa-info circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">About</p>
+                <p>About this Website</p>
+              </li>
+              <li class="collection-item blue-grey darken-4"></li>
+            </ul>
+          </div>
+        </div>
+        <h1 class="hide"></h1>
+        <div class="row">
+          <div class="col s12 m6 l4">
+            <div class="card-panel blue-grey darken-3 white-text">
+              <h5>Cricket INDIA</h5>
+              <h6>Schedules of India's matches..</h6>
+              <a href="cricind.html" class="oui-button transparent amber-text text-accent-2">OPEN</a>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card-panel blue-grey darken-3 white-text">
+              <h5>Indian Super League</h5>
+              <h6>Schedules, Standings of India's Football League</h6>
+              <a href="isleague.html" class="oui-button transparent amber-text text-accent-2">OPEN</a>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card-panel blue-grey darken-3 white-text">
+              <h5>PKL 2021</h5>
+              <h6>Pro Kabaddi League 2021</h6>
+              <a href="pkabaddi.html" class="oui-button transparent amber-text text-accent-2">OPEN</a>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card-panel blue-grey darken-3 white-text">
+              <h5>IPL 2022</h5>
+              <h6>Indian Premier League 2022</h6>
+              <a href="iplhome.html" class="oui-button transparent amber-text text-accent-2">OPEN</a>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card-panel blue-grey darken-3 white-text">
+              <h5>Cricket INDIA</h5>
+              <h6>Results of previous matches..</h6>
+              <a href="results.html" class="oui-button transparent amber-text text-accent-2">OPEN</a>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card-panel blue-grey darken-3 white-text">
+              <h5>Cricket INT'L</h5>
+              <h6>Schedules of all teams except INDIA..</h6>
+              <a href="cricint.html" class="oui-button transparent amber-text text-accent-2">OPEN</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </main>
+  <script>
+    if ('serviceWorker' in navigator) {
+      // Register service worker
+      navigator.serviceWorker.register('sw.js', {
+        scope: '.'
+      });
+    };
+  </script>
+</body>
+
+</html>

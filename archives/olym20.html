@@ -1,0 +1,4244 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <title>One UI Sports - Olympic Games Beijing 2022</title>
+  <link rel="stylesheet" href="OneUI/oui.min.css">
+  <link rel="stylesheet" href="materialize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css">
+  <link rel="icon" href="OUC.ico">
+  <style>
+    @font-face {
+      font-family: 'SamsungOne 400';
+      src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+    }
+
+    * {
+      font-family: 'SamsungOne 400';
+      font-size: larger;
+    }
+
+    .oui-button {
+      font-family: 'SamsungOne 400';
+    }
+
+    iframe {
+      border-radius: 15px;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="materialize.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    $(document).ready(function () {
+      $('.fixed-action-btn').openFAB();
+      $('.fixed-action-btn').closeFAB();
+      $('.fixed-action-btn.toolbar').openToolbar();
+      $('.fixed-action-btn.toolbar').closeToolbar();
+      $('.tooltipped').tooltip({
+        delay: 50
+      });
+    })
+    $(document).ready(function () {
+      $('.modal').modal();
+      $('#modal2').modal();
+    });
+  </script>
+</head>
+
+<body oncontextmenu="return false;" onload="location.href='#view'">
+  <main class="containr">
+    <div class="oui-interaction center-align">
+      <!-- Interaction area -->
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5 modal-trigger"
+          data-position="left" data-delay="50" data-tooltip="Menu" href="#modal2">
+          <i class="large fas fa-bars"></i>
+        </a>
+      </div>
+      <div class="oui-bubble blue darken-4">
+        <!--Menu-->
+        <div id="modal2" class="modal bottom-sheet right-align blue darken-4 white-text">
+          <div class="modal-content">
+            <a href="#!" onclick="location.reload()" class="white-text tooltipped" data-tooltip="Refresh"
+              data-position="top"><i class="small fas fa-sync-alt"></i></a>
+            <ul class="collection left-align" style="border-width: 0px;">
+              <li class="collection-item avatar blue darken-4 oui-bubble" onclick="location.href='index.html'">
+                <a href="#!"><i class="fas fa-home circle blue darken-3"></i></a>
+                <p style="font-size: x-large;">OUI Cricket Home</p>
+                <p>Back to Home Page</p>
+              </li>
+              <li class="collection-item avatar blue darken-4 oui-bubble" onclick="location.href='about.html'">
+                <a href="#!"><i class="fas fa-info circle blue darken-3"></i></a>
+                <p style="font-size: x-large;">About</p>
+                <p>About this Website</p>
+              </li>
+              <li class="collection-item blue darken-4"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="oui-bubble">
+          <h5 class="blue-text text-darken-4"><b>BEIJING OLYMPICS & PARALYMPICS 2021</b></h5>
+          <img
+            src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202107/Olympic-Schedule-1.jpg?cKs11nxhUsoYw5dRAFAkADcH1FgQc2TH&size=770:433"
+            width="125px" height="75px">
+        </div>
+        <div class="oui-button blue darken-4 waves-effect z-depth-5"><a href="#ind" class="white-text"><i
+              class="fas fa-angle-double-down"></i> Scroll to <img
+              src="https://www.mykhel.com/common_dynamic/images/olympics/country_flag/IND.svg" width="25px"
+              height="15px"> in Olympics/ Paralympics <i class="fas fa-angle-double-down"></i></a></div>
+        <h5 class="white-text"><b>OLYMPICS MEDAL TALLY 2021<sup>*</sup></b></h5>
+        <h6 class="white-text">Last Update: Aug 8</h6>
+        <div class="oui-bubble">
+          <table class="centered bordered striped">
+            <tbody>
+              <tr>
+                <td><b>NATION</b></td>
+                <td><b>GOLD</b></td>
+                <td><b>SILVER</b></td>
+                <td><b>BRONZE</b></td>
+                <td><b>TOTAL</b></td>
+              </tr>
+              <tr>
+                <td>USA</td>
+                <td>39</td>
+                <td>41</td>
+                <td>33</td>
+                <td>113</td>
+              </tr>
+              <tr>
+                <td>CHN</td>
+                <td>38</td>
+                <td>32</td>
+                <td>18</td>
+                <td>88</td>
+              </tr>
+              <tr>
+                <td>JPN</td>
+                <td>27</td>
+                <td>14</td>
+                <td>17</td>
+                <td>58</td>
+              </tr>
+              <tr>
+                <td>GBR</td>
+                <td>22</td>
+                <td>21</td>
+                <td>22</td>
+                <td>65</td>
+              </tr>
+              <tr>
+                <td>ROC</td>
+                <td>20</td>
+                <td>28</td>
+                <td>23</td>
+                <td>71</td>
+              </tr>
+              <tr>
+                <td>AUS</td>
+                <td>17</td>
+                <td>7</td>
+                <td>22</td>
+                <td>46</td>
+              </tr>
+              <tr>
+                <td>NED</td>
+                <td>10</td>
+                <td>12</td>
+                <td>14</td>
+                <td>36</td>
+              </tr>
+              <tr>
+                <td>FRA</td>
+                <td>10</td>
+                <td>12</td>
+                <td>11</td>
+                <td>33</td>
+              </tr>
+              <tr>
+                <td>GER</td>
+                <td>10</td>
+                <td>11</td>
+                <td>16</td>
+                <td>37</td>
+              </tr>
+              <tr>
+                <td>ITA</td>
+                <td>10</td>
+                <td>10</td>
+                <td>20</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>CAN</td>
+                <td>7</td>
+                <td>6</td>
+                <td>11</td>
+                <td>24</td>
+              </tr>
+              <tr>
+                <td>BRA</td>
+                <td>7</td>
+                <td>6</td>
+                <td>8</td>
+                <td>21</td>
+              </tr>
+              <tr>
+                <td>NZL</td>
+                <td>7</td>
+                <td>6</td>
+                <td>7</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>CUB</td>
+                <td>7</td>
+                <td>3</td>
+                <td>5</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>HUN</td>
+                <td>6</td>
+                <td>7</td>
+                <td>7</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>KOR</td>
+                <td>6</td>
+                <td>4</td>
+                <td>10</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>POL</td>
+                <td>4</td>
+                <td>5</td>
+                <td>5</td>
+                <td>14</td>
+              </tr>
+              <tr>
+                <td>CZE</td>
+                <td>4</td>
+                <td>4</td>
+                <td>3</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>KEN</td>
+                <td>4</td>
+                <td>4</td>
+                <td>2</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>NOR</td>
+                <td>4</td>
+                <td>2</td>
+                <td>2</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>JAM</td>
+                <td>4</td>
+                <td>1</td>
+                <td>4</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>ESP</td>
+                <td>3</td>
+                <td>8</td>
+                <td>6</td>
+                <td>17</td>
+              </tr>
+              <tr>
+                <td>SWE</td>
+                <td>3</td>
+                <td>6</td>
+                <td>0</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>SUI</td>
+                <td>3</td>
+                <td>4</td>
+                <td>6</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>DEN</td>
+                <td>3</td>
+                <td>4</td>
+                <td>4</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>CRO</td>
+                <td>3</td>
+                <td>3</td>
+                <td>2</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td>3</td>
+                <td>2</td>
+                <td>2</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>SRB</td>
+                <td>3</td>
+                <td>1</td>
+                <td>5</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>BEL</td>
+                <td>3</td>
+                <td>1</td>
+                <td>3</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>BUL</td>
+                <td>3</td>
+                <td>1</td>
+                <td>2</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>SLO</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>UZB</td>
+                <td>3</td>
+                <td>0</td>
+                <td>2</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>GEO</td>
+                <td>2</td>
+                <td>5</td>
+                <td>1</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>TPE</td>
+                <td>2</td>
+                <td>4</td>
+                <td>6</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>TUR</td>
+                <td>2</td>
+                <td>2</td>
+                <td>9</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>GRE</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>UGA</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>ECU</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>IRL</td>
+                <td>2</td>
+                <td>0</td>
+                <td>2</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>ISR</td>
+                <td>2</td>
+                <td>0</td>
+                <td>2</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>QAT</td>
+                <td>2</td>
+                <td>0</td>
+                <td>1</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>BAH</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>KOS</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>UKR</td>
+                <td>1</td>
+                <td>6</td>
+                <td>12</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <td>BLR</td>
+                <td>1</td>
+                <td>3</td>
+                <td>3</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>ROU</td>
+                <td>1</td>
+                <td>3</td>
+                <td>0</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>VEN</td>
+                <td>1</td>
+                <td>3</td>
+                <td>0</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>IND</td>
+                <td>1</td>
+                <td>2</td>
+                <td>4</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>HKG</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>PHI</td>
+                <td>1</td>
+                <td>2</td>
+                <td>1</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>SVK</td>
+                <td>1</td>
+                <td>2</td>
+                <td>1</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>RSA</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>AUT</td>
+                <td>1</td>
+                <td>1</td>
+                <td>5</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>EGY</td>
+                <td>1</td>
+                <td>1</td>
+                <td>4</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>INA</td>
+                <td>1</td>
+                <td>1</td>
+                <td>3</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>ETH</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>POR</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>TUN</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>EST</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>FIJ</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>LAT</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>THA</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>BER</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>MAR</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>PUR</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>COL</td>
+                <td>0</td>
+                <td>4</td>
+                <td>1</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>AZE</td>
+                <td>0</td>
+                <td>3</td>
+                <td>4</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>DOM</td>
+                <td>0</td>
+                <td>3</td>
+                <td>2</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>ARM</td>
+                <td>0</td>
+                <td>2</td>
+                <td>2</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>KGZ</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>MGL</td>
+                <td>0</td>
+                <td>1</td>
+                <td>3</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>ARG</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>SMR</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>JOR</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>MAS</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>NGR</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>BRN</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>KSA</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>LTU</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>MKD</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>NAM</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>TKM</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>KAZ</td>
+                <td>0</td>
+                <td>0</td>
+                <td>8</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>MEX</td>
+                <td>0</td>
+                <td>0</td>
+                <td>4</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>FIN</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>BOT</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>BUR</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>CIV</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>GHA</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>GRN</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>KUW</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>MDA</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>SYR</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h5 class="white-text"><b>PARALYMPICS MEDAL TALLY 2021<sup>*</sup></b></h5>
+        <h6 class="white-text">Last Update: Sept 5</h6>
+        <div class="oui-bubble">
+          <table class="centered bordered striped">
+            <tbody>
+              <tr>
+                <td>CHN</td>
+                <td>96</td>
+                <td>60</td>
+                <td>51</td>
+                <td>207</td>
+              </tr>
+              <tr>
+                <td>GBR</td>
+                <td>41</td>
+                <td>38</td>
+                <td>45</td>
+                <td>124</td>
+              </tr>
+              <tr>
+                <td>USA</td>
+                <td>37</td>
+                <td>36</td>
+                <td>31</td>
+                <td>104</td>
+              </tr>
+              <tr>
+                <td>RPC</td>
+                <td>36</td>
+                <td>33</td>
+                <td>49</td>
+                <td>118</td>
+              </tr>
+              <tr>
+                <td>NED</td>
+                <td>25</td>
+                <td>17</td>
+                <td>17</td>
+                <td>59</td>
+              </tr>
+              <tr>
+                <td>UKR</td>
+                <td>24</td>
+                <td>47</td>
+                <td>27</td>
+                <td>98</td>
+              </tr>
+              <tr>
+                <td>BRA</td>
+                <td>22</td>
+                <td>20</td>
+                <td>30</td>
+                <td>72</td>
+              </tr>
+              <tr>
+                <td>AUS</td>
+                <td>21</td>
+                <td>29</td>
+                <td>30</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>ITA</td>
+                <td>14</td>
+                <td>29</td>
+                <td>26</td>
+                <td>69</td>
+              </tr>
+              <tr>
+                <td>AZE</td>
+                <td>14</td>
+                <td>1</td>
+                <td>4</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <td>JPN</td>
+                <td>13</td>
+                <td>15</td>
+                <td>23</td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>GER</td>
+                <td>13</td>
+                <td>12</td>
+                <td>18</td>
+                <td>43</td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td>12</td>
+                <td>11</td>
+                <td>1</td>
+                <td>24</td>
+              </tr>
+              <tr>
+                <td>FRA</td>
+                <td>11</td>
+                <td>15</td>
+                <td>28</td>
+                <td>54</td>
+              </tr>
+              <tr>
+                <td>ESP</td>
+                <td>9</td>
+                <td>15</td>
+                <td>12</td>
+                <td>36</td>
+              </tr>
+              <tr>
+                <td>UZB</td>
+                <td>8</td>
+                <td>5</td>
+                <td>6</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <td>POL</td>
+                <td>7</td>
+                <td>6</td>
+                <td>12</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>HUN</td>
+                <td>7</td>
+                <td>5</td>
+                <td>4</td>
+                <td>16</td>
+              </tr>
+              <tr>
+                <td>SUI</td>
+                <td>7</td>
+                <td>4</td>
+                <td>3</td>
+                <td>14</td>
+              </tr>
+              <tr>
+                <td>MEX</td>
+                <td>7</td>
+                <td>2</td>
+                <td>13</td>
+                <td>22</td>
+              </tr>
+              <tr>
+                <td>NZL</td>
+                <td>6</td>
+                <td>3</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>ISR</td>
+                <td>6</td>
+                <td>2</td>
+                <td>1</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>CAN</td>
+                <td>5</td>
+                <td>10</td>
+                <td>6</td>
+                <td>21</td>
+              </tr>
+              <tr>
+                <td>IND</td>
+                <td>5</td>
+                <td>8</td>
+                <td>6</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <td>THA</td>
+                <td>5</td>
+                <td>5</td>
+                <td>8</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td>SVK</td>
+                <td>5</td>
+                <td>2</td>
+                <td>4</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>BLR</td>
+                <td>5</td>
+                <td>1</td>
+                <td>1</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>TUN</td>
+                <td>4</td>
+                <td>5</td>
+                <td>2</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>ALG</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>MAR</td>
+                <td>4</td>
+                <td>4</td>
+                <td>3</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>BEL</td>
+                <td>4</td>
+                <td>3</td>
+                <td>8</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>IRL</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>NGR</td>
+                <td>4</td>
+                <td>1</td>
+                <td>5</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>RSA</td>
+                <td>4</td>
+                <td>1</td>
+                <td>2</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>CUB</td>
+                <td>4</td>
+                <td>1</td>
+                <td>1</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>JOR</td>
+                <td>4</td>
+                <td>0</td>
+                <td>1</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>COL</td>
+                <td>3</td>
+                <td>7</td>
+                <td>14</td>
+                <td>24</td>
+              </tr>
+              <tr>
+                <td>VEN</td>
+                <td>3</td>
+                <td>2</td>
+                <td>2</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>MAS</td>
+                <td>3</td>
+                <td>2</td>
+                <td>0</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>DEN</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>KOR</td>
+                <td>2</td>
+                <td>10</td>
+                <td>12</td>
+                <td>24</td>
+              </tr>
+              <tr>
+                <td>TUR</td>
+                <td>2</td>
+                <td>4</td>
+                <td>9</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>INA</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>CZE</td>
+                <td>2</td>
+                <td>3</td>
+                <td>3</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>CHI</td>
+                <td>2</td>
+                <td>3</td>
+                <td>1</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>SRB</td>
+                <td>2</td>
+                <td>3</td>
+                <td>1</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>NOR</td>
+                <td>2</td>
+                <td>0</td>
+                <td>2</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>SGP</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>AUT</td>
+                <td>1</td>
+                <td>5</td>
+                <td>3</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>SWE</td>
+                <td>1</td>
+                <td>5</td>
+                <td>2</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>GRE</td>
+                <td>1</td>
+                <td>3</td>
+                <td>7</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>FIN</td>
+                <td>1</td>
+                <td>3</td>
+                <td>1</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>KAZ</td>
+                <td>1</td>
+                <td>3</td>
+                <td>1</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>UAE</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>CRC</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>ECU</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>CYP</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>SRI</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>ETH</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>MGL</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>PAK</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>PER</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>ARG</td>
+                <td>0</td>
+                <td>5</td>
+                <td>4</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>EGY</td>
+                <td>0</td>
+                <td>5</td>
+                <td>2</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>CRO</td>
+                <td>0</td>
+                <td>3</td>
+                <td>4</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>LAT</td>
+                <td>0</td>
+                <td>3</td>
+                <td>2</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>GEO</td>
+                <td>0</td>
+                <td>3</td>
+                <td>0</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>HKG</td>
+                <td>0</td>
+                <td>2</td>
+                <td>3</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>BUL</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>IRQ</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>KUW</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>NAM</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>ROU</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>SLO</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>VIE</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>LTU</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>POR</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>BIH</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>ESA</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>KEN</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>KSA</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>MNE</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>OMA</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>QAT</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>TPE</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>UGA</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h5 class="white-text"><b>OLYMPICS (Jul 21 to Aug 8)</b></h5>
+        <h6 class="white-text"><i class="fas fa-fire"></i> Opening Ceremony: Jul 23, <i class="fas fa-fire"></i> Closing
+          Ceremony: Aug 8</h6>
+        <h5 class="white-text"><b>PARALYMPICS (Aug 25 to Sept 5)</b></h5>
+        <h6 class="white-text"><i class="fas fa-fire"></i> Opening Ceremony: Aug 24, <i class="fas fa-fire"></i> Closing
+          Ceremony: Sept 5</h6>
+        <div class="oui-bubble">
+          <table class="centered bordered striped">
+            <tbody>
+              <tr>
+                <td><b>DATE</b></td>
+                <td><b>EVENTS</b></td>
+                <td><b>MEDAL EVENTS</b></td>
+              </tr>
+              <tr>
+                <td>Jul-21</td>
+                <td>Football| Softball|</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Jul-22</td>
+                <td>Football| Softball|</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Jul-23</td>
+                <td>Archery| Rowing|</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Jul-24</td>
+                <td>Basketball 3x3| Beach Volleyball| Boxing| Equestrian - Dressage| Football| Gymnastics - Artistic|
+                  Handball| Hockey| Rowing| Softball| Swimming| Table Tennis| Tennis| Volleyball| Water Polo|</td>
+                <td>Archery| Cycling - Road| Fencing| Judo| Shooting| Taekwondo| Weightlifting|</td>
+              </tr>
+              <tr>
+                <td>Jul-25</td>
+                <td>Basketball| Basketball 3x3| Beach Volleyball| Boxing| Canoe Slalom| Equestrian - Dressage| Football|
+                  Gymnastics - Artistics| Handball| Hockey| Rowing| Sailing| Softball| Surfing| Table Tennis|
+                  Volleyball| Water Polo|</td>
+                <td>Archery| Cycling - Road| Diving| Fencing| Judo| Shooting| Skate Boarding| Swimming| Taekwondo|
+                  Weightlifting|</td>
+              </tr>
+              <tr>
+                <td>Jul-26</td>
+                <td>Basketball| Basketball 3x3| Beach Volleyball| Boxing| Handball| Hockey| Rowing| Rugby Sevens|
+                  Sailing| Softball| Surfing| Volleyball| Water Polo|</td>
+                <td>Archery| Canoe Slalom| Diving| Fencing| Gymnastics - Artistics| Judo| Mountain Bike| Shooting| Skate
+                  Boarding| Swimming| Table Tennis| Taekwondo| Triathlon| Weightlifting|</td>
+              </tr>
+              <tr>
+                <td>Jul-27</td>
+                <td>Archery| Basketball| Basketball 3x3| Beach Volleyball| Boxing| Football| Handball| Hockey| Rugby
+                  Sevens| Sailing| Surfing| Table Tennis| Volleyball| Water Polo|</td>
+                <td>Canoe Slalom| Diving| Equestrian - Dressage| Fencing| Gymnastics - Artistics| Judo| Mountain Bike|
+                  Rowing| Shooting| Softball| Swimming| Taekwondo| Triathlon| Weightlifting|</td>
+              </tr>
+              <tr>
+                <td>Jul-28</td>
+                <td>Baseball| Basketball| Beach Volleyball| Boxing| Canoe Slalom| Football| Handball| Hockey| Sailing|
+                  Shooting| Table Tennis| Tennis| Volleyball| Water Polo|</td>
+                <td>Basketball 3x3| Cycling - Road| Diving| Equestrian - Dressage| Fencing| Gymnastics - Artistics|Judo|
+                  Rowing| Rugby Sevens| Surfing| Swimming| Weightlifting|</td>
+              </tr>
+              <tr>
+                <td>Jul-29</td>
+                <td>Baseball| Basketball| Beach Volleyball| BMX Racing| Boxing| Golf| Handball| Hockey| Rugby Sevens|
+                  Sailing| Tennis| Volleyball| Water Polo|</td>
+                <td>Canoe Slalom| Fencing| Gymnastics - Artistics| Judo| Rowing| Shooting| Swimming| Table Tennis|</td>
+              </tr>
+              <tr>
+                <td>Jul-30</td>
+                <td>Badminton| Baseball| Basketball| Beach Volleyball| Boxing| Diving| Equestrian - Eventing| Football|
+                  Golf| Handball| Hockey| Rugby Sevens| Sailing| Volleyball| Water Polo|</td>
+                <td>Archery| Athletics| BMX Racing| Canoe Slalom| Fencing| Gymnastics - Trampolining| Judo| Rowing|
+                  Shooting| Swimming| Table Tennis| Tennis|</td>
+              </tr>
+              <tr>
+                <td>Jul-31</td>
+                <td>Baseball| Basketball| Beach Volleyball| BMX Freestyle| Diving| Equestrian - Eventing| Football|
+                  Golf| Handball| Hockey| Volleyball| Water Polo|</td>
+                <td>Archery| Athletics| Badminton| Boxing| Fencing| Gymnastics - Trampolining| Judo| Rugby Sevens|
+                  Sailing| Shooting| Swimming| Tennis| Triathlon| Weightlifting|</td>
+              </tr>
+              <tr>
+                <td>Aug-01</td>
+                <td>Baseball| Basketball| Equestrain - Eventing| Handball| Hockey| Shooting| Table Tennis| Volleyball|
+                  Water Polo| Wrestling - Freestyle| Wrestling - Greco-Roman|</td>
+                <td>Athletics| Badminton| BMX Freestyle| Boxing| Diving| Fencing| Golf| Gymnastics - Artistics| Sailing|
+                  Swimming| Tennis| Weightlifting|</td>
+              </tr>
+              <tr>
+                <td>Aug-02</td>
+                <td>Artistic Swimming| Baseball| Basketball| Canoe Sprint| Diving| Football| Handball| Hockey| Table
+                  Tennis| Volleyball| Water Polo|</td>
+                <td>Athletics| Badminton| Cycling - Track| Equestrian - Eventing| Gymnastics - Artistics| Sailing|
+                  Shooting| Weightlifting| Wrestling - Freestyle| Wrestling - Greco-Roman|</td>
+              </tr>
+              <tr>
+                <td>Aug-03</td>
+                <td>Artistic Swimming| Baseball| Basketball| Beach Volleyball| Equestrian - Eventing| Football|
+                  Handball| Hockey| Sport Climbing| Table Tennis| Volleyball| Water Polo|</td>
+                <td>Athletics| Boxing| Canoe Sprint| Cycling - Track| Diving| Gymnastics - Artistics| Sailing|
+                  Weightlifting| Wrestling - Freestyle| Wrestling - Greco-Roman|</td>
+              </tr>
+              <tr>
+                <td>Aug-04</td>
+                <td>Baseball| Basketball| Beach Volleyball| Canoe Sprint| Diving| Golf| Handball| Hockey| Sport
+                  Climbing| Table Tennis| Volleyball| Water Polo|</td>
+                <td>Artistic Swimming| Athletics| Boxing| Cycling - Track| Equestrian - Eventing| Open Water Swimming|
+                  Sailing| Skate Boarding| Weightlifting| Wrestling - Freestyle| Wrestling - Greco-Roman|</td>
+              </tr>
+              <tr>
+                <td>Aug-05</td>
+                <td>Baseball| Basketball| Beach Volleyball| Golf| Handball| Modern Pentathlon| Volleyball| Water Polo|
+                </td>
+                <td>Athletics| Boxing| Canoe Sprint| Cycling - Track| Diving| Football| Hockey| Karate| Open Water
+                  Swimming| Skate Boarding| Sport Climbing| Table Tennis| Wrestling - Freestyle|</td>
+              </tr>
+              <tr>
+                <td>Aug-06</td>
+                <td>Artistic Swimming| Basketball| Canoe Sprint| Diving| Equestrian - Eventing| Golf| Gymnastics -
+                  Rhythmic| Handball| Volleyball| Water Polo|</td>
+                <td>Athletics| Beach Volleyball| Boxing| Cycling - Track| Football| Hockey| Karate| Modern Pentathlon|
+                  Sport Climbing| Table Tennis| Wrestling - Freestyle|</td>
+              </tr>
+              <tr>
+                <td>Aug-07</td>
+                <td>-</td>
+                <td>Artistic Swimming| Athletics| Baseball| Basketball| Beach Volleyball| Boxing| Canoe Sprint| Cycling
+                  - Track| Diving| Equestrian - Eventing| Football| Golf| Gymnastics - Rhythmic| Handball| Karate|
+                  Modern Pentathlon| Volleyball| Water Polo| Wrestling - Freestyle|</td>
+              </tr>
+              <tr>
+                <td>Aug-08</td>
+                <td>-</td>
+                <td>Athletics| Basketball| Boxing| Cycling - Track| Gymnastics - Rhythmic| Handball| Volleyball| Water
+                  Polo|</td>
+              </tr>
+              <tr>
+                <td colspan="3"><b>PARALYMPICS</b></td>
+              </tr>
+              <tr>
+                <td>Aug-25</td>
+                <td>Goalball| Table Tennis| Wheelchair Basketball| Wheelchair Rugby|</td>
+                <td>Cycling Track| Swimming| Wheelchair Fencing|</td>
+              </tr>
+              <tr>
+                <td>Aug-26</td>
+                <td>Goalball| Table Tennis| Wheelchair Basketball| Wheelchair Rugby|</td>
+                <td>Cycling Track| Equestrian| Powerlifting| Swimming| Wheelchair Fencing|</td>
+              </tr>
+              <tr>
+                <td>Aug-27</td>
+                <td>Archery| Goalball| Rowing| Sitting Volleyball| Table Tennis| Wheelchair Basketball| Wheelchair
+                  Rugby| Wheelchair Tennis|</td>
+                <td>Athletics| Cycling Track| Equestrian| Judo| Powerlifting| Swimming| Wheelchair Fencing|</td>
+              </tr>
+              <tr>
+                <td>Aug-28</td>
+                <td>Boccia| Goalball| Rowing| Sitting Volleyball| Wheelchair Basketball| Wheelchair Rugby| Wheelchair
+                  Tennis|</td>
+                <td>Archery| Athletics| Cycling Track| Equestrian| Judo| Powerlifting| Swimming| Table Tennis|
+                  Triathlon| Wheelchair Fencing|</td>
+              </tr>
+              <tr>
+                <td>Aug-29</td>
+                <td>Boccia| Football 5-a-side| Goalball| Sitting Volleyball| Wheelchair Basketball| Wheelchair Tennis|
+                </td>
+                <td>Archery| Athletics| Equestrian| Judo| Powerlifting| Rowing| Swimming| Table Tennis| Triathlon|
+                  Wheelchair Fencing| Wheelchair Rugby|</td>
+              </tr>
+              <tr>
+                <td>Aug-30</td>
+                <td>Boccia| Football 5-a-side| Goalball| Sitting Volleyball| Wheelchair Basketball| Wheelchair Tennis|
+                </td>
+                <td>Archery| Athletics| Equestrian| Powerlifting| Shooting| Swimming| Table Tennis|</td>
+              </tr>
+              <tr>
+                <td>Aug-31</td>
+                <td>Boccia| Football 5-a-side| Goalball| Sitting Volleyball| Table Tennis| Wheelchair Basketball|
+                  Wheelchair Tennis|</td>
+                <td>Archery| Athletics| Cycling Road| Shooting| Swimming|</td>
+              </tr>
+              <tr>
+                <td>Sep-01</td>
+                <td>Badminton| Goalball| Sitting Volleyball| Table Tennis| Wheelchair Basketball|</td>
+                <td>Athletics| Boccia| Cycling Road| Shooting| Swimming| Wheelchair Tennis|</td>
+              </tr>
+              <tr>
+                <td>Sep-02</td>
+                <td>Badminton| Boccia| Canoe Sprint| Football 5-a-side| Goalball| Sitting Volleyball| Wheelchair
+                  Basketball|</td>
+                <td>Archery| Athletics| Cycling Road| Shooting| Swimming| Table Tennis| Taekwondo| Wheelchair Tennis|
+                </td>
+              </tr>
+              <tr>
+                <td>Sep-03</td>
+                <td>Badminton| Boccia| Sitting Volleyball| Wheelchair Basketball|</td>
+                <td>Archery| Athletics| Canoe Sprint| Cycling Road| Goalball| Shooting| Swimming| Table Tennis|
+                  Taekwondo| Wheelchair Tennis|</td>
+              </tr>
+              <tr>
+                <td>Sep-04</td>
+                <td>-</td>
+                <td>Archery| Athletics| Badminton| Boccia| Canoe Sprint| Football 5-a-side| Shooting| Sitting
+                  Volleyball| Taekwondo| Wheelchair Basketball| Wheelchair Tennis|</td>
+              </tr>
+              <tr>
+                <td>Sep-05</td>
+                <td>-</td>
+                <td>Athletics| Badminton| Shooting| Sitting Volleyball| Wheelchair Basketball|</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h5 class="white-text" id="ind"><img
+            src="https://www.mykhel.com/common_dynamic/images/olympics/country_flag/IND.svg" width="30px" height="18px">
+          <b>INDIA in OLYMPICS/ PARALYMPICS - MEDAL TALLY 2021<sup>*</sup></b></h5>
+        <div class="oui-bubble">
+          <table class="centered bordered striped">
+            <tbody>
+              <tr>
+                <td><b>GOLD</b></td>
+                <td><b>SILVER</b></td>
+                <td><b>BRONZE</b></td>
+                <td><b>TOTAL</b></td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>4</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td colspan="4"><b>PARALYMPICS</b></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>8</td>
+                <td>6</td>
+                <td>19</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h5 class="white-text"><img src="https://www.mykhel.com/common_dynamic/images/olympics/country_flag/IND.svg"
+            width="30px" height="18px"> <b>INDIA in OLYMPICS/ PARALYMPICS - SCHEDULE (Jul 23 to Aug 8/ Aug 25 to Sept
+            5)</b></h5>
+        <h6 class="white-text">All Timings are as per IST</h6>
+        <div class="oui-bubble">
+          <table class="centered bordered striped">
+            <tbody>
+              <tr>
+                <td><b>DATE<br>TIME</b></td>
+                <td><b>EVENTS</b></td>
+                <td><b>ATHLETES</b></td>
+              </tr>
+              <tr>
+                <td>Jul 23<br>5:30 AM</td>
+                <td>Archery - Women's Individual Ranking Round</td>
+                <td>Deepika Kumari</td>
+              </tr>
+              <tr>
+                <td>Jul 23<br>9:30 AM</td>
+                <td>Archery - Men's Individual Ranking Round</td>
+                <td>Atanu Das, Pravin Jadhav, Tarundeep Rai</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 1</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Jul 24<br>5:00 AM</td>
+                <td>Shooting - 10m Air Rifle Women's Qual.</td>
+                <td>Elavenil Valarivan & Apurvi Chandela</td>
+              </tr>
+              <tr>
+                <td>Jul 24<br>6:00 AM</td>
+                <td>Archery - Mixed 1/8 to Eliminations</td>
+                <td>Deepika Kumari & Pravin Jadhav</td>
+              </tr>
+              <tr>
+                <td>Jul 24<br>6:30 AM</td>
+                <td>Hockey - Men's 'A': India vs New Zealand</td>
+                <td>Team India</td>
+              </tr>
+              <tr>
+                <td>Jul 24<br>7:15 AM</td>
+                <td>Shooting - 10m Air Rifle Women's Final</td>
+                <td>Subject to Qualification</td>
+              </tr>
+              <tr>
+                <td>Jul 24<br>7:30 AM</td>
+                <td>Judo - Women 48kg Elimination Round of 32</td>
+                <td>Shushila Devi</td>
+              </tr>
+              <tr>
+                <td>Jul 24<br>8:30 AM</td>
+                <td>Table Tennis - Mixed Doubles Round of 16</td>
+                <td>Sharath Kamal & Manika Batra</td>
+              </tr>
+              <tr>
+                <td>Jul 24<br>8:50 AM</td>
+                <td>Badminton - Men's Doubles Group Stage</td>
+                <td>Satwik Sairaj & Chirag Shetty</td>
+              </tr>
+              <tr>
+                <td>Jul 24<br>9:00 AM</td>
+                <td>Tennis - Men's SIngles 1st Round</td>
+                <td>Sumit Nagal</td>
+              </tr>
+              <tr>
+                <td>Jul 24<br>9:30 AM</td>
+                <td>Badminton - Men's Singles Group Stage| Shooting - 10m Air Pistol Men's Qual.</td>
+                <td>B Sai Praneeth| Saurabh Chaudhary & Abhishek Verma</td>
+              </tr>
+              <tr>
+                <td>Jul 24<br>10:20 AM</td>
+                <td>Weightlifting - Women's 49kg Final</td>
+                <td>Mirabai Chanu</td>
+              </tr>
+              <tr>
+                <td>Jul 24<br>12:00 PM</td>
+                <td>Shooting - 10m Air Pistol Men's Final</td>
+                <td>Subject to Qualification</td>
+              </tr>
+              <tr>
+                <td>Jul 24<br>12:15 PM</td>
+                <td>Table Tennis - Women's Singles Round 1</td>
+                <td>Manika Batra</td>
+              </tr>
+              <tr>
+                <td>Jul 24<br>1:00 PM</td>
+                <td>Table Tennis - Women's Singles Round 1</td>
+                <td>Sutirtha Mukherjee</td>
+              </tr>
+              <tr>
+                <td>Jul 24<br>3:54 PM</td>
+                <td>Boxing - Men's 69kg Round of 32</td>
+                <td>Vikas Krishnan</td>
+              </tr>
+              <tr>
+                <td>Jul 24<br>5:15 PM</td>
+                <td>Hockey - Women's 'A': India vs Netherlands</td>
+                <td>Team India</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 2</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Jul 25<br>5:30 AM</td>
+                <td>Shooting - 10m Air Pistol Women's Qual.</td>
+                <td>Manu Bhaker & Yashaswini Deswal</td>
+              </tr>
+              <tr>
+                <td>Jul 25<br>6:30 AM</td>
+                <td>Shooting - Skeet Men's Qual.| Artistic Gymnastics - Women's Qual.</td>
+                <td>Mairaj Ahmad Khan & Angad Vir Singh| Pranati Nayak</td>
+              </tr>
+              <tr>
+                <td>Jul 25<br>6:40 AM</td>
+                <td>Rowing - Lightweight Men's Double Sculls Round 2</td>
+                <td>Arjun Lal Jat, Arvind Singh</td>
+              </tr>
+              <tr>
+                <td>Jul 25<br>7:10 AM</td>
+                <td>Badminton - Women's Singles Group Stage</td>
+                <td>PV Sindhu</td>
+              </tr>
+              <tr>
+                <td>Jul 25<br>7:45 AM</td>
+                <td>Shooting - 10m Air Pistol Women's Final</td>
+                <td>Subject to Qualification</td>
+              </tr>
+              <tr>
+                <td>Jul 25<br>7:30 AM</td>
+                <td>Tennis - Women's Doubles 1st Round</td>
+                <td>Sania Mirza & Ankita Raina</td>
+              </tr>
+              <tr>
+                <td>Jul 25<br>8:35 AM</td>
+                <td>Sailing - Women's Laser Radial Race 1</td>
+                <td>Nethra Kumanan</td>
+              </tr>
+              <tr>
+                <td>Jul 25<br>9:30 AM</td>
+                <td>Shooting - 10m Air Rifle Men's Qual.| Sailing - Race 2</td>
+                <td>Deepak Kumar & Divyansh Singh Panwar| Nethra Kumanan</td>
+              </tr>
+              <tr>
+                <td>Jul 25<br>10:30 AM</td>
+                <td>Table Tennis - Men's Singles Round 2</td>
+                <td>Sathiyan Gnanasekaran</td>
+              </tr>
+              <tr>
+                <td>Jul 25<br>11:05 AM</td>
+                <td>Sailing - Men's Laser Radial Race 1</td>
+                <td>Vishnu Saravanan</td>
+              </tr>
+              <tr>
+                <td>Jul 25<br>12:00 PM</td>
+                <td>Table Tennis - Women's Singles Round 2| Sailing - Men's Race 2| Shooting - 10m Air Pistol Men's
+                  Final</td>
+                <td>Manika Batra| Vishnu Saravanan| Subject to Qual.</td>
+              </tr>
+              <tr>
+                <td>Jul 25<br>1:30 PM</td>
+                <td>Boxing - Women's 51kg Round of 32</td>
+                <td>MC Mary Kom</td>
+              </tr>
+              <tr>
+                <td>Jul 25<br>3:00 PM</td>
+                <td>Hockey - Men's 'A': India vs Australia</td>
+                <td>Team India</td>
+              </tr>
+              <tr>
+                <td>Jul 25<br>3:06 PM</td>
+                <td>Boxing - Men's 63kg Round of 32</td>
+                <td>Manish Kaushik</td>
+              </tr>
+              <tr>
+                <td>Jul 25<br>3:32 PM</td>
+                <td>Swimming - Women's 100m Backstroke Heat 1</td>
+                <td>Maana Patel</td>
+              </tr>
+              <tr>
+                <td>Jul 25<br>4:26 PM</td>
+                <td>Swimming - Men's 100m Backstroke Heat 3</td>
+                <td>Srihari Nataraj</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 3</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Jul 26<br>5:30 AM</td>
+                <td>Fencing - Women's Sabre Individual of 64</td>
+                <td>CA Bhavani Devi</td>
+              </tr>
+              <tr>
+                <td>Jul 26<br>6:00 AM</td>
+                <td>Archery - Men's Team 1/8 Eliminations</td>
+                <td>Atanu Das, Pravin Jadhav, Tarundeep Rai</td>
+              </tr>
+              <tr>
+                <td>Jul 26<br>6:30 AM</td>
+                <td>Shooting - Skeet Men's Qual. 2| Table Tennis - Men's Singles Round 2</td>
+                <td>Mairaj Ahmad Khan & Angad Vir Singh/ Sharath Kamal</td>
+              </tr>
+              <tr>
+                <td>Jul 26<br>TBD</td>
+                <td>Tennis - Men's SIngles 2nd Round</td>
+                <td>Sumit Nagal</td>
+              </tr>
+              <tr>
+                <td>Jul 26<br>8:30 AM</td>
+                <td>Table Tennis - Women's Singles Round 2</td>
+                <td>Sutirtha Mukherjee</td>
+              </tr>
+              <tr>
+                <td>Jul 26<br>8:35 AM</td>
+                <td>Sailing - Men's Laser Radial Race 2 & 3</td>
+                <td>Vishnu Saravanan</td>
+              </tr>
+              <tr>
+                <td>Jul 26<br>9:10 AM</td>
+                <td>Badminton - Men's Doubles Group Stage</td>
+                <td>Satwik Sairaj & Chirag Shetty</td>
+              </tr>
+              <tr>
+                <td>Jul 26<br>10:15 AM</td>
+                <td>Archery - Men's Team Quarter Final</td>
+                <td>Subject to Qualification</td>
+              </tr>
+              <tr>
+                <td>Jul 26<br>11:05 AM</td>
+                <td>Sailing - Women's Laser Radial Race 3 & 4</td>
+                <td>Nethra Kumanan</td>
+              </tr>
+              <tr>
+                <td>Jul 26<br>11:47 AM</td>
+                <td>Archery - Men's Team Semi Final</td>
+                <td>Subject to Qualification</td>
+              </tr>
+              <tr>
+                <td>Jul 26<br>12:00 PM</td>
+                <td>Table Tennis - Women's Singles Round 3</td>
+                <td>Manika Batra</td>
+              </tr>
+              <tr>
+                <td>Jul 26<br>12:20 PM</td>
+                <td>Shooting - Skeet Men's Final</td>
+                <td>Subject to Qualification</td>
+              </tr>
+              <tr>
+                <td>Jul 26<br>12:45 PM</td>
+                <td>Archery - Men's Team Medal Round</td>
+                <td>Subject to Qualification</td>
+              </tr>
+              <tr>
+                <td>Jul 26<br>3:06 PM</td>
+                <td>Boxing - Men's 75kg Round of 32</td>
+                <td>Ashish Kumar</td>
+              </tr>
+              <tr>
+                <td>Jul 26<br>3:50 PM</td>
+                <td>Swimming - Men's 200m Butterfly Heat 2</td>
+                <td>Sajan Prakash</td>
+              </tr>
+              <tr>
+                <td>Jul 26<br>5:45 PM</td>
+                <td>Hockey - Women's 'A': India vs Germany</td>
+                <td>Team India</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 4</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Jul 27<br>5:30 AM</td>
+                <td>Shooting - 10m Air Pistol Mixed Qual. 1</td>
+                <td>Manu Bhaker & Saurabh Chaudhary,| Yashaswini Deswal & Abhishek Verma</td>
+              </tr>
+              <tr>
+                <td>Jul 27<br>6:15 AM</td>
+                <td>Shooting - 10m Air Pistol Mixed Qual. 2</td>
+                <td>Subject to Qualification</td>
+              </tr>
+              <tr>
+                <td>Jul 27<br>6:30 AM</td>
+                <td>Hockey - Men's 'A' India vs Spain</td>
+                <td>Team India</td>
+              </tr>
+              <tr>
+                <td>Jul 27<br>7:30 AM</td>
+                <td>Shooting - 10m Air Pistol Mixed Medal Rounds</td>
+                <td>Subject to Qualification</td>
+              </tr>
+              <tr>
+                <td>Jul 27<br>8:30 AM</td>
+                <td>Badminton - Men's Doubles Group Stage| Table Tennis - Men's Singles Round 3</td>
+                <td>Satwik Sairaj Rankireddy & Chirag Shetty| Sharath Kamal</td>
+              </tr>
+              <tr>
+                <td>Jul 27<br>8:35 AM</td>
+                <td>Sailing - Women's Laser Radial Race 5 & 6</td>
+                <td>Nethra Kumanan</td>
+              </tr>
+              <tr>
+                <td>Jul 27<br>8:45 AM</td>
+                <td>Sailing - Men's Laser Radial Race 4, 5 & 6</td>
+                <td>Vishnu Saravanan</td>
+              </tr>
+              <tr>
+                <td>Jul 27<br>9:45 AM</td>
+                <td>Shooting - 10m Air Rifle Mixed Qual. 1</td>
+                <td>Elavenil Valarivan & Divyansh Panwar,| Deepak Kumar & Anjum Moudgil</td>
+              </tr>
+              <tr>
+                <td>Jul 27<br>10:30 AM</td>
+                <td>Shooting - 10m Air Rifle Mixed Qual. 2</td>
+                <td>Subject to Qualification</td>
+              </tr>
+              <tr>
+                <td>Jul 27<br>10:57 AM</td>
+                <td>Boxing - Women's 69kg of 16</td>
+                <td>Lovlina Borgohain</td>
+              </tr>
+              <tr>
+                <td>Jul 27<br>11:20 AM</td>
+                <td>Sailing - 49er Men's Race 1, 2 & 3</td>
+                <td>KC Ganapathy & Varun Thakkar</td>
+              </tr>
+              <tr>
+                <td>Jul 27<br>11:45 AM</td>
+                <td>Shooting - 10m Air Rifle Mixed Medal Rounds</td>
+                <td>Subject to Qualification</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 5</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Jul 28<br>6:30 AM</td>
+                <td>Hockey - Women's 'A' India vs Great Britain</td>
+                <td>Team India</td>
+              </tr>
+              <tr>
+                <td>Jul 28<br>7:30 AM</td>
+                <td>Badminton - Women's Singles Group Stage</td>
+                <td>PV Sindhu</td>
+              </tr>
+              <tr>
+                <td>Jul 28<br>7:31 AM</td>
+                <td>Archery - Men's Individual 1/32 Eliminations</td>
+                <td>Tarundeep Rai</td>
+              </tr>
+              <tr>
+                <td>Jul 28<br>8:00 AM</td>
+                <td>Rowing - Men's Doubles Semi Final A/B 2</td>
+                <td>Arjun Lal Jat & Arvind Singh</td>
+              </tr>
+              <tr>
+                <td>Jul 28<br>8:35 AM</td>
+                <td>Sailing - 49er Men's Race 2, 3 & 4</td>
+                <td>KC Ganapathy & Varun Thakkar</td>
+              </tr>
+              <tr>
+                <td>Jul 28<br>12:30 PM</td>
+                <td>Archery - Men's Individual 1/32 Eliminations</td>
+                <td>Pravin Jadhav</td>
+              </tr>
+              <tr>
+                <td>Jul 28<br>2:14 PM</td>
+                <td>Archery - Women's Individual 1/32 Eliminations</td>
+                <td>Deepika Kumari</td>
+              </tr>
+              <tr>
+                <td>Jul 28<br>2:30 PM</td>
+                <td>Badminton - Men's Singles Group Stage</td>
+                <td>B Sai Praneeth</td>
+              </tr>
+              <tr>
+                <td>Jul 28<br>2:33 PM</td>
+                <td>Boxing - Women's 75kg Round of 16</td>
+                <td>Pooja Rani</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 6</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Jul 29<br>5:20 AM</td>
+                <td>Rowing - Men's Doubles Final B</td>
+                <td>Arjun Lal Jat & Arvind Singh</td>
+              </tr>
+              <tr>
+                <td>Jul 29<br>5:22 AM</td>
+                <td>Golf - Men's Round 1</td>
+                <td>Anirban Lahiri</td>
+              </tr>
+              <tr>
+                <td>Jul 29<br>5:30 AM</td>
+                <td>Shooting - Women's 25m Pistol Qual.</td>
+                <td>Rahi Sarnobat & Manu Bhaker</td>
+              </tr>
+              <tr>
+                <td>Jul 29<br>6:00 AM</td>
+                <td>Hockey - Men's 'A' India vs Argentina</td>
+                <td>Team India</td>
+              </tr>
+              <tr>
+                <td>Jul 29<br>6:15 AM</td>
+                <td>Badminton - Women's Singles Round of 16</td>
+                <td>PV Sindhu</td>
+              </tr>
+              <tr>
+                <td>Jul 29<br>7:31 AM</td>
+                <td>Archery - Men's Individual 1/32 Eliminations</td>
+                <td>Atanu Das</td>
+              </tr>
+              <tr>
+                <td>Jul 29<br>7:39 AM</td>
+                <td>Golf - Men's Round 1</td>
+                <td>Udayan Mane</td>
+              </tr>
+              <tr>
+                <td>Jul 29<br>8:35 AM</td>
+                <td>Sailing - Men's Laser Race 7 & 8| Sailing - 49er Men's Race 5 & 6</td>
+                <td>Vishnu Saravanan| KC Ganapathy & Varun Thakkar</td>
+              </tr>
+              <tr>
+                <td>Jul 29<br>8:45 AM</td>
+                <td>Sailing - Women's Laser Radial Race 7 & 8</td>
+                <td>Nethra Kumanan</td>
+              </tr>
+              <tr>
+                <td>Jul 29<br>8:48 AM</td>
+                <td>Boxing - Men's 91kg+ Round of 16</td>
+                <td>Satish Kumar</td>
+              </tr>
+              <tr>
+                <td>Jul 29<br>3:36 PM</td>
+                <td>Boxing - Women's 51kg Round of 16</td>
+                <td>MC Mary Kom</td>
+              </tr>
+              <tr>
+                <td>Jul 29<br>4:16 PM</td>
+                <td>Swimming - Men's 100m Butterfly Heat 2</td>
+                <td>Sajan Prakash</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 7</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>5:00 AM</td>
+                <td>Equestrian - Eventing Dressage Day 1 Session 1</td>
+                <td>Fouaad Mirza</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>5:22 AM</td>
+                <td>Golf - Men's Round 2</td>
+                <td>Anirban Lahiri</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>5:30 AM</td>
+                <td>Shooting - Women's 25m Pistol Qual. Rapid</td>
+                <td>Rahi Sarnobat & Manu Bhaker</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>6:00 AM</td>
+                <td>Archery - Women's Individual 1/8 Eliminations</td>
+                <td>Deepika Kumari</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>6:17 AM</td>
+                <td>Athletics - Men's 3000m Steeplechase Round 1 H2</td>
+                <td>Avinash Sable</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>7:39 AM</td>
+                <td>Golf - Men's Round 2</td>
+                <td>Udayan Mane</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>TBD</td>
+                <td>Athletics - Women's 100m Round 1 - H1, 2 & 3</td>
+                <td>Dutee Chand</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>8:15 AM</td>
+                <td>Hockey - Women's 'A' India vs Ireland</td>
+                <td>Team India</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>8:18 AM</td>
+                <td>Boxing - Women's 60kg Round of 16</td>
+                <td>Simranjit Kaur</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>8:27 AM</td>
+                <td>Athletics - Men's 400m Hurdles Round 1 - H5</td>
+                <td>M.P Jabir</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>8:35 AM</td>
+                <td>Sailing - 49er Men's Race 7, 8 & 9| Sailing - Women's Laser Radial Race 9 & 10</td>
+                <td>KC Ganapathy & Varun Thakkar| Nethra Kumanan</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>8:48 AM</td>
+                <td>Boxing - Women's 69kg Quarterfinal 2</td>
+                <td>Lovlina Borgohain</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>10:30 AM</td>
+                <td>Shooting - Women's 25m Pistol Final</td>
+                <td>Subject to Qualification</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>11:05 AM</td>
+                <td>Sailing - Men's Laser 9 & 10</td>
+                <td>Vishnu Saravanan</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>TBD</td>
+                <td>Archery - Women's Individual QF, SF & Final</td>
+                <td>Subject to Qualification</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>1:15 PM</td>
+                <td>Badminton - Women's Singles Quarterfinal</td>
+                <td>PV Sindhu</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>2:00 PM</td>
+                <td>Equestrian - Eventing Dressage Day 1 Session 2</td>
+                <td>Fouaad Mirza</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>3:00 PM</td>
+                <td>Hockey - Men's 'A' India vs Japan</td>
+                <td>Team India</td>
+              </tr>
+              <tr>
+                <td>Jul 30<br>4:42 PM</td>
+                <td>Athletics - 4x400m Relay Mixed Round 1 H2</td>
+                <td>Alex Antony, Sarthak Bhambri, Revathi Veeramani & Subha Venkatesan</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 8</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Jul 31<br>4:15 AM</td>
+                <td>Golf - Men's Round 2</td>
+                <td>Anirban Lahiri</td>
+              </tr>
+              <tr>
+                <td>Jul 31<br>6:00 AM</td>
+                <td>Athletics - Women's Discus Throw Qual. Grp A| Golf - Men's Round 3</td>
+                <td>Seema Punia| Anirban Lahiri & Udayan Mane</td>
+              </tr>
+              <tr>
+                <td>Jul 31<br>7:18 AM</td>
+                <td>Archery - Women's Individual 1/8 Eliminations</td>
+                <td>Atanu Das</td>
+              </tr>
+              <tr>
+                <td>Jul 31<br>7:25 AM</td>
+                <td>Athletics - Women's Discus Throw Qual. Grp B</td>
+                <td>Kamalpreet Kaur</td>
+              </tr>
+              <tr>
+                <td>Jul 31<br>7:30 AM</td>
+                <td>Boxing - Men's 52kg Round of 16</td>
+                <td>Amit Panghal</td>
+              </tr>
+              <tr>
+                <td>Jul 31<br>8:30 AM</td>
+                <td>Shooting - Women's 50m Rifle 3 Pos Qual.</td>
+                <td>Tejaswini Sawant & Anjum Moudgil</td>
+              </tr>
+              <tr>
+                <td>Jul 31<br>8:35 AM</td>
+                <td>Sailing - 49er Men's Race 10, 11 & 12</td>
+                <td>KC Ganapathy & Varun Thakkar</td>
+              </tr>
+              <tr>
+                <td>Jul 31<br>8:45 AM</td>
+                <td>Hockey - Women's 'A' India vs South Africa</td>
+                <td>Team India</td>
+              </tr>
+              <tr>
+                <td>Jul 31<br>TBD</td>
+                <td>Archery - Men's Individual QF to Final</td>
+                <td>Atanu Das (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Jul 31<br>12:30 PM</td>
+                <td>Shooting - Women's 50m Rifle Final 3 Pos</td>
+                <td>Subject to Qualification</td>
+              </tr>
+              <tr>
+                <td>Jul 31<br>3:20 PM</td>
+                <td>Badminton - Women's Singles SF</td>
+                <td>PV Sindhu</td>
+              </tr>
+              <tr>
+                <td>Jul 31<br>3:36 PM</td>
+                <td>Boxing - Women's 75kg QF4</td>
+                <td>Pooja Rani</td>
+              </tr>
+              <tr>
+                <td>Jul 31<br>3:40 PM</td>
+                <td>Athletics - Men's Long Jump Qual. Grp B</td>
+                <td>Sreeshankar Murali</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 9</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Aug 1<br>4:11 AM</td>
+                <td>Golf - Men's Round 4</td>
+                <td>Udayan Mane</td>
+              </tr>
+              <tr>
+                <td>Aug 1<br>5:18 AM</td>
+                <td>Equestrian - Cross Country - Individual</td>
+                <td>Fouaad Mirza</td>
+              </tr>
+              <tr>
+                <td>Aug 1<br>5:55 AM</td>
+                <td>Golf - Men's Round 4</td>
+                <td>Anirban Lahiri</td>
+              </tr>
+              <tr>
+                <td>Aug 1<br>9:36 AM</td>
+                <td>Boxing - Men's 91kg+ QF</td>
+                <td>Satish Kumar</td>
+              </tr>
+              <tr>
+                <td>Aug 1<br>5:00 PM</td>
+                <td>Badminton - Women's Singles Bronze Medal</td>
+                <td>PV Sindhu</td>
+              </tr>
+              <tr>
+                <td>Aug 1<br>5:30 PM</td>
+                <td>Hockey - Men's QF India vs Great Britain</td>
+                <td>Team India</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 10</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Aug 2<br>7:24 AM</td>
+                <td>Athletics - Women's 200m Round 1 H1</td>
+                <td>Dutee Chand</td>
+              </tr>
+              <tr>
+                <td>Aug 2<br>8:00 AM</td>
+                <td>Shooting - Men's 50m Rifle 3 Pos Qual.</td>
+                <td>Aishwary Pratap Singh Tomar & Sanjeev Rajput</td>
+              </tr>
+              <tr>
+                <td>Aug 2<br>8:30 AM</td>
+                <td>Hockey - Women's QF India vs Australia</td>
+                <td>Team India</td>
+              </tr>
+              <tr>
+                <td>Aug 2<br>1:20 PM</td>
+                <td>Shooting - Men's 50m Rifle 3 Pos Final</td>
+                <td>Subject to Qualification</td>
+              </tr>
+              <tr>
+                <td>Aug 2<br>1:30 PM</td>
+                <td>Equestrian - Eventing Individual Jumping Qualifier</td>
+                <td>Fouaad Mirza</td>
+              </tr>
+              <tr>
+                <td>Aug 2<br>3:55 PM</td>
+                <td>Athletics - Women's 200m SF1</td>
+                <td>Dutee Chand (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Aug 2<br>4:30 PM</td>
+                <td>Athletics - Women's Discus Throw Final</td>
+                <td>Kamalpreet Kaur</td>
+              </tr>
+              <tr>
+                <td>Aug 2<br>5:15 PM</td>
+                <td>Equestrian - Eventing Individual Jumping Final</td>
+                <td>Fouaad Mirza (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 11</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Aug 3<br>5:50 AM</td>
+                <td>Athletics - Women's Javelin Throw Qual. Grp A</td>
+                <td>Annu Rani</td>
+              </tr>
+              <tr>
+                <td>Aug 3<br>7:00 AM</td>
+                <td>Hockey - Men's SF India vs Belgium</td>
+                <td>Team India</td>
+              </tr>
+              <tr>
+                <td>Aug 3<br>8:30 AM</td>
+                <td>Wrestling - Women's Freestyle 62kg 1/8 QF</td>
+                <td>Sonam Malik</td>
+              </tr>
+              <tr>
+                <td>Aug 3<br>2:45 PM</td>
+                <td>Wrestling - Women's Freestyle 62kg 1/8 SF</td>
+                <td>Sonam Malik (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Aug 3<br>3:45 PM</td>
+                <td>Athletics - Men's Shot Put Qual. Grp A</td>
+                <td>Tajinderpal Singh Toor</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 12</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Aug 4<br>5:35 AM</td>
+                <td>Athletics - Men's Javelin Throw Qual. Grp A</td>
+                <td>Neeraj Chopra</td>
+              </tr>
+              <tr>
+                <td>Aug 4<br>5:55 AM</td>
+                <td>Golf - Women's Round 1</td>
+                <td>Aditi Ashok</td>
+              </tr>
+              <tr>
+                <td>Aug 4<br>7:05 AM</td>
+                <td>Athletics - Men's Javelin Throw Qual. Grp B</td>
+                <td>Shivpal Singh</td>
+              </tr>
+              <tr>
+                <td>Aug 4<br>7:39 AM</td>
+                <td>Golf - Women's Round 1</td>
+                <td>Diksha Dagar</td>
+              </tr>
+              <tr>
+                <td>Aug 4<br>8:00 AM</td>
+                <td>Wrestling - Men's 57kg Freestyle 1/8 QF</td>
+                <td>Ravi Dahiya</td>
+              </tr>
+              <tr>
+                <td>Aug 4<br>8:00 AM</td>
+                <td>Wrestling - Women's 57kg Freestyle 1/8 QF</td>
+                <td>Anshu Malik</td>
+              </tr>
+              <tr>
+                <td>Aug 4<br>8:00 AM</td>
+                <td>Wrestling - Men's 86kg Freestyle 1/8 QF</td>
+                <td>Deepak Punia</td>
+              </tr>
+              <tr>
+                <td>Aug 4<br>11:00 AM</td>
+                <td>Boxing - Women's 69kg SF1</td>
+                <td>Lovlina Borgohain</td>
+              </tr>
+              <tr>
+                <td>Aug 4<br>2:45 PM</td>
+                <td>Wrestling - Men's 57kg Freestyle SF</td>
+                <td>Ravi Kumar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Aug 4<br>2:45 PM</td>
+                <td>Wrestling - Women's 57kg Freestyle SF</td>
+                <td>Anshu Malik (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Aug 4<br>2:45 PM</td>
+                <td>Wrestling - Men's 86kg Freestyle SF</td>
+                <td>Deepak Punia (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Aug 4<br>3:30 PM</td>
+                <td>Hockey - Women's SF India vs Argentina</td>
+                <td>Team India</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 13</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Aug 5<br>4:00 AM</td>
+                <td>Golf - Women's Round 2</td>
+                <td>Aditi Ashok</td>
+              </tr>
+              <tr>
+                <td>Aug 5<br>5:44 AM</td>
+                <td>Golf - Women's Round 2</td>
+                <td>Diksha Dagar</td>
+              </tr>
+              <tr>
+                <td>Aug 5<br>7:00 AM</td>
+                <td>Hockey - Men's Bronze Medal India vs Germany</td>
+                <td>Team India</td>
+              </tr>
+              <tr>
+                <td>Aug 5<br>7:37 AM</td>
+                <td>Wrestling - Women's 57kg Freestyle Repechage</td>
+                <td>Anshu Malik</td>
+              </tr>
+              <tr>
+                <td>Aug 5<br>8:00 AM</td>
+                <td>Wrestling - Women's 53kg Freestyle 1/8 Final</td>
+                <td>Vinesh Phogat</td>
+              </tr>
+              <tr>
+                <td>Aug 5<br>8:56 AM</td>
+                <td>Wrestling - Women's 53kg Freestyle QF</td>
+                <td>Vinesh Phogat (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Aug 5<br>1:00 PM</td>
+                <td>Athletics - Men's 20km Race Walk Final</td>
+                <td>K.T. Irfan, Rahul Rohilla & Sandeep Kumar</td>
+              </tr>
+              <tr>
+                <td>Aug 5<br>3:25 PM</td>
+                <td>Wrestling - Women's 53kg Freestyle SF</td>
+                <td>Vinesh Phogat (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Aug 5<br>4:20 PM</td>
+                <td>Wrestling - Men's 57kg Freestyle Final</td>
+                <td>Ravi Dahiya</td>
+              </tr>
+              <tr>
+                <td>Aug 5<br>4:40 PM</td>
+                <td>Wrestling - Women's 86kg Freestyle Bronze Medal</td>
+                <td>Deepak Punia</td>
+              </tr>
+              <tr>
+                <td>Aug 5<br>5:35 PM</td>
+                <td>Wrestling - Women's 57kg Freestyle Bronze Medal</td>
+                <td>Anshu Malik (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 14</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Aug 6<br>2:00 AM</td>
+                <td>Athletics - Men's 50km Race Walk Final</td>
+                <td>Gurpreet Singh</td>
+              </tr>
+              <tr>
+                <td>Aug 6<br>5:29 AM</td>
+                <td>Golf - Women's Round 3</td>
+                <td>Diksha Dagar</td>
+              </tr>
+              <tr>
+                <td>Aug 6<br>5:48 AM</td>
+                <td>Golf - Women's Round 3</td>
+                <td>Aditi Ashok</td>
+              </tr>
+              <tr>
+                <td>Aug 6<br>7:00 AM</td>
+                <td>Hockey - Women's Bronze Medal India vs Great Britain</td>
+                <td>Team India</td>
+              </tr>
+              <tr>
+                <td>Aug 6<br>8:07 AM</td>
+                <td>Wrestling - Women's 50kg Freestyle 1/8 Final</td>
+                <td>Seema Bisla</td>
+              </tr>
+              <tr>
+                <td>Aug 6<br>8:49 AM</td>
+                <td>Wrestling - Men's 65kg Freestyle 1/8 Final</td>
+                <td>Bajrang Punia</td>
+              </tr>
+              <tr>
+                <td>Aug 6<br>8:56 AM</td>
+                <td>Wrestling - Women's 50kg Freestyle QF</td>
+                <td>Seema Bisla</td>
+              </tr>
+              <tr>
+                <td>Aug 6<br>9:17 AM</td>
+                <td>Wrestling - Men's 65kg Freestyle QF</td>
+                <td>Bajrang Punia</td>
+              </tr>
+              <tr>
+                <td>Aug 6<br>1:00 PM</td>
+                <td>Athletics - Women's 20km Race Walk Final</td>
+                <td>Priyanka Goswami & Bhawna Jat</td>
+              </tr>
+              <tr>
+                <td>Aug 6<br>2:52 PM</td>
+                <td>Wrestling - Men's 65kg Freestyle SF</td>
+                <td>Bajrang Punia</td>
+              </tr>
+              <tr>
+                <td>Aug 6<br>3:13 PM</td>
+                <td>Wrestling - Women's 50kg Freestyle SF</td>
+                <td>Seema Bisla</td>
+              </tr>
+              <tr>
+                <td>Aug 6<br>5:07 PM</td>
+                <td>Athletics - Men's 4x400m Relay Round 1 H2</td>
+                <td>Amoj Jacob, Arokia Rajiv, Naganathan Pandi, Nirmal Tom Noah & Anas Muhammed Yahiya</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 15</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Aug 7<br>4:17 AM</td>
+                <td>Golf - Women's Round 4</td>
+                <td>Diksha Dagar</td>
+              </tr>
+              <tr>
+                <td>Aug 7<br>4:48 AM</td>
+                <td>Golf - Women's Round 4</td>
+                <td>Aditi Ashok</td>
+              </tr>
+              <tr>
+                <td>Aug 7<br>3:55 PM</td>
+                <td>Wrestling - Men's 65kg Freestyle Bronze Medal</td>
+                <td>Bajrang Punia</td>
+              </tr>
+              <tr>
+                <td>Aug 7<br>4:30 PM</td>
+                <td>Athletics - Men's Javelin Throw Final</td>
+                <td>Neeraj Chopra</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 16</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Aug-08</td>
+                <td>** No Schedule for India **</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 17</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td colspan="3"><b>PARALYMPICS</b></td>
+              </tr>
+              <tr>
+                <td>Aug 25<br>7:30 AM</td>
+                <td>Table Tennis - Women's Singles Class 3 - D</td>
+                <td>Sonal Patel</td>
+              </tr>
+              <tr>
+                <td>Aug 25<br>8:50 AM</td>
+                <td>Table Tennis - Women's Singles Class 4 - A</td>
+                <td>Bhavina Patel</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 1</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Aug 26<br>9:30 AM</td>
+                <td>Table Tennis - Women's Singles Class 4 - A</td>
+                <td>Bhavina Patel</td>
+              </tr>
+              <tr>
+                <td>Aug 26<br>5:10 PM</td>
+                <td>Table Tennis - Women's Singles Class 3 - D</td>
+                <td>Sonal Patel</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 2</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Aug 27<br>5:30 AM</td>
+                <td>Archery - Women's Individual Compound Open Ranking Round</td>
+                <td>Jyoti Balyan</td>
+              </tr>
+              <tr>
+                <td>Aug 27<br>7:30 AM</td>
+                <td>Table Tennis - Women's Singles Class 4, Round of 16</td>
+                <td>Bhavina Patel</td>
+              </tr>
+              <tr>
+                <td>Aug 27<br>9:30 AM</td>
+                <td>Powerlifting - Women's 50kg Final</td>
+                <td>Sakina Khatun</td>
+              </tr>
+              <tr>
+                <td>Aug 27<br>10:30 AM</td>
+                <td>Archery - Men's Individual Compound Open Ranking Round</td>
+                <td>Rakesh Kumar & Shyam Sundar</td>
+              </tr>
+              <tr>
+                <td>Aug 27<br>10:30 AM</td>
+                <td>Archery - Men's Individual Recurve Open Ranking Round</td>
+                <td>Harvinder Singh & Vivek Chikara</td>
+              </tr>
+              <tr>
+                <td>Aug 27<br>3:00 PM</td>
+                <td>Powerlifting - Men's 65kg Final</td>
+                <td>Jaideep</td>
+              </tr>
+              <tr>
+                <td>Aug 27<br>3:30 PM</td>
+                <td>Athletics - Men's Shot Put F55-Final</td>
+                <td>Tek Chand</td>
+              </tr>
+              <tr>
+                <td>Aug 27<br>3:50 PM</td>
+                <td>Table Tennis - Women's Singles Class 4 QF</td>
+                <td>Bhavina Patel</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 3</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Aug 28<br>6:10 AM</td>
+                <td>Table Tennis - Women's Singles Class 4 - SF2</td>
+                <td>Bhavina Patel</td>
+              </tr>
+              <tr>
+                <td>Aug 28<br>6:38 AM</td>
+                <td>Archery - Men's Individual Compound Open 1/16 Elimination</td>
+                <td>Shyam Sundar</td>
+              </tr>
+              <tr>
+                <td>Aug 28<br>8:52 AM</td>
+                <td>Archery - Men's Individual Compound Open 1/16 Elimination</td>
+                <td>Rakesh Kumar</td>
+              </tr>
+              <tr>
+                <td>Aug 28<br>3:30 PM</td>
+                <td>Athletics - Men's Javelin Throw F57 - Final</td>
+                <td>Ranjeet Bhati</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 4</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Aug 29<br>6:55 AM</td>
+                <td>Archery - Women's Individual Compound Open 1/16 Elimination</td>
+                <td>Jyoti Balyan</td>
+              </tr>
+              <tr>
+                <td>Aug 29<br>7:15 AM</td>
+                <td>Table Tennis - Women's Singles Class 4 Final</td>
+                <td>Bhavina Patel</td>
+              </tr>
+              <tr>
+                <td>Aug 29<br>9:00 AM</td>
+                <td>Archery - Mixed Team Compound Open 1/8 Elimination</td>
+                <td>Jyoti Balyan & Rakesh Kumar</td>
+              </tr>
+              <tr>
+                <td>Aug 29<br>2:40 PM</td>
+                <td>Archery - Mixed Team Compound Open QF</td>
+                <td>Jyoti Balyan & Rakesh Kumar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Aug 29<br>3:40 PM</td>
+                <td>Archery - Mixed Team Compound Open SF</td>
+                <td>Jyoti Balyan & Rakesh Kumar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Aug 29<br>3:54 PM</td>
+                <td>Athletics - Men's Discus Throw F52 Final</td>
+                <td>Vinod Kumar</td>
+              </tr>
+              <tr>
+                <td>Aug 29<br>3:58 PM</td>
+                <td>Athletics - Men's High Jump T47 Final</td>
+                <td>Nishad Kumar & Ram Pal Chahar</td>
+              </tr>
+              <tr>
+                <td>Aug 29<br>4:06 PM</td>
+                <td>Archery - Mixed Team Compound Open Bronze Medal Match</td>
+                <td>Jyoti Balyan & Rakesh Kumar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Aug 29<br>4:26 PM</td>
+                <td>Archery - Mixed Team Compound Open Gold Medal Match</td>
+                <td>Jyoti Balyan & Rakesh Kumar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 5</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Aug 30<br>5:00 AM</td>
+                <td>Shooting: R2 Women's 10m AR Standing SH1 Qualification</td>
+                <td>Avani Lekhara</td>
+              </tr>
+              <tr>
+                <td>Aug 30<br>6:05 AM</td>
+                <td>Athetics: Men's Discus Thorw - F56 - Final</td>
+                <td>Yogesh Kathuniya</td>
+              </tr>
+              <tr>
+                <td>Aug 30<br>7:15 AM</td>
+                <td>Shooting: R1 Men's 10m AR Standing SH1 Qualification</td>
+                <td>Deepak & Swaroop Unhalkar</td>
+              </tr>
+              <tr>
+                <td>Aug 30<br>7:30 AM</td>
+                <td>Shooting: R2 Women's 10m AR Standing SH1 - Final</td>
+                <td>Avani Lekhara (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Aug 30<br>7:33 AM</td>
+                <td>Athletics: Men's Javelin Throw - F46 - Final</td>
+                <td>Sundar Singh Gurjar, Devendra & Ajeet Singh</td>
+              </tr>
+              <tr>
+                <td>Aug 30<br>9:45 AM</td>
+                <td>Shooting: R1 Men's 10m AR Standing SH1 - Final</td>
+                <td>Deepak & Swaroop Unhalkar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Aug 30<br>3:30 PM</td>
+                <td>Athletics: Men's Javelin Throw - F64 - Final</td>
+                <td>Sumit Antil & Sandeep Choudhary</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 6</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Aug 31<br>6:00 AM</td>
+                <td>Shooting - Women's P2 10m Air Pistol SH1 Qual</td>
+                <td>Rubina Francis</td>
+              </tr>
+              <tr>
+                <td>Aug 31<br>6:56 AM</td>
+                <td>Athletics - Women's Shot Put F34 Final</td>
+                <td>Bhagyashri Jadhav</td>
+              </tr>
+              <tr>
+                <td>Aug 31<br>7:08 AM</td>
+                <td>Athletics - Women's 100m T13 Round 1 Heat 2</td>
+                <td>Simran Sharma</td>
+              </tr>
+              <tr>
+                <td>Aug 31<br>7:12 AM</td>
+                <td>Archery - Men's Individual Compound Open 1/8 Elimination</td>
+                <td>Rakesh Kumar</td>
+              </tr>
+              <tr>
+                <td>Aug 31<br>8:00 AM</td>
+                <td>Table Tennis - Women's Doubles Classes 4-5 QF</td>
+                <td>Bhavina Patel & Sonal Patel</td>
+              </tr>
+              <tr>
+                <td>Aug 31<br>8:30 AM</td>
+                <td>Shooting - Women's P2 10m Air Rifle SH1 Final</td>
+                <td>Rubina Francis (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Aug 31<br>8:30 AM</td>
+                <td>Shooting - Men's P1 10m Air Pistol SH1 Qual</td>
+                <td>Manish Narwal Singhraj Adana & Deepender Singh</td>
+              </tr>
+              <tr>
+                <td>Aug 31<br>8:34 AM</td>
+                <td>Archery - Men's Individual Compound Open QF</td>
+                <td>Rakesh Kumar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Aug 31<br>9:25 AM</td>
+                <td>Archery - Men's Individual Compound Open SF</td>
+                <td>Rakesh Kumar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Aug 31<br>9:48 AM</td>
+                <td>Archery - Men's Individual Compound Open Bronze Medal Match</td>
+                <td>Rakesh Kumar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Aug 31<br>10:05 AM</td>
+                <td>Archery - Men's Individual Compound Open Gold Medal Match</td>
+                <td>Rakesh Kumar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Aug 31<br>11:00 AM</td>
+                <td>Shooting - Men's P1 10m Air Pistol SH1 Qual</td>
+                <td>Manish Narwal Singhraj Adana & Deepender Singh</td>
+              </tr>
+              <tr>
+                <td>Aug 31<br>3:55 PM</td>
+                <td>Athletics - Men's High Jump T63 Final</td>
+                <td>Mariyappan Thangavelu Sharad Kumar & Varun Singh Bhati</td>
+              </tr>
+              <tr>
+                <td>Aug 31<br>4:40 PM</td>
+                <td>Athletics - Women's 100m T13 Final</td>
+                <td>Simran Sharma (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 7</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Sept 1 <br>6:00 AM</td>
+                <td>Shooting - Mixed R3 10m Air Rifle Prone SH1 Qual</td>
+                <td>Sidhartha Babu Deepak & Avani Lekhara</td>
+              </tr>
+              <tr>
+                <td>Sept 1 <br>8:00 AM</td>
+                <td>Shooting - Mixed R3 10m Air Rifle Prone SH1 Final</td>
+                <td>Sidhartha Babu Deepak & Avani Lekhara (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 1 <br>1:30 PM</td>
+                <td>Swimming - Men's 100m Breast Stroke SB7 Final</td>
+                <td>Suyash Jadhav</td>
+              </tr>
+              <tr>
+                <td>Sept 1 <br>2:30 PM</td>
+                <td>Badminton - Mixed Doubles SL3 SU5 Group B Match 1</td>
+                <td>Pramod Bhagat & Palak Kohli</td>
+              </tr>
+              <tr>
+                <td>Sept 1 <br>3:55 PM</td>
+                <td>Athletics - Men's Club Throw F51 Final</td>
+                <td>Amit Kumar Saroha & Dharambir</td>
+              </tr>
+              <tr>
+                <td>Sept 1 <br>5:10 PM</td>
+                <td>Badminton - Women's Singles SU5 Group A Match 1</td>
+                <td>Palak Kohli</td>
+              </tr>
+              <tr>
+                <td>Sept 1 <br>5:50 PM</td>
+                <td>Badminton - Men's Singles SL3 Group A Match 1</td>
+                <td>Pramod Bhagat vs Manoj Sarkar</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 8</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>5:15 AM</td>
+                <td>Shooting: P3 Mixed 25m Pistol SH1 Qualification - Precision</td>
+                <td>Akash & Rahul Jakhar</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>5:30 AM</td>
+                <td>Badminton: Women's Doubles SL3-SU5 - Group B - Match 1</td>
+                <td>Palak Kohli & Parul Parmar</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>6:10 AM</td>
+                <td>Badminton: Men's Singles SL4 - Group A - Match 1</td>
+                <td>Suhas L Yathiraj</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>6:10 AM</td>
+                <td>Canoe Sprint: Women's 200m VL2 - Heat 1</td>
+                <td>Prachi Yadav</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>6:50 AM</td>
+                <td>Badminton: Men's Singles SL4 - Group B - Match 1</td>
+                <td>Tarun Dhillon</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>7:15 AM</td>
+                <td>Taekwondo: Women K44 - 49 Kg - Round of 16</td>
+                <td>Aruna Tanwar</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>8:50 AM</td>
+                <td>Badminton: Women's Singles SL4 - Group D - Match 1</td>
+                <td>Parul Parmar</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>9:00 AM</td>
+                <td>Taekwondo: Women K44-49 Kg - Quarterfinal</td>
+                <td>Aruna Tanwar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>9:00 AM</td>
+                <td>Shooting: P3 Mixed 25m Pistol SH1 Qualification - Rapid</td>
+                <td>Akash & Rahul Jakhar</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>9:30 AM</td>
+                <td>Badminton: Men's Singles SH6 - Group B - Match 1</td>
+                <td>Krishna Nagar</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>10:10 AM</td>
+                <td>Badminton: Women's Singles SU5 - Group A - Match 2</td>
+                <td>Palak Kohli</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>10:30 AM</td>
+                <td>Taekwondo: Women K44 - 49 Kg - Repechage Quarterfinal</td>
+                <td>Aruna Tanwar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>12:00 PM</td>
+                <td>Shooting: P3 Mixed 25m Pistol SH1 - Final</td>
+                <td>Akash & Rahul Jakhar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>1:10 PM</td>
+                <td>Badminton: Men's Singles SL3 - Group A - Match 2</td>
+                <td>Pramod Bhagat</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>2:30 PM</td>
+                <td>Badminton: Women's Singles SL4 - Group D - Match 2</td>
+                <td>Parul Parmar</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>2:30 PM</td>
+                <td>Taekwondo: Women K44 - 49 Kg - Semifinal</td>
+                <td>Aruna Tanwar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>3:30 PM</td>
+                <td>Taekwondo: Women K44-49 Kg - Repechage Semifinal</td>
+                <td>Aruna Tanwar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>4:28 PM</td>
+                <td>Athletics: Men's Shot Put - F35 - Final</td>
+                <td>Arvind</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>4:30 PM</td>
+                <td>Taekwondo: Women K44-49 Kg - Bronze Medal Match</td>
+                <td>Aruna Tanwar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 2 <br>5:30 PM</td>
+                <td>Taekwondo: Women K44-49 Kg - Gold Medal Match</td>
+                <td>Aruna Tanwar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 9</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>5:30 AM</td>
+                <td>Badminton: Women's Doubles SL3-SU5 Group B Match 2</td>
+                <td>Palak Kohli & Parul Parmar</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>6:00 AM</td>
+                <td>Shooting: R7 Men's 50m Rifle 3P SH1 Qualification</td>
+                <td>Deepak</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>6:00 AM</td>
+                <td>Shooting: R8 Women's 50m Rifle 3P SH1 Qualification</td>
+                <td>Avani Lekhara</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>6:17 AM</td>
+                <td>Swimming: Men's 50m Butterfly - S7 - Heat 1</td>
+                <td>Suyash Jadhav</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>6:20 AM</td>
+                <td>Swimming: Men's 50m Butterfly - S7 - Heat 2</td>
+                <td>Niranjan Mukundan</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>6:21 AM</td>
+                <td>Canoe Sprint: Women's VL2 200m Semifinal 2</td>
+                <td>Prachi Yadav</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>6:30 AM</td>
+                <td>Archery: Men's Ind. Recurve Open 1/16 Elim. Round</td>
+                <td>Harvinder Singh</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>6:50 AM</td>
+                <td>Badminton: Men's Singles SL4 - Group A - Match 2</td>
+                <td>Suhas L Yathiraj</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>6:50 AM</td>
+                <td>Badminton: Men's Singles SL4 - Group B - Match 2</td>
+                <td>Tarun Dhillon</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>7:30 AM</td>
+                <td>Badminton: Men's Singles SL3 - Group A - Match 2</td>
+                <td>Manoj Sarkar</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>7:32 AM</td>
+                <td>Athletics: Men's High Jump - T64 - Final</td>
+                <td>Praveen Kumar</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>7:32 AM</td>
+                <td>Canoe Sprint: Women's VL2 200m - Final</td>
+                <td>Prachi Yadav (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>8:10 AM</td>
+                <td>Badminton: Mixed Doubles SL3-SU5 Group B - Match - 2</td>
+                <td>Pramod Bhagat & Palak Kohli</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>8:45 AM</td>
+                <td>Archery: Men's Ind. Recurve Open 1/16 Elim. Round</td>
+                <td>Vivek Chikara</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>10:00 AM</td>
+                <td>Shooting: R8 Women's 50m Rifle 3P SH1 - Final</td>
+                <td>Avani Lekhara (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>11:45 AM</td>
+                <td>Shooting: R7 Men's 50m Rifle 3P SH1 - Final</td>
+                <td>Deepak (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>11:50 AM</td>
+                <td>Badminton: Men's Singles SH6 - Group B - Match 2</td>
+                <td>Krishna Nagar</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>1:10 PM</td>
+                <td>Badminton: Men's Singles SL4 - Group A - Match 3</td>
+                <td>Suhas L Yathiraj</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>1:50 PM</td>
+                <td>Badminton: Men's Singles SL4 - Group B - Match 3</td>
+                <td>Tarun Dhillon</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>2:15 PM</td>
+                <td>Archery: Men's Ind. Recurve Open 1/8 Elimination Round</td>
+                <td>Harvinder Singh (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>2:28 PM</td>
+                <td>Swimming: Men's 50m Butterfly - S7 - Final</td>
+                <td>Niranjan Mukundan & Suyash Jadhav (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>3:00 PM</td>
+                <td>Archery: Men's Ind. Recurve Open 1/8 Elimination Round</td>
+                <td>Vivek Chikara (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>3:35 PM</td>
+                <td>Athletics: Women's Club Throw - F51 - Final</td>
+                <td>Kashish Lakra & Ekta Bhyan</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>3:40 PM</td>
+                <td>Athletics: Men's Shot Put - F57 - Final</td>
+                <td>Soman Rana</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>4:00 PM</td>
+                <td>Archery: Men's Ind. Recurve Open - Quarterfinal</td>
+                <td>Harvinder Singh (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>4:45 PM</td>
+                <td>Archery: Men's Ind. Recurve Open - Quarterfinal</td>
+                <td>Vivek Chikara (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>5:00 PM</td>
+                <td>Archery: Men's Ind. Recurve Open - Semifinal</td>
+                <td>Harvinder Singh (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>5:15 PM</td>
+                <td>Archery: Men's Ind. Recurve Open - Semifinal</td>
+                <td>Vivek Chikara (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>5:36 PM</td>
+                <td>Archery: Men's Ind. Recurve Open Bronze Medal Match</td>
+                <td>Harvinder Singh & Vivek Chikara (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 3 <br>5:51 PM</td>
+                <td>Archery: Men's Ind. Recurve Open Gold Medal Match</td>
+                <td>Harvinder Singh & Vivek Chikara (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>TBD</td>
+                <td>Badminton: Women's Singles SU5 - Quarterfinal</td>
+                <td>Palak Kohli</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 10</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Sept 4 <br>6:00 AM</td>
+                <td>Shooting: P4 Mixed 50m Pistol SH1 Qualification</td>
+                <td>Singhraj Akash & Manish Narwal</td>
+              </tr>
+              <tr>
+                <td>Sept 4 <br>6:15 AM</td>
+                <td>Badminton: Men's Singles SL3 Semifinal</td>
+                <td>Pramod Bhagat</td>
+              </tr>
+              <tr>
+                <td>Sept 4 <br>7:00 AM</td>
+                <td>Badminton: Men's Singles SL3 Semifinal</td>
+                <td>Manoj Sarkar</td>
+              </tr>
+              <tr>
+                <td>Sept 4 <br>7:45 AM</td>
+                <td>Badminton: Men's Singles SL4 Semifinal</td>
+                <td>Tarun Dhillon</td>
+              </tr>
+              <tr>
+                <td>Sept 4 <br>7:45 AM</td>
+                <td>Badminton: Men's Singles SL4 Semifinal</td>
+                <td>Suhas L Yathiraj</td>
+              </tr>
+              <tr>
+                <td>Sept 4 <br>8:45 AM</td>
+                <td>Shooting: P4 Mixed 50m Pistol SH1 - Final</td>
+                <td>Singhraj Akash & Manish Narwal (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 4 <br>10:00 AM</td>
+                <td>Badminton: Men's Singles SH6 - Semifinal</td>
+                <td>Krishna Nagar</td>
+              </tr>
+              <tr>
+                <td>Sept 4 <br>11:45 AM</td>
+                <td>Badminton: Mixed Doubles SL3-SU5 Semifinal</td>
+                <td>Pramod Bhagat & Palak Kohli</td>
+              </tr>
+              <tr>
+                <td>Sept 4 <br>3:00 PM</td>
+                <td>Badminton: Men's Singles SL3 Bronze Medal Match</td>
+                <td>Pramod Bhagat & Manoj Sarkar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 4 <br>3:00 PM</td>
+                <td>Badminton: Men's Singles SL3 Gold Medal Match</td>
+                <td>Pramod Bhagat & Manoj Sarkar (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 4 <br>3:40 PM</td>
+                <td>Athletics: Men's Javelin Throw - F41 - Final</td>
+                <td>Navdeep</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 11</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Sept 5 <br>6:00 AM</td>
+                <td>Shooting: R6 Mixed 50m Air Rifle Prone SH1 Qualification</td>
+                <td>Sidhartha Babu Deepak & Avani Lekhara</td>
+              </tr>
+              <tr>
+                <td>Sept 5 <br>6:15 AM</td>
+                <td>Badminton: Men's Singles SL4 Gold Medal Match</td>
+                <td>Suhas L Yathiraj</td>
+              </tr>
+              <tr>
+                <td>Sept 5 <br>6:15 AM</td>
+                <td>Badminton: Men's Singles SL4 Bronze Medal Match</td>
+                <td>Tarun Dhillon</td>
+              </tr>
+              <tr>
+                <td>Sept 5 <br>8:00 AM</td>
+                <td>Badminton: Men's Singles SH6 Gold Medal Match</td>
+                <td>Krishna Nagar</td>
+              </tr>
+              <tr>
+                <td>Sept 5 <br>8:00 AM</td>
+                <td>Shooting: R6 Mixed 50m Air Rifle Prone SH1 Final</td>
+                <td>Sidhartha Babu Deepak & Avani Lekhara (Subject to Qualification)</td>
+              </tr>
+              <tr>
+                <td>Sept 5 <br>8:45 AM</td>
+                <td>Badminton: Mixed Doubles SL3-SU5 Bronze Medal Match</td>
+                <td>Pramod Bhagat & Palak Kohli</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>END OF DAY 12</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h5 class="white-text"><img src="https://www.mykhel.com/common_dynamic/images/olympics/country_flag/IND.svg"
+            width="30px" height="18px"> <b>MEDALS WON BY INDIAN ATHLETES (Olympics/ Paralympics)</b></h5>
+        <div class="oui-bubble">
+          <table class="centered bordered striped">
+            <tbody>
+              <tr>
+                <td><b>MEDAL</b></td>
+                <td><b>WON BY</b></td>
+                <td><b>IN SPORT OF</b></td>
+              </tr>
+              <tr>
+                <td>Gold</td>
+                <td>Neeraj Chopra</td>
+                <td>Athletics - Men's Javelin Throw</td>
+              </tr>
+              <tr>
+                <td>Silver</td>
+                <td>MIRABAI Chanu Saikhom</td>
+                <td>Weightlifting Women's</td>
+              </tr>
+              <tr>
+                <td>Silver</td>
+                <td>Ravi Kumar Dahiya</td>
+                <td>Wrestling Men's 57kg</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>PUSARLA V. Sindhu</td>
+                <td>Badminton Women's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Lovlina Borgohain</td>
+                <td>Boxing Women's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Bajrang Punia</td>
+                <td>Wrestling Men's 65kg</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Kumar Surendra</td>
+                <td>Hockey Men's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Kumar Varun</td>
+                <td>Hockey Men's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Lakra Birendra</td>
+                <td>Hockey Men's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Parattu Raveendran Sreejesh (GK)</td>
+                <td>Hockey Men's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Prasad Vivek Sagar</td>
+                <td>Hockey Men's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Rohidas Amit</td>
+                <td>Hockey Men's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Sharma Nilakanta</td>
+                <td>Hockey Men's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Singh Dilpreet</td>
+                <td>Hockey Men's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Singh Gurjant</td>
+                <td>Hockey Men's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Singh Hardik</td>
+                <td>Hockey Men's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Singh Harmanpreet</td>
+                <td>Hockey Men's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Singh Mandeep</td>
+                <td>Hockey Men's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Singh Manpreet (Captain)</td>
+                <td>Hockey Men's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Singh Rupinder Pal</td>
+                <td>Hockey Men's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Singh Shamsher</td>
+                <td>Hockey Men's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Singh Simranjeet</td>
+                <td>Hockey Men's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Sumit</td>
+                <td>Hockey Men's</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Upadhyay Lalit Kumar</td>
+                <td>Hockey Men's</td>
+              </tr>
+              <tr>
+                <td colspan="3"><b>PARALYMPICS</b></td>
+              </tr>
+              <tr>
+                <td>Gold</td>
+                <td>Avani Lekhara</td>
+                <td>Para Shooting</td>
+              </tr>
+              <tr>
+                <td>Gold</td>
+                <td>Sumit Antil</td>
+                <td>Para Athletics - Men's Javelin Throw</td>
+              </tr>
+              <tr>
+                <td>Gold</td>
+                <td>Manish Narwal</td>
+                <td>Para Shooting</td>
+              </tr>
+              <tr>
+                <td>Gold</td>
+                <td>Pramod Bhagat</td>
+                <td>Para Badminton</td>
+              </tr>
+              <tr>
+                <td>Gold</td>
+                <td>Krishna Nagar</td>
+                <td>Para Badminton</td>
+              </tr>
+              <tr>
+                <td>Silver</td>
+                <td>Devendra Jhajharia</td>
+                <td>Para Athletics - Men's Javelin Throw</td>
+              </tr>
+              <tr>
+                <td>Silver</td>
+                <td>Yogesh Kathuniya</td>
+                <td>Para Athletics - Men's Discus Throw</td>
+              </tr>
+              <tr>
+                <td>Silver</td>
+                <td>Bhavina Hasmukhbhai Patel</td>
+                <td>Para Table Tennis</td>
+              </tr>
+              <tr>
+                <td>Silver</td>
+                <td>Nishad Kumar</td>
+                <td>Para Athletics - Men's High Jump</td>
+              </tr>
+              <tr>
+                <td>Silver</td>
+                <td>Mariyappan Thangavelu</td>
+                <td>Para Athetics - Men's High Jump</td>
+              </tr>
+              <tr>
+                <td>Silver</td>
+                <td>Praveen Kumar</td>
+                <td>Para Athetics - Men's High Jump</td>
+              </tr>
+              <tr>
+                <td>Silver</td>
+                <td>Singhraj Adana</td>
+                <td>Para Shooting</td>
+              </tr>
+              <tr>
+                <td>Silver</td>
+                <td>Suhas L Yathiraj</td>
+                <td>Para Badminton</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Gurjar Sundar Singh</td>
+                <td>Para Athletics - Men's Javelin Throw</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Singhraj Adana</td>
+                <td>Para Shooting</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Sharad Kumar</td>
+                <td>Para Athetics - Men's High Jump</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Avani Lekhara</td>
+                <td>Para Shooting</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Harvinder Singh</td>
+                <td>Para Archery</td>
+              </tr>
+              <tr>
+                <td>Bronze</td>
+                <td>Manoj Sarkar</td>
+                <td>Para Badminton</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h5 class="white-text"><img src="https://www.mykhel.com/common_dynamic/images/olympics/country_flag/IND.svg"
+            width="30px" height="18px"> <b>INDIAN ATHLETES (PLAYERS) [Olympics Total 125 & Paralympics Total 54]</b>
+        </h5>
+        <div class="oui-bubble">
+          <table class="bordered striped">
+            <tbody>
+              <tr>
+                <td><b>ATHLETE (PLAYER) NAME</b></td>
+                <td><b>SPORT/ DISCIPLINE</b></td>
+              </tr>
+              <tr>
+                <td>DAS Atanu</td>
+                <td> Archery</td>
+              </tr>
+              <tr>
+                <td>JADHAV Pravin</td>
+                <td> Archery</td>
+              </tr>
+              <tr>
+                <td>KUMARI Deepika</td>
+                <td> Archery</td>
+              </tr>
+              <tr>
+                <td>RAI Tarundeep</td>
+                <td> Archery</td>
+              </tr>
+              <tr>
+                <td>NAYAK Pranati</td>
+                <td> Artistic Gymnastics</td>
+              </tr>
+              <tr>
+                <td>ANTONY Alex</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>BHAMBRI Sarthak</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>CHAND Dutee</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>CHOPRA Neeraj</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>JACOB Amoj</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>JAT Bhawna</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>KAUR Kamalpreet</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>KOLOTHUM THODI Irfan</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>KUMAR Sandeep</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>MADARI PALLIYALIL Jabir</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>PANDI Naganathan</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>PRIYANKA .</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>PUNIA Seema</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>RAHUL .</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>RAJIV Arokia</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>RANI Annu</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>SABLE Avinash Mukund</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>SEKAR Dhanalakshmi</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>SINGH Gurpreet</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>SINGH Shivpal</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>SREESHANKAR .</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>TOM Noah Nirmal</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>TOOR Tajinderpal Singh</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>VEERAMANI Revathi</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>VENKATESAN Subha</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>YAHIYA Muhammed Anas</td>
+                <td> Athletics</td>
+              </tr>
+              <tr>
+                <td>B. Sai Praneeth</td>
+                <td> Badminton</td>
+              </tr>
+              <tr>
+                <td>PUSARLA V. Sindhu</td>
+                <td> Badminton</td>
+              </tr>
+              <tr>
+                <td>RANKIREDDY Satwiksairaj</td>
+                <td> Badminton</td>
+              </tr>
+              <tr>
+                <td>SHETTY Chirag</td>
+                <td> Badminton</td>
+              </tr>
+              <tr>
+                <td>AMIT Amit</td>
+                <td> Boxing</td>
+              </tr>
+              <tr>
+                <td>ASHISH KUMAR Ashish Kumar</td>
+                <td> Boxing</td>
+              </tr>
+              <tr>
+                <td>BAATTH Simranjit Kaur</td>
+                <td> Boxing</td>
+              </tr>
+              <tr>
+                <td>BORGOHAIN Lovlina</td>
+                <td> Boxing</td>
+              </tr>
+              <tr>
+                <td>HMANGTE Chungneijang Mery Kom</td>
+                <td> Boxing</td>
+              </tr>
+              <tr>
+                <td>KAUSHIK Manish</td>
+                <td> Boxing</td>
+              </tr>
+              <tr>
+                <td>POOJA RANI Pooja Rani</td>
+                <td> Boxing</td>
+              </tr>
+              <tr>
+                <td>SATISH KUMAR Satish Kumar</td>
+                <td> Boxing</td>
+              </tr>
+              <tr>
+                <td>VIKAS Krishan</td>
+                <td> Boxing</td>
+              </tr>
+              <tr>
+                <td>MIRZA Fouaad</td>
+                <td> Equestrian</td>
+              </tr>
+              <tr>
+                <td>CHADALAVADA ANANDHA SUNDH Bhavani .</td>
+                <td> Fencing</td>
+              </tr>
+              <tr>
+                <td>ASHOK Aditi</td>
+                <td> Golf</td>
+              </tr>
+              <tr>
+                <td>LAHIRI Anirban</td>
+                <td> Golf</td>
+              </tr>
+              <tr>
+                <td>MANE Udayan</td>
+                <td> Golf</td>
+              </tr>
+              <tr>
+                <td>DEVI Sharmila</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>EKKA Deep Grace</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>KATARIYA Vandana</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>KAUR Gurjit</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>KAUR Navjot</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>KAUR Navneet</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>KHOKHAR Reena</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>KUMAR Surender</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>KUMAR Varun</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>LAKRA Birendra</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>LALREMSIAMI</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>MONIKA</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>NEHA Neha</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>NISHA</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>PARATTU RAVEENDRAN Sreejesh</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>PRADHAN Nikki</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>PRASAD Vivek Sagar</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>PUKHRAMBAM Sushila Chanu</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>RANI</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>ROHIDAS Amit</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>SAVITA</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>SHARMA Nilakanta</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>SINGH Dilpreet</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>SINGH Gurjant</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>SINGH Hardik</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>SINGH Harmanpreet</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>SINGH Mandeep</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>SINGH Manpreet</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>SINGH Rupinder Pal</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>SINGH Shamsher</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>SINGH Simranjeet</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>SUMIT</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>TETE Salima</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>TOPPO Namita</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>UDITA</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>UPADHYAY Lalit Kumar</td>
+                <td> Hockey</td>
+              </tr>
+              <tr>
+                <td>LIKMABAM Shushila Devi</td>
+                <td> Judo</td>
+              </tr>
+              <tr>
+                <td>LAL JAT Arjun</td>
+                <td> Rowing</td>
+              </tr>
+              <tr>
+                <td>SINGH Arvind</td>
+                <td> Rowing</td>
+              </tr>
+              <tr>
+                <td>KELAPANDA Ganapathy</td>
+                <td> Sailing</td>
+              </tr>
+              <tr>
+                <td>KUMANAN Nethra</td>
+                <td> Sailing</td>
+              </tr>
+              <tr>
+                <td>SARAVANAN Vishnu</td>
+                <td> Sailing</td>
+              </tr>
+              <tr>
+                <td>THAKKAR Varun</td>
+                <td> Sailing</td>
+              </tr>
+              <tr>
+                <td>BAJWA Angad Vir Singh</td>
+                <td> Shooting</td>
+              </tr>
+              <tr>
+                <td>BHAKER Manu</td>
+                <td> Shooting</td>
+              </tr>
+              <tr>
+                <td>CHANDELA Apurvi</td>
+                <td> Shooting</td>
+              </tr>
+              <tr>
+                <td>DESWAL Yashaswini Singh</td>
+                <td> Shooting</td>
+              </tr>
+              <tr>
+                <td>KHAN Mairaj Ahmad</td>
+                <td> Shooting</td>
+              </tr>
+              <tr>
+                <td>KUMAR Deepak</td>
+                <td> Shooting</td>
+              </tr>
+              <tr>
+                <td>MOUDGIL Anjum</td>
+                <td> Shooting</td>
+              </tr>
+              <tr>
+                <td>PANWAR Divyansh Singh</td>
+                <td> Shooting</td>
+              </tr>
+              <tr>
+                <td>RAJPUT Sanjeev</td>
+                <td> Shooting</td>
+              </tr>
+              <tr>
+                <td>SARNOBAT Rahi</td>
+                <td> Shooting</td>
+              </tr>
+              <tr>
+                <td>SAURABH Chaudhary</td>
+                <td> Shooting</td>
+              </tr>
+              <tr>
+                <td>SAWANT Tejaswini</td>
+                <td> Shooting</td>
+              </tr>
+              <tr>
+                <td>TOMAR Aishwary Pratap Singh</td>
+                <td> Shooting</td>
+              </tr>
+              <tr>
+                <td>VALARIVAN Elavenil</td>
+                <td> Shooting</td>
+              </tr>
+              <tr>
+                <td>VERMA Abhishek</td>
+                <td> Shooting</td>
+              </tr>
+              <tr>
+                <td>NATARAJ Srihari</td>
+                <td> Swimming</td>
+              </tr>
+              <tr>
+                <td>PATEL Maana Patel</td>
+                <td> Swimming</td>
+              </tr>
+              <tr>
+                <td>PRAKASH Sajan</td>
+                <td> Swimming</td>
+              </tr>
+              <tr>
+                <td>ACHANTA Kamal</td>
+                <td> Table Tennis</td>
+              </tr>
+              <tr>
+                <td>BATRA Manika</td>
+                <td> Table Tennis</td>
+              </tr>
+              <tr>
+                <td>GNANASEKARAN Sathiyan</td>
+                <td> Table Tennis</td>
+              </tr>
+              <tr>
+                <td>MUKHERJEE Sutirtha</td>
+                <td> Table Tennis</td>
+              </tr>
+              <tr>
+                <td>MIRZA Sania</td>
+                <td> Tennis</td>
+              </tr>
+              <tr>
+                <td>NAGAL Sumit</td>
+                <td> Tennis</td>
+              </tr>
+              <tr>
+                <td>RAINA Ankita</td>
+                <td> Tennis</td>
+              </tr>
+              <tr>
+                <td>MIRABAI Chanu Saikhom</td>
+                <td> Weightlifting</td>
+              </tr>
+              <tr>
+                <td>ANSHU Anshu</td>
+                <td> Wrestling</td>
+              </tr>
+              <tr>
+                <td>BAJRANG Bajrang</td>
+                <td> Wrestling</td>
+              </tr>
+              <tr>
+                <td>PUNIA Deepak</td>
+                <td> Wrestling</td>
+              </tr>
+              <tr>
+                <td>RAVI Kumar</td>
+                <td> Wrestling</td>
+              </tr>
+              <tr>
+                <td>SEEMA Seema</td>
+                <td> Wrestling</td>
+              </tr>
+              <tr>
+                <td>SONAM Sonam</td>
+                <td> Wrestling</td>
+              </tr>
+              <tr>
+                <td>VINESH Vinesh</td>
+                <td> Wrestling</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="oui-bubble">
+          <table class="bordered striped">
+            <tbody>
+              <tr>
+                <td><b>PARA ATHLETE NAME</b></td>
+                <td><b>SPORT</b></td>
+              </tr>
+              <tr>
+                <td>Harvinder Singh</td>
+                <td>Archery</td>
+              </tr>
+              <tr>
+                <td>Vivek Chikara</td>
+                <td>Archery</td>
+              </tr>
+              <tr>
+                <td>Rakesh Kumar</td>
+                <td>Archery</td>
+              </tr>
+              <tr>
+                <td>Shyam Sundar Swami</td>
+                <td>Archery</td>
+              </tr>
+              <tr>
+                <td>Jyoti Baliyan</td>
+                <td>Archery</td>
+              </tr>
+              <tr>
+                <td>Amit Kumar Saroha</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Dharambir Nain</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Vinod Kumar</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Yogesh Kathuniya</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Nishad Kumar</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Ram Pal</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Mariyappan Thangavelu</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Sharad Kumar</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Varun Singh Bhati</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Praveen Kumar</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Navdeep Singh</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Sudar Singh Gurjar</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Ajeet Singh</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Devendra Jhajharia</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Tek Chand</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Ranjeet Bhati</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Sandeep Choudhary</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Sumit Antil</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Arvind Malik</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Soman Rana</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Simran Yadav</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Kashish Lakra</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Ekta Bhyan</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Bhagyashri Madhavrai Jadhav</td>
+                <td>Athletics</td>
+              </tr>
+              <tr>
+                <td>Pramod Bhagat</td>
+                <td>Badminton</td>
+              </tr>
+              <tr>
+                <td>Manoj Sarkar</td>
+                <td>Badminton</td>
+              </tr>
+              <tr>
+                <td>Tarun Dhillon</td>
+                <td>Badminton</td>
+              </tr>
+              <tr>
+                <td>Suhas Lalinakere</td>
+                <td>Badminton</td>
+              </tr>
+              <tr>
+                <td>Krishna Nagar</td>
+                <td>Badminton</td>
+              </tr>
+              <tr>
+                <td>Paul Parmar</td>
+                <td>Badminton</td>
+              </tr>
+              <tr>
+                <td>Palak Kohli</td>
+                <td>Badminton</td>
+              </tr>
+              <tr>
+                <td>Prachi Yadav</td>
+                <td>Paracanoeing</td>
+              </tr>
+              <tr>
+                <td>Jaideep Deswal</td>
+                <td>Powerlifting</td>
+              </tr>
+              <tr>
+                <td>Sakina Khatun</td>
+                <td>Powerlifting</td>
+              </tr>
+              <tr>
+                <td>Manish Narwal</td>
+                <td>Shooting</td>
+              </tr>
+              <tr>
+                <td>Deepender Singh</td>
+                <td>Shooting</td>
+              </tr>
+              <tr>
+                <td>Singhraj</td>
+                <td>Shooting</td>
+              </tr>
+              <tr>
+                <td>Swaroop Mahavir Unhalkar</td>
+                <td>Shooting</td>
+              </tr>
+              <tr>
+                <td>Deepak Saini</td>
+                <td>Shooting</td>
+              </tr>
+              <tr>
+                <td>Rubina Francis</td>
+                <td>Shooting</td>
+              </tr>
+              <tr>
+                <td>Avani Lekhara</td>
+                <td>Shooting</td>
+              </tr>
+              <tr>
+                <td>Rahul Jakhar</td>
+                <td>Shooting</td>
+              </tr>
+              <tr>
+                <td>Akash</td>
+                <td>Shooting</td>
+              </tr>
+              <tr>
+                <td>Sidhartha Babu</td>
+                <td>Shooting</td>
+              </tr>
+              <tr>
+                <td>Suyash Jadhav</td>
+                <td>Swimming</td>
+              </tr>
+              <tr>
+                <td>Sonalben Madhubhai Patel</td>
+                <td>Table Tennis</td>
+              </tr>
+              <tr>
+                <td>Bhavina Hasmukhbhai Patel</td>
+                <td>Table Tennis</td>
+              </tr>
+              <tr>
+                <td>Aruna Singh Tanwar</td>
+                <td>Taekwondo</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div><br>
+  </main>
+</body>
+
+</html>

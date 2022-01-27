@@ -1,0 +1,154 @@
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <!-- <meta http-equiv="refresh" content="60;"> -->
+  <title lang="en-us">One UI Sports - IPL 2022</title>
+  <link rel="stylesheet" href="OneUI/oui.min.css">
+  <link rel="stylesheet" href="materialize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css">
+  <link rel="icon" href="images/OUC.ico">
+  <style>
+    @font-face {
+      font-family: 'SamsungOne 400';
+      src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+    }
+
+    * {
+      font-family: 'SamsungOne 400';
+      font-size: larger;
+    }
+
+    .oui-button {
+      font-family: 'SamsungOne 400';
+    }
+
+    iframe {
+      border-radius: 15px;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="materialize.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.fixed-action-btn').openFAB();
+      $('.fixed-action-btn').closeFAB();
+      $('.fixed-action-btn.toolbar').openToolbar();
+      $('.fixed-action-btn.toolbar').closeToolbar();
+      $('.tooltipped').tooltip({
+        delay: 50
+      });
+    })
+    $(document).ready(function () {
+      $('.modal').modal();
+      $('#modal2').modal();
+    });
+  </script>
+</head>
+
+<body oncontextmenu="return false;" onload="location.href='#view'">
+  <main class="containr">
+    <div class="oui-viewing center-align">
+      <h4>IPL 2022</h4>
+      <h5>Season 15</h5>
+      <h6>10 Teams, 74 Matches (Yet to be announced)</h6>
+      <!-- <h6>Auto Refresh in every 60 seconds</h6> -->
+    </div>
+    <div class="oui-interaction center-align">
+      <!--Interaction area-->
+      <div class="oui-bubble orange accent-3" id="view">
+        <div class="fixed-action-btn">
+          <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5 modal-trigger"
+            data-position="top" data-delay="50" data-tooltip="Menu" href="#modal2">
+            <i class="large fas fa-bars"></i>
+          </a>
+        </div>
+        <!--Menu-->
+        <div id="modal2" class="modal bottom-sheet right-align orange accent-3 white-text">
+          <div class="modal-content">
+            <ul class="collection left-align" style="border-width: 0px;">
+              <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='index.html'">
+                <a href="#!"><i class="fas fa-home circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">OUI Sports Home</p>
+                <p>Back to Sports Home</p>
+              </li>
+              <li class="collection-item avatar orange accent-3 oui-bubble" onclick="location.href='about.html'">
+                <a href="#!"><i class="fas fa-info circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">About</p>
+                <p>About this Website</p>
+              </li>
+              <li class="collection-item orange accent-3"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab"><a href="iplresults.html" target="_blank" class="orange accent-3 white-text">
+                  <h6>RESULTS<br>2021 OR BEFORE</h6>
+                </a></li>
+              <li class="tab"><a href="#sche" class="orange accent-3 white-text">
+                  <h6>SCHEDULE<br>2022</h6>
+                </a></li>
+              <li class="tab"><a href="#sqad" class="active orange accent-3 white-text">
+                  <h6>SQUADS<br>RETENTION LIST</h6>
+                </a></li>
+              <div class="indicator white"></div>
+            </ul>
+          </div>
+          <div class="col s12 white-text" id="sche">
+            <h4>YET TO BE ANNOUNCED</h4>
+            <h6>Below is what known till now for the Schedule..</h6>
+            <ul>
+              <li>Tentative Dates: March 27 - May 21 2022</li>
+              <li>Total Matches: 74; 70 of League between 10 Teams & 4 Playoffs.</li>
+              <li>Each Team will play 14 League matches, 2 games against 5 teams & 1 game against 4 teams.</li>
+              <li>Two Groups of 5 Teams each will be formed & each team will play only 1 game against them.</li>
+            </ul>
+          </div>
+          <div class="col s12 white-text" id="sqad">
+            <h4>IPL 2022 RETENTION LIST</h4>
+            <h4>IPL 2022 AUCTION - will confirm remaining players<br>(to be held in Dec end/ Jan start)</h4>
+            <h6>(Below Players will continue playing in their respective teams)<br>Source - Official IPL Twitter</h6>
+            <h5>CHENNAI SUPER KINGS</h5>
+            <h6>Remaining Purse amount - 48 Crores</h6>
+            <img src="https://pbs.twimg.com/media/FFdIZOeUYAA9gO7?format=jpg&name=medium" alt="csk"
+              class="responsive-img">
+            <h5>DELHI CAPITALS</h5>
+            <h6>Remaining Purse amount - 51 Crores</h6>
+            <img src="https://pbs.twimg.com/media/FFdKB5XUcAEtt3J?format=jpg&name=medium" alt="" class="responsive-img">
+            <h5>KOLKATA KNIGHT RIDERS</h5>
+            <h6>Remaining Purse amount - 56 Crores</h6>
+            <img src="https://pbs.twimg.com/media/FFdK-4aVcAAiCbt?format=jpg&name=medium" alt="" class="responsive-img">
+            <h5>MUMBAI INDIANS</h5>
+            <h6>Remaining Purse amount - 48 Crores</h6>
+            <img src="https://pbs.twimg.com/media/FFdDyRFVkAA6Lkf?format=jpg&name=medium" alt="" class="responsive-img">
+            <h5>PUNJAB KINGS</h5>
+            <h6>Remaining Purse amount - 74 Crores</h6>
+            <img src="https://pbs.twimg.com/media/FFdGwKZUYAURV1M?format=jpg&name=medium" alt="" class="responsive-img">
+            <h5>ROYAL CHALLENGERS BANGALORE</h5>
+            <h6>Remaining Purse amount - 57 Crores</h6>
+            <img src="https://pbs.twimg.com/media/FFdCYEsVgAAOq5m?format=jpg&name=medium" alt="" class="responsive-img">
+            <h5>RAJASTHAN ROYALS</h5>
+            <h6>Remaining Purse amount - 62 Crores</h6>
+            <img src="https://pbs.twimg.com/media/FFdMYhHVUAEmKd_?format=jpg&name=medium" alt="" class="responsive-img">
+            <h5>SUNRISERS HYDERABAD</h5>
+            <h6>Remaining Purse amount - 68 Crores</h6>
+            <img src="https://pbs.twimg.com/media/FFdG4TtVIAc-OgG?format=jpg&name=medium" alt="" class="responsive-img">
+            <h5>AHMEDABAD</h5>
+            <h6>Remaining Purse amount - 90 Crores</h6>
+            <h5>LUCKNOW</h5>
+            <h6>Remaining Purse amount - 90 Crores</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </main>
+</body>
+
+</html>
