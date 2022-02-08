@@ -1,0 +1,1538 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <title>One UI Sports - ICC Cricket Events</title>
+  <link rel="stylesheet" href="OneUI/oui.min.css">
+  <link rel="stylesheet" href="materialize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css">
+  <link rel="icon" href="images/OUC.ico">
+  <style>
+    @font-face {
+      font-family: 'SamsungOne 400';
+      src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+    }
+
+    * {
+      font-family: 'SamsungOne 400';
+      font-size: larger;
+    }
+
+    .oui-button {
+      font-family: 'SamsungOne 400';
+    }
+
+    iframe {
+      border-radius: 15px;
+    }
+
+    img {
+      width: 25px;
+      height: 15px;
+      border-radius: 5px;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="materialize.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.fixed-action-btn').openFAB();
+      $('.fixed-action-btn').closeFAB();
+      $('.fixed-action-btn.toolbar').openToolbar();
+      $('.fixed-action-btn.toolbar').closeToolbar();
+      $('.tooltipped').tooltip({
+        delay: 50
+      });
+    })
+    $(document).ready(function () {
+      $('.modal').modal();
+      $('#modal2').modal();
+    });
+  </script>
+</head>
+
+<body oncontextmenu="return false;" onload="location.href='#view'">
+  <main class="containr">
+    <div class="oui-viewing center-align">
+      <h4>ICC Cricket Event Results, Schedules</h4>
+      <h5 class="grey-text text-darken-1">UPCOMING: WCT20 2022</h5>
+      <h6>October 16 - November 13, 2022</h6>
+    </div>
+    <div class="oui-interaction center-align">
+      <!-- Interaction area -->
+      <div class="oui-bubble blue-grey darken-4" id="view">
+        <div class="fixed-action-btn">
+          <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5 modal-trigger"
+            data-position="left" data-delay="50" data-tooltip="Menu" href="#modal2">
+            <i class="large fas fa-bars"></i>
+          </a>
+        </div>
+        <!--Menu-->
+        <div id="modal2" class="modal bottom-sheet right-align blue-grey darken-4 amber-text text-accent-2">
+          <div class="modal-content">
+            <a href="#!" onclick="location.reload()" class="amber-text text-accent-2 tooltipped" data-tooltip="Refresh"
+              data-position="top"><i class="small fas fa-sync-alt"></i></a>
+            <ul class="collection left-align" style="border-width: 0px;">
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='index.html'">
+                <a href="#!"><i class="fas fa-home circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">OUI Sports Home</p>
+                <p>Back to Sports Home</p>
+              </li>
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='about.html'">
+                <a href="#!"><i class="fas fa-info circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">About</p>
+                <p>About this Website</p>
+              </li>
+              <li class="collection-item blue-grey darken-4"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab"><a href="#cwc" class="blue-grey darken-4 amber-text text-accent-3">
+                  <h6>WORLD<br>CUP</h6>
+                </a></li>
+              <li class="tab"><a href="#wct" class="active blue-grey darken-4 amber-text text-accent-3">
+                  <h6>T20 WORLD<br>CUP</h6>
+                </a></li>
+              <li class="tab"><a href="#cht" class="blue-grey darken-4 amber-text text-accent-3">
+                  <h6>CHAMPIONS<br>TROPHY</h6>
+                </a></li>
+              <li class="tab"><a href="#asc" class="blue-grey darken-4 amber-text text-accent-3">
+                  <h6>ASIA<br>CUP</h6>
+                </a></li>
+              <div class="indicator amber accent-3"></div>
+            </ul>
+          </div>
+        </div>
+        <div class="col s12" id="cwc">
+          <div class="row">
+            <div class="col s12">
+              <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a href="#cw07" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2007</h6>
+                  </a></li>
+                <li class="tab"><a href="#cw11" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2011</h6>
+                  </a></li>
+                <li class="tab"><a href="#cw15" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2015</h6>
+                  </a></li>
+                <li class="tab"><a href="#cw19" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2019</h6>
+                  </a></li>
+                <li class="tab"><a href="#cw23" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2023</h6>
+                  </a></li>
+                <li class="tab"><a href="#cw27" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2027</h6>
+                  </a></li>
+                <li class="tab"><a href="#cw31" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2031</h6>
+                  </a></li>
+                <div class="indicator amber accent-3"></div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col s12" id="wct">
+          <div class="row">
+            <div class="col s12">
+              <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a href="#wt07" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2007</h6>
+                  </a></li>
+                <li class="tab"><a href="#wt09" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2009</h6>
+                  </a></li>
+                <li class="tab"><a href="#wt10" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2010</h6>
+                  </a></li>
+                <li class="tab"><a href="#wt12" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2012</h6>
+                  </a></li>
+                <li class="tab"><a href="#wt14" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2014</h6>
+                  </a></li>
+                <li class="tab"><a href="#wt16" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2016</h6>
+                  </a></li>
+                <li class="tab"><a href="#wt21" class="active blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2021</h6>
+                  </a></li>
+                <li class="tab"><a href="#wt22" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2022</h6>
+                  </a></li>
+                <li class="tab"><a href="#wt24" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2024</h6>
+                  </a></li>
+                <li class="tab"><a href="#wt26" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2026</h6>
+                  </a></li>
+                <li class="tab"><a href="#wt28" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2028</h6>
+                  </a></li>
+                <li class="tab"><a href="#wt30" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2030</h6>
+                  </a></li>
+                <div class="indicator amber accent-3"></div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col s12" id="asc">
+          <div class="row">
+            <div class="col s12">
+              <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a href="#ac08" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2008</h6>
+                  </a></li>
+                <li class="tab"><a href="#ac10" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2010</h6>
+                  </a></li>
+                <li class="tab"><a href="#ac12" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2012</h6>
+                  </a></li>
+                <li class="tab"><a href="#ac14" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2014</h6>
+                  </a></li>
+                <li class="tab"><a href="#ac16" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2016</h6>
+                  </a></li>
+                <li class="tab"><a href="#ac18" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2018</h6>
+                  </a></li>
+                <div class="indicator amber accent-3"></div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col s12" id="cht">
+          <div class="row">
+            <div class="col s12">
+              <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a href="#ct09" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2009</h6>
+                  </a></li>
+                <li class="tab"><a href="#ct13" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2013</h6>
+                  </a></li>
+                <li class="tab"><a href="#ct17" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2017</h6>
+                  </a></li>
+                <li class="tab"><a href="#ct25" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2025</h6>
+                  </a></li>
+                <li class="tab"><a href="#ct29" class="blue-grey darken-4 amber-text text-accent-3">
+                    <h6>2029</h6>
+                  </a></li>
+                <div class="indicator amber accent-3"></div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--Tabs end-->
+        <div class="col s12" id="cw07"></div>
+        <div class="col s12" id="wt07"></div>
+        <div class="col s12" id="ac08"></div>
+        <div class="col s12" id="wt09"></div>
+        <div class="col s12" id="ct09"></div>
+        <div class="col s12" id="wt10"></div>
+        <div class="col s12" id="ac10"></div>
+        <div class="col s12" id="cw11"></div>
+        <div class="col s12" id="wt12"></div>
+        <div class="col s12" id="ac12"></div>
+        <div class="col s12" id="ct13"></div>
+        <div class="col s12" id="wt14"></div>
+        <div class="col s12" id="ac14"></div>
+        <div class="col s12" id="cw15"></div>
+        <div class="col s12" id="wt16"></div>
+        <div class="col s12" id="ac16"></div>
+        <div class="col s12" id="ct17"></div>
+        <div class="col s12" id="ac18"></div>
+        <div class="col s12" id="cw19"></div>
+        <div class="col s12" id="wt21">
+          <h5 class="amber-text text-accent-2"><b>GROUP 1</b> (6 Teams)</h5>
+          <div class="oui-bubble blue-grey darken-4">
+            <table class="centered white-text">
+              <tr>
+                <td><b>POS</b></td>
+                <td><b>TEAM</b></td>
+                <td><b>PLD</b></td>
+                <td><b>POINTS</b></td>
+                <td><b>NRR</b></td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#81;</span></td>
+                <td><img src="https://images.cricket.com/teams/3_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>ENG</td>
+                <td>5</td>
+                <td>8</td>
+                <td>+2.464</td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#81;</span></td>
+                <td><img src="https://images.cricket.com/teams/1_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>AUS</td>
+                <td>5</td>
+                <td>8</td>
+                <td>+1.216</td>
+              </tr>
+              <tr>
+                <td colspan="5">
+                  <hr style="border-width: 0.1px;">
+                </td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#10104;</span></td>
+                <td><img src="https://images.cricket.com/teams/7_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>SA</td>
+                <td>5</td>
+                <td>8</td>
+                <td>+0.739</td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#10105;</span></td>
+                <td><img src="https://images.cricket.com/teams/8_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>SL (A1)</td>
+                <td>5</td>
+                <td>4</td>
+                <td>-0.269</td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#10106;</span></td>
+                <td><img src="https://images.cricket.com/teams/9_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>WI</td>
+                <td>5</td>
+                <td>2</td>
+                <td>-1.641</td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#10107;</span></td>
+                <td><img src="https://images.cricket.com/teams/2_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>BAN (B2)</td>
+                <td>5</td>
+                <td>0</td>
+                <td>-2.383</td>
+              </tr>
+            </table>
+          </div>
+          <h5 class="amber-text text-accent-2"><b>GROUP 2</b> (6 Teams)</h5>
+          <div class="oui-bubble blue-grey darken-4">
+            <table class="centered white-text">
+              <tr>
+                <td><b>POS</b></td>
+                <td><b>TEAM</b></td>
+                <td><b>PLD</b></td>
+                <td><b>POINTS</b></td>
+                <td><b>NRR</b></td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#81;</span></td>
+                <td><img src="https://images.cricket.com/teams/6_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>PAK</td>
+                <td>5</td>
+                <td>10</td>
+                <td>+1.583</td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#81;</span></td>
+                <td><img src="https://images.cricket.com/teams/5_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>NZ</td>
+                <td>5</td>
+                <td>8</td>
+                <td>+1.162</td>
+              </tr>
+              <tr>
+                <td colspan="5">
+                  <hr style="border-width: 0.1px;">
+                </td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#10104;</span></td>
+                <td><img src="https://images.cricket.com/teams/4_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IND</td>
+                <td>5</td>
+                <td>6</td>
+                <td>+1.747</td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#10105;</span></td>
+                <td><img src="https://images.cricket.com/teams/1188_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>AFG</td>
+                <td>5</td>
+                <td>4</td>
+                <td>+1.053</td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#10106;</span></td>
+                <td><img src="https://images.cricket.com/teams/20_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>NAM (A2)</td>
+                <td>5</td>
+                <td>2</td>
+                <td>-1.890</td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#10107;</span></td>
+                <td><img src="https://images.cricket.com/teams/16_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>SCO (B1)</td>
+                <td>5</td>
+                <td>0</td>
+                <td>-3.543</td>
+              </tr>
+            </table>
+          </div>
+          <h5 class="amber-text text-accent-2"><b>GROUP A</b> (4 Teams)</h5>
+          <div class="oui-bubble blue-grey darken-4">
+            <table class="centered white-text">
+              <tr>
+                <td><b>POS</b></td>
+                <td><b>TEAM#</b></td>
+                <td><b>PLD</b></td>
+                <td><b>POINTS</b></td>
+                <td><b>NRR</b></td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#81;</span></td>
+                <td><img src="https://images.cricket.com/teams/8_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>SL</td>
+                <td>3</td>
+                <td>6</td>
+                <td>+3.754</td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#81;</span></td>
+                <td><img src="https://images.cricket.com/teams/20_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>NAM</td>
+                <td>3</td>
+                <td>4</td>
+                <td>-0.523</td>
+              </tr>
+              <tr>
+                <td colspan="5">
+                  <hr style="border-width: 0.1px;">
+                </td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#10104;</span></td>
+                <td><img src="https://images.cricket.com/teams/13_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>IRE</td>
+                <td>3</td>
+                <td>2</td>
+                <td>-0.853</td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#10105;</span></td>
+                <td><img src="https://images.cricket.com/teams/15_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>NED</td>
+                <td>3</td>
+                <td>0</td>
+                <td>-2.460</td>
+              </tr>
+            </table>
+          </div>
+          <h5 class="amber-text text-accent-2"><b>GROUP B</b> (4 Teams)</h5>
+          <div class="oui-bubble blue-grey darken-4">
+            <table class="centered white-text">
+              <tr>
+                <td><b>POS</b></td>
+                <td><b>TEAM#</b></td>
+                <td><b>PLD</b></td>
+                <td><b>POINTS</b></td>
+                <td><b>NRR</b></td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#81;</span></td>
+                <td><img src="https://images.cricket.com/teams/16_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>SCO</td>
+                <td>3</td>
+                <td>6</td>
+                <td>+0.775</td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#81;</span></td>
+                <td><img src="https://images.cricket.com/teams/2_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>BAN</td>
+                <td>3</td>
+                <td>4</td>
+                <td>+1.733</td>
+              </tr>
+              <tr>
+                <td colspan="5">
+                  <hr style="border-width: 0.1px;">
+                </td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#10104;</span></td>
+                <td><img src="https://images.cricket.com/teams/28_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>OMN</td>
+                <td>3</td>
+                <td>2</td>
+                <td>-0.025</td>
+              </tr>
+              <tr>
+                <td><span style="font-size: x-large;">&#10105;</span></td>
+                <td><img src="https://images.cricket.com/teams/750_flag_safari.png" width="25px" height="15px"
+                    style="border-radius: 5px;"><br>PNG</td>
+                <td>3</td>
+                <td>0</td>
+                <td>-2.655</td>
+              </tr>
+            </table>
+          </div>
+          <h6 class="white-text"><b>NOTES:-</b><br>A1 (SL), B2 (BAN) Qualified in Group 1 &<br>A2 (NAM), B1 (SCO)
+            Qualified in Group
+            2<br><b>Abbreviations:-</b><br>A1: Team from Group 'A' with 1st Position<br>A2: Team from Group 'A' with
+            2nd Position<br>B1: Team from Group 'B' with 1st Position<br>B2: Team from Group 'B' with 2nd
+            Position<br>POS:
+            Position in the group<br>PLD: No. of Played Matches<br>NRR: Net Run Rate</h6>
+          <h5 class="amber-text text-accent-2"><b>WCT20 2021 Warm-Up Matches</b></h5>
+          <div class="oui-bubble blue-grey darken-4">
+            <table class="centered bordered white-text">
+              <tbody>
+                <tr>
+                  <td><b>DATE</b></td>
+                  <td><b>RESULTS <br>H/Ls Link</b></td>
+                  <td><b>WINNER <br>MARGIN</b></td>
+                </tr>
+                <tr>
+                  <td>Oct 12
+                    <br>&#9788;</td>
+                  <td><b>PNG</b>: 96/8
+                    <br><b>IRE</b>: 99/2 (16.4)
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/13_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>IRE</b>
+                    <br>
+                    <br>8 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 12
+                    <br>&#9790;</td>
+                  <td><b>SCO</b>: 122/6
+                    <br><b>NED</b>: 90 (17.5)
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/16_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>SCO</b>
+                    <br>
+                    <br>32 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Oct 12
+                    <br>&#9790;</td>
+                  <td><b>BAN</b>: 147/7
+                    <br><b>SL</b>: 148/6 (19.0)
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/8_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>SL</b>
+                    <br>
+                    <br>4 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 12
+                    <br>&#9790;</td>
+                  <td><b>OMN</b>: 152/8
+                    <br><b>NAM</b>: 120/9
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/28_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>OMN</b>
+                    <br>
+                    <br>32 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Oct 14
+                    <br>&#9788;</td>
+                  <td><b>IRE</b>: 177/3
+                    <br><b>BAN</b>: 144
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/13_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>IRE</b>
+                    <br>
+                    <br>33 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Oct 14
+                    <br>&#9788;</td>
+                  <td><b>SL</b>: 162/5
+                    <br><b>PNG</b>: 123/7
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/8_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>SL</b>
+                    <br>
+                    <br>39 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Oct 14
+                    <br>&#9788;</td>
+                  <td><b>SCO</b>: 203/7
+                    <br><b>NAM</b>: 184/5
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/16_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>SCO</b>
+                    <br>
+                    <br>19 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Oct 14
+                    <br>&#9788;</td>
+                  <td><b>NED</b>: 165/4
+                    <br><b>OMN</b>: 161/8
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/15_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>NED</b>
+                    <br>
+                    <br>4 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Oct 18
+                    <br>&#9788;</td>
+                  <td><b>SA</b>: 145/5
+                    <br><b>AFG</b>: 104/8
+                    <br>
+                    <br><a href="https://www.t20worldcup.com/video/2295995"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a></td>
+                  <td><img src="https://images.cricket.com/teams/7_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>SA</b>
+                    <br>
+                    <br>41 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Oct 18
+                    <br>&#9788;</td>
+                  <td><b>WI</b>: 130/7
+                    <br><b>PAK</b>: 131/3 (15.3)
+                    <br>
+                    <br><a href="https://www.t20worldcup.com/video/2295930"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a></td>
+                  <td><img src="https://images.cricket.com/teams/6_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>PAK</b>
+                    <br>
+                    <br>7 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 18
+                    <br>&#9790;</td>
+                  <td><b>NZ</b>: 158/7
+                    <br><b>AUS</b>: 159/7 (19.5)
+                    <br>
+                    <br><a href="https://www.t20worldcup.com/video/2296554"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a></td>
+                  <td><img src="https://images.cricket.com/teams/1_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>AUS</b>
+                    <br>
+                    <br>3 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 18
+                    <br>&#9790;</td>
+                  <td><b>ENG</b>: 188/5
+                    <br><b>IND</b>: 192/3 (19.0)
+                    <br>
+                    <br><a href="https://www.t20worldcup.com/video/2296583"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a></td>
+                  <td><img src="https://images.cricket.com/teams/4_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>IND</b>
+                    <br>
+                    <br>7 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 20
+                    <br>&#9788;</td>
+                  <td><b>ENG</b>: 163/6
+                    <br><b>NZ</b>: 150 (19.2)
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2298990"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/3_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>ENG</b>
+                    <br>
+                    <br>13 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Oct 20
+                    <br>&#9788;</td>
+                  <td><b>IND</b>: 153/1 (17.5)
+                    <br><b>AUS</b>: 152/5
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2298971"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/4_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>IND</b>
+                    <br>
+                    <br>9 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 20
+                    <br>&#9790;</td>
+                  <td><b>PAK</b>: 186/6
+                    <br><b>SA</b>: 190/4
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2299620"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/7_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>SA</b>
+                    <br>
+                    <br>6 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 20
+                    <br>&#9790;</td>
+                  <td><b>AFG</b>: 189/5
+                    <br><b>WI</b>: 133/5
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2299625"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/1188_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>AFG</b>
+                    <br>
+                    <br>56 RUNS</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h5 class="amber-text text-accent-2"><b>WCT20 2021 League Matches</b></h5>
+          <div class="oui-bubble blue-grey darken-4">
+            <table class="centered bordered white-text">
+              <tbody>
+                <tr>
+                  <td><b>DATE</b></td>
+                  <td><b>RESULTS <br>H/Ls Link</b></td>
+                  <td><b>WINNER <br>MARGIN</b></td>
+                </tr>
+                <tr>
+                  <td>Oct 17
+                    <br>&#9788;</td>
+                  <td><b>OMN</b>: 131/0 (13.4)
+                    <br><b>PNG</b>: 129/9
+                    <br>
+                    <br><a href="https://www.t20worldcup.com/video/2294065"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a></td>
+                  <td><img src="https://images.cricket.com/teams/28_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>OMN</b>
+                    <br>
+                    <br>10 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 17
+                    <br>&#9790;</td>
+                  <td><b>BAN</b>: 134/7
+                    <br><b>SCO</b>: 140/9
+                    <br>
+                    <br><a href="https://www.t20worldcup.com/video/2294841"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a></td>
+                  <td><img src="https://images.cricket.com/teams/16_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>SCO</b>
+                    <br>
+                    <br>6 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Oct 18
+                    <br>&#9788;</td>
+                  <td><b>IRE</b>: 107/3 (15.1)
+                    <br><b>NED</b>: 106
+                    <br>
+                    <br><a href="https://www.t20worldcup.com/video/2295884"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a></td>
+                  <td><img src="https://images.cricket.com/teams/13_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>IRE</b>
+                    <br>
+                    <br>7 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 18
+                    <br>&#9790;</td>
+                  <td><b>SL</b>: 100/3 (13.3)
+                    <br><b>NAM</b>: 96 (19.3)
+                    <br>
+                    <br><a href="https://www.t20worldcup.com/video/2296534"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a></td>
+                  <td><img src="https://images.cricket.com/teams/8_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>SL</b>
+                    <br>
+                    <br>7 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 19
+                    <br>&#9788;</td>
+                  <td><b>SCO</b>: 165/9
+                    <br><b>PNG</b>: 148 (19.3)
+                    <br>
+                    <br><a href="https://www.t20worldcup.com/video/2297713"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a></td>
+                  <td><img src="https://images.cricket.com/teams/16_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>SCO</b>
+                    <br>
+                    <br>17 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Oct 19
+                    <br>&#9790;</td>
+                  <td><b>OMN</b>: 127/9
+                    <br><b>BAN</b>: 153
+                    <br>
+                    <br><a href="https://www.t20worldcup.com/video/2298132"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a></td>
+                  <td><img src="https://images.cricket.com/teams/2_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>BAN</b>
+                    <br>
+                    <br>26 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Oct 20
+                    <br>&#9788;</td>
+                  <td><b>NAM</b>: 166/4 (19.0)
+                    <br><b>NED</b>: 164/4
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2298959"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/20_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>NAM</b>
+                    <br>
+                    <br>6 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 20
+                    <br>&#9790;</td>
+                  <td><b>SL</b>: 171/7
+                    <br><b>IRE</b>: 101 (18.3)
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2299609"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/8_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>SL</b>
+                    <br>
+                    <br>70 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Oct 21
+                    <br>&#9788;</td>
+                  <td><b>BAN</b>: 181/7
+                    <br><b>PNG</b>: 97 (19.3)
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2300351"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/2_flag.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>BAN</b>
+                    <br>
+                    <br>84 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Oct 21
+                    <br>&#9790;</td>
+                  <td><b>OMN</b>: 122
+                    <br><b>SCO</b>: 123/2 (17.0)
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2300737"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/16_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>SCO</b>
+                    <br>
+                    <br>8 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 22
+                    <br>&#9788;</td>
+                  <td><b>NAM</b>: 126/2 (18.3)
+                    <br><b>IRE</b>: 125/8
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2301627"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/20_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>NAM</b>
+                    <br>
+                    <br>8 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 22
+                    <br>&#9790;</td>
+                  <td><b>SL</b>: 45/2 (7.1)
+                    <br><b>NED</b>: 44 (10)
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2301897"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/8_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>SL</b>
+                    <br>
+                    <br>8 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 23
+                    <br>&#9788;</td>
+                  <td><b>AUS</b>: 121/5 (19.4)
+                    <br><b>SA</b>: 118/9
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2303676"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/1_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>AUS</b>
+                    <br>
+                    <br>5 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 23
+                    <br>&#9790;</td>
+                  <td><b>ENG</b>: 56/4 (8.2)
+                    <br><b>WI</b>: 55 (14.2)
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2304795"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/3_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>ENG</b>
+                    <br>
+                    <br>6 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 24
+                    <br>&#9788;</td>
+                  <td><b>SL</b>: 172/5 (18.5)
+                    <br><b>BAN</b>: 171/4
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2306386"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/8_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>SL</b>
+                    <br>
+                    <br>5 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 24
+                    <br>&#9790;</td>
+                  <td><b>IND</b>: 151/7
+                    <br><b>PAK</b>: 152/0 (17.5)
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2308055"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/6_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>PAK</b>
+                    <br>
+                    <br>10 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 25
+                    <br>&#9790;</td>
+                  <td><b>AFG</b>: 190/4
+                    <br><b>SCO</b>: 60 (10.2)
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2309432"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/1188_flag_safari.png" class="white" width="15px"
+                      height="15px" style="border-radius: 5px;">
+                    <br><b>AFG</b>
+                    <br>
+                    <br>130 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Oct 26
+                    <br>&#9788;</td>
+                  <td><b>SA</b>: 144/2 (18.2)
+                    <br><b>WI</b>: 143/8
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2310058"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/7_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>SA</b>
+                    <br>
+                    <br>8 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 26
+                    <br>&#9790;</td>
+                  <td><b>PAK</b>: 135/5 (18.4)
+                    <br><b>NZ</b>: 134/8
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2310407"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch H/Ls
+                      </a-->
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/6_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>PAK</b>
+                    <br>
+                    <br>5 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 27
+                    <br>&#9788;</td>
+                  <td><b>ENG</b>: 126/2 (14.1)
+                    <br><b>BAN</b>: 124/9
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2311067"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/3_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>ENG</b>
+                    <br>
+                    <br>8 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 27
+                    <br>&#9790;</td>
+                  <td><b>SCO</b>: 109/8
+                    <br><b>NAM</b>: 115/6 (19.1)
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2311447"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/20_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>NAM</b>
+                    <br>
+                    <br>4 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 28
+                    <br>&#9790;</td>
+                  <td><b>AUS</b>: 155/3 (17.0)
+                    <br><b>SL</b>: 154/6
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2312764"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/1_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>AUS</b>
+                    <br>
+                    <br>7 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 29
+                    <br>&#9788;</td>
+                  <td><b>WI</b>: 142/7
+                    <br><b>BAN</b>: 139/5
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2313510"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/9_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>WI</b>
+                    <br>
+                    <br>3 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Oct 29
+                    <br>&#9790;</td>
+                  <td><b>AFG</b>: 147/6
+                    <br><b>PAK</b>: 148/5 (19.0)
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2313860"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/6_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>PAK</b>
+                    <br>
+                    <br>5 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 30
+                    <br>&#9788;</td>
+                  <td><b>SA</b>: 146/6 (19.5)
+                    <br><b>SL</b>: 142
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2315262"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/7_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>SA</b>
+                    <br>
+                    <br>4 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 30
+                    <br>&#9790;</td>
+                  <td><b>ENG</b>: 126/2 (11.4)
+                    <br><b>AUS</b>: 125
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2317104"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/3_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>ENG</b>
+                    <br>
+                    <br>8 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Oct 31
+                    <br>&#9788;</td>
+                  <td><b>AFG</b>: 160/5
+                    <br><b>NAM</b>: 98/9
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2318545"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/1188_flag.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>AFG</b>
+                    <br>
+                    <br>62 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Oct 31
+                    <br>&#9790;</td>
+                  <td><b>IND</b>: 110/7
+                    <br><b>NZ</b>: 111/2 (14.3)
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2318980"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/5_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>NZ</b>
+                    <br>
+                    <br>8 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Nov 1
+                    <br>&#9790;</td>
+                  <td><b>ENG</b>: 163/4
+                    <br><b>SL</b>: 137 (19.0)
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2325913"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/3_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>ENG</b>
+                    <br>
+                    <br>26 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Nov 2
+                    <br>&#9788;</td>
+                  <td><b>SA</b>: 86/4 (13.3)
+                    <br><b>BAN</b>: 84 (18.2)
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2326959"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/7_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>SA</b>
+                    <br>
+                    <br>6 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Nov 2
+                    <br>&#9790;</td>
+                  <td><b>PAK</b>: 189/2
+                    <br><b>NAM</b>: 144/5
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2327413"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/6_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>PAK</b>
+                    <br>
+                    <br>45 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Nov 3
+                    <br>&#9788;</td>
+                  <td><b>NZ</b>: 172/5
+                    <br><b>SCO</b>: 156/5
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2328268"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/5_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>NZ</b>
+                    <br>
+                    <br>16 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Nov 3
+                    <br>&#9790;</td>
+                  <td><b>IND</b>: 210/2
+                    <br><b>AFG</b>: 144/7
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2328745"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/4_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>IND</b>
+                    <br>
+                    <br>66 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Nov 4
+                    <br>&#9788;</td>
+                  <td><b>AUS</b>: 78/2 (6.2)
+                    <br><b>BAN</b>: 73 (15.0)
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2336883"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/1_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>AUS</b>
+                    <br>
+                    <br>8 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Nov 4
+                    <br>&#9790;</td>
+                  <td><b>WI</b>: 169/8
+                    <br><b>SL</b>: 189/3
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2337505"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/8_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>SL</b>
+                    <br>
+                    <br>20 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Nov 5
+                    <br>&#9788;</td>
+                  <td><b>NZ</b>: 163/4
+                    <br><b>NAM</b>: 111/7
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2338410"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/7_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>NZ</b>
+                    <br>
+                    <br>52 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Nov 5
+                    <br>&#9790;</td>
+                  <td><b>IND</b>: 89/2 (6.3)
+                    <br><b>SCO</b>: 85 (17.4)
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2338677"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/4_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>IND</b>
+                    <br>
+                    <br>8 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Nov 6
+                    <br>&#9788;</td>
+                  <td><b>AUS</b>: 161/2 (16.2)
+                    <br><b>WI</b>: 157/7
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2340482"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/1_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>AUS</b>
+                    <br>
+                    <br>8 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Nov 6
+                    <br>&#9790;</td>
+                  <td><b>ENG</b>: 179/8
+                    <br><b>SA</b>: 189/2
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2341554"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/7_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>SA</b>
+                    <br>
+                    <br>10 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Nov 7
+                    <br>&#9788;</td>
+                  <td><b>NZ</b>: 125/2 (18.1)
+                    <br><b>AFG</b>: 124/8
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2342636"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/5_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>NZ</b>
+                    <br>
+                    <br>8 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Nov 7
+                    <br>&#9790;</td>
+                  <td><b>PAK</b>: 189/4
+                    <br><b>SCO</b>: 117/6
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2344362"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/6_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>PAK</b>
+                    <br>
+                    <br>72 RUNS</td>
+                </tr>
+                <tr>
+                  <td>Nov 8
+                    <br>&#9790;</td>
+                  <td><b>IND</b>: 136/1 (15.2)
+                    <br><b>NAM</b>: 132/8
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2345930"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/4_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>IND</b>
+                    <br>
+                    <br>9 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Nov 10
+                    <br>&#9790;</td>
+                  <td><b>ENG</b>: 166/4
+                    <br><b>NZ</b>: 167/5 (19.0)
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2348105"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/5_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>NZ</b>
+                    <br>
+                    <br>5 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Nov 11
+                    <br>&#9790;</td>
+                  <td><b>PAK</b>: 176/4
+                    <br><b>AUS</b>: 177/5 (19.0)
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/2349075"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/1_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>AUS</b>
+                    <br>
+                    <br>5 WKTS</td>
+                </tr>
+                <tr>
+                  <td>Nov 14
+                    <br>&#9790;</td>
+                  <td><b>NZ</b>: 172/4
+                    <br><b><u>AUS</u></b>: 173/2 (18.5)
+                    <br>
+                    <br>
+                    <a href="https://www.t20worldcup.com/video/"
+                      class="oui-button blue-grey darken-2 amber-text z-depth-5 waves-effect" target="_blank">Watch
+                      H/Ls</a>
+                  </td>
+                  <td><img src="https://images.cricket.com/teams/1_flag_safari.png" width="25px" height="15px"
+                      style="border-radius: 5px;">
+                    <br><b>AUS</b>
+                    <br>
+                    <br>8 WKTS</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col s12" id="wt22">
+          <div class="blue-grey darken-4">
+            <h6 class="white-text">All Timings in IST</h6>
+            <table class="centered bordered white-text">
+              <tbody>
+                <tr>
+                  <td><b><i class="fas fa-calendar"></i> <i class="fas fa-clock"></i> <i
+                        class="fas fa-map-marker-alt"></i></b></td>
+                  <td><b>TEAM 1</b></td>
+                  <td><b>TEAM 2</b></td>
+                  <td><b>SCORECARD</b></td>
+                </tr>
+                <tr>
+                  <td>Oct 16<br>09:30<br>Geelong</td>
+                  <td><img src="https://images.cricket.com/teams/8_flag_safari.png" alt="SL"><br>SL</td>
+                  <td><img src="https://images.cricket.com/teams/20_flag_safari.png" alt="NAM"><br>NAM</td>
+                  <td>Match Centre &#8250;</td>
+                </tr>
+                <tr>
+                  <td>Oct 16<br>13:30<br>Geelong</td>
+                  <td>Q2</td>
+                  <td>Q3</td>
+                  <td>Match Centre &#8250;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col s12" id="cw23"></div>
+        <div class="col s12" id="wt24"></div>
+        <div class="col s12" id="ct25"></div>
+        <div class="col s12" id="wt26"></div>
+        <div class="col s12" id="cw27"></div>
+        <div class="col s12" id="wt28"></div>
+        <div class="col s12" id="ct29"></div>
+        <div class="col s12" id="wt30"></div>
+        <div class="col s12" id="cw31"></div>
+      </div>
+    </div><br>
+  </main>
+</body>
+
+</html>
