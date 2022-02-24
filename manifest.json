@@ -1,10 +1,10 @@
 {
-  "name": "One UI Sports",
+  "name": "One UI Cricket",
   "short_name": "OUICric",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#0d47a1",
-  "description": "One UI Sports",
+  "description": "One UI Cricket",
   "theme_color": "#0d47a1",
   "orientation": "any",
   "icons": [{
