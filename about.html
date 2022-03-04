@@ -71,10 +71,13 @@
       $('.modal').modal();
       $('#modal2').modal();
     });
-  </script>
+  $(document).bind("contextmenu", function (e) {
+            return false;
+        });
+    </script>
 </head>
 
-<body oncontextmenu="return false;" onload="Materialize.fadeInImage('#image')">
+<body onload="Materialize.fadeInImage('#image')">
   <main class="containr">
     <div class="oui-viewing center-align">
       <h4>One UI Cricket</h4>

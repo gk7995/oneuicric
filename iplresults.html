@@ -45,10 +45,13 @@
     $(document).ready(function () {
       $('.tabs').tabs();
     });
-  </script>
+  $(document).bind("contextmenu", function (e) {
+            return false;
+        });
+    </script>
 </head>
 
-<body oncontextmenu="return false;" onload="location.href='#view'">
+<body onload="location.href='#view'">
   <main class="containr">
     <div class="oui-viewing center-align">
       <h4>IPL Points Table* & Match Results</h4>

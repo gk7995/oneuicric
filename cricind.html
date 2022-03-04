@@ -47,10 +47,13 @@
       $('.modal').modal();
       $('#modal2').modal();
     });
+    $(document).bind("contextmenu", function (e) {
+      return false;
+    });
   </script>
 </head>
 
-<body oncontextmenu="return false;" onload="location.href='#view'">
+<body onload="location.href='#view'">
   <main class="containr">
     <div class="oui-viewing center-align">
       <h4>Cricket India Home</h4>
@@ -157,10 +160,10 @@
                       <td>Mar 4<br>9:30 IST</td>
                       <td>1st TEST</td>
                       <td><a href="https://www.cricket.com/live-score/205704/scorecard" target="score"
-                          class="oui-button transparent white-text show-on-large hide-on-med-and-down"> Upcoming
+                          class="oui-button transparent white-text show-on-large hide-on-med-and-down"> LIVE
                           &#8250;</a>
                         <a href="https://www.cricket.com/live-score/205704/scorecard" target="score1"
-                          class="oui-button transparent white-text show-on-medium-and-down hide-on-large-only"> Upcoming
+                          class="oui-button transparent white-text show-on-medium-and-down hide-on-large-only"> LIVE
                           &#8250;</a><i class="fas fa-map-marker-alt"></i> Mohali</td>
                     </tr>
                     <tr>
