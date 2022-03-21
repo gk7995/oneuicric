@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <meta http-equiv="refresh" content="60;">
   <title>One UI Cricket - IPL Results & Points Table</title>
   <link rel="stylesheet" href="OneUI/oui.min.css">
   <link rel="stylesheet" href="materialize.css">
@@ -59,8 +60,10 @@
   <main class="containr">
     <div class="oui-viewing center-align">
       <h4>IPL Points Table* & Match Results</h4>
-      <h5 class="grey-text text-darken-1">*Top 4 enter in Playoffs</h5>
-      <h6><b>'FORM' DENOTATIONS:</b> Green dots- Won, Red dots- Lose, Grey dots- No Result/ Tied</h6>
+      <h5 class="grey-text text-darken-1">*Top 2 from each group will enter in Playoffs</h5>
+      <h6><b>TEAM DENOTATIONS:</b> CSK-Chennai Super Kings, DC-Delhi Capitals, GT-Gujarat Titans, KKR-Kolkata Knight
+        Riders, LSG-Lucknow Super Giants, <br> MI-Mumbai Indians, PBKS-Punjab Kings, RR-Rajasthan Royals,
+        RCB-Royal Challengers Bangalore, SRH-Sunrisers Hyderabad</h6>
     </div>
     <div class="oui-interaction center-align">
       <!-- Interaction area -->
@@ -136,10 +139,10 @@
               <li class="tab"><a href="#tab20" class="orange accent-3 white-text">
                   <h6>2020</h6>
                 </a></li>
-              <li class="tab"><a href="#tab21" class="active orange accent-3 white-text">
+              <li class="tab"><a href="#tab21" class="orange accent-3 white-text">
                   <h6>2021</h6>
                 </a></li>
-              <li class="tab"><a href="#tab22" class="orange accent-3 white-text">
+              <li class="tab"><a href="#tab22" class="active orange accent-3 white-text">
                   <h6>2022</h6>
                 </a></li>
               <div class="indicator white"></div>
@@ -7431,8 +7434,7 @@
               </table>
             </div>
             <h6 class="white-text"><b>Abbreviations</b> - POS: Position, NRR: Net Run Rate, MOTM: Man of the Match,
-              Fig.:
-              Figures, Avg.: Average, Inn.: Innings, Econ.: Economy</h6>
+              Fig.: Figures, Avg.: Average, Inn.: Innings, Econ.: Economy</h6>
           </div>
           <div id="tab22" class="col s12"><br>
             <div class="oui-bubble">
@@ -7449,35 +7451,35 @@
                 </tr>
                 <tr>
                   <td><span style="font-size: x-large;">&#10102;</span></td>
-                  <td></td>
+                  <td><b>MI</b></td>
                   <td>0</td>
                   <td>0</td>
                   <td>+0.000</td>
                 </tr>
                 <tr>
                   <td><span style="font-size: x-large;">&#10103;</span></td>
-                  <td></td>
+                  <td><b>KKR</b></td>
                   <td>0</td>
                   <td>0</td>
                   <td>+0.000</td>
                 </tr>
                 <tr>
                   <td><span style="font-size: x-large;">&#10104;</span></td>
-                  <td></td>
+                  <td><b>RR</b></td>
                   <td>0</td>
                   <td>0</td>
                   <td>+0.000</td>
                 </tr>
                 <tr>
                   <td><span style="font-size: x-large;">&#10105;</span></td>
-                  <td></td>
+                  <td><b>DC</b></td>
                   <td>0</td>
                   <td>0</td>
                   <td>+0.000</td>
                 </tr>
                 <tr>
                   <td><span style="font-size: x-large;">&#10106;</span></td>
-                  <td></td>
+                  <td><b>LSG</b></td>
                   <td>0</td>
                   <td>0</td>
                   <td>+0.000</td>
@@ -7499,123 +7501,173 @@
                 </tr>
                 <tr>
                   <td><span style="font-size: x-large;">&#10102;</span></td>
-                  <td></td>
+                  <td><b>CSK</b></td>
                   <td>0</td>
                   <td>0</td>
                   <td>+0.000</td>
                 </tr>
                 <tr>
                   <td><span style="font-size: x-large;">&#10103;</span></td>
-                  <td></td>
+                  <td><b>SRH</b></td>
                   <td>0</td>
                   <td>0</td>
                   <td>+0.000</td>
                 </tr>
                 <tr>
                   <td><span style="font-size: x-large;">&#10104;</span></td>
-                  <td></td>
+                  <td><b>RCB</b></td>
                   <td>0</td>
                   <td>0</td>
                   <td>+0.000</td>
                 </tr>
                 <tr>
                   <td><span style="font-size: x-large;">&#10105;</span></td>
-                  <td></td>
+                  <td><b>PBKS</b></td>
                   <td>0</td>
                   <td>0</td>
                   <td>+0.000</td>
                 </tr>
                 <tr>
                   <td><span style="font-size: x-large;">&#10106;</span></td>
-                  <td></td>
+                  <td><b>GT</b></td>
                   <td>0</td>
                   <td>0</td>
                   <td>+0.000</td>
                 </tr>
               </table>
             </div>
+            <h5 class="white-text"><b>GROUP & FORMAT 2022</b></h5>
+            <div class="oui-bubble">
+              <table class="centered">
+                <tr>
+                  <td><b>GROUP</b></td>
+                  <td>&#10102;</td>
+                  <td>&#10103;</td>
+                  <td>&#10104;</td>
+                  <td>&#10105;</td>
+                  <td>&#10106;</td>
+                </tr>
+                <tr>
+                  <td><b>A</b></td>
+                  <td>MI</td>
+                  <td>KKR</td>
+                  <td>RR</td>
+                  <td>DC</td>
+                  <td>LSG</td>
+                </tr>
+                <tr>
+                  <td><b>B</b></td>
+                  <td>CSK</td>
+                  <td>SRH</td>
+                  <td>RCB</td>
+                  <td>PBKS</td>
+                  <td>GT</td>
+                </tr>
+              </table>
+            </div>
+            <h6 class="white-text"><b>-: NOTE :-</b></h6>
+            <h6 class="white-text">Each team will play twice against the teams in their own group and also will play
+              twice against the team with the same row number of the other group. Teams will play one match against the
+              remaining four teams in the other group. To make it simpler, take Mumbai Indians' example: MI will play
+              twice in the league stages against KKR, RR, DC, LSG, and CSK (the team with the same row number of the
+              other group). MI will play only once against SRH, RCB, PBKS, and GT.</h6><br>
             <div class="oui-bubble">
               <table class="centered">
                 <tbody>
                   <tr>
                     <td><b>DATE</b></td>
-                    <td><b>RESULTS<br> H/Ls Link</b></td>
+                    <td><b>RESULTS<br>MOTM</b></td>
                     <td><b>WINNER<br> MARGIN</b></td>
                   </tr>
+                  <!-- <tr>
+                    <td>Mar 26
+                      <br>&#9790;</td>
+                    <td><b>CSK</b>: /
+                      <br><b>KKR</b>: /
+                      <br>
+                      <br>
+                      <br>()</td>
+                    <td><img src="https://images.cricket.com/teams/_flag_safari.png" width="25px" height="25px">
+                      <br><b></b>
+                      <br>
+                      <br> </td>
+                  </tr> -->
                 </tbody>
               </table>
             </div>
             <h5 class="white-text"><b>BOUNDARY METER</b></h5>
-            <!-- <h6 class="white-text"><b>Last Update:</b> After Match 1, v </h6> -->
+            <!-- <h6 class="white-text"><b>Last Update:</b> After Match 1, CSK v KKR </h6> -->
             <div class="oui-bubble">
-              <!-- <table class="centered">
+              <table class="centered">
                 <tr>
                   <td>
-                    <h4><b>Fours &#8227;</b></h4>
+                    <h4><b>Fours &#8227;</b> 0</h4>
                   </td>
                   <td>
-                    <h4>1548</h4>
+                    <h4></h4>
                   </td>
-                  <td>CSK &#8227; 231<br>DC &#8227; 233<br>KKR &#8227; 220<br>MI &#8227; 180<br>
-                    PBKS &#8227; 156<br>RR &#8227; 187<br>RCB &#8227; 190<br>SRH &#8227; 151</td>
+                  <td>CSK &#8227; <br>DC &#8227; <br>GT &#8227; <br>KKR &#8227; <br>
+                    LSG &#8227; <br>MI &#8227; <br>PBKS &#8227; <br>RR &#8227; <br>
+                    RCB &#8227; <br>SRH &#8227; </td>
                 </tr>
                 <tr>
                   <td>
-                    <h4><b>Sixes &#8227;</b></h4>
+                    <h4><b>Sixes &#8227;</b> 0</h4>
                   </td>
                   <td>
-                    <h4>686</h4>
+                    <h4></h4>
                   </td>
-                  <td>CSK &#8227; 115<br>DC &#8227; 66<br>KKR &#8227; 98<br>MI &#8227; 75<br>
-                    PBKS &#8227; 93<br>RR &#8227; 90<br>RCB &#8227; 79<br>SRH &#8227; 70</td>
+                  <td>CSK &#8227; <br>DC &#8227; <br>GT &#8227; <br>KKR &#8227; <br>
+                    LSG &#8227; <br>MI &#8227; <br>PBKS &#8227; <br>RR &#8227; <br>
+                    RCB &#8227; <br>SRH &#8227; </td>
                 </tr>
-              </table> -->
+              </table>
             </div>
             <h5 class="white-text"><b>STATS</b></h5>
-            <!-- <h6 class="white-text"><b>Last Update:</b> After Match 1, v </h6> -->
+            <!-- <h6 class="white-text"><b>Last Update:</b> After Match 1, CSK v KKR </h6> -->
             <div class="oui-bubble">
-              <!-- <table class="centered bordered">
+              <table class="centered bordered">
                 <tr>
                   <td><b>MOST RUNS</b></td>
-                  <td>Ruturaj Gaikwad&#8227; 635<br>Faf du Plessis&#8227; 633</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <td><b>MOST WKTS</b></td>
-                  <td>Harshal Patel&#8227; 32<br>Avesh Khan&#8227; 24</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <td><b>MOST FOURS</b></td>
-                  <td>Ruturaj Gaikwad&#8227; 64<br>Shikhar Dhawan&#8227; 63</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <td><b>MOST SIXES</b></td>
-                  <td>KL Rahul&#8227; 30<br>Faf du Plessis&#8227; 23</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <td><b>MOST FIFTIES</b></td>
-                  <td>Faf du Plessis&#8227; 6<br>KL Rahul&#8227; 6</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <td><b>MOST HUNDREDS</b></td>
-                  <td>Ruturaj Gaikwad&#8227; 1<br>Sanju Samson&#8227; 1</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <td><b>BEST BOWL FIG.</b></td>
-                  <td>Andre Russell&#8227; 5/15<br>Harshal Patel&#8227; 5/27</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <td><b>BEST BOWL AVG.</b></td>
-                  <td>Imran Tahir&#8227; 8.00<br>Moises Henriques&#8227; 11.25</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <td><b>HIGHEST INN. RUNS</b></td>
-                  <td>Jos Buttler&#8227; 124<br>Sanju Samson&#8227; 119</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <td><b>BEST BOWL ECON.</b></td>
-                  <td>Imran Tahir&#8227; 4.00<br>Moises Henriques&#8227; 4.50</td>
+                  <td></td>
                 </tr>
-              </table> -->
+              </table>
             </div>
             <h6 class="white-text"><b>Abbreviations</b> - POS: Position, NRR: Net Run Rate, PLD: Played, Fig.: Figures,
               Avg.: Average, Inn.: Innings, Econ.: Economy</h6>
