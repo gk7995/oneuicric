@@ -1,0 +1,129 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <title>One UI Cricket - Int'l Series Schedules</title>
+  <link rel="stylesheet" href="OneUI/oui.min.css">
+  <link rel="stylesheet" href="materialize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css">
+  <link rel="icon" href="images/OUC.ico">
+  <style>
+    @font-face {
+      font-family: 'SamsungOne 400';
+      src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+    }
+
+    * {
+      font-family: 'SamsungOne 400';
+      font-size: larger;
+    }
+
+    .oui-button {
+      font-family: 'SamsungOne 400';
+    }
+
+    iframe {
+      border-radius: 15px;
+    }
+
+    img {
+      width: 25px;
+      height: 15px;
+      border-radius: 5px;
+    }
+
+    .ser {
+      width: 100%;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="materialize.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.fixed-action-btn').openFAB();
+      $('.fixed-action-btn').closeFAB();
+      $('.fixed-action-btn.toolbar').openToolbar();
+      $('.fixed-action-btn.toolbar').closeToolbar();
+      $('.tooltipped').tooltip({
+        delay: 50
+      });
+    })
+    $(document).ready(function () {
+      $('.modal').modal();
+      $('#modal2').modal();
+    });
+    $(document).bind("contextmenu", function (e) {
+      return false;
+    });
+  </script>
+</head>
+
+<body onload="location.href='#view'">
+  <main class="containr">
+    <div class="oui-viewing center-align">
+      <h4>International Cricket Series Schedules</h4>
+    </div>
+    <div class="oui-interaction center-align">
+      <!-- Interaction area -->
+      <div class="oui-bubble blue-grey darken-4" id="view">
+        <div class="fixed-action-btn">
+          <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5 modal-trigger"
+            data-position="left" data-delay="50" data-tooltip="Menu" href="#modal2">
+            <i class="large fas fa-bars"></i>
+          </a>
+        </div>
+        <!--Menu-->
+        <div id="modal2" class="modal bottom-sheet right-align blue-grey darken-4 amber-text text-accent-2">
+          <div class="modal-content">
+            <a href="#!" onclick="location.reload()" class="amber-text text-accent-2 tooltipped" data-tooltip="Refresh"
+              data-position="top"><i class="small fas fa-sync-alt"></i></a>
+            <ul class="collection left-align" style="border-width: 0px;">
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='index.html'">
+                <a href="#!"><i class="fas fa-home circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">OUI Cricket Home</p>
+                <p>Back to Sports Home</p>
+              </li>
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='about.html'">
+                <a href="#!"><i class="fas fa-info circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">About</p>
+                <p>About this Website</p>
+              </li>
+              <li class="collection-item blue-grey darken-4"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab"><a href="#upc" class="blue-grey darken-4 amber-text text-accent-3">
+                  <h6>UPCOMING</h6>
+                </a></li>
+              <li class="tab"><a href="#ong" class="blue-grey darken-4 amber-text text-accent-3">
+                  <h6>ONGOING</h6>
+                </a></li>
+              <li class="tab"><a href="#com" class="blue-grey darken-4 amber-text text-accent-3">
+                  <h6>COMPLETED</h6>
+                </a></li>
+              <div class="indicator amber accent-3"></div>
+            </ul>
+          </div>
+        </div>
+        <div id="upc" class="col s12">
+          <iframe src="https://www.cricket.com/series/upcoming" width="60%" height="2500px" scrolling="no"></iframe>
+        </div>
+        <div id="ong" class="col s12">
+          <iframe src="https://www.cricket.com/series/ongoing" width="60%" height="2500px" scrolling="no"></iframe>
+        </div>
+        <div id="com" class="col s12">
+          <iframe src="https://www.cricket.com/series/completed" width="60%" height="2500px" scrolling="no"></iframe>
+        </div>
+      </div>
+    </div><br>
+  </main>
+</body>
+
+</html>
