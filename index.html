@@ -59,6 +59,12 @@
     img {
       border-radius: 5px;
     }
+
+    #curr {
+      text-decoration: underline dotted;
+      text-underline-position: under;
+      text-decoration-thickness: 1.5px;
+    }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="text/javascript" src="materialize.js"></script>
@@ -131,12 +137,27 @@
   <main class="containr">
     <div class="oui-viewing center-align">
       <h4>One UI Cricket</h4>
-      <h5>Click to open of Cricket Tournaments below</h5>
+      <h5>Click on the India's Series' below to view Dates, Venues, Scorecards</h5>
       <h6>Auto Refresh in every 60 seconds</h6>
+    </div>
+    <div id="view"></div><br>
+    <div class="row">
+      <div class="col s1 m1 l1 left-align show-on-small hide-on-med-and-up" style="font-size: x-large;">
+        <a href="javascript:openNav()" class="tooltipped black-text" data-position="right" data-delay="50"
+          data-tooltip="Menu">&#9776;</a></div>
+      <div class="col s11 m11 l11"></div>
+      <div class="show-on-medium-and-up hide-on-small-only center" style="font-size: large;">
+        <a href="#!" class="col m2 l2 blue-text text-darken-4">India's<br><span id="curr">Schedule</span></a>
+        <a href="cricint.html" class="col m2 l2 black-text">Int'l<br>Schedule</a>
+        <a href="iplhome.html" class="col m2 l2 black-text">IPL<br>Schedule</a>
+        <a href="iplresults.html" class="col m2 l2 black-text">IPL<br>Results</a>
+        <a href="results.html" class="col m2 l2 black-text">India's<br>Results</a>
+        <a href="about.html" class="col m2 l2 black-text">About</a>
+      </div>
     </div>
     <div class="oui-interaction center-align">
       <!--Interaction area-->
-      <div class="oui-bubble blue-grey darken-4" id="view">
+      <div class="oui-bubble blue-grey darken-4">
         <div class="fixed-action-btn">
           <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5 modal-trigger"
             data-position="top" data-delay="50" data-tooltip="Menu" href="#modal2">
@@ -147,6 +168,21 @@
         <div id="modal2" class="modal bottom-sheet right-align blue-grey darken-4 amber-text text-accent-2">
           <div class="modal-content">
             <ul class="collection left-align" style="border-width: 0px;">
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='cricint.html'">
+                <a href="#!"><i class="fas fa-globe circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">International</p>
+                <p></p>
+              </li>
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='iplhome.html'">
+                <a href="#!"><i class="fas fa-trophy circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">IPL</p>
+                <p></p>
+              </li>
+              <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='results.html'">
+                <a href="#!"><i class="fas fa-list circle blue darken-4"></i></a>
+                <p style="font-size: x-large;">Results</p>
+                <p></p>
+              </li>
               <li class="collection-item avatar blue-grey darken-4 oui-bubble" onclick="location.href='about.html'">
                 <a href="#!"><i class="fas fa-info circle blue darken-4"></i></a>
                 <p style="font-size: x-large;">About</p>
@@ -161,21 +197,13 @@
           <div class="col s12">
             <ul class="tabs tabs-fixed-width">
               <li class="tab"><a href="#ind" class="active blue-grey darken-4 amber-text text-accent-2">
-                  <h6>IND</h6>
-                </a></li>
-              <li class="tab"><a href="cricint.html" target="_blank"
-                  class="blue-grey darken-4 amber-text text-accent-2">
-                  <h6>INT</h6>
+                  <h6>ONGOING</h6>
                 </a></li>
               <li class="tab"><a href="#acc" class="blue-grey darken-4 amber-text text-accent-2">
-                  <h6>ACC</h6>
+                  <h6>ASIA CUP<br>2022</h6>
                 </a></li>
               <li class="tab"><a href="#icc" class="blue-grey darken-4 amber-text text-accent-2">
-                  <h6>ICC</h6>
-                </a></li>
-              <li class="tab"><a href="iplhome.html" target="_blank"
-                  class="blue-grey darken-4 amber-text text-accent-2">
-                  <h6>IPL</h6>
+                  <h6>ICC WCT20<br>2022</h6>
                 </a></li>
               <div class="indicator amber accent-3"></div>
             </ul>
@@ -266,12 +294,7 @@
               scrolling="no"></iframe>
           </div>
           <div class="col s12" id="ind">
-            <div class="row">
-              <a href="results.html" target="_blank"
-                class="oui-button blue-grey darken-4 white-text col s6 m6 l6"><b>RESULTS</b></a>
-              <a href="#sch" class="oui-button blue-grey darken-4 white-text col s6 m6 l6"><b>SCHEDULES</b></a>
-            </div>
-            <div class="row">
+            <div class="row"><br>
               <div class="col s12 m12 l4">
                 <iframe src="https://www.cricket.com/live-score/214444/scorecard" width="100%" height="160px"
                   scrolling="no"></iframe>
