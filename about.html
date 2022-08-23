@@ -29,6 +29,12 @@
     .oui-button {
       font-family: 'SamsungOne 400';
     }
+
+    #curr {
+      text-decoration: underline dotted;
+      text-underline-position: under;
+      text-decoration-thickness: 1.5px;
+    }
   </style>
   <script type="text/javascript" src="convert.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -82,6 +88,20 @@
     <div class="oui-viewing center-align">
       <h4>One UI Cricket</h4>
       <h5 class="grey-text text-darken-1">Version 2022.3.4 beta</h5>
+    </div>
+    <div class="row">
+      <div class="col s1 m1 l1 left-align show-on-small hide-on-med-and-up" style="font-size: x-large;">
+        <a href="javascript:openNav()" class="tooltipped black-text" data-position="right" data-delay="50"
+          data-tooltip="Menu">&#9776;</a></div>
+      <div class="col s11 m11 l11"></div>
+      <div class="show-on-medium-and-up hide-on-small-only center" style="font-size: large;">
+        <a href="index.html" class="col m2 l2 black-text">India's<br>Schedule</a>
+        <a href="cricint.html" class="col m2 l2 black-text">Int'l<br>Schedule</a>
+        <a href="iplhome.html" class="col m2 l2 black-text">IPL<br>Schedule</a>
+        <a href="iccresults.html" class="col m2 l2 black-text">ICC<br>Results</a>
+        <a href="results.html" class="col m2 l2 black-text">India's<br>Results</a>
+        <a href="#!" class="col m2 l2 blue-text text-darken-4"><span id="curr">About</span></a>
+      </div>
     </div>
     <div class="oui-interaction center-align">
       <!-- Interaction area -->

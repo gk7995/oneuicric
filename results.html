@@ -29,6 +29,12 @@
     iframe {
       border-radius: 15px;
     }
+
+    #curr {
+      text-decoration: underline dotted;
+      text-underline-position: under;
+      text-decoration-thickness: 1.5px;
+    }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="text/javascript" src="materialize.js"></script>
@@ -59,9 +65,24 @@
       <h5 class="grey-text text-darken-1">of all India's International Series, Tournaments</h5>
       <h6>Sorted in Descending Order</h6>
     </div>
+    <div id="view"></div><br>
+    <div class="row">
+      <div class="col s1 m1 l1 left-align show-on-small hide-on-med-and-up" style="font-size: x-large;">
+        <a href="javascript:openNav()" class="tooltipped black-text" data-position="right" data-delay="50"
+          data-tooltip="Menu">&#9776;</a></div>
+      <div class="col s11 m11 l11"></div>
+      <div class="show-on-medium-and-up hide-on-small-only center" style="font-size: large;">
+        <a href="index.html" class="col m2 l2 black-text">India's<br>Schedule</a>
+        <a href="cricint.html" class="col m2 l2 black-text">Int'l<br>Schedule</a>
+        <a href="iplhome.html" class="col m2 l2 black-text">IPL<br>Schedule</a>
+        <a href="iccresults.html" class="col m2 l2 black-text">ICC<br>Results</a>
+        <a href="#!" class="col m2 l2 blue-text text-darken-4">India's<br><span id="curr">Results</span></a>
+        <a href="about.html" class="col m2 l2 black-text">About</a>
+      </div>
+    </div>
     <div class="oui-interaction center-align">
       <!-- Interaction area -->
-      <div class="oui-bubble blue-grey darken-4" id="view">
+      <div class="oui-bubble blue-grey darken-4">
         <div class="fixed-action-btn">
           <a class="btn-floating btn-large blue darken-4 btn tooltipped pulse z-depth-5 modal-trigger"
             data-position="left" data-delay="50" data-tooltip="Menu" href="#modal2">
@@ -139,11 +160,11 @@
                   </tr>
                   <tr>
                     <td>22-08-22</td>
-                    <td><b>ZIM:</b> 226/7 (43) <br><b>IND:</b> 289/8 </td>
-                    <td><b>ZIM need 64 runs</b><br>Updated 20:15 IST</td>
+                    <td><b>ZIM:</b> 276 (49.3) <br><b>IND:</b> 289/8 </td>
+                    <td><b>IND</b><br>13 RUNS</td>
                   </tr>
                   <tr>
-                    <td colspan="3" class="grey darken-4">INDIA LEAD THE 3 ODI SERIES BY 2-0</td>
+                    <td colspan="3" class="grey darken-4">INDIA WON THE 3 ODI SERIES BY 3-0</td>
                   </tr>
                   <tr>
                     <td>29-07-22</td>
