@@ -226,7 +226,8 @@
       <h4>One UI Cricket</h4>
       <!-- <h5>Click on the India's Series' below to view Dates, Venues, Scorecards</h5> -->
       <h5>Click on the Scorecard button against any match below to view Full Scores</h5>
-      <h6>Auto Refresh in every 60 seconds</h6>
+      <h6>Auto Refresh in every 60 seconds,
+        <img src="images/Red.gif" width="25px" height="25px"> indicates LIVE Match is in progess under that tab</h6>
     </div>
     <div id="view"></div><br>
     <div class="row">
@@ -251,13 +252,19 @@
           <div class="col s12">
             <ul class="tabs tabs-fixed-width">
               <li class="tab"><a href="#ind" class="blue-grey darken-4 amber-text text-accent-2">
-                  <h6>UPCOMING<br>AUS TOUR OF IND</h6>
+                  <h6>AUS TOUR<br> OF IND</h6>
                 </a></li>
-              <li class="tab"><a href="#acc" class="active blue-grey darken-4 amber-text text-accent-2">
+              <li class="tab"><a href="#acc" class="blue-grey darken-4 amber-text text-accent-2">
                   <h6>ASIA CUP<br>2022</h6>
                 </a></li>
-              <li class="tab"><a href="#icc" class="blue-grey darken-4 amber-text text-accent-2">
+              <!-- <li class="tab"><a href="#icc" class="blue-grey darken-4 amber-text text-accent-2">
                   <h6>ICC WCT20<br>2022</h6>
+                </a></li> -->
+              <li class="tab"><a href="#rsw" class="active blue-grey darken-4 amber-text text-accent-2">
+                  <h6><img src="images/Red.gif" width="15px" height="15px">RSWS<br>2022</h6>
+                </a></li>
+              <li class="tab"><a href="#llt" class="blue-grey darken-4 amber-text text-accent-2">
+                  <h6>LEGENDS<br>LEAGUE 2022</h6>
                 </a></li>
               <div class="indicator amber accent-3"></div>
             </ul>
@@ -613,7 +620,7 @@
           <div class="col s12" id="ind">
             <!-- <div class="row"><br>
               <div class="col s12 m12 l8 offset-l2">
-                <iframe src="https://www.cricket.com/live-score/214859/scorecard" width="100%" height="160px"
+                <iframe src="https://www.cricket.com/live-score/214859/scorecard" width="100%" height="150px"
                   scrolling="no"></iframe>
               </div>
             </div> -->
@@ -742,7 +749,7 @@
           <div class="col s12" id="acc">
             <div class="row"><br>
               <div class="col s12 m12 l8 offset-l2">
-                <iframe src="https://www.cricket.com/live-score/215326/scorecard" width="100%" height="150px"
+                <iframe src="https://www.cricket.com/live-score/215327/scorecard" width="100%" height="150px"
                   scrolling="no"></iframe>
               </div>
             </div>
@@ -895,8 +902,8 @@
                   <td>Dubai<br>Super 4<br>
                     <a href="#215325" class="oui-button blue-grey darken-2 white-text modal-trigger"> Scorecard</a></td>
                 </tr>
-                <tr class="z-depth-5">
-                  <td>&#10151;Sep 9<br>19:30 IST</td>
+                <tr>
+                  <td>Sep 9<br>19:30 IST</td>
                   <td><img src="https://images.cricket.com/teams/8_flag_safari.png" alt="SL" width="35px"
                       height="25px"><br><b>SL</b></td>
                   <td>
@@ -907,8 +914,8 @@
                   <td>Dubai<br>Super 4<br>
                     <a href="#215326" class="oui-button blue-grey darken-2 white-text modal-trigger"> Scorecard</a></td>
                 </tr>
-                <tr>
-                  <td>Sep 11<br>19:30 IST</td>
+                <tr class="z-depth-5">
+                  <td>&#10151;Sep 11<br>19:30 IST</td>
                   <td><img src="https://images.cricket.com/teams/8_flag_safari.png" alt="SL" width="35px"
                       height="25px"><br><b>SL</b></td>
                   <td>
@@ -922,13 +929,210 @@
               </tbody>
             </table>
           </div>
-          <div class="col s12" id="icc">
-            <!-- <div class="row"><br>
+          <div class="col s12" id="rsw">
+            <div class="row"><br>
               <div class="col s12 m12 l8 offset-l2">
-                <iframe src="https://www.cricket.com/live-score/209235/scorecard" width="100%" height="160px"
+                <iframe src="https://www.cricket.com/live-score/216370/scorecard" width="100%" height="150px"
                   scrolling="no"></iframe>
               </div>
-            </div> -->
+            </div>
+            <div class="row">
+              <div class="col m1 l2"></div>
+              <a href="#pt0" class="oui-button amber accent-2 black-text modal-trigger col s5 m4 l3">
+                POINTS TABLE</a>
+              <div class="col s2 m2 l2"></div>
+              <a href="#sqd2" class="oui-button amber accent-2 black-text modal-trigger col s5 m4 l3">SQUADS</a>
+              <div class="col m1 l2"></div>
+            </div>
+            <div class="modal blue-grey darken-4" id="pt0">
+              <table class="centered bordered white-text">
+                <tbody>
+                  <tr>
+                    <td><b>POS</b></td>
+                    <td><b>&#10102;</b></td>
+                    <td><b>&#10103;</b></td>
+                    <td><b>&#10104;</b></td>
+                    <td><b>&#10105;</b></td>
+                    <td><b>&#10106;</b></td>
+                    <td><b>&#10107;</b></td>
+                    <td><b>&#10108;</b></td>
+                    <td><b>&#10109;</b></td>
+                  </tr>
+                  <tr>
+                    <td><b>TEAM</b></td>
+                    <td>INL</td>
+                    <td>AUL</td>
+                    <td>BDL</td>
+                    <td>ENL</td>
+                    <td>NZL</td>
+                    <td>SLL</td>
+                    <td>WIL</td>
+                    <td>SAL</td>
+                  </tr>
+                  <tr>
+                    <td><b>PTS</b></td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td><b>NRR</b></td>
+                    <td>+3.1</td>
+                    <td>+0.0</td>
+                    <td>+0.0</td>
+                    <td>+0.0</td>
+                    <td>+0.0</td>
+                    <td>+0.0</td>
+                    <td>+0.0</td>
+                    <td>-3.1</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h6 class="white-text"><b>Abbreviations</b> - POS: Position, PTS: Points, NRR: Net Run Rate, <br>
+                AUL: AUS Legends, BDL: BAN Legends, ENL: ENG Legends, <br> INL: IND Legends, NZL: NZ Legends,
+                SAL: SA Legends, <br> SLL: SL Legends, WIL: WI Legends</h6>
+              <table class="centered bordered white-text">
+                <caption><b><u>RESULTS</u></b></caption>
+                <tbody>
+                  <tr>
+                    <td>MATCH 1 (Sep 10) - INL: 217/4 vs SAL: 156/9; INL won by 61 runs</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 2 (Sep 11) - BDL: 98 (19.4) vs WIL</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 3 (Sep 11) - SLL vs AUL</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 4 (Sep 12) - NZL vs SAL</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 5 (Sep 13) - ENL vs SLL</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 6 (Sep 14) - INL vs WIL</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 7 (Sep 15) - BDL vs NZL</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 8 (Sep 17) - ENL vs WIL</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 9 (Sep 17) - SLL vs SAL</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 10 (Sep 18) - AUL vs BDL</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 11 (Sep 18) - INL vs NZL</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 12 (Sep 19) - ENL vs SAL</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 13 (Sep 21) - INL vs BDL</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 14 (Sep 22) - WIL vs NZL</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 15 (Sep 23) - AUL vs SAL</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 16 (Sep 24) - INL vs ENL</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 17 (Sep 25) - SLL vs NZL</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 18 (Sep 25) - AUL vs WIL</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 19 (Sep 27) - SLL vs BDL</td>
+                  </tr>
+                  <tr>
+                    <td>MATCH 20 (Sep 27) - ENL vs AUL</td>
+                  </tr>
+                  <tr>
+                    <td>SEMI FINAL1 (Sep 28) - TBD vs TBD</td>
+                  </tr>
+                  <tr>
+                    <td>SEMI FINAL2 (Sep 29) - TBD vs TBD</td>
+                  </tr>
+                  <tr>
+                    <td>FINAL (Oct 1) - TBD vs TBD</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <img src="https://pbs.twimg.com/media/Fb3217UVUAAailk?format=jpg&name=large" alt="RSWS" width="100%">
+          </div>
+          <div class="col s12" id="llt">
+            <div class="row"><br>
+              <div class="col s12 m12 l8 offset-l2">
+                <iframe src="https://www.cricket.com/live-score/216407/scorecard" width="100%" height="150px"
+                  scrolling="no"></iframe>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col m1 l2"></div>
+              <a href="#pt1" class="oui-button amber accent-2 black-text modal-trigger col s5 m4 l3">
+                POINTS TABLE</a>
+              <div class="col s2 m2 l2"></div>
+              <a href="#sqd3" class="oui-button amber accent-2 black-text modal-trigger col s5 m4 l3">SQUADS</a>
+              <div class="col m1 l2"></div>
+            </div>
+            <div class="modal blue-grey darken-4" id="pt1">
+              <table class="centered bordered white-text">
+                <tbody>
+                  <tr>
+                    <td><b>POS</b></td>
+                    <td><b>&#10102;</b></td>
+                    <td><b>&#10103;</b></td>
+                    <td><b>&#10104;</b></td>
+                    <td><b>&#10105;</b></td>
+                  </tr>
+                  <tr>
+                    <td><b>TEAM</b></td>
+                    <td>BK</td>
+                    <td>GG</td>
+                    <td>IC</td>
+                    <td>MT</td>
+                  </tr>
+                  <tr>
+                    <td><b>POINTS</b></td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td><b>NRR</b></td>
+                    <td>+0.000</td>
+                    <td>+0.000</td>
+                    <td>+0.000</td>
+                    <td>+0.000</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h6 class="white-text"><b>Abbreviations</b> - POS: Position, PTS: Points, NRR: Net Run Rate, <br>
+                BK: Bhilwara Kings, GG: Gujarat Giants, IC: India Capitals, MT: Manipal Tigers</h6>
+            </div>
+            <img src="https://pbs.twimg.com/media/FcCJWTvaMAE7aaL?format=jpg&name=large" alt="LLT20" width="100%">
+          </div>
+          <!-- <div class="col s12" id="icc">
+            <div class="row"><br>
+              <div class="col s12 m12 l8 offset-l2">
+                <iframe src="https://www.cricket.com/live-score/209235/scorecard" width="100%" height="150px"
+                  scrolling="no"></iframe>
+              </div>
+            </div>
             <div class="row"><br>
               <div class="col m1 l2"></div>
               <a href="iccresults.html" class="oui-button amber accent-2 black-text modal-trigger col s5 m4 l3">
@@ -1654,7 +1858,7 @@
             </table>
             <h6 class="white-text"><b>Abbreviations:</b>Q1, Q3: To be Quailified from QUALIFIERS;
               WiA, WiB: Winner of Group A, B; RuA, RuB: Runner Up of Group A, B; TBD: To be Decided</h6>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
