@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-  <meta http-equiv="refresh" content="60">
+  <!-- <meta http-equiv="refresh" content="60"> -->
   <meta name="description" content="Sports Schedules">
   <meta name="msvalidate.01" content="FC10FA22248EFBF4FA3A591D08BDD039" />
   <title lang="en-us">One UI Cricket - Schedules, Scores & more</title>
   <link rel="stylesheet" href="OneUI/oui.min.css">
   <link rel="stylesheet" href="materialize.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <link rel="icon" href="images/OUC.ico">
@@ -107,6 +107,15 @@
       text-underline-position: under;
       text-decoration-thickness: 1.5px;
     }
+
+    .collapsible-header,
+    .collapsible-body {
+      border: none;
+    }
+
+    .collapsible {
+      align-content: center;
+    }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="text/javascript" src="materialize.js"></script>
@@ -127,51 +136,6 @@
     $(document).bind("contextmenu", function (e) {
       return false;
     });
-
-    function ser5() {
-      var element10 = document.getElementById("m11");
-      var element11 = document.getElementById("m12");
-      var element12 = document.getElementById("m13");
-      element10.classList.toggle("hide");
-      element11.classList.toggle("hide");
-      element12.classList.toggle("hide");
-    }
-
-    function ser6() {
-      var element13 = document.getElementById("m14");
-      var element14 = document.getElementById("m15");
-      var element15 = document.getElementById("m16");
-      element13.classList.toggle("hide");
-      element14.classList.toggle("hide");
-      element15.classList.toggle("hide");
-    }
-
-    function ser7() {
-      var element16 = document.getElementById("m17");
-      var element17 = document.getElementById("m18");
-      var element18 = document.getElementById("m19");
-      element16.classList.toggle("hide");
-      element17.classList.toggle("hide");
-      element18.classList.toggle("hide");
-    }
-
-    function ser8() {
-      var element19 = document.getElementById("m20");
-      var element20 = document.getElementById("m21");
-      var element21 = document.getElementById("m22");
-      element19.classList.toggle("hide");
-      element20.classList.toggle("hide");
-      element21.classList.toggle("hide");
-    }
-
-    function ser9() {
-      var element22 = document.getElementById("m23");
-      var element23 = document.getElementById("m24");
-      var element24 = document.getElementById("m25");
-      element22.classList.toggle("hide");
-      element23.classList.toggle("hide");
-      element24.classList.toggle("hide");
-    }
   </script>
 </head>
 
@@ -224,8 +188,6 @@
     </script>
     <div class="oui-viewing center-align">
       <h4>One UI Cricket</h4>
-      <!-- <h5>Click on the India's Series' below to view Dates, Venues, Scorecards</h5> -->
-      <h5>Click on the Scorecard button against any match below to view Full Scores</h5>
       <h6>Auto Refresh in every 60 seconds, <br>
         <img src="images/Red.gif" width="25px" height="25px"> indicates LIVE Match is in progess under that tab</h6>
     </div>
@@ -255,63 +217,20 @@
                   <h6>
                     <!-- img src="images/Red.gif" width="15px" height="15px"-->SA TOUR<br> OF IND</h6>
                 </a></li>
-              <!-- <li class="tab"><a href="#icc" class="blue-grey darken-4 amber-text text-accent-2">
-                  <h6>ICC WCT20<br>2022</h6>
-                </a></li> -->
+              <li class="tab disabled"><a href="#icc" class="blue-grey darken-4 amber-text text-accent-2">
+                  <h6>
+                    <!--img src="images/Red.gif" width="15px" height="15px"-->ICC WCT20<br>3 Days..</h6>
+                </a></li>
               <li class="tab"><a href="#rsw" class="blue-grey darken-4 amber-text text-accent-2">
                   <h6>
                     <!--img src="images/Red.gif" width="15px" height="15px"-->RSWS<br>2022</h6>
                 </a></li>
               <li class="tab"><a href="#llt" class="blue-grey darken-4 amber-text text-accent-2">
                   <h6>
-                    <!--img src="images/Red.gif" width="15px" height="15px"-->LEGENDS<br>LEAGUE 2022</h6>
+                    <!--img src="images/Red.gif" width="15px" height="15px"-->LEGENDS<br>LEAGUE '22</h6>
                 </a></li>
               <div class="indicator amber accent-3"></div>
             </ul>
-          </div>
-          <div id="h2h" class="modal blue-grey darken-4 white-text">
-            <!-- <h5 class="amber-text text-accent-2">NOTHING TO SHOW</h5> -->
-            <h6 class="amber-text text-accent-2"> *After 1st ODI </h6>
-            <table class="centered white-text">
-              <tbody>
-                <tr>
-                  <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="35px"
-                      height="25px"><br>IND</td>
-                  <td><b>TEAMS</b></td>
-                  <td><img src="https://images.cricket.com/teams/7_flag_safari.png" alt="AUS" width="35px"
-                      height="25px"><br>SA</td>
-                </tr>
-                <tr>
-                  <td><img src="https://images.cricket.com/players/3722_headshot_safari.png" alt="IND" width="70px"
-                      height="100px"><br>Shikhar Dhawan</td>
-                  <td><b>VS</b></td>
-                  <td><img src="https://images.cricket.com/players/12492_headshot_safari.png" alt="SA" width="70px"
-                      height="100px"><br>Temba Bavuma</td>
-                  <!-- <td><img src="https://images.cricket.com/players/4330_headshot_safari.png" alt="NZ" width="70px"
-                      height="100px"><br>Kane Williamson</td> -->
-                </tr>
-                <tr>
-                  <td colspan="3">
-                    <hr><br>IN ODIs</td>
-                </tr>
-                <tr>
-                  <td><b>WON: 35*</b><br>40%</td>
-                  <td><b>MATCHES: 88*</b><br>TIE/ NR/ DRAW: 3</td>
-                  <td><b>WON: 50*</b><br>57%</td>
-                </tr>
-                <tr>
-                  <td><b>3</b></td>
-                  <td><b>ICC RANK</b></td>
-                  <td><b>6</b></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="sqd" class="modal blue-grey darken-4">
-            <iframe src="https://www.cricket.com/series/international/2620/south-africa-tour-of-india-2022/squads"
-              width="100%" height="3000px" scrolling="no"></iframe>
-            <!-- <iframe src="https://www.cricket.com/series/international/2584/india-tour-of-new-zealand-2022/squads"
-              width="100%" height="3000px" scrolling="no"></iframe> -->
           </div>
           <div id="sqd2" class="modal blue-grey darken-4">
             <iframe src="https://www.cricket.com/series/domestic/2692/road-safety-t20-world-series-2022/squads"
@@ -324,42 +243,6 @@
           <!-- <div id="sqd2" class="modal blue-grey darken-4">
             <iframe src="https://www.cricket.com/series/international/2254/icc-world-twenty20-2022/squads" width="100%"
               height="3000px" scrolling="no"></iframe>
-          </div> -->
-          <div id="214865" class="modal blue-grey darken-4">
-            <iframe src="https://www.cricket.com/live-score/214865/scorecard" width="100%" height="3000px"
-              scrolling="no"></iframe>
-          </div>
-          <div id="214866" class="modal blue-grey darken-4">
-            <iframe src="https://www.cricket.com/live-score/214866/scorecard" width="100%" height="3000px"
-              scrolling="no"></iframe>
-          </div>
-          <div id="214867" class="modal blue-grey darken-4">
-            <iframe src="https://www.cricket.com/live-score/214867/scorecard" width="100%" height="3000px"
-              scrolling="no"></iframe>
-          </div>
-          <!-- <div id="213900" class="modal blue-grey darken-4">
-            <iframe src="https://www.cricket.com/live-score/213900/scorecard" width="100%" height="3000px"
-              scrolling="no"></iframe>
-          </div>
-          <div id="213901" class="modal blue-grey darken-4">
-            <iframe src="https://www.cricket.com/live-score/213901/scorecard" width="100%" height="3000px"
-              scrolling="no"></iframe>
-          </div>
-          <div id="213902" class="modal blue-grey darken-4">
-            <iframe src="https://www.cricket.com/live-score/213902/scorecard" width="100%" height="3000px"
-              scrolling="no"></iframe>
-          </div>
-          <div id="213903" class="modal blue-grey darken-4">
-            <iframe src="https://www.cricket.com/live-score/213903/scorecard" width="100%" height="3000px"
-              scrolling="no"></iframe>
-          </div>
-          <div id="213904" class="modal blue-grey darken-4">
-            <iframe src="https://www.cricket.com/live-score/213904/scorecard" width="100%" height="3000px"
-              scrolling="no"></iframe>
-          </div>
-          <div id="213905" class="modal blue-grey darken-4">
-            <iframe src="https://www.cricket.com/live-score/213905/scorecard" width="100%" height="3000px"
-              scrolling="no"></iframe>
           </div> -->
           <!-- <div id="209235" class="modal blue-grey darken-4">
             <iframe src="https://www.cricket.com/live-score/209235/scorecard" width="100%" height="3000px"
@@ -548,84 +431,387 @@
                   scrolling="no"></iframe>
               </div>
             </div>
-            <div class="row"><br>
-              <div class="col m1 l2"></div>
-              <a href="#h2h" class="oui-button amber accent-2 black-text modal-trigger col s5 m4 l3">HEAD TO HEAD</a>
-              <div class="col s2 m2 l2"></div>
-              <a href="#sqd" class="oui-button amber accent-2 black-text modal-trigger col s5 m4 l3">SQUADS</a>
-              <div class="col m1 l2"></div>
-            </div>
-            <table class="centered white-text">
-              <tbody>
-                <tr id="sch">
-                  <td><b>DATE<br>TIME (IST)</b></td>
-                  <td><b>MATCH</b></td>
-                  <td><b>SCORECARD<br>VENUE</b></td>
-                </tr>
-                <tr>
-                  <td colspan="3"><b>SOUTH AFRICA TOUR OF INDIA [3 ODIs]</b></td>
-                </tr>
-                <tr>
-                  <td>Oct 6<br>13:30 IST</td>
-                  <td>1st ODI</td>
-                  <td><a href="#214865" class="oui-button blue-grey darken-2 white-text modal-trigger"> Scorecard
-                    </a><br><i class="fas fa-map-marker-alt"></i> Lucknow</td>
-                </tr>
-                <tr>
-                  <td>Oct 9<br>13:30 IST</td>
-                  <td>2nd ODI</td>
-                  <td><a href="#214866" class="oui-button blue-grey darken-2 white-text modal-trigger"> Scorecard
-                    </a><br><i class="fas fa-map-marker-alt"></i> Ranchi</td>
-                </tr>
-                <tr>
-                  <td>Oct 11<br>13:30 IST</td>
-                  <td>3rd ODI</td>
-                  <td><a href="#214867" class="oui-button blue-grey darken-2 white-text modal-trigger"> Scorecard
-                    </a><br><i class="fas fa-map-marker-alt"></i> Delhi</td>
-                </tr>
-                <tr onclick="ser8()">
-                  <td colspan="3"><b>INDIA TOUR OF NEW ZEALAND [3 T20s]</b></td>
-                </tr>
-                <tr id="m20" class="hide">
-                  <td>Nov 18<br>12:00 IST</td>
-                  <td>1st T20</td>
-                  <td><a href="#213900" class="oui-button blue-grey darken-2 white-text modal-trigger"> Scorecard
-                    </a><br><i class="fas fa-map-marker-alt"></i> Wellington</td>
-                </tr>
-                <tr id="m21" class="hide">
-                  <td>Nov 20<br>12:00 IST</td>
-                  <td>2nd T20</td>
-                  <td><a href="#213901" class="oui-button blue-grey darken-2 white-text modal-trigger"> Scorecard
-                    </a><br><i class="fas fa-map-marker-alt"></i> Mount Maunganui</td>
-                </tr>
-                <tr id="m22" class="hide">
-                  <td>Nov 22<br>12:00 IST</td>
-                  <td>3rd T20</td>
-                  <td><a href="#213902" class="oui-button blue-grey darken-2 white-text modal-trigger"> Scorecard
-                    </a><br><i class="fas fa-map-marker-alt"></i> Napier</td>
-                </tr>
-                <tr onclick="ser9()">
-                  <td colspan="3"><b>INDIA TOUR OF NEW ZEALAND [3 ODIs]</b></td>
-                </tr>
-                <tr id="m23" class="hide">
-                  <td>Nov 25<br>07:00 IST</td>
-                  <td>1st ODI</td>
-                  <td><a href="#213903" class="oui-button blue-grey darken-2 white-text modal-trigger"> Scorecard
-                    </a><br><i class="fas fa-map-marker-alt"></i> Auckland</td>
-                </tr>
-                <tr id="m24" class="hide">
-                  <td>Nov 27<br>07:00 IST</td>
-                  <td>2nd ODI</td>
-                  <td><a href="#213904" class="oui-button blue-grey darken-2 white-text modal-trigger"> Scorecard
-                    </a><br><i class="fas fa-map-marker-alt"></i> Hamilton</td>
-                </tr>
-                <tr id="m25" class="hide">
-                  <td>Nov 30<br>07:00 IST</td>
-                  <td>3rd ODI</td>
-                  <td><a href="#213905" class="oui-button blue-grey darken-2 white-text modal-trigger"> Scorecard
-                    </a><br><i class="fas fa-map-marker-alt"></i> Christchurch</td>
-                </tr>
-              </tbody>
+            <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header active blue-grey darken-4"><b>HEAD TO HEAD (IN ODIs)</b></div>
+                <div class="collapsible-body">
+                  <table class="centered white-text">
+                    <tbody>
+                      <tr>
+                        <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="35px"
+                            height="25px"><br>IND</td>
+                        <td><b>TEAMS</b></td>
+                        <td><img src="https://images.cricket.com/teams/7_flag_safari.png" alt="AUS" width="35px"
+                            height="25px"><br>SA</td>
+                      </tr>
+                      <tr>
+                        <td><img src="https://images.cricket.com/players/3722_headshot_safari.png" alt="IND"
+                            width="56px" height="80px"><br>Shikhar Dhawan</td>
+                        <td><b>VS</b></td>
+                        <td><img src="https://images.cricket.com/players/12492_headshot_safari.png" alt="SA"
+                            width="56px" height="80px"><br>Temba Bavuma</td>
+                        <!-- <td><img src="https://images.cricket.com/players/4330_headshot_safari.png" alt="NZ"
+                                      width="70px" height="100px"><br>Kane Williamson</td> -->
+                      </tr>
+                      <tr>
+                        <td colspan="3" class="amber-text text-accent-2">
+                          <hr><br>*After 1st ODI</td>
+                      </tr>
+                      <tr>
+                        <td><b>WON: 35*</b><br>40%</td>
+                        <td><b>MATCHES: 88*</b><br>TIE/ NR/ DRAW: 3</td>
+                        <td><b>WON: 50*</b><br>57%</td>
+                      </tr>
+                      <tr>
+                        <td><b>3</b></td>
+                        <td><b>ICC RANK</b></td>
+                        <td><b>6</b></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header blue-grey darken-4"><b>SQUADS (IN ODIs)</b></div>
+                <div class="collapsible-body">
+                  <table class="centered white-text">
+                    <tbody>
+                      <tr>
+                        <td><b>IND</b></td>
+                        <td><b><i class="fa-solid fa-caret-left"></i> TEAMS <i class="fa-solid fa-caret-right"></i></b>
+                        </td>
+                        <td><b>SA</b></td>
+                      </tr>
+                      <tr>
+                        <td>SHIKHAR DHAWAN</td>
+                        <td>Captain</td>
+                        <td>TEMBA BAVUMA</td>
+                      </tr>
+                      <tr>
+                        <td>Rahul Tripathi</td>
+                        <td>2</td>
+                        <td>Aiden Markram</td>
+                      </tr>
+                      <tr>
+                        <td>Rajat Patidar</td>
+                        <td>3</td>
+                        <td>David Miller</td>
+                      </tr>
+                      <tr>
+                        <td>Ruturaj Gaikwad</td>
+                        <td>4</td>
+                        <td>Janneman Mallan</td>
+                      </tr>
+                      <tr>
+                        <td>Shreyas Iyer</td>
+                        <td>5</td>
+                        <td>Reeza Hendricks</td>
+                      </tr>
+                      <tr>
+                        <td>Shubman Gill</td>
+                        <td>6</td>
+                        <td>Andile Phehlukwayo</td>
+                      </tr>
+                      <tr>
+                        <td>Shahbaz Ahmed</td>
+                        <td>7</td>
+                        <td>Dwaine Pretorius</td>
+                      </tr>
+                      <tr>
+                        <td>Ishan Kishan</td>
+                        <td>8</td>
+                        <td>Heinrich Klaasen</td>
+                      </tr>
+                      <tr>
+                        <td>Sanju Samson</td>
+                        <td>9</td>
+                        <td>Quinton de Kock</td>
+                      </tr>
+                      <tr>
+                        <td>Avesh Khan</td>
+                        <td>10</td>
+                        <td>Anrich Nortje</td>
+                      </tr>
+                      <tr>
+                        <td>Deepak Chahar</td>
+                        <td>11</td>
+                        <td>Kagiso Rabada</td>
+                      </tr>
+                      <tr>
+                        <td>Kuldeep Yadav</td>
+                        <td>12</td>
+                        <td>Keshav Maharaj</td>
+                      </tr>
+                      <tr>
+                        <td>Mohammed Siraj</td>
+                        <td>13</td>
+                        <td>Lungi Ngidi</td>
+                      </tr>
+                      <tr>
+                        <td>Mukesh Kumar</td>
+                        <td>14</td>
+                        <td>Marco Jansen</td>
+                      </tr>
+                      <tr>
+                        <td>Ravi Bishnoi</td>
+                        <td>15</td>
+                        <td>Tabraiz Shamsi</td>
+                      </tr>
+                      <tr>
+                        <td>Shardul Thakur</td>
+                        <td>16</td>
+                        <td>Wayne Parnell</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+            <h5 class="amber-text text-accent-2"><b>SCHEDULES</b></h5>
+            <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header active blue-grey darken-4"><b>SOUTH AFRICA TOUR OF INDIA [3 ODIs]</b>
+                </div>
+                <div class="collapsible-body">
+                  <table class="centered white-text">
+                    <tbody>
+                      <tr>
+                        <td><b>DATE<br>TIME<br>(IST)</b></td>
+                        <td><b>MATCH</b></td>
+                        <td><b>VENUE</b></td>
+                      </tr>
+                      <tr>
+                        <td>Oct 6<br>13:30 IST</td>
+                        <td>1st ODI</td>
+                        <td><i class="fas fa-map-marker-alt"></i> Lucknow</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">
+                          <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                            <li>
+                              <div class="collapsible-header blue-grey darken-4 amber-text text-accent-2">Full Scorecard
+                              </div>
+                              <div class="collapsible-body">
+                                <iframe src="https://www.cricket.com/live-score/214865/scorecard" width="100%"
+                                  height="3000px" scrolling="no"
+                                  class="show-on-medium-and-down hide-on-large-only"></iframe>
+                                <iframe src="https://www.cricket.com/live-score/214865/scorecard" width="80%"
+                                  height="3000px" scrolling="no" class="hide-on-med-and-down show-on-large"></iframe>
+                              </div>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Oct 9<br>13:30 IST</td>
+                        <td>2nd ODI</td>
+                        <td><i class="fas fa-map-marker-alt"></i> Ranchi</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">
+                          <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                            <li>
+                              <div class="collapsible-header blue-grey darken-4 amber-text text-accent-2">Full Scorecard
+                              </div>
+                              <div class="collapsible-body">
+                                <iframe src="https://www.cricket.com/live-score/214866/scorecard" width="100%"
+                                  height="3000px" scrolling="no"
+                                  class="show-on-medium-and-down hide-on-large-only"></iframe>
+                                <iframe src="https://www.cricket.com/live-score/214866/scorecard" width="80%"
+                                  height="3000px" scrolling="no" class="hide-on-med-and-down show-on-large"></iframe>
+                              </div>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Oct 11<br>13:30 IST</td>
+                        <td>3rd ODI</td>
+                        <td><i class="fas fa-map-marker-alt"></i> Delhi</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">
+                          <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                            <li>
+                              <div class="collapsible-header blue-grey darken-4 amber-text text-accent-2">Full Scorecard
+                              </div>
+                              <div class="collapsible-body">
+                                <iframe src="https://www.cricket.com/live-score/214867/scorecard" width="100%"
+                                  height="3000px" scrolling="no"
+                                  class="show-on-medium-and-down hide-on-large-only"></iframe>
+                                <iframe src="https://www.cricket.com/live-score/214867/scorecard" width="80%"
+                                  height="3000px" scrolling="no" class="hide-on-med-and-down show-on-large"></iframe>
+                              </div>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header blue-grey darken-4"><b>INDIA TOUR OF NEW ZEALAND [3 T20s]</b></div>
+                <div class="collapsible-body">
+                  <table class="centered white-text">
+                    <tbody>
+                      <tr>
+                        <td><b>DATE<br>TIME<br>(IST)</b></td>
+                        <td><b>MATCH</b></td>
+                        <td><b>VENUE</b></td>
+                      </tr>
+                      <tr>
+                        <td>Nov 18<br>12:00 IST</td>
+                        <td>1st T20</td>
+                        <td><i class="fas fa-map-marker-alt"></i> Wellington</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">
+                          <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                            <li>
+                              <div class="collapsible-header blue-grey darken-4 amber-text text-accent-2">Full Scorecard
+                              </div>
+                              <!-- <div class="collapsible-body">
+                                <iframe src="https://www.cricket.com/live-score/213900/scorecard" width="100%"
+                                  height="3000px" scrolling="no"
+                                  class="show-on-medium-and-down hide-on-large-only"></iframe>
+                                <iframe src="https://www.cricket.com/live-score/213900/scorecard" width="80%"
+                                  height="3000px" scrolling="no" class="hide-on-med-and-down show-on-large"></iframe>
+                              </div> -->
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Nov 20<br>12:00 IST</td>
+                        <td>2nd T20</td>
+                        <td><i class="fas fa-map-marker-alt"></i> Mount Maunganui</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">
+                          <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                            <li>
+                              <div class="collapsible-header blue-grey darken-4 amber-text text-accent-2">Full Scorecard
+                              </div>
+                              <!-- <div class="collapsible-body">
+                                <iframe src="https://www.cricket.com/live-score/213901/scorecard" width="100%"
+                                  height="3000px" scrolling="no"
+                                  class="show-on-medium-and-down hide-on-large-only"></iframe>
+                                <iframe src="https://www.cricket.com/live-score/213901/scorecard" width="80%"
+                                  height="3000px" scrolling="no" class="hide-on-med-and-down show-on-large"></iframe>
+                              </div> -->
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Nov 22<br>12:00 IST</td>
+                        <td>3rd T20</td>
+                        <td><i class="fas fa-map-marker-alt"></i> Napier</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">
+                          <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                            <li>
+                              <div class="collapsible-header blue-grey darken-4 amber-text text-accent-2">Full Scorecard
+                              </div>
+                              <!-- <div class="collapsible-body">
+                                <iframe src="https://www.cricket.com/live-score/213902/scorecard" width="100%"
+                                  height="3000px" scrolling="no"
+                                  class="show-on-medium-and-down hide-on-large-only"></iframe>
+                                <iframe src="https://www.cricket.com/live-score/213902/scorecard" width="80%"
+                                  height="3000px" scrolling="no" class="hide-on-med-and-down show-on-large"></iframe>
+                              </div> -->
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header blue-grey darken-4"><b>INDIA TOUR OF NEW ZEALAND [3 ODIs]</b></div>
+                <div class="collapsible-body">
+                  <table class="centered white-text">
+                    <tbody>
+                      <tr>
+                        <td><b>DATE<br>TIME<br>(IST)</b></td>
+                        <td><b>MATCH</b></td>
+                        <td><b>VENUE</b></td>
+                      </tr>
+                      <tr>
+                        <td>Nov 25<br>07:00 IST</td>
+                        <td>1st ODI</td>
+                        <td><i class="fas fa-map-marker-alt"></i> Auckland</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">
+                          <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                            <li>
+                              <div class="collapsible-header blue-grey darken-4 amber-text text-accent-2">Full Scorecard
+                              </div>
+                              <!-- <div class="collapsible-body">
+                                <iframe src="https://www.cricket.com/live-score/213903/scorecard" width="100%"
+                                  height="3000px" scrolling="no"
+                                  class="show-on-medium-and-down hide-on-large-only"></iframe>
+                                <iframe src="https://www.cricket.com/live-score/213903/scorecard" width="80%"
+                                  height="3000px" scrolling="no" class="hide-on-med-and-down show-on-large"></iframe>
+                              </div> -->
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Nov 27<br>07:00 IST</td>
+                        <td>2nd ODI</td>
+                        <td><i class="fas fa-map-marker-alt"></i> Hamilton</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">
+                          <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                            <li>
+                              <div class="collapsible-header blue-grey darken-4 amber-text text-accent-2">Full Scorecard
+                              </div>
+                              <!-- <div class="collapsible-body">
+                                <iframe src="https://www.cricket.com/live-score/213904/scorecard" width="100%"
+                                  height="3000px" scrolling="no"
+                                  class="show-on-medium-and-down hide-on-large-only"></iframe>
+                                <iframe src="https://www.cricket.com/live-score/213904/scorecard" width="80%"
+                                  height="3000px" scrolling="no" class="hide-on-med-and-down show-on-large"></iframe>
+                              </div> -->
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Nov 30<br>07:00 IST</td>
+                        <td>3rd ODI</td>
+                        <td><i class="fas fa-map-marker-alt"></i> Christchurch</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">
+                          <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                            <li>
+                              <div class="collapsible-header blue-grey darken-4 amber-text text-accent-2">Full Scorecard
+                              </div>
+                              <!-- <div class="collapsible-body">
+                                <iframe src="https://www.cricket.com/live-score/213905/scorecard" width="100%"
+                                  height="3000px" scrolling="no"
+                                  class="show-on-medium-and-down hide-on-large-only"></iframe>
+                                <iframe src="https://www.cricket.com/live-score/213905/scorecard" width="80%"
+                                  height="3000px" scrolling="no" class="hide-on-med-and-down show-on-large"></iframe>
+                              </div> -->
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+            </tbody>
             </table>
           </div>
           <div class="col s12" id="rsw">
@@ -890,20 +1076,211 @@
           <!-- <div class="col s12" id="icc">
             <div class="row"><br>
               <div class="col s12 m12 l8 offset-l2">
-                <iframe src="https://www.cricket.com/live-score/209235/scorecard" width="100%" height="150px"
+                <iframe src="https://www.cricket.com/live-score/216468/scorecard" width="100%" height="150px"
                   scrolling="no"></iframe>
               </div>
             </div>
-            <div class="row"><br>
-              <div class="col m1 l2"></div>
-              <a href="iccresults.html" class="oui-button amber accent-2 black-text modal-trigger col s5 m4 l3">
-                RESULTS</a>
-              <div class="col s2 m2 l2"></div>
-              <a href="#sqd2" class="oui-button amber accent-2 black-text modal-trigger col s5 m4 l3">SQUADS</a>
-              <div class="col m1 l2"></div>
+            <h5 class="amber-text text-accent-2"><b>MEN'S T20 WORLD CUP AUSTRALIA 2022 SQUADS</b></h5>
+            <div class="row">
+              <div class="col s12 m6 l3">
+                <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header blue-grey darken-4">
+                      <img src="https://images.cricket.com/teams/1188_flag_safari.png" alt="AFG" width="28px"
+                        height="20px">&nbsp;AFGHANISTAN</div>
+                    <div class="collapsible-body">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col s12 m6 l3">
+                <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header blue-grey darken-4">
+                      <img src="https://images.cricket.com/teams/1_flag_safari.png" alt="AUS" width="28px"
+                        height="20px">&nbsp;AUSTRALIA</div>
+                    <div class="collapsible-body">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col s12 m6 l3">
+                <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header blue-grey darken-4">
+                      <img src="https://images.cricket.com/teams/2_flag_safari.png" alt="BAN" width="28px"
+                        height="20px">&nbsp;BANGLADESH</div>
+                    <div class="collapsible-body">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col s12 m6 l3">
+                <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header blue-grey darken-4">
+                      <img src="https://images.cricket.com/teams/3_flag_safari.png" alt="ENG" width="28px"
+                        height="20px">&nbsp;ENGLAND</div>
+                    <div class="collapsible-body">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col s12 m6 l3">
+                <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header blue-grey darken-4">
+                      <img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="28px"
+                        height="20px">&nbsp;INDIA</div>
+                    <div class="collapsible-body">
+                      <ol>
+                        <li><b>ROHIT SHARMA</b></li>
+                        <li>Virat Kohli</li>
+                        <li>Suryakumar Yadav</li>
+                        <li>Shreyas Iyer</li>
+                        <li>Axar Patel</li>
+                        <li>Deepak Hooda</li>
+                        <li>Hardik Pandya</li>
+                        <li>Ravichandran Ashwin</li>
+                        <li>Dinesh Karthik</li>
+                        <li>KL Rahul</li>
+                        <li>Rishabh Pant</li>
+                        <li>Arshdeep Singh</li>
+                        <li>Bhuvneshwar Kumar</li>
+                        <li>Deepak Chahar</li>
+                        <li>Harshal Patel</li>
+                        <li>Mohammed Shami</li>
+                        <li>Ravi Bishnoi</li>
+                        <li>Yuzvendra Chahal</li>
+                      </ol>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col s12 m6 l3">
+                <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header blue-grey darken-4">
+                      <img src="https://images.cricket.com/teams/13_flag_safari.png" alt="IRE" width="28px"
+                        height="20px">&nbsp;IRELAND</div>
+                    <div class="collapsible-body">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col s12 m6 l3">
+                <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header blue-grey darken-4">
+                      <img src="https://images.cricket.com/teams/20_flag_safari.png" alt="NAM" width="28px"
+                        height="20px">&nbsp;NAMIBIA</div>
+                    <div class="collapsible-body">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col s12 m6 l3">
+                <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header blue-grey darken-4">
+                      <img src="https://images.cricket.com/teams/15_flag_safari.png" alt="NED" width="28px"
+                        height="20px">&nbsp;NETHERLANDS</div>
+                    <div class="collapsible-body">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col s12 m6 l3">
+                <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header blue-grey darken-4">
+                      <img src="https://images.cricket.com/teams/5_flag_safari.png" alt="NZ" width="28px"
+                        height="20px">&nbsp;NEW ZEALAND</div>
+                    <div class="collapsible-body">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col s12 m6 l3">
+                <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header blue-grey darken-4">
+                      <img src="https://images.cricket.com/teams/6_flag_safari.png" alt="PAK" width="28px"
+                        height="20px">&nbsp;PAKISTAN</div>
+                    <div class="collapsible-body">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col s12 m6 l3">
+                <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header blue-grey darken-4">
+                      <img src="https://images.cricket.com/teams/7_flag_safari.png" alt="SA" width="28px"
+                        height="20px">&nbsp;SOUTH AFRICA</div>
+                    <div class="collapsible-body">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col s12 m6 l3">
+                <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header blue-grey darken-4">
+                      <img src="https://images.cricket.com/teams/16_flag_safari.png" alt="SCO" width="28px"
+                        height="20px">&nbsp;SCOTLAND</div>
+                    <div class="collapsible-body">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col s12 m6 l3">
+                <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header blue-grey darken-4">
+                      <img src="https://images.cricket.com/teams/8_flag_safari.png" alt="SL" width="28px"
+                        height="20px">&nbsp;SRI LANKA</div>
+                    <div class="collapsible-body">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col s12 m6 l3">
+                <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header blue-grey darken-4">
+                      <img src="https://images.cricket.com/teams/21_flag_safari.png" alt="UAE" width="28px"
+                        height="20px">&nbsp;UAE</div>
+                    <div class="collapsible-body">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col s12 m6 l3">
+                <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header blue-grey darken-4">
+                      <img src="https://images.cricket.com/teams/9_flag_safari.png" alt="WI" width="28px"
+                        height="20px">&nbsp;WEST INDIES</div>
+                    <div class="collapsible-body">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col s12 m6 l3">
+                <ul class="collapsible popout blue-grey darken-4 white-text" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header blue-grey darken-4">
+                      <img src="https://images.cricket.com/teams/10_flag_safari.png" alt="ZIM" width="28px"
+                        height="20px">&nbsp;ZIMBABWE</div>
+                    <div class="collapsible-body">
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
             <h6><b class="blue darken-1 white-text">&nbsp; INDIA's MATCHES Highlighted in Blue &nbsp;</b></h6>
-            <h5 class="white-text"><b>MEN'S T20 WORLD CUP AUSTRALIA 2022 WARM-UPS SCHEDULE</b></h5>
+            <h5 class="amber-text text-accent-2"><b>MEN'S T20 WORLD CUP AUSTRALIA 2022 WARM-UPS SCHEDULE</b></h5>
             <table class="centered white-text">
               <tbody>
                 <tr>
@@ -1007,7 +1384,7 @@
                   <td>MCG<br>
                     <a href="#216480" class="oui-button blue-grey darken-2 white-text modal-trigger"> Scorecard</a></td>
                 </tr>
-                <tr>
+                <tr class="blue darken-1">
                   <td>Oct 17<br>08:30 IST</td>
                   <td><img src="https://images.cricket.com/teams/1_flag_safari.png" alt="AUS" width="35px"
                       height="25px"><br><b>AUS</b></td>
@@ -1079,7 +1456,7 @@
                   <td>Allan Border<br>Field<br>
                     <a href="#216490" class="oui-button blue-grey darken-2 white-text modal-trigger"> Scorecard</a></td>
                 </tr>
-                <tr>
+                <tr class="blue darken-1">
                   <td>Oct 19<br>12:30 IST</td>
                   <td><img src="https://images.cricket.com/teams/5_flag_safari.png" alt="NZ" width="35px"
                       height="25px"><br><b>NZ</b></td>
@@ -1093,7 +1470,7 @@
                 </tr>
               </tbody>
             </table>
-            <h5 class="white-text"><b>MEN'S T20 WORLD CUP AUSTRALIA 2022 SCHEDULE</b></h5>
+            <h5 class="amber-text text-accent-2"><b>MEN'S T20 WORLD CUP AUSTRALIA 2022 SCHEDULE</b></h5>
             <table class="centered white-text">
               <tbody>
                 <tr>
