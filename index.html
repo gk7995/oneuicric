@@ -101,6 +101,7 @@
     }
 
     iframe,
+    td,
     .card-panel {
       border-radius: 20px;
     }
@@ -115,6 +116,7 @@
     .collapsible-header,
     .collapsible-body {
       border: none;
+      border-radius: 20px;
     }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -212,17 +214,223 @@
         <div class="row">
           <div class="col s12">
             <ul class="tabs tabs-fixed-width">
-              <!-- <li class="tab"><a href="#ind" class="blue-grey darken-4 amber-text text-accent-2">
-                  <h6>
-                    <img src="images/Red.gif" width="15px" height="15px">IND TOUR<br> OF NZ</h6>
-                </a></li> -->
+              <li class="tab"><a href="#ind" class="blue-grey darken-4 amber-text text-accent-2">
+                  <h6>IND TOUR OF NZ
+                    <!--br><img src="images/Red.gif" width="12px" height="12px"> <span class="red-text"><b>LIVE</b></span-->
+                  </h6>
+                </a></li>
               <li class="tab"><a href="#icc" class="active blue-grey darken-4 amber-text text-accent-2">
                   <h6>ICC WCT20 2022
-                    <br><img src="images/Red.gif" width="12px" height="12px"> <span class="red-text"><b>LIVE</b></span>
+                    <!--br><img src="images/Red.gif" width="12px" height="12px"> <span class="red-text"><b>LIVE</b></span-->
                   </h6>
                 </a></li>
               <div class="indicator amber accent-3"></div>
             </ul>
+          </div>
+          <div class="col s12" id="ind">
+            <div class="row"><br>
+              <div class="col s12 m12 l8 offset-l2">
+                <iframe src="https://www.cricket.com/match-score/213900/scorecard" width="100%" height="150px"
+                  scrolling="no"></iframe>
+              </div>
+            </div>
+            <ul class="collapsible blue-grey darken-4 white-text" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header active blue-grey darken-4"><b>HEAD TO HEAD (IN T20s)</b></div>
+                <div class="collapsible-body">
+                  <table class="centered white-text">
+                    <tbody>
+                      <tr>
+                        <td><img src="https://images.cricket.com/teams/5_flag_safari.png" alt="NZ" width="35px"
+                            height="25px"><br>NZ</td>
+                        <td><b><i class="fa-solid fa-caret-left"></i> TEAMS <i class="fa-solid fa-caret-right"></i></b>
+                        </td>
+                        <td><img src="https://images.cricket.com/teams/4_flag_safari.png" alt="IND" width="35px"
+                            height="25px"><br>IND</td>
+                      </tr>
+                      <tr>
+                        <td><img src="https://images.cricket.com/players/4330_headshot_safari.png" alt="NZ" width="56px"
+                            height="80px"><br>Kane Williamson</td>
+                        <td><b>VS</b></td>
+                        <td><img src="https://images.cricket.com/players/63751_headshot_safari.png" alt="IND"
+                            width="56px" height="80px"><br>Hardik Pandya</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" class="amber-text text-accent-2">
+                          <hr><br>*Before 1st T20</td>
+                      </tr>
+                      <tr>
+                        <td><b>WON: 9*</b><br>45%</td>
+                        <!-- <td><b>WON: 49*</b><br>45%</td> -->
+                        <td><b>MATCHES: 20*</b><br>TIE/ NR/ DRAW: 0</td>
+                        <!-- <td><b>MATCHES: 110*</b><br>TIE/ NR/ DRAW: 6</td> -->
+                        <td><b>WON: 11*</b><br>55%</td>
+                        <!-- <td><b>WON: 55*</b><br>50%</td> -->
+                      </tr>
+                      <tr>
+                        <td><b style="font-size: x-large;">&#10116;</b></td>
+                        <!-- <td><b>2</b></td> -->
+                        <td><b><i class="fa-solid fa-caret-left"></i> ICC RANK
+                            <i class="fa-solid fa-caret-right"></i></b></td>
+                        <td><b style="font-size: x-large;">&#10112;</b></td>
+                        <!-- <td><b>3</b></td> -->
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header blue-grey darken-4"><b>SQUADS (IND tour of NZ)</b></div>
+                <div class="collapsible-body">
+                  <h5><b>NEW ZEALAND (IN T20s):</b></h5>
+                  <h6></h6>
+                  <h5><b>INDIA (IN T20s):</b></h5>
+                  <h6>HARDIK PANDYA (c), Shreyas Iyer, Shubman Gill, Suryakumar Yadav, Deepak Hooda,<br>
+                    Washington Sundar, Ishan Kishan, Rishabh Pant, Sanju Samson, Arshdeep Singh,<br>
+                    Bhuvneshwar Kumar, Harshal Patel, Kuldeep Yadav, Mohammed Siraj, Umran Malik,<br>
+                    Yuzvendra Chahal</h6>
+                  <hr>
+                  <h5><b>NEW ZEALAND (IN ODIs):</b></h5>
+                  <h6></h6>
+                  <h5><b>INDIA (IN ODIs):</b></h5>
+                  <h6>SHIKHAR DHAWAN (c), Shreyas Iyer, Shubman Gill, Suryakumar Yadav, Deepak Hooda,<br>
+                    Shahbaz Ahmed, Washington Sundar, Rishabh Pant, Sanju Samson, Arshdeep Singh,<br>
+                    Deepak Chahar, Kuldeep Sen, Kuldeep Yadav, Shardul Thakur, Umran Malik,<br>
+                    Yuzvendra Chahal</h6>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header blue-grey darken-4"><b>SQUADS (IND tour of BAN)</b></div>
+                <div class="collapsible-body">
+                  <h5><b>BANGLADESH (IN ODIs):</b></h5>
+                  <h6></h6>
+                  <h5><b>INDIA (IN ODIs):</b></h5>
+                  <h6>ROHIT SHARMA (c), KL Rahul, Rahul Tripathi, Rajat Patidar, Shikhar Dhawan,<br>
+                    Shreyas Iyer, Virat Kohli, Axar Patel, Ravindra Jadeja, Washington Sundar,<br>
+                    Ishan Kishan, Rishabh Pant, Deepak Chahar, Mohammad Shami, Mohammed Siraj,<br>
+                    Shardul Thakur, Yash Dayal</h6>
+                  <hr>
+                  <h5><b>BANGLADESH (IN TESTs):</b></h5>
+                  <h6></h6>
+                  <h5><b>INDIA (IN TESTs):</b></h5>
+                  <h6>ROHIT SHARMA (c), Cheteshwar Pujara, KL Rahul, Shreyas Iyer, Shubman Gill,<br>
+                    Virat Kohli, Axar Patel, Ravichandran Ashwin, Ravindra Jadeja, Rishabh Pant,<br>
+                    Srikar Bharat, Kuldeep Yadav, Mohammad Shami, Mohammed Siraj, Shardul Thakur,<br>
+                    Umesh Yadav</h6>
+                </div>
+              </li>
+            </ul>
+            <h5 class="amber-text text-accent-2"><b>SCHEDULES</b></h5>
+            <table class="centered white-text">
+              <tbody>
+                <tr>
+                  <td class="grey darken-4"><b>INDIA TOUR OF NEW ZEALAND [3 T20s, 3 ODIs]</b></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="row">
+                      <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                        <h6>Nov 18, 12:00 IST</h6>
+                        <hr>
+                        <h6>1st T20</h6>
+                        <h6><i class="fa-solid fa-map-marker-alt"></i> Wellington</h6>
+                        <h6><a href="#nzs01" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
+                            Scores</a></h6>
+                      </div>
+                      <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                        <h6>Nov 20, 12:00 IST</h6>
+                        <hr>
+                        <h6>2nd T20</h6>
+                        <h6><i class="fa-solid fa-map-marker-alt"></i> Mount Maunganui</h6>
+                        <h6><a href="#nzs02" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
+                            Scores</a></h6>
+                      </div>
+                      <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                        <h6>Nov 22, 12:00 IST</h6>
+                        <hr>
+                        <h6>3rd T20</h6>
+                        <h6><i class="fa-solid fa-map-marker-alt"></i> Napier</h6>
+                        <h6><a href="#nzs03" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
+                            Scores</a></h6>
+                      </div>
+                      <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                        <h6>Nov 25, 07:00 IST</h6>
+                        <hr>
+                        <h6>1st ODI</h6>
+                        <h6><i class="fa-solid fa-map-marker-alt"></i> Auckland</h6>
+                        <h6><a href="#nzs04" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
+                            Scores</a></h6>
+                      </div>
+                      <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                        <h6>Nov 27, 07:00 IST</h6>
+                        <hr>
+                        <h6>2nd ODI</h6>
+                        <h6><i class="fa-solid fa-map-marker-alt"></i> Hamilton</h6>
+                        <h6><a href="#nzs05" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
+                            Scores</a></h6>
+                      </div>
+                      <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                        <h6>Nov 30, 07:00 IST</h6>
+                        <hr>
+                        <h6>3rd ODI</h6>
+                        <h6><i class="fa-solid fa-map-marker-alt"></i> Christchurch</h6>
+                        <h6><a href="#nzs06" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
+                            Scores</a></h6>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="grey darken-4"><b>INDIA TOUR OF BANGLADESH [3 ODIs, 2 TESTs]</b></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="row">
+                      <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                        <h6>Dec 4, 12:30 IST</h6>
+                        <hr>
+                        <h6>1st ODI</h6>
+                        <h6><i class="fa-solid fa-map-marker-alt"></i> Mirpur</h6>
+                        <h6><a href="#bns01" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
+                            Scores</a></h6>
+                      </div>
+                      <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                        <h6>Dec 7, 12:30 IST</h6>
+                        <hr>
+                        <h6>2nd ODI</h6>
+                        <h6><i class="fa-solid fa-map-marker-alt"></i> Mirpur</h6>
+                        <h6><a href="#bns02" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
+                            Scores</a></h6>
+                      </div>
+                      <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                        <h6>Dec 10, 12:30 IST</h6>
+                        <hr>
+                        <h6>3rd ODI</h6>
+                        <h6><i class="fa-solid fa-map-marker-alt"></i> Mirpur</h6>
+                        <h6><a href="#bns03" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
+                            Scores</a></h6>
+                      </div>
+                      <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                        <h6>Dec 14-18, 09:30 IST</h6>
+                        <hr>
+                        <h6>1st TEST</h6>
+                        <h6><i class="fa-solid fa-map-marker-alt"></i> Chattogram</h6>
+                        <h6><a href="#bns04" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
+                            Scores</a></h6>
+                      </div>
+                      <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                        <h6>Dec 22-26, 09:30 IST</h6>
+                        <hr>
+                        <h6>2nd TEST</h6>
+                        <h6><i class="fa-solid fa-map-marker-alt"></i> Mirpur</h6>
+                        <h6><a href="#bns05" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
+                            Scores</a></h6>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div class="col s12" id="icc">
             <div class="modal blue-grey darken-4 white-text" id="wct01">
@@ -4598,26 +4806,108 @@
             <div class="modal blue-grey darken-4 white-text" id="wct53">
               <div class="modal-content">
                 <h6 class="white-text"><b>TOSS</b>: AFG opted to field</h6>
-                <h5 class="amber-text text-accent-2"><b>AUSTRALIA</b>: ( Overs)</h5>
+                <h5 class="amber-text text-accent-2"><b>AUSTRALIA</b>: 168/8 (20 Overs)</h5>
                 <table class="bordered white-text">
                   <tr>
-                    <td></td>
-                    <td></td>
+                    <td>Warner (b Naveen)</td>
+                    <td>25 runs (18 balls, 4s:5, SR:138.89)</td>
+                  </tr>
+                  <tr>
+                    <td>Green (c Gulbadin b Farooqi)</td>
+                    <td>3 runs (2 balls, SR:150)</td>
+                  </tr>
+                  <tr>
+                    <td>Marsh (c Gurbaz b Mujeeb)</td>
+                    <td>45 runs (31 balls, 4s:3, 6s:2, SR:145.16)</td>
+                  </tr>
+                  <tr>
+                    <td>Smith (lbw Naveen)</td>
+                    <td>4 runs (4 balls, 4s:1, SR:100) </td>
+                  </tr>
+                  <tr>
+                    <td>Stoinis (c Ghani b Rashid)</td>
+                    <td>25 runs (21 balls, 6s:2, SR:119.05)</td>
+                  </tr>
+                  <tr>
+                    <td>Maxwell</td>
+                    <td>54* runs (32 balls, 4s:6, 6s:2, SR:168.75)</td>
+                  </tr>
+                  <tr>
+                    <td>Wade (b Farooqi)</td>
+                    <td>6 runs (8 balls, 4s:1, SR:75)</td>
+                  </tr>
+                  <tr>
+                    <td>Cummins (c Rashid b Naveen)</td>
+                    <td>0 runs (2 balls)</td>
+                  </tr>
+                  <tr>
+                    <td>Richardson (run out Naveen)</td>
+                    <td>1 run (1 ball, SR:100)</td>
+                  </tr>
+                  <tr>
+                    <td>Zampa</td>
+                    <td>1* run (1 ball, SR:100)</td>
+                  </tr>
+                  <tr>
+                    <td><b>Extras</b></td>
+                    <td>4 (lb 2, wd 2)</td>
                   </tr>
                 </table>
-                <h6><b>Did not bat</b>:
-                  <br><b>Fall of wickets</b>: </h6>
-                <h6 class="left-align"></h6>
-                <h5 class="amber-text text-accent-2"><b>AFGHANISTAN</b>: ( Overs)</h5>
+                <h6><b>Did not bat</b>: Hazlewood
+                  <br><b>Fall of wickets</b>: 22/1 (Green), 50/2 (Warner), 54/3 (Smith), 86/4 (Marsh), 139/5 (Stoinis),
+                  155/6 (Wade), 156/7 (Cummins), 159/8 (Richardson)
+                </h6>
+                <h6 class="left-align">Farooqi &#8227; 4-0-29-2<br>Mujeeb &#8227; 4-0-42-1<br>Naveen &#8227;
+                  4-0-21-3<br>
+                  Gulbadin &#8227; 3-0-31-0<br>Rashid &#8227; 4-0-29-1<br>Nabi &#8227; 1-0-14-0</h6>
+                <h5 class="amber-text text-accent-2"><b>AFGHANISTAN</b>: 164/7 (20 Overs)</h5>
                 <table class="bordered white-text">
                   <tr>
-                    <td></td>
-                    <td></td>
+                    <td>Gurbaz (c Warner b Richardson)</td>
+                    <td>30 runs (17 balls, 4s:2, 6s:2, SR:176.47)</td>
+                  </tr>
+                  <tr>
+                    <td>Ghani (c Cummins b Hazlewood)</td>
+                    <td>2 runs (7 balls, SR:28.57)</td>
+                  </tr>
+                  <tr>
+                    <td>Zadran (c Marsh b Zampa)</td>
+                    <td>26 runs (33 balls, 4s:2, SR:78.79)</td>
+                  </tr>
+                  <tr>
+                    <td>Gulbadin (run out Maxwell)</td>
+                    <td>39 runs (23 balls, 4s:3, 6s:2, SR:169.57)</td>
+                  </tr>
+                  <tr>
+                    <td>Nabi (c Warner b Hazlewood)</td>
+                    <td>1 run (2 balls, SR:50)</td>
+                  </tr>
+                  <tr>
+                    <td>Najibullah (c Maxwell b Zampa)</td>
+                    <td>0 runs (2 balls)</td>
+                  </tr>
+                  <tr>
+                    <td>Rasooli (run out Wade/Stoinis)</td>
+                    <td>15 runs (13 balls, 4s:1, SR:115.38)</td>
+                  </tr>
+                  <tr>
+                    <td>Rashid</td>
+                    <td>48* runs (23 balls, 4s:3, 6s:4, SR:208.70)</td>
+                  </tr>
+                  <tr>
+                    <td>Naveen</td>
+                    <td>0* runs (0 balls)</td>
+                  </tr>
+                  <tr>
+                    <td><b>Extras</b></td>
+                    <td>3 (wd 3)</td>
                   </tr>
                 </table>
-                <h6><b>Did not bat</b>:
-                  <br><b>Fall of wickets</b>: </h6>
-                <h6 class="left-align"></h6>
+                <h6><b>Did not bat</b>: Mujeeb, Farooqi
+                  <br><b>Fall of wickets</b>: 15/1 (Ghani), 40/2 (Gurbaz), 99/3 (Gulbadin), 99/4 (Zadran), 99/5
+                  (Najibullah), 103/6 (Nabi)</h6>
+                <h6 class="left-align">Hazlewood &#8227; 4-0-33-2<br>Cummins &#8227; 4-0-22-0<br>Stoinis &#8227;
+                  2-0-26-0<br>Richardson &#8227; 4-0-48-1<br>Zampa &#8227; 4-0-22-2<br>Green &#8227; 2-0-13-0</h6>
               </div>
             </div>
             <div class="modal blue-grey darken-4 white-text" id="wct54">
@@ -5843,7 +6133,7 @@
                             Scores</a></h6>
                       </div>
                       <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
-                        <h6> &#10151; Nov 4, 13:30 IST</h6>
+                        <h6>Nov 4, 13:30 IST</h6>
                         <hr>
                         <h6 class="col s4 m4 l4"><img src="https://images.cricket.com/teams/1_flag_safari.png" alt="AUS"
                             width="35px" height="25px"><br><b>AUS</b></h6>
