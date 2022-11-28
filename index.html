@@ -40,47 +40,6 @@
   <link rel="icon" type="image/png" sizes="512x512" href="images/picture1.png">
   <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="images/picture1.png">
   <style>
-    .sidenav {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: #f5f5f5;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 80px;
-      z-index: 950;
-    }
-
-    .sidenav a {
-      padding: 8px 8px 8px 10px;
-      text-decoration: none;
-      font-size: 25px;
-      color: black;
-      display: block;
-      transition: 0.3s;
-    }
-
-    .sidenav a:hover {
-      color: #818181;
-    }
-
-    .sidenav .closebtn {
-      position: absolute;
-      top: 5px;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 10px;
-    }
-
-    @media screen and (max-height: 450px) {
-      .sidenav a {
-        font-size: 18px;
-      }
-    }
-
     @font-face {
       font-family: 'SamsungOne 400';
       src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
@@ -143,67 +102,15 @@
 
 <body onload="location.href='#view'">
   <main class="containr">
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <ul class="collection left-align container" style="border-width: 0px;">
-        <li class="collection-item avatar grey lighten-3 oui-bubble z-depth-1" style="cursor: pointer;"
-          onclick="location.href='cricint.html'">
-          <a href="#!"><i class="fas fa-globe circle blue darken-4"></i></a>
-          <span style="font-size: x-large;">International Schedule</span><br>
-          <span>Schedule of all teams except India</span>
-        </li><br>
-        <li class="collection-item avatar grey lighten-3 oui-bubble z-depth-1" style="cursor: pointer;"
-          onclick="location.href='iplhome.html'">
-          <a href="#!"><i class="fas fa-trophy circle blue darken-4"></i></a>
-          <span style="font-size: x-large;">IPL Schedule</span><br>
-          <span>Indian Premier League Schedule page</span>
-        </li><br>
-        <li class="collection-item avatar grey lighten-3 oui-bubble z-depth-1" style="cursor: pointer;"
-          onclick="location.href='iccresults.html'">
-          <a href="#!"><i class="fas fa-list circle blue darken-4"></i></a>
-          <span style="font-size: x-large;">ICC Results</span><br>
-          <span>Results of various ICC/ ACC tournaments</span>
-        </li><br>
-        <li class="collection-item avatar grey lighten-3 oui-bubble z-depth-1" style="cursor: pointer;"
-          onclick="location.href='results.html'">
-          <a href="#!"><i class="fas fa-list-alt circle blue darken-4"></i></a>
-          <span style="font-size: x-large;">India's Results</span><br>
-          <span>Results of India's Matches</span>
-        </li><br>
-        <li class="collection-item avatar grey lighten-3 oui-bubble z-depth-1" style="cursor: pointer;"
-          onclick="location.href='about.html'">
-          <a href="#!"><i class="fas fa-info circle blue darken-4"></i></a>
-          <span style="font-size: x-large;">About</span><br>
-          <span>About this Website</span>
-        </li>
-        <li class="collection-item transparent"></li>
-      </ul>
-    </div>
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "100%";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-    </script>
     <div class="oui-viewing center-align">
       <h4>One UI Cricket</h4>
     </div>
     <div id="view"></div><br>
     <div class="row">
-      <div class="col s1 m1 l1 left-align show-on-small hide-on-med-and-up" style="font-size: x-large;">
-        <a href="javascript:openNav()" class="tooltipped black-text" data-position="top" data-delay="50"
-          data-tooltip="Menu">&#9776;</a></div>
-      <div class="col s11 m11 l11"></div>
-      <div class="show-on-medium-and-up hide-on-small-only center" style="font-size: large;">
-        <a href="#!" class="col m2 l2 blue-text text-darken-4"><span id="curr">Home</span></a>
-        <a href="cricint.html" class="col m2 l2 black-text">Int'l<br>Schedule</a>
-        <a href="iplhome.html" class="col m2 l2 black-text">IPL<br>Schedule</a>
-        <a href="iccresults.html" class="col m2 l2 black-text">ICC<br>Results</a>
-        <a href="results.html" class="col m2 l2 black-text">India's<br>Results</a>
-        <a href="about.html" class="col m2 l2 black-text">About</a>
+      <div class="center" style="font-size: large;">
+        <a href="#!" class="col s4 m4 l4 blue-text text-darken-4"><span id="curr">Home</span></a>
+        <a href="results.html" class="col s4 m4 l4 black-text">Results/<br>Archives</a>
+        <a href="about.html" class="col s4 m4 l4 black-text">About</a>
       </div>
     </div>
     <div class="oui-interaction center-align">
@@ -1505,7 +1412,7 @@
                   <td>
                     <div class="row">
                       <div class="card-panel blue-grey darken-4 white-text col s12 m12 l6 z-depth-2">
-                        <h6>1st T20: Nov 18, 12:00 IST</h6>
+                        <h6>1st T20: Nov 18, 12:00 IST<br><i class="fa-solid fa-map-marker-alt"></i> Wellington</h6>
                         <hr>
                         <h6 class="col s6 m6 l6">
                           <img src="https://images.cricket.com/teams/5_flag_safari.png" width="20px" height="12px">
@@ -1516,12 +1423,12 @@
                           <b>IND</b></h6>
                         <h6 class="col s6 m6 l6">-</h6>
                         <h6><b>Match</b> Cancelled</h6>
-                        <h6><i class="fa-solid fa-map-marker-alt"></i> Wellington</h6>
                         <h6><a href="#nzs01" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
                             Scores</a></h6>
                       </div>
                       <div class="card-panel blue-grey darken-4 white-text col s12 m12 l6 z-depth-2">
-                        <h6>2nd T20: Nov 20, 12:00 IST</h6>
+                        <h6>2nd T20: Nov 20, 12:00 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mount Maunganui
+                        </h6>
                         <hr>
                         <h6 class="col s6 m6 l6">
                           <img src="https://images.cricket.com/teams/5_flag_safari.png" width="20px" height="12px">
@@ -1532,12 +1439,11 @@
                           <b>IND</b></h6>
                         <h6 class="col s6 m6 l6">191/6 (20)</h6>
                         <h6><b>IND</b> won by 65 RUNS</h6>
-                        <h6><i class="fa-solid fa-map-marker-alt"></i> Mount Maunganui</h6>
                         <h6><a href="#nzs02" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
                             Scores</a></h6>
                       </div>
                       <div class="card-panel blue-grey darken-4 white-text col s12 m12 l6 z-depth-2">
-                        <h6>3rd T20: Nov 22, 12:00 IST</h6>
+                        <h6>3rd T20: Nov 22, 12:00 IST<br><i class="fa-solid fa-map-marker-alt"></i> Napier</h6>
                         <hr>
                         <h6 class="col s6 m6 l6">
                           <img src="https://images.cricket.com/teams/5_flag_safari.png" width="20px" height="12px">
@@ -1548,12 +1454,11 @@
                           <b>IND</b></h6>
                         <h6 class="col s6 m6 l6">75/4 (9)</h6>
                         <h6><b>Match</b> Tied (D/L)</h6>
-                        <h6><i class="fa-solid fa-map-marker-alt"></i> Napier</h6>
                         <h6><a href="#nzs03" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
                             Scores</a></h6>
                       </div>
                       <div class="card-panel blue-grey darken-4 white-text col s12 m12 l6 z-depth-2">
-                        <h6>1st ODI: Nov 25, 07:00 IST</h6>
+                        <h6>1st ODI: Nov 25, 07:00 IST<br><i class="fa-solid fa-map-marker-alt"></i> Auckland</h6>
                         <hr>
                         <h6 class="col s6 m6 l6">
                           <img src="https://images.cricket.com/teams/5_flag_safari.png" width="20px" height="12px">
@@ -1564,12 +1469,11 @@
                           <b>IND</b></h6>
                         <h6 class="col s6 m6 l6">306/7</h6>
                         <h6><b>NZ</b> won by 7 WKTS</h6>
-                        <h6><i class="fa-solid fa-map-marker-alt"></i> Auckland</h6>
                         <h6><a href="#nzs04" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
                             Scores</a></h6>
                       </div>
                       <div class="card-panel blue-grey darken-4 white-text col s12 m12 l6 z-depth-2">
-                        <h6>2nd ODI: Nov 27, 07:00 IST</h6>
+                        <h6>2nd ODI: Nov 27, 07:00 IST<br><i class="fa-solid fa-map-marker-alt"></i> Hamilton</h6>
                         <hr>
                         <h6 class="col s6 m6 l6">
                           <img src="https://images.cricket.com/teams/5_flag_safari.png" width="20px" height="12px">
@@ -1580,12 +1484,11 @@
                           <b>IND</b></h6>
                         <h6 class="col s6 m6 l6">89/1 (12.5/29)</h6>
                         <h6><b>Match</b> Cancelled</h6>
-                        <h6><i class="fa-solid fa-map-marker-alt"></i> Hamilton</h6>
                         <h6><a href="#nzs05" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
                             Scores</a></h6>
                       </div>
                       <div class="card-panel blue-grey darken-4 white-text col s12 m12 l6 z-depth-2">
-                        <h6>3rd ODI: Nov 30, 07:00 IST</h6>
+                        <h6>3rd ODI: Nov 30, 07:00 IST<br><i class="fa-solid fa-map-marker-alt"></i> Christchurch</h6>
                         <hr>
                         <h6 class="col s6 m6 l6">
                           <img src="https://images.cricket.com/teams/5_flag_safari.png" width="20px" height="12px">
@@ -1596,7 +1499,6 @@
                           <b>IND</b></h6>
                         <h6 class="col s6 m6 l6 transparent-text">-</h6>
                         <h6 class="transparent-text"><b>-</b> -</h6>
-                        <h6><i class="fa-solid fa-map-marker-alt"></i> Christchurch</h6>
                         <h6><a href="#nzs06" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
                             Scores</a></h6>
                       </div>
@@ -1610,7 +1512,7 @@
                   <td>
                     <div class="row">
                       <div class="card-panel blue-grey darken-4 white-text col s12 m12 l6 z-depth-2">
-                        <h6>1st ODI: Dec 4, 12:30 IST</h6>
+                        <h6>1st ODI: Dec 4, 12:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mirpur</h6>
                         <hr>
                         <h6 class="col s6 m6 l6">
                           <img src="https://images.cricket.com/teams/2_flag_safari.png" width="20px" height="12px">
@@ -1621,12 +1523,11 @@
                           <b>IND</b></h6>
                         <h6 class="col s6 m6 l6 transparent-text">-</h6>
                         <h6 class="transparent-text"><b>-</b> -</h6>
-                        <h6><i class="fa-solid fa-map-marker-alt"></i> Mirpur</h6>
                         <h6><a href="#bns01" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
                             Scores</a></h6>
                       </div>
                       <div class="card-panel blue-grey darken-4 white-text col s12 m12 l6 z-depth-2">
-                        <h6>2nd ODI: Dec 7, 12:30 IST</h6>
+                        <h6>2nd ODI: Dec 7, 12:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mirpur</h6>
                         <hr>
                         <h6 class="col s6 m6 l6">
                           <img src="https://images.cricket.com/teams/2_flag_safari.png" width="20px" height="12px">
@@ -1637,12 +1538,11 @@
                           <b>IND</b></h6>
                         <h6 class="col s6 m6 l6 transparent-text">-</h6>
                         <h6 class="transparent-text"><b>-</b> -</h6>
-                        <h6><i class="fa-solid fa-map-marker-alt"></i> Mirpur</h6>
                         <h6><a href="#bns02" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
                             Scores</a></h6>
                       </div>
                       <div class="card-panel blue-grey darken-4 white-text col s12 m12 l6 z-depth-2">
-                        <h6>3rd ODI: Dec 10, 12:30 IST</h6>
+                        <h6>3rd ODI: Dec 10, 12:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mirpur</h6>
                         <hr>
                         <h6 class="col s6 m6 l6">
                           <img src="https://images.cricket.com/teams/2_flag_safari.png" width="20px" height="12px">
@@ -1653,12 +1553,11 @@
                           <b>IND</b></h6>
                         <h6 class="col s6 m6 l6 transparent-text">-</h6>
                         <h6 class="transparent-text"><b>-</b> -</h6>
-                        <h6><i class="fa-solid fa-map-marker-alt"></i> Mirpur</h6>
                         <h6><a href="#bns03" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
                             Scores</a></h6>
                       </div>
                       <div class="card-panel blue-grey darken-4 white-text col s12 m12 l6 z-depth-2">
-                        <h6>1st TEST: Dec 14-18, 09:30 IST</h6>
+                        <h6>1st TEST: Dec 14-18, 09:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Chattogram</h6>
                         <hr>
                         <h6 class="col s6 m6 l6">
                           <img src="https://images.cricket.com/teams/2_flag_safari.png" width="20px" height="12px">
@@ -1669,12 +1568,11 @@
                           <b>IND</b></h6>
                         <h6 class="col s6 m6 l6 transparent-text">-</h6>
                         <h6 class="transparent-text"><b>-</b> -</h6>
-                        <h6><i class="fa-solid fa-map-marker-alt"></i> Chattogram</h6>
                         <h6><a href="#bns04" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
                             Scores</a></h6>
                       </div>
                       <div class="card-panel blue-grey darken-4 white-text col s12 m12 l6 z-depth-2">
-                        <h6>2nd TEST: Dec 22-26, 09:30 IST</h6>
+                        <h6>2nd TEST: Dec 22-26, 09:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mirpur</h6>
                         <hr>
                         <h6 class="col s6 m6 l6">
                           <img src="https://images.cricket.com/teams/2_flag_safari.png" width="20px" height="12px">
@@ -1685,7 +1583,6 @@
                           <b>IND</b></h6>
                         <h6 class="col s6 m6 l6 transparent-text">-</h6>
                         <h6 class="transparent-text"><b>-</b> -</h6>
-                        <h6><i class="fa-solid fa-map-marker-alt"></i> Mirpur</h6>
                         <h6><a href="#bns05" class="oui-button blue-grey darken-3 white-text modal-trigger">Full
                             Scores</a></h6>
                       </div>
@@ -7006,12 +6903,8 @@
                 </table>
               </div>
             </div>
-            <div class="row"><br>
-              <div class="col s12 m12 l8 offset-l2">
-                <!-- <iframe src="https://www.cricket.com/live-score/209312/scorecard" width="100%" height="150px"
-                  scrolling="no"></iframe> -->
-              </div>
-            </div>
+            <a class="oui-button amber accent-2 grey-text text-darken-4" href="iccresults.html" target="_blank">
+              Results 2022</a>
             <h5 class="amber-text text-accent-2"><b>MEN'S T20 WORLD CUP AUSTRALIA 2022 SQUADS</b></h5>
             <ul class="collapsible blue-grey darken-4 white-text" data-collapsible="accordion">
               <li>

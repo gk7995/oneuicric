@@ -12,45 +12,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css">
   <link rel="icon" href="images/OUC.ico">
   <style>
-    .sidenav {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: #f5f5f5;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 80px;
-      z-index: 950;
-    }
-
-    .sidenav a {
-      padding: 8px 8px 8px 10px;
-      text-decoration: none;
-      font-size: 25px;
-      color: black;
-      display: block;
-      transition: 0.3s;
-    }
-
-    .sidenav a:hover {
-      color: #818181;
-    }
-
-    .sidenav .closebtn {
-      position: absolute;
-      top: 5px;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 10px;
-    }
-
-    @media screen and (max-height: 450px) {
-      .sidenav a {
-        font-size: 18px;
-      }
+    html {
+      scroll-behavior: smooth;
     }
 
     @font-face {
@@ -83,30 +46,6 @@
   <script type="text/javascript" src="materialize.js"></script>
   <script>
     $(document).ready(function () {
-      // Add smooth scrolling to all links
-      $("a").on('click', function (event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function () {
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
-    $(document).ready(function () {
       $('.fixed-action-btn').openFAB();
       $('.fixed-action-btn').closeFAB();
       $('.fixed-action-btn.toolbar').openToolbar();
@@ -127,67 +66,15 @@
 
 <body onload="Materialize.fadeInImage('#image')">
   <main class="containr">
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <ul class="collection left-align container" style="border-width: 0px;">
-        <li class="collection-item avatar grey lighten-3 oui-bubble z-depth-1" style="cursor: pointer;"
-          onclick="location.href='index.html'">
-          <a href="#!"><i class="fas fa-arrow-left circle blue darken-4"></i></a>
-          <span style="font-size: x-large;">India's Schedule</span><br>
-          <span>Back to India's Schedule</span>
-        </li><br>
-        <li class="collection-item avatar grey lighten-3 oui-bubble z-depth-1" style="cursor: pointer;"
-          onclick="location.href='cricint.html'">
-          <a href="#!"><i class="fas fa-globe circle blue darken-4"></i></a>
-          <span style="font-size: x-large;">International Schedule</span><br>
-          <span>Schedule of all teams except India</span>
-        </li><br>
-        <li class="collection-item avatar grey lighten-3 oui-bubble z-depth-1" style="cursor: pointer;"
-          onclick="location.href='iplhome.html'">
-          <a href="#!"><i class="fas fa-trophy circle blue darken-4"></i></a>
-          <span style="font-size: x-large;">IPL Schedule</span><br>
-          <span>Indian Premier League Schedule page</span>
-        </li><br>
-        <li class="collection-item avatar grey lighten-3 oui-bubble z-depth-1" style="cursor: pointer;"
-          onclick="location.href='iccresults.html'">
-          <a href="#!"><i class="fas fa-list circle blue darken-4"></i></a>
-          <span style="font-size: x-large;">ICC Results</span><br>
-          <span>Results of various ICC/ ACC tournaments</span>
-        </li><br>
-        <li class="collection-item avatar grey lighten-3 oui-bubble z-depth-1" style="cursor: pointer;"
-          onclick="location.href='results.html'">
-          <a href="#!"><i class="fas fa-list-alt circle blue darken-4"></i></a>
-          <span style="font-size: x-large;">India's Results</span><br>
-          <span>Results of India's Matches</span>
-        </li>
-        <li class="collection-item transparent"></li>
-      </ul>
-    </div>
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "100%";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-    </script>
     <div class="oui-viewing center-align">
       <h4>One UI Cricket</h4>
-      <h5 class="grey-text text-darken-1">Version 2022.3.5</h5>
+      <h5 class="grey-text text-darken-1">Version 2022.3.6</h5>
     </div>
     <div class="row">
-      <div class="col s1 m1 l1 left-align show-on-small hide-on-med-and-up" style="font-size: x-large;">
-        <a href="javascript:openNav()" class="tooltipped black-text" data-position="right" data-delay="50"
-          data-tooltip="Menu">&#9776;</a></div>
-      <div class="col s11 m11 l11"></div>
-      <div class="show-on-medium-and-up hide-on-small-only center" style="font-size: large;">
-        <a href="index.html" class="col m2 l2 black-text">India's<br>Schedule</a>
-        <a href="cricint.html" class="col m2 l2 black-text">Int'l<br>Schedule</a>
-        <a href="iplhome.html" class="col m2 l2 black-text">IPL<br>Schedule</a>
-        <a href="iccresults.html" class="col m2 l2 black-text">ICC<br>Results</a>
-        <a href="results.html" class="col m2 l2 black-text">India's<br>Results</a>
-        <a href="#!" class="col m2 l2 blue-text text-darken-4"><span id="curr">About</span></a>
+      <div class="center" style="font-size: large;">
+        <a href="index.html" class="col s4 m4 l4 black-text">Home</a>
+        <a href="results.html" class="col s4 m4 l4 black-text">Results/<br>Archives</a>
+        <a href="#!" class="col s4 m4 l4 blue-text text-darken-4"><span id="curr">About</span></a>
       </div>
     </div>
     <div class="oui-interaction center-align">
@@ -215,6 +102,10 @@
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td>2022.3.6</td>
+              <td>Optimised pages & removed pages too, contents of such merged into results page</td>
+            </tr>
             <tr>
               <td>2022.3.5</td>
               <td>Prev version testing done, Added Full Scores into all WCT20 matches</td>
