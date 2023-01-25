@@ -12,47 +12,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css">
   <link rel="icon" href="images/OUC.ico">
   <style>
-    .sidenav {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: #f5f5f5;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 80px;
-      z-index: 950;
-    }
-
-    .sidenav a {
-      padding: 8px 8px 8px 10px;
-      text-decoration: none;
-      font-size: 25px;
-      color: black;
-      display: block;
-      transition: 0.3s;
-    }
-
-    .sidenav a:hover {
-      color: #818181;
-    }
-
-    .sidenav .closebtn {
-      position: absolute;
-      top: 5px;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 10px;
-    }
-
-    @media screen and (max-height: 450px) {
-      .sidenav a {
-        font-size: 18px;
-      }
-    }
-
     @font-face {
       font-family: 'SamsungOne 400';
       src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
@@ -69,8 +28,11 @@
     }
 
     .card-panel,
-    img {
-      border-radius: 15px;
+    img,
+    iframe,
+    td {
+      border: none;
+      border-radius: 20px;
     }
 
     .ser {
@@ -107,53 +69,8 @@
 
 <body onload="location.href='#view'">
   <main class="containr">
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <ul class="collection left-align container" style="border-width: 0px;">
-        <li class="collection-item avatar grey lighten-3 oui-bubble z-depth-1" style="cursor: pointer;"
-          onclick="location.href='index.html'">
-          <a href="#!"><i class="fas fa-arrow-left circle blue darken-4"></i></a>
-          <span style="font-size: x-large;">India's Schedule</span><br>
-          <span>Back to India's Schedule</span>
-        </li><br>
-        <li class="collection-item avatar grey lighten-3 oui-bubble z-depth-1" style="cursor: pointer;"
-          onclick="location.href='iplhome.html'">
-          <a href="#!"><i class="fas fa-trophy circle blue darken-4"></i></a>
-          <span style="font-size: x-large;">IPL Schedule</span><br>
-          <span>Indian Premier League Schedule page</span>
-        </li><br>
-        <li class="collection-item avatar grey lighten-3 oui-bubble z-depth-1" style="cursor: pointer;"
-          onclick="location.href='iccresults.html'">
-          <a href="#!"><i class="fas fa-list circle blue darken-4"></i></a>
-          <span style="font-size: x-large;">ICC Results</span><br>
-          <span>Results of various ICC/ ACC tournaments</span>
-        </li><br>
-        <li class="collection-item avatar grey lighten-3 oui-bubble z-depth-1" style="cursor: pointer;"
-          onclick="location.href='results.html'">
-          <a href="#!"><i class="fas fa-list-alt circle blue darken-4"></i></a>
-          <span style="font-size: x-large;">India's Results</span><br>
-          <span>Results of India's Matches</span>
-        </li><br>
-        <li class="collection-item avatar grey lighten-3 oui-bubble z-depth-1" style="cursor: pointer;"
-          onclick="location.href='about.html'">
-          <a href="#!"><i class="fas fa-info circle blue darken-4"></i></a>
-          <span style="font-size: x-large;">About</span><br>
-          <span>About this Website</span>
-        </li>
-        <li class="collection-item transparent"></li>
-      </ul>
-    </div>
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "100%";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-    </script>
     <div class="oui-viewing center-align">
-      <h4>Video Highlights & Special Series</h4>
+      <h4>Video Highlights & ONEUICRIC Specials</h4>
     </div>
     <div id="view"></div><br>
     <div class="row">
@@ -171,13 +88,445 @@
           <div class="col s12">
             <ul class="tabs tabs-fixed-width">
               <li class="tab"><a href="#spl" class="blue-grey darken-4 amber-text text-accent-3">
-                  <h6>SPECIAL SERIES</h6>
+                  <h6>ONEUICRIC<br>SPECIALS</h6>
                 </a></li>
-              <li class="tab"><a href="#hls" class="blue-grey darken-4 amber-text text-accent-3">
-                  <h6>HIGHLIGHTS</h6>
+              <li class="tab"><a href="#hls" class="active blue-grey darken-4 amber-text text-accent-3">
+                  <h6>VIDEO<br>HIGHLIGHTS</h6>
                 </a></li>
               <div class="indicator amber accent-3"></div>
             </ul>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="spl01">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/nihAhU6aosA"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="spl02">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/ZdYlkwGXB-I"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="spl03">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/PApbw8ohhG8"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="spl04">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/WeF_l35X8fc"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="spl05">
+          <div class="modal-content">
+            <h5 class="white-text">VIDEO NOT AVAILABLE</h5>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls23">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/QmZF0IQC#83S8Sx5tR2_HiUXV3die9Hq4xUWN1KZNpNcwlNzFyPs" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls24">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/1yZlnYxI#ozyMDFrPWLW0BAzPWZO-VrmkkQtxjMGGL0cmJx23l94" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls25">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/73ercXgTwgQ"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe><br>
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/ZuPNZxUDKII"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe><br>
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/Lx53e78EzeE"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe><br>
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/a6byJqt6Grs"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe><br>
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/WYlhDmjMWE0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls26">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/sy3u_KCspSE"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls27">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/2oRp7GBjfVM"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls28">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/MaIGWBDaHow"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls29">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/8iXHBo_c0YA"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls30">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/Zq-OtH4XisM"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls31">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/gL_LIAm22Mc"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls32">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/nBUQk_pvrrE"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls33">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/kCN-b1306Eo"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls34">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/W3VIs796UQ4"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls35">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/hNyvfsTSBM0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls36">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/_W9CG-tUbJg"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls37">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/TFy6ldA4-Xs"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls38">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/To6ye-7Vors"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls39">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/8VoaLGgtHu4"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls40">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/4SshmVFDCMg"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls41">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/3NDkPw7Ji1g"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls42">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/k6UN_a-y6kg"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls43">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/8rhgmaxA#3cQxianvg8RFyv6-t7Z0mRWQ7R5irpMeTqG4Ulkynlk" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls44">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/Q3Qi2AjS#YbX6Q0eb0v1E3eAPcnscrPrD2TWLovPL8JL3PMbp6Yw" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls45">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/pvwxBaJD#7edKUdaQBFRAIfat82Qc3-ID4--RMjZTjDNsma9kOLY" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls46">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/J3pH3LYK#yT6o3jtneuHjUDWrG4UeTgBqclHKTGGaOx3efFfT4_4" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls47">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/Jyw3gJTC#Blvb-fZi_hCtcTLNGH3HySTBHM0Mn4qJk5LAi3ldYWM" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls48">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/luJ1SZjC#Eg2g76FLQ50m4bFjvXB6doAlL3CpQ4ZcajcmyMAI0I4" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls49">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/YjwQBSwD#jKHMRxSK1Ixrp2j7u4cZSUtpD29qBDI8o7TGlfAc8Ew" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls50">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/EjoHmKRZ#ROvR5eVQ3fJPgIMcPurDVCZUVSJ-aK2RpFkSDxd5CUw" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls51">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/h6IiDKQB#f_JXSEuNk4yuZuN7ryZ5KBtVFUNeneyb-5VeuXJmh9w" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls52">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/NDlW5ihu3js"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls53">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/pFPrxL8ZidY"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls55">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/01mUTa8MJmA"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls56">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/52QY8TOHg6Q"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls57">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/FEemX5zaiwM"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls58">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/RIiNXO_cFJE"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls59">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/LxAJjgqjt_U"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls60">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/9X7Lc7TpARk"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls61">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/5TSFMP6TQ2o"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <br>
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/xbPq9Xv1Q5I"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <br>
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/OVxocMZQ39g"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <br>
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/JCXIxhs7gKA"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls62">
+          <div class="modal-content">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/dzunXKiiEaY"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <br>
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/PX8oig02xX0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <br>
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/ZVHE3aVofH0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <br>
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/zscadYQCfyk"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <br>
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/zFVxNhtUFXw"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls63">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/szhEAQiQ#BsatPY-qahur6mqvbfmBF3G2W8fZrVLbqBz6KfjMY5I" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls64">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/cmAgzIQC#3tOCdrhy6KVcz-lZd_mZVRU-Ra2OPd9HqBe5Bae4rww" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls65">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/djxzXZgL#GX4cLvnf3Jn_qmBBEcgGEV7XIAQ6LdN0WeQsFHqiRbw" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls66">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/9qhE0DaA#kLtbCfyGTX8wox5EGcgmmuN9_dqY47gThjEyrzKb9M0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls67">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/J2RBWDLD#4DO6vWq4OHAmKsNwRtDUejWkD7k3ipQWPEzZBtoR_os" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls68">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/9nRixYDR#PxXEptTwZgw_hHN-ARQ0sl7-3Tn3OsMxHX6dlXnGY4Y" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls71">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/ZjowSBbA#Yu9EXgq8Tgn1b6yLuQ9AJbq2aNY6Vuh7laBL-9-3uyY" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls70">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/5rhDgZoL#7kGFziH-BnvOggKLvJur0jL5_UczvLGsNUsZGqxvp-A" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal blue-grey darken-4 white-text" id="hls69">
+          <div class="modal-content">
+            <iframe width="100%" height="360" frameborder="0"
+              src="https://mega.nz/embed/F25WEKbS#8_nYxyPB-m-eggRjvlLzHtmY-0rWQxeETPrx-lrHmiQ" allowfullscreen></iframe>
           </div>
         </div>
         <div id="spl">
@@ -185,52 +534,137 @@
           <img src="images/spl/1.jpg" width="100%" class="responsive-img">
           <div class="row">
             <div class="col s4 m4 l4">
-              <a href="#!" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+              <a href="#spl01" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
             </div>
             <div class="col s4 m4 l4">
-              <a href="#!" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+              <a href="#spl02" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
             </div>
             <div class="col s4 m4 l4">
-              <a href="#!" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+              <a href="#spl03" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
             </div>
           </div>
           <img src="images/spl/2.jpg" width="100%" class="responsive-img">
           <div class="row">
             <div class="col s4 m4 l4">
-              <a href="#!" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+              <a href="#spl04" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
             </div>
             <div class="col s4 m4 l4">
-              <a href="#!" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+              <a href="#spl05" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
             </div>
             <div class="col s4 m4 l4">
-              <a href="#!" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+              <a href="#hls58" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
             </div>
           </div>
           <img src="images/spl/3.jpg" width="100%" class="responsive-img">
-          <a href="#!" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+          <a href="#hls71" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
         </div>
         <div id="hls">
-          <h5><b>Coming Soon</b></h5>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/nihAhU6aosA" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/ZdYlkwGXB-I" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/PApbw8ohhG8" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/WeF_l35X8fc" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/RIiNXO_cFJE" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+          <table class="centered white-text">
+            <tbody>
+              <tr id="nzs23">
+                <td class="grey darken-4"><b>NEW ZEALAND TOUR OF INDIA [3 ODIs, 3 T20s]</b></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="row">
+                    <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                      <h6>1st ODI: Jan 18</h6>
+                      <hr>
+                      <h6><a href="#hls71" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                      <h6>2nd ODI: Jan 21</h6>
+                      <hr>
+                      <h6><a href="#hls70" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                      <h6>3rd ODI: Jan 24</h6>
+                      <hr>
+                      <h6><a href="#hls69" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+                    </div>
+                    <!-- <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                      <h6>1st T20: Jan 27</h6>
+                      <hr>
+                      <h6><a href="#hls74" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+                    </div> -->
+                    <!-- <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                      <h6>2nd T20: Jan 29</h6>
+                      <hr>
+                      <h6><a href="#hls73" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+                    </div> -->
+                    <!-- <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                      <h6>3rd T20: Feb 1</h6>
+                      <hr>
+                      <h6><a href="#hls72" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+                    </div> -->
+                  </div>
+                </td>
+              </tr>
+              <tr id="sls23">
+                <td class="grey darken-4"><b>SRI LANKA TOUR OF INDIA [3 T20s, 3 ODIs]</b></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="row">
+                    <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                      <h6>1st T20: Jan 3</h6>
+                      <hr>
+                      <h6><a href="#hls65" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                      <h6>2nd T20: Jan 5</h6>
+                      <hr>
+                      <h6><a href="#hls64" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                      <h6>3rd T20: Jan 7</h6>
+                      <hr>
+                      <h6><a href="#hls63" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                      <h6>1st ODI: Jan 10</h6>
+                      <hr>
+                      <h6><a href="#hls68" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                      <h6>2nd ODI: Jan 12</h6>
+                      <hr>
+                      <h6><a href="#hls67" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s6 m4 l3 z-depth-2">
+                      <h6>3rd ODI: Jan 15</h6>
+                      <hr>
+                      <h6><a href="#hls66" class="oui-button blue-grey darken-3 white-text modal-trigger">Watch</a></h6>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr id="bns22">
+                <td class="grey darken-4"><b>INDIA TOUR OF BANGLADESH [3 ODIs, 2 TESTs]</b></td>
+              </tr>
+              <tr id="nzs22">
+                <td class="grey darken-4"><b>INDIA TOUR OF NEW ZEALAND [3 T20s, 3 ODIs]</b></td>
+              </tr>
+              <tr id="sas22">
+                <td class="grey darken-4"><b>INDIA TOUR OF SOUTH AFRICA [3 T20s, 3 ODIs]</b></td>
+              </tr>
+              <tr id="aus22">
+                <td class="grey darken-4"><b>INDIA TOUR OF AUSTRALIA [3 T20s]</b></td>
+              </tr>
+              <tr id="zis22">
+                <td class="grey darken-4"><b>INDIA TOUR OF ZIMBABWE [3 ODIs]</b></td>
+              </tr>
+              <tr id="wis22">
+                <td class="grey darken-4"><b>INDIA TOUR OF WEST INDIES [3 ODIs, 5 T20s]</b></td>
+              </tr>
+              <tr id="ens22">
+                <td class="grey darken-4"><b>INDIA TOUR OF ENGLAND [1 TEST, 3 T20s, 3 ODIs]</b></td>
+              </tr>
+              <tr id="irs22">
+                <td class="grey darken-4"><b>INDIA TOUR OF IRELAND [2 T20s]</b></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div><br>
