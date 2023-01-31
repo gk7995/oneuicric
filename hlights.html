@@ -39,6 +39,10 @@
       width: 100%;
     }
 
+    .dropdown-content {
+      border-radius: 15px;
+    }
+
     #curr {
       text-decoration: underline dotted;
       text-underline-position: under;
@@ -74,11 +78,20 @@
     </div>
     <div id="view"></div><br>
     <div class="row">
-      <div class="center" style="font-size: large;">
-        <a href="index.html" class="col s3 m3 l3 black-text">Home</a>
-        <a href="#!" class="col s3 m3 l3 blue-text text-darken-4">Video<br><span id="curr">H/Ls</span></a>
-        <a href="results.html" class="col s3 m3 l3 black-text">India's<br>Results</a>
-        <a href="about.html" class="col s3 m3 l3 black-text">About</a>
+      <div style="font-size: large;">
+        <a href="#!" class="dropdown-button col s5 m3 l2 black-text" data-belowOrigin="true" data-gutter="10"
+          data-activates="dd1">&#9776;</a>
+        <ul id="dd1" class="dropdown-content">
+          <li><a href="index.html" class="black-text"><i class="fa-solid fa-home"></i>Home</a></li>
+          <li class="divider"></li>
+          <li><a href="#!" class="blue-text text-darken-4"><i class="fa-solid fa-video"></i><span id="curr">Video
+                Highlights</span></a></li>
+          <li class="divider"></li>
+          <li><a href="results.html" class="black-text"><i class="fa-solid fa-list"></i>Results/ Archives</a>
+          </li>
+          <li class="divider"></li>
+          <li><a href="about.html" class="black-text"><i class="fa-solid fa-circle-info"></i>About</a></li>
+        </ul>
       </div>
     </div>
     <div class="oui-interaction center-align">
