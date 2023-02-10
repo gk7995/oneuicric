@@ -1,0 +1,12 @@
+CACHE MANIFEST
+# 2023-02-15 v23.3.9
+/materialize.css
+/materialize.js
+/images/OUC.ico
+/OneUI/*
+
+NETWORK:
+*
+
+FALLBACK:
+/html/ /offline.html
