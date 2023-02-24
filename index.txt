@@ -257,3 +257,1461 @@
                   </div>
                 </td>
               </tr>
+
+              
+                  <div class="row">
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 1: March 31, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Ahmedabad</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Titans</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1108_flag_safari.png" class="circle ipl">
+                        <b>Chennai Super Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl01" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 2: April 1, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mohali</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1107_flag_safari.png" class="circle ipl">
+                        <b>Punjab Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1106_flag_safari.png" class="circle ipl">
+                        <b>Kolkata Knight Riders</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 3: April 1, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Lucknow</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>Lucknow Super Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 4: April 2, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Hyderabad</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1379_flag_safari.png" class="circle ipl">
+                        <b>Sunrisers Hyderabad</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1110_flag_safari.png" class="circle ipl">
+                        <b>Rajasthan Royals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 5: April 2, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Bengaluru</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 6: April 3, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Chennai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1108_flag_safari.png" class="circle ipl">
+                        <b>Chennai Super Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>Lucknow Super Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 7: April 4, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Delhi</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Titans</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 8: April 5, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Guwahati</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1110_flag_safari.png" class="circle ipl">
+                        <b>Rajasthan Royals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1107_flag_safari.png" class="circle ipl">
+                        <b>Punjab Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 9: April 6, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Kolkata</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1106_flag_safari.png" class="circle ipl">
+                        <b>Kolkata Knight Riders</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 10: April 7, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Lucknow</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>Lucknow Super Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1379_flag_safari.png" class="circle ipl">
+                        <b>Sunrisers Hyderabad</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 11: April 8, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Guwahati</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1110_flag_safari.png" class="circle ipl">
+                        <b>Rajasthan Royals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 12: April 8, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1108_flag_safari.png" class="circle ipl">
+                        <b>Chennai Super Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 13: April 9, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Ahmedabad</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Titans</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1106_flag_safari.png" class="circle ipl">
+                        <b>Kolkata Knight Riders</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 14: April 9, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Hyderabad</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1379_flag_safari.png" class="circle ipl">
+                        <b>Sunrisers Hyderabad</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1107_flag_safari.png" class="circle ipl">
+                        <b>Punjab Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 15: April 10, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Bengaluru</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>Lucknow Super Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 16: April 11, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Delhi</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 17: April 12, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Chennai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1108_flag_safari.png" class="circle ipl">
+                        <b>Chennai Super Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1110_flag_safari.png" class="circle ipl">
+                        <b>Rajasthan Royals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 18: April 13, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mohali</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1107_flag_safari.png" class="circle ipl">
+                        <b>Punjab Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Titans</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 19: April 14, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Kolkata</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1106_flag_safari.png" class="circle ipl">
+                        <b>Kolkata Knight Riders</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1379_flag_safari.png" class="circle ipl">
+                        <b>Sunrisers Hyderabad</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 20: April 15, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Bengaluru</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 21: April 15, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Lucknow</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>Lucknow Super Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1107_flag_safari.png" class="circle ipl">
+                        <b>Punjab Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 22: April 16, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1106_flag_safari.png" class="circle ipl">
+                        <b>Kolkata Knight Riders</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 23: April 16, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Ahmedabad</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Titans</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1110_flag_safari.png" class="circle ipl">
+                        <b>Rajasthan Royals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 24: April 17, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Bengaluru</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1108_flag_safari.png" class="circle ipl">
+                        <b>Chennai Super Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 25: April 18, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Hyderabad</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1379_flag_safari.png" class="circle ipl">
+                        <b>Sunrisers Hyderabad</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 26: April 19, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Jaipur</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1110_flag_safari.png" class="circle ipl">
+                        <b>Rajasthan Royals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>Lucknow Super Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 27: April 20, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mohali</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1107_flag_safari.png" class="circle ipl">
+                        <b>Punjab Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 28: April 20, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Delhi</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1106_flag_safari.png" class="circle ipl">
+                        <b>Kolkata Knight Riders</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 29: April 21, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Chennai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1108_flag_safari.png" class="circle ipl">
+                        <b>Chennai Super Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1379_flag_safari.png" class="circle ipl">
+                        <b>Sunrisers Hyderabad</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 30: April 22, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Lucknow</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>Lucknow Super Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Titans</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 31: April 22, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1107_flag_safari.png" class="circle ipl">
+                        <b>Punjab Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 32: April 23, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Bengaluru</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1110_flag_safari.png" class="circle ipl">
+                        <b>Rajasthan Royals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 33: April 23, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Kolkata</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1106_flag_safari.png" class="circle ipl">
+                        <b>Kolkata Knight Riders</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1108_flag_safari.png" class="circle ipl">
+                        <b>Chennai Super Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 34: April 24, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Hyderabad</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1379_flag_safari.png" class="circle ipl">
+                        <b>Sunrisers Hyderabad</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 35: April 25, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Ahmedabad</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Titans</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 36: April 26, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Bengaluru</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1106_flag_safari.png" class="circle ipl">
+                        <b>Kolkata Knight Riders</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 37: April 27, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Jaipur</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1110_flag_safari.png" class="circle ipl">
+                        <b>Rajasthan Royals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1108_flag_safari.png" class="circle ipl">
+                        <b>Chennai Super Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 38: April 28, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mohali</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1107_flag_safari.png" class="circle ipl">
+                        <b>Punjab Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>Lucknow Super Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 39: April 29, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Kolkata</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1106_flag_safari.png" class="circle ipl">
+                        <b>Kolkata Knight Riders</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Titans</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 40: April 29, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Delhi</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1379_flag_safari.png" class="circle ipl">
+                        <b>Sunrisers Hyderabad</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 41: April 30, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Chennai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1108_flag_safari.png" class="circle ipl">
+                        <b>Chennai Super Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1107_flag_safari.png" class="circle ipl">
+                        <b>Punjab Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 42: April 30, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1110_flag_safari.png" class="circle ipl">
+                        <b>Rajasthan Royals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 43: May 1, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Lucknow</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>Lucknow Super Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 44: May 2, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Ahmedabad</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Titans</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 45: May 3, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mohali</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1107_flag_safari.png" class="circle ipl">
+                        <b>Punjab Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 46: May 4, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Lucknow</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>Lucknow Super Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1108_flag_safari.png" class="circle ipl">
+                        <b>Chennai Super Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 47: May 4, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Hyderabad</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1379_flag_safari.png" class="circle ipl">
+                        <b>Sunrisers Hyderabad</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1106_flag_safari.png" class="circle ipl">
+                        <b>Kolkata Knight Riders</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 48: May 5, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Jaipur</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1110_flag_safari.png" class="circle ipl">
+                        <b>Rajasthan Royals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Titans</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 49: May 6, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Chennai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1108_flag_safari.png" class="circle ipl">
+                        <b>Chennai Super Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 50: May 6, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Delhi</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 51: May 7, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Ahmedabad</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Titans</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>Lucknow Super Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 52: May 7, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Jaipur</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1110_flag_safari.png" class="circle ipl">
+                        <b>Rajasthan Royals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1379_flag_safari.png" class="circle ipl">
+                        <b>Sunrisers Hyderabad</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 53: May 8, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Kolkata</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1106_flag_safari.png" class="circle ipl">
+                        <b>Kolkata Knight Riders</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1107_flag_safari.png" class="circle ipl">
+                        <b>Punjab Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 54: May 9, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 55: May 10, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Chennai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1108_flag_safari.png" class="circle ipl">
+                        <b>Chennai Super Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 56: May 11, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Kolkata</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1106_flag_safari.png" class="circle ipl">
+                        <b>Kolkata Knight Riders</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1110_flag_safari.png" class="circle ipl">
+                        <b>Rajasthan Royals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 57: May 12, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Titans</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 58: May 13, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Hyderabad</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1379_flag_safari.png" class="circle ipl">
+                        <b>Sunrisers Hyderabad</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>Lucknow Super Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 59: May 13, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Delhi</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1107_flag_safari.png" class="circle ipl">
+                        <b>Punjab Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 60: May 14, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Jaipur</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1110_flag_safari.png" class="circle ipl">
+                        <b>Rajasthan Royals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 61: May 14, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Chennai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1108_flag_safari.png" class="circle ipl">
+                        <b>Chennai Super Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1106_flag_safari.png" class="circle ipl">
+                        <b>Kolkata Knight Riders</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 62: May 15, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Ahmedabad</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Titans</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1379_flag_safari.png" class="circle ipl">
+                        <b>Sunrisers Hyderabad</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 63: May 16, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Lucknow</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>Lucknow Super Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 64: May 17, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Dharamsala</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1107_flag_safari.png" class="circle ipl">
+                        <b>Punjab Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 65: May 18, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Hyderabad</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1379_flag_safari.png" class="circle ipl">
+                        <b>Sunrisers Hyderabad</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 66: May 19, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Dharamsala</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1107_flag_safari.png" class="circle ipl">
+                        <b>Punjab Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1110_flag_safari.png" class="circle ipl">
+                        <b>Rajasthan Royals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 67: May 20, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Delhi</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1108_flag_safari.png" class="circle ipl">
+                        <b>Chennai Super Kings</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 68: May 20, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Kolkata</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1106_flag_safari.png" class="circle ipl">
+                        <b>Kolkata Knight Riders</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>Lucknow Super Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 69: May 21, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1379_flag_safari.png" class="circle ipl">
+                        <b>Sunrisers Hyderabad</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 70: May 21, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Bengaluru</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Titans</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#ipl" class="oui-button modal-trigger deep-orange accent-3 white-text">Full
+                          Scores</a>
+                      </h6>
+                    </div>
+                  </div>
+
+                  
+                  <div class="row">
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 1: March 4, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Navi Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl01" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 2: March 5, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl02" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 3: March 5, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Navi Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>UP Warriorz</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl03" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 4: March 6, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl04" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 5: March 7, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Navi Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>UP Warriorz</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl05" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 6: March 8, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl06" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 7: March 9, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Navi Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl07" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 8: March 10, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>UP Warriorz</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl08" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 9: March 11, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Navi Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl09" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 10: March 12, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>UP Warriorz</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl10" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 11: March 13, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Navi Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl11" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 12: March 14, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl12" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 13: March 15, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Navi Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>UP Warriorz</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl13" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 14: March 16, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl14" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 15: March 18, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Navi Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>UP Warriorz</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl15" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 16: March 18, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl16" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 17: March 20, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2955_flag_safari.png" class="circle ipl">
+                        <b>Gujarat Giants</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>UP Warriorz</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl17" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 18: March 20, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Navi Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl18" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 19: March 21, 15:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Navi Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1105_flag_safari.png" class="circle ipl">
+                        <b>RC Bangalore</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1111_flag_safari.png" class="circle ipl">
+                        <b>Mumbai Indians</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl19" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>Match 20: March 21, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/2954_flag_safari.png" class="circle ipl">
+                        <b>UP Warriorz</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
+                        <b>Delhi Capitals</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl20" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>ELIMINATOR: March 24, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Navi Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="images/flag.png" class="circle ipl">
+                        <b>TBC</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="images/flag.png" class="circle ipl">
+                        <b>TBC</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl21" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                    <div class="card-panel blue-grey darken-4 white-text col s12 m12 l4 z-depth-2">
+                      <h6>FINAL: March 26, 19:30 IST<br><i class="fa-solid fa-map-marker-alt"></i> Mumbai</h6>
+                      <hr>
+                      <h6 class="col s7 m7 l7">
+                        <img src="images/flag.png" class="circle ipl">
+                        <b>TBC</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s7 m7 l7">
+                        <img src="images/flag.png" class="circle ipl">
+                        <b>TBC</b></h6>
+                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="transparent-text"><b>-</b> won by -</h6>
+                      <h6><a href="#wpl22" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
+                      </h6>
+                    </div>
+                  </div>
