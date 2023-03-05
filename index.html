@@ -118,7 +118,8 @@
     <div class="oui-viewing center-align">
       <h4>One UI Cricket</h4>
     </div>
-    <div id="view"></div><br>
+    <div></div><br>
+    <!-- <div id="view"></div><br> -->
     <div class="row">
       <div style="font-size: large;">
         <a href="#!" class="dropdown-button col s6 m3 l3 black-text" data-belowOrigin="true" data-gutter="10"
@@ -296,6 +297,12 @@
               <img src="images/mch79/6.jpg" width="100%" class="responsive-img"> -->
           </div>
         </div>
+        <div class="modal blue-grey darken-4 white-text" id="wpllive">
+          <div class="modal-content">
+            <iframe src="https://www.jiocinema.com/sports/royal-challengers-bangalore-vs-delhi-capitals/3706863"
+              width="100%" height="450px" scrolling="no"></iframe>
+          </div>
+        </div>
         <div class="modal blue-grey darken-4 white-text" id="wpl01">
           <div class="modal-content">
             <h6 class="white-text"><b>TOSS</b>:GG opted to field</h6>
@@ -319,9 +326,9 @@
             <img src="images/wpl02/2.jpg" width="100%" class="responsive-img">
             <img src="images/wpl02/3.jpg" width="100%" class="responsive-img"> -->
             <h5 class="amber-text text-accent-2"><b>DC</b></h5>
-            <!-- <img src="images/wpl02/4.jpg" width="100%" class="responsive-img">
+            <img src="images/wpl02/4.jpg" width="100%" class="responsive-img">
             <img src="images/wpl02/5.jpg" width="100%" class="responsive-img">
-            <img src="images/wpl02/6.jpg" width="100%" class="responsive-img"> -->
+            <img src="images/wpl02/6.jpg" width="100%" class="responsive-img">
           </div>
         </div>
         <div class="modal blue-grey darken-4 white-text" id="wpl03">
@@ -883,13 +890,28 @@
           </table>
         </div>
         <div class="col s12" id="wpl">
-          <div class="row"><br>
+          <!-- <div class="row"><br>
             <div class="col s12 m12 l8 offset-l2">
               <iframe src="https://www.cricket.com/match-score/221909/scorecard" width="100%" height="150px"
                 scrolling="no"></iframe>
             </div>
-          </div>
+          </div> -->
           <div class="row">
+            <ul class="collapsible blue-grey darken-4 white-text col s12 m12 l12" data-collapsible="accordion">
+              <li>
+                <span id="view"></span>
+                <div class="collapsible-header red white-text"><b>WATCH LIVE</b></div>
+                <div class="collapsible-body">
+                  <iframe src="https://www.jiocinema.com/sports/royal-challengers-bangalore-vs-delhi-capitals/3706863"
+                    width="100%" height="600px" scrolling="no" class="show-on-large hide-on-med-and-down"></iframe>
+                  <iframe src="https://www.jiocinema.com/sports/royal-challengers-bangalore-vs-delhi-capitals/3706863"
+                    width="100%" height="450px" scrolling="no"
+                    class="show-on-medium hide-on-large-only hide-on-small-only"></iframe>
+                  <iframe src="https://www.jiocinema.com/sports/royal-challengers-bangalore-vs-delhi-capitals/3706863"
+                    width="100%" height="350px" scrolling="no" class="show-on-small hide-on-med-and-up"></iframe>
+                </div>
+              </li>
+            </ul>
             <ul class="collapsible blue-grey darken-4 white-text col s12 m6 l6" data-collapsible="accordion">
               <li>
                 <div class="collapsible-header blue-grey darken-4"><b>WPL POINTS TABLE</b></div>
@@ -955,7 +977,7 @@
                       <h6 class="col s7 m7 l7">
                         <img src="https://images.cricket.com/teams/1109_flag_safari.png" class="circle ipl">
                         <b>Delhi Capitals</b></h6>
-                      <h6 class="col s5 m5 l5 transparent-text">-</h6>
+                      <h6 class="col s5 m5 l5">223/2</h6>
                       <h6 class="transparent-text"><b>-</b> won by -</h6>
                       <h6><a href="#wpl02" class="oui-button modal-trigger pink accent-3 white-text">Full Scores</a>
                       </h6>
